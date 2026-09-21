@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment / secrets
+.env
+*.env
+
+# FAISS index (large binary files — regenerate locally)
+vector_store/*.index
+vector_store/*.meta
+
+# HuggingFace model cache (very large)
+~/.cache/huggingface/
+
+# Streamlit
+.streamlit/
+
+# Data files (add your own PDFs; don't commit them)
+data/sample_pdfs/*.pdf
+
+# Evaluation output
+evaluation_results.csv
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb

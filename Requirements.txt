@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────────────────
+# RAG PDF Q&A System — Requirements
+# Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────────────────────
+
+# PDF processing
+PyMuPDF>=1.23.0          # fitz — primary PDF extractor (fast, accurate)
+pypdf>=3.0.0             # fallback PDF extractor
+
+# Text chunking (via LangChain's text splitter only)
+langchain-text-splitters>=0.2.0
+
+# Embeddings (local, no API key required)
+sentence-transformers>=2.6.0
+torch>=2.0.0              # CPU is fine; GPU is optional
+
+# Vector database
+faiss-cpu>=1.7.4          # change to faiss-gpu if you have CUDA
+
+# Local LLM
+transformers>=4.36.0
+accelerate>=0.25.0        # optional, speeds up model loading
+sentencepiece>=0.1.99     # required for some tokenizers
+
+# Streamlit UI
+streamlit>=1.32.0
+
+# Evaluation / data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities
+python-dotenv>=1.0.0      # loads .env for API keys
+tqdm>=4.65.0              # progress bars
+
+# ── Optional: remote LLM fallbacks ────────────────────────────────────────
+# Uncomment whichever you want:
+# groq>=0.4.0             # Groq API (llama3, mixtral)
+# google-generativeai>=0.5.0   # Google Gemini API
