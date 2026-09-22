@@ -8,6 +8,14 @@ All tunable parameters live here so you only need to change one file.
 import os
 from pathlib import Path
 
+# Load .env from the project root — must happen before any os.getenv() call.
+# This works whether the module is imported first by app.py or test_pipeline.py.
+try:
+    from dotenv import load_dotenv
+    load_dotenv(Path(__file__).resolve().parent.parent / ".env", override=False)
+except ImportError:
+    pass  # python-dotenv not installed — env vars must be set manually
+
 # ─────────────────────────────────────────────
 # Paths
 # ─────────────────────────────────────────────
@@ -40,13 +48,13 @@ DEFAULT_TOP_K = 4   # number of chunks to retrieve per query
 # ─────────────────────────────────────────────
 # Primary: local FLAN-T5 (no API key needed)
 # Fallback: Groq API (set GROQ_API_KEY in .env)
-LOCAL_LLM_MODEL   = "google/flan-t5-base"   # "google/flan-t5-large" for better quality
+LOCAL_LLM_MODEL   = "google/flan-t5-small"  # stable on CPU; upgrade to flan-t5-base if RAM > 8 GB
 MAX_NEW_TOKENS    = 512
 TEMPERATURE       = 0.1   # keep low for factual grounding
 
 # Groq fallback (optional)
 GROQ_API_KEY  = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL    = "llama3-8b-8192"
+GROQ_MODEL    = "openai/gpt-oss-20b"
 
 # Gemini fallback (optional)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
