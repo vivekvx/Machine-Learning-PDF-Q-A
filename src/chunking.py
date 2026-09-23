@@ -17,6 +17,7 @@ Strategy: Recursive Character Text Splitter
 from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import List
+import re
 import logging
 
 from src.config import CHUNK_SIZE, CHUNK_OVERLAP
@@ -67,7 +68,21 @@ def _make_splitter(chunk_size: int = CHUNK_SIZE, chunk_overlap: int = CHUNK_OVER
         chunk_overlap=chunk_overlap,
         separators=["\n\n", "\n", ". ", ", ", " ", ""],
         length_function=len,
+        add_start_index=True,
     )
+
+
+_SECTION_HEADING_RE = re.compile(
+    r"(?im)^(?:\d+(?:\.\d+)*\s+)?(abstract|introduction|background|"
+    r"related work|literature review|methods?|methodology|materials and methods|"
+    r"results?|findings?|discussion|conclusions?|limitations?|references)\s*$"
+)
+
+
+def _section_heading_at(text: str, offset: int) -> str:
+    """Return the closest conventional research-paper heading before ``offset``."""
+    matches = [match for match in _SECTION_HEADING_RE.finditer(text) if match.start() <= offset]
+    return matches[-1].group(1).strip().title() if matches else "Unlabelled section"
 
 
 # ─────────────────────────────────────────────────────────
@@ -102,19 +117,26 @@ def chunk_documents(
     global_idx = 0
 
     for doc in page_docs:
-        # Split the page text into raw string pieces
-        raw_pieces = splitter.split_text(doc.page_content)
+        # ``start_index`` lets every chunk retain the heading that preceded it.
+        raw_pieces = splitter.create_documents([doc.page_content])
 
-        for piece in raw_pieces:
-            piece = piece.strip()
+        for piece_doc in raw_pieces:
+            piece = piece_doc.page_content.strip()
             if not piece:           # skip empty strings
                 continue
+            metadata = dict(doc.metadata)
+            metadata.update({
+                "file_name": doc.source,
+                "section_heading": _section_heading_at(
+                    doc.page_content, piece_doc.metadata.get("start_index", 0)
+                ),
+            })
             all_chunks.append(TextChunk(
                 chunk_text=piece,
                 page_number=doc.page_number,
                 source=doc.source,
                 chunk_index=global_idx,
-                metadata=doc.metadata,
+                metadata=metadata,
             ))
             global_idx += 1
 

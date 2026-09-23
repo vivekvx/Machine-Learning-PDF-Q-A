@@ -33,6 +33,7 @@ from src.vector_store import FAISSVectorStore
 from src.retriever    import retrieve
 from src.generator    import generate_answer
 from src.evaluation   import EvaluationTracker
+from src.query_intelligence import classify_and_expand
 from src.config       import (
     DEFAULT_TOP_K, CHUNK_SIZE, CHUNK_OVERLAP,
     EMBEDDING_MODEL, LOCAL_LLM_MODEL, GROQ_MODEL,
@@ -47,7 +48,7 @@ logger = logging.getLogger(__name__)
 
 # ── Page Configuration ───────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="RAG Intelligence Workspace",
+    page_title="A Retrieval-Augmented Question Answering System for PDF Documents Using Machine Learning",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -223,11 +224,17 @@ def execute_qa(query_text):
 
     with st.spinner("🧠 Retrieving semantic context & generating answer..."):
         try:
-            # 1. Dense Retrieval
+            intel = classify_and_expand(
+                query_text.strip(), index_size=st.session_state.vector_store.total_vectors
+            )
+            # 1. Intent-aware retrieval
             ret_result = retrieve(
                 query_text.strip(),
                 st.session_state.vector_store,
-                top_k=DEFAULT_TOP_K,
+                top_k=intel.recommended_top_k,
+                expanded_queries=intel.expanded_queries,
+                is_broad=intel.is_broad,
+                query_type=intel.intent,
             )
 
             # 2. Answer Generation (Groq -> Gemini -> Extractive)
@@ -235,6 +242,10 @@ def execute_qa(query_text):
                 query_text.strip(),
                 ret_result.chunks,
                 prefer_local=False,
+                scores=ret_result.scores,
+                intent=intel.intent,
+                query_expanded=len(intel.expanded_queries) > 1,
+                fallback_triggered=ret_result.fallback_triggered,
             )
 
             # 3. Log Performance Evaluation
@@ -356,7 +367,7 @@ with st.sidebar:
 st.markdown(
     """
     <div class="hero-container">
-        <div class="hero-title">RAG PDF Intelligence Platform</div>
+        <div class="hero-title">Retrieval-Augmented PDF Question Answering</div>
         <div class="hero-subtitle">
             Grounded Neural Retrieval & Question Answering over PDF Documents
         </div>

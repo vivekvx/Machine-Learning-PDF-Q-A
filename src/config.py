@@ -35,13 +35,13 @@ EMBEDDING_DIM   = 384   # must match the chosen model
 # ─────────────────────────────────────────────
 # Text chunking
 # ─────────────────────────────────────────────
-CHUNK_SIZE    = 500   # characters per chunk
-CHUNK_OVERLAP = 50    # overlap between consecutive chunks
+CHUNK_SIZE    = 1200  # characters per chunk — larger for academic/research PDFs
+CHUNK_OVERLAP = 200   # generous overlap to prevent context fragmentation
 
 # ─────────────────────────────────────────────
 # Retrieval
 # ─────────────────────────────────────────────
-DEFAULT_TOP_K = 4   # number of chunks to retrieve per query
+DEFAULT_TOP_K = 6   # baseline; query_intelligence.py raises this for broad questions
 
 # ─────────────────────────────────────────────
 # Generator / LLM
@@ -49,7 +49,7 @@ DEFAULT_TOP_K = 4   # number of chunks to retrieve per query
 # Primary: local FLAN-T5 (no API key needed)
 # Fallback: Groq API (set GROQ_API_KEY in .env)
 LOCAL_LLM_MODEL   = "google/flan-t5-small"  # stable on CPU; upgrade to flan-t5-base if RAM > 8 GB
-MAX_NEW_TOKENS    = 512
+MAX_NEW_TOKENS    = 1024  # increased for academic synthesis answers
 TEMPERATURE       = 0.1   # keep low for factual grounding
 
 # Groq fallback (optional)

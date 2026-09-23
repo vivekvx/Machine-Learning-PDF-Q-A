@@ -33,13 +33,14 @@ from pydantic import BaseModel
 # Ensure src/ is on Python path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from src.pdf_loader   import load_pdfs
-from src.chunking     import chunk_documents, get_chunk_stats
-from src.vector_store import FAISSVectorStore
-from src.retriever    import retrieve
-from src.generator    import generate_answer
-from src.evaluation   import EvaluationTracker
-from src.config       import (
+from src.pdf_loader        import load_pdfs
+from src.chunking          import chunk_documents, get_chunk_stats
+from src.vector_store      import FAISSVectorStore
+from src.retriever         import retrieve
+from src.generator         import generate_answer
+from src.evaluation        import EvaluationTracker
+from src.query_intelligence import classify_and_expand
+from src.config            import (
     DEFAULT_TOP_K, CHUNK_SIZE, CHUNK_OVERLAP,
     EMBEDDING_MODEL, LOCAL_LLM_MODEL, GROQ_MODEL,
 )
@@ -53,7 +54,7 @@ logger = logging.getLogger(__name__)
 
 # ── FastAPI App Initialisation ───────────────────────────────────────────────
 app = FastAPI(
-    title="RAG PDF Q&A Platform",
+    title="A Retrieval-Augmented Question Answering System for PDF Documents Using Machine Learning",
     description="Research-Grade Retrieval-Augmented Generation REST API",
     version="2.0.0",
 )
@@ -162,10 +163,11 @@ async def upload_and_index(files: List[UploadFile] = File(...)):
 @app.post("/api/query")
 def execute_query(req: QueryRequest):
     """
-    Executes a RAG query:
-    1. Embeds question & retrieves top-K context chunks from FAISS
-    2. Generates grounded answer via Groq LLM (with Gemini & Extractive fallbacks)
-    3. Logs evaluation metrics
+    Executes a RAG query with query intelligence:
+    1. Classify intent & expand queries
+    2. Multi-query FAISS retrieval with deduplication
+    3. Generates grounded answer via Groq LLM
+    4. Logs evaluation metrics
     """
     if not req.question or not req.question.strip():
         raise HTTPException(status_code=400, detail="Question cannot be empty.")
@@ -174,28 +176,60 @@ def execute_query(req: QueryRequest):
         raise HTTPException(status_code=400, detail="No active document index found. Please upload a PDF first.")
 
     try:
-        # 1. Retrieve
-        ret_result = retrieve(req.question.strip(), vector_store, top_k=DEFAULT_TOP_K)
+        question = req.question.strip()
 
-        # 2. Generate Grounded Answer
-        gen_result = generate_answer(req.question.strip(), ret_result.chunks, prefer_local=False)
+        # 1. Classify intent & expand queries
+        intel = classify_and_expand(question, index_size=vector_store.total_vectors)
+        logger.info(
+            f"[Query] intent={intel.intent}, top_k={intel.recommended_top_k}, "
+            f"expanded={len(intel.expanded_queries)}, is_broad={intel.is_broad}"
+        )
 
-        # 3. Log Performance Evaluation
+        # 2. Multi-query retrieval
+        ret_result = retrieve(
+            question,
+            vector_store,
+            top_k=intel.recommended_top_k,
+            expanded_queries=intel.expanded_queries,
+            is_broad=intel.is_broad,
+            query_type=intel.intent,
+        )
+
+        # 3. Generate Grounded Answer
+        gen_result = generate_answer(
+            question,
+            ret_result.chunks,
+            prefer_local=False,
+            scores=ret_result.scores,
+            intent=intel.intent,
+            query_expanded=len(intel.expanded_queries) > 1,
+            fallback_triggered=ret_result.fallback_triggered,
+        )
+        logger.info(
+            f"[Query] question={question!r} query_type={intel.intent} "
+            f"pages={[c.page_number for c in ret_result.chunks]} "
+            f"scores={[round(s, 4) for s in ret_result.scores]} "
+            f"model={gen_result.model_used} latency="
+            f"{ret_result.retrieval_time + gen_result.generation_time:.3f}s"
+        )
+
+        # 4. Log Performance Evaluation
         eval_tracker.log(ret_result, gen_result)
 
-        # 4. Format Chunk Snippets for JSON
+        # 5. Format Chunk Snippets for JSON
         chunk_snippets = [
             {
                 "source": c.source,
                 "page_number": c.page_number,
                 "score": round(score, 4),
+                "section_heading": c.metadata.get("section_heading", "Unlabelled section"),
                 "text": c.chunk_text,
             }
             for c, score in zip(ret_result.chunks, ret_result.scores)
         ]
 
         return {
-            "question": req.question.strip(),
+            "question": question,
             "answer": gen_result.answer,
             "source_pages": gen_result.source_pages,
             "source_files": gen_result.source_files,
@@ -206,6 +240,11 @@ def execute_query(req: QueryRequest):
             "top_similarity": ret_result.top_score,
             "avg_similarity": ret_result.avg_similarity,
             "chunks": chunk_snippets,
+            # Intelligence metadata
+            "intent": intel.intent,
+            "query_expanded": gen_result.query_expanded,
+            "fallback_triggered": gen_result.fallback_triggered,
+            "expanded_queries": intel.expanded_queries,
         }
 
     except Exception as exc:
