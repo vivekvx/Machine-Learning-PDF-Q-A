@@ -14,6 +14,8 @@ build/
 # Environment / secrets
 .env
 *.env
+.env.*
+*.backup
 
 # FAISS index (large binary files — regenerate locally)
 vector_store/*.index
@@ -40,3 +42,55 @@ evaluation_results.csv
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
+
+# SLM research: local environments, caches, archives, and model states.
+research/slm/**/.cache/
+research/slm/**/.venv/
+research/slm/**/.retrieval-venv/
+research/slm/scratch.zip
+research/slm/**/*.safetensors
+research/slm/**/*.npz
+research/slm/**/*.parquet
+research/slm/**/*.tar.gz
+research/slm/**/*.bib.gz
+research/slm/**/*.log
+
+# Preserve sealed partitions and raw predictions locally.
+research/slm/**/test.sealed.jsonl
+research/slm/scratch/**/test*.jsonl
+research/slm/curated/*.jsonl
+!research/slm/curated/document_decisions.jsonl
+!research/slm/curated/cross_split_duplicates.jsonl
+research/slm/pilot/*.jsonl
+!research/slm/pilot/exclusions.jsonl
+research/slm/feasibility_data/*.jsonl
+research/slm/portable/data/v1/*.jsonl
+!research/slm/portable/data/v1/selection_audit.jsonl
+research/slm/retrieval_baseline/v1/*.jsonl
+!research/slm/retrieval_baseline/v1/prediction_provenance.jsonl
+research/slm/retrieval_baseline/v1/predictions_*.json
+research/slm/retrieval_baseline/v1/smoke_gold.json
+research/slm/training_data_v2/v1/*.jsonl
+!research/slm/training_data_v2/v1/candidate_expansion.jsonl
+!research/slm/training_data_v2/v1/duplicate_review_signals.jsonl
+!research/slm/training_data_v2/v1/license_ledger.jsonl
+!research/slm/training_data_v2/v1/train_ids.jsonl
+!research/slm/training_data_v2/v1/validation_ids.jsonl
+research/slm/human_review/v1/cohort_snapshot/*.jsonl
+!research/slm/human_review/v1/cohort_snapshot/cohort_decisions.jsonl
+!research/slm/human_review/v1/cohort_snapshot/candidate_cohort.jsonl
+research/slm/human_review/v1/sources/
+research/slm/validation_*eval.jsonl
+research/slm/EVIDENCE_REVIEW_SAMPLE.csv
+research/slm/baseline_smoke.json
+research/slm/baseline_validation.json
+research/slm/baseline_faiss_validation.json
+research/slm/adapter_validation.json
+research/slm/feasibility_adapter/adapter_config.json
+
+# Official documentation source text stays local; publish source references,
+# transformation code, manifests, rights ledgers, and license notices.
+research/slm/scratch/real_text/v*/raw/Doc/library/
+research/slm/scratch/real_text/v*/train.jsonl
+research/slm/scratch/real_text/v*/validation.jsonl
+research/slm/scratch/real_text/v*/test.sealed.jsonl
