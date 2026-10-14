@@ -1,0 +1,159 @@
+mx.metal.reset_peak_memory is deprecated and will be removed in a future version. Use mx.reset_peak_memory instead.
+mx.metal.get_active_memory is deprecated and will be removed in a future version. Use mx.get_active_memory instead.
+mx.metal.get_peak_memory is deprecated and will be removed in a future version. Use mx.get_peak_memory instead.
+{"step": 10, "train_exact": 0.25, "validation_exact": null}
+{"step": 20, "train_exact": 0.375, "validation_exact": null}
+{"step": 30, "train_exact": 0.5, "validation_exact": null}
+{"step": 40, "train_exact": 0.5, "validation_exact": null}
+{"step": 50, "train_exact": 0.25, "validation_exact": null}
+{"step": 60, "train_exact": 0.375, "validation_exact": null}
+{"step": 70, "train_exact": 0.25, "validation_exact": null}
+{"step": 80, "train_exact": 0.25, "validation_exact": null}
+{"step": 90, "train_exact": 0.25, "validation_exact": null}
+{"step": 100, "train_exact": 0.375, "validation_exact": null}
+{"step": 110, "train_exact": 0.5, "validation_exact": null}
+{"step": 120, "train_exact": 0.5, "validation_exact": null}
+{"step": 130, "train_exact": 0.5, "validation_exact": null}
+{"step": 140, "train_exact": 0.5, "validation_exact": null}
+{"step": 150, "train_exact": 0.5, "validation_exact": null}
+{"step": 160, "train_exact": 0.375, "validation_exact": null}
+{"step": 170, "train_exact": 0.375, "validation_exact": null}
+{"step": 180, "train_exact": 0.375, "validation_exact": null}
+{"step": 190, "train_exact": 0.375, "validation_exact": null}
+{"step": 200, "train_exact": 0.25, "validation_exact": null}
+{"step": 210, "train_exact": 0.25, "validation_exact": null}
+{"step": 220, "train_exact": 0.5, "validation_exact": null}
+{"step": 230, "train_exact": 0.375, "validation_exact": null}
+{"step": 240, "train_exact": 0.375, "validation_exact": null}
+{"step": 250, "train_exact": 0.375, "validation_exact": null}
+{"step": 260, "train_exact": 0.25, "validation_exact": null}
+{"step": 270, "train_exact": 0.5, "validation_exact": null}
+{"step": 280, "train_exact": 0.375, "validation_exact": null}
+{"step": 290, "train_exact": 0.5, "validation_exact": null}
+{"step": 300, "train_exact": 0.625, "validation_exact": null}
+{
+  "status": "tiny_failed",
+  "steps": 300,
+  "best_step": null,
+  "initial": {
+    "step": 0,
+    "train": {
+      "nll": 1.3899307996034622,
+      "exact": 0.0,
+      "paraphrase_exact": 0.0,
+      "copy_support": 1.0,
+      "question_changed_doc_fraction": 1.0,
+      "groups": {
+        "all": {
+          "correct": 0,
+          "count": 8,
+          "accuracy": 0.0
+        },
+        "direct": {
+          "correct": 0,
+          "count": 4,
+          "accuracy": 0.0
+        },
+        "metric": {
+          "correct": 0,
+          "count": 2,
+          "accuracy": 0.0
+        },
+        "copy": {
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1.0
+        },
+        "paraphrase": {
+          "correct": 0,
+          "count": 4,
+          "accuracy": 0.0
+        },
+        "capacity": {
+          "correct": 0,
+          "count": 2,
+          "accuracy": 0.0
+        },
+        "method": {
+          "correct": 0,
+          "count": 2,
+          "accuracy": 0.0
+        },
+        "owner": {
+          "correct": 0,
+          "count": 2,
+          "accuracy": 0.0
+        }
+      }
+    }
+  },
+  "final": {
+    "step": 300,
+    "train": {
+      "nll": 1.3862939327955246,
+      "exact": 0.625,
+      "paraphrase_exact": 0.75,
+      "copy_support": 1.0,
+      "question_changed_doc_fraction": 1.0,
+      "groups": {
+        "all": {
+          "correct": 5,
+          "count": 8,
+          "accuracy": 0.625
+        },
+        "direct": {
+          "correct": 2,
+          "count": 4,
+          "accuracy": 0.5
+        },
+        "metric": {
+          "correct": 1,
+          "count": 2,
+          "accuracy": 0.5
+        },
+        "copy": {
+          "correct": 8,
+          "count": 8,
+          "accuracy": 1.0
+        },
+        "paraphrase": {
+          "correct": 3,
+          "count": 4,
+          "accuracy": 0.75
+        },
+        "capacity": {
+          "correct": 1,
+          "count": 2,
+          "accuracy": 0.5
+        },
+        "method": {
+          "correct": 1,
+          "count": 2,
+          "accuracy": 0.5
+        },
+        "owner": {
+          "correct": 2,
+          "count": 2,
+          "accuracy": 1.0
+        }
+      }
+    }
+  },
+  "best": null,
+  "restoration": null,
+  "parameter_count": 1009153,
+  "peak_mlx_bytes": 37224779,
+  "worker_wall_seconds": 6.806898042093962,
+  "test_file_opened": false,
+  "provenance": {
+    "config_sha256": "dcc4aa68b195be706271b25fb8df00dc98de51317fd56092f781b35fbd9b2dd4",
+    "manifest_sha256": "50fb590d826999b209620d51a3bdfc746f18d3599b60e17cde8740bdedb58edf",
+    "train_sha256": "83af9f500008737a315c8a022278bd635da6c7617d0d9785020a9a0a1ca8a04e",
+    "validation_sha256": "0b77fcd829d907158afa019c5916e47c5e6b361e36b1a16e2d07fb0ac688b16a",
+    "tokenizer_sha256": "30c39795b07b7006e3b74685ab48bb8c04b6f4a156f5a59185010ddb7b3a0c36",
+    "model_sha256": "49faa851e508d6414803f978d2a740e7ce5a7136fa0a11b2c12083b40bd3de66",
+    "prepare_sha256": "da3e11ed16033c1abadca3ed4102165114fb64da585bbeb192ccf12ee65b965b",
+    "shared_encoder_sha256": "531f54300eb7fb0e5abe08975f04ff66a8843b5531535d7de469e4a4aa63a86f",
+    "plan_sha256": "093db14daefd554e5786a2de96d95f3828decda15c2656167fb5e109e8d2b366"
+  }
+}
