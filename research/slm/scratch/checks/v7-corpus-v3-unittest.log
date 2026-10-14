@@ -1,0 +1,12 @@
+test_duplicate_detector_and_related_page_family (test_corpus_v3.CorpusV3Tests.test_duplicate_detector_and_related_page_family) ... ok
+test_guarded_run_curve_and_checkpoint_restore (test_corpus_v3.CorpusV3Tests.test_guarded_run_curve_and_checkpoint_restore) ... ok
+test_official_archive_license_and_manifest_hashes (test_corpus_v3.CorpusV3Tests.test_official_archive_license_and_manifest_hashes) ... ok
+test_split_grouping_leakage_and_minimum_corpus_gate (test_corpus_v3.CorpusV3Tests.test_split_grouping_leakage_and_minimum_corpus_gate) ... ok
+test_train_only_tokenizer_and_frozen_windows (test_corpus_v3.CorpusV3Tests.test_train_only_tokenizer_and_frozen_windows) ... ok
+test_training_is_opt_in_with_strict_step_and_wall_caps (test_corpus_v3.CorpusV3Tests.test_training_is_opt_in_with_strict_step_and_wall_caps) ... ok
+test_training_loader_never_reads_sealed_test (test_corpus_v3.CorpusV3Tests.test_training_loader_never_reads_sealed_test) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 8.513s
+
+OK

@@ -1,0 +1,11 @@
+test_document_disjoint_and_test_sealed (test_expanded_corpus.ExpandedCorpusTests.test_document_disjoint_and_test_sealed) ... ok
+test_leakage_detector_catches_exact_and_near_duplicates (test_expanded_corpus.ExpandedCorpusTests.test_leakage_detector_catches_exact_and_near_duplicates) ... ok
+test_rights_and_rebuild (test_expanded_corpus.ExpandedCorpusTests.test_rights_and_rebuild) ... ok
+test_saved_best_and_final_checkpoint_restore (test_expanded_corpus.ExpandedCorpusTests.test_saved_best_and_final_checkpoint_restore) ... ok
+test_train_only_tokenizer_and_fixed_windows (test_expanded_corpus.ExpandedCorpusTests.test_train_only_tokenizer_and_fixed_windows) ... ok
+test_training_loader_never_opens_sealed_test (test_expanded_corpus.ExpandedCorpusTests.test_training_loader_never_opens_sealed_test) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.155s
+
+OK
