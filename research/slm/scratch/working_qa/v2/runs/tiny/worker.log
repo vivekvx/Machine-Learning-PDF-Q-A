@@ -1,0 +1,10 @@
+mx.metal.reset_peak_memory is deprecated and will be removed in a future version. Use mx.reset_peak_memory instead.
+mx.metal.get_active_memory is deprecated and will be removed in a future version. Use mx.get_active_memory instead.
+mx.metal.get_peak_memory is deprecated and will be removed in a future version. Use mx.get_peak_memory instead.
+{"step": 10, "train_exact": 0.5, "validation_exact": null}
+{"step": 20, "train_exact": 0.5, "validation_exact": null}
+{"step": 30, "train_exact": 0.5, "validation_exact": null}
+{"step": 40, "train_exact": 0.5, "validation_exact": null}
+{"step": 50, "train_exact": 0.625, "validation_exact": null}
+{"step": 60, "train_exact": 0.875, "validation_exact": null}
+{"step": 70, "train_exact": 0.75, "validation_exact": null}
