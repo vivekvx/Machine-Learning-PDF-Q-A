@@ -1,0 +1,110 @@
+{
+  "checkpoints": {
+    "60": {
+      "model": {
+        "all_finite": true,
+        "l2_norm": 69.82878454259247,
+        "max_absolute": 1.1044763326644897,
+        "scalar_count": 1082496,
+        "tensor_count": 28
+      },
+      "model_sha256": "52a4e06b02574da144d749e0e2fc9538f0cccb4a0dd008a1f50ac78a50b49bc4",
+      "optimizer": {
+        "all_finite": true,
+        "l2_norm": 60.00094834414167,
+        "max_absolute": 60.0,
+        "scalar_count": 2164994,
+        "tensor_count": 58
+      },
+      "optimizer_sha256": "4c9b027243e77229a530d07b516285c84d79258dcf7952c2fb16293415ac97c5",
+      "optimizer_step": 60,
+      "parameter_count": 1082496,
+      "probe_max_abs_difference": 0.0,
+      "train": {
+        "loss": 6.395853678385417,
+        "per_document_loss": {
+          "Doc/library/array.rst": 6.086325287818909,
+          "Doc/library/bisect.rst": 6.665028254191081,
+          "Doc/library/heapq.rst": 6.579733371734619,
+          "Doc/library/itertools.rst": 6.139098008473714,
+          "Doc/library/json.rst": 6.487600406010945,
+          "Doc/library/pathlib.rst": 6.327123165130615
+        },
+        "perplexity": 599.3547610948693,
+        "windows": 33
+      },
+      "train_record_difference": 0.0,
+      "validation": {
+        "loss": 6.336194266443667,
+        "per_document_loss": {
+          "Doc/library/collections.rst": 6.160876546587263,
+          "Doc/library/decimal.rst": 6.557474136352539,
+          "Doc/library/functools.rst": 6.268317401409149
+        },
+        "perplexity": 564.6433350654428,
+        "windows": 23
+      },
+      "validation_record_difference": 0.0
+    },
+    "80": {
+      "model": {
+        "all_finite": true,
+        "l2_norm": 70.58440573401965,
+        "max_absolute": 1.1282895803451538,
+        "scalar_count": 1082496,
+        "tensor_count": 28
+      },
+      "model_sha256": "619986f43b249348ec881d862a098368b69fcc61fe45ccd22ed32961eadc92e7",
+      "optimizer": {
+        "all_finite": true,
+        "l2_norm": 80.00056764330417,
+        "max_absolute": 80.0,
+        "scalar_count": 2164994,
+        "tensor_count": 58
+      },
+      "optimizer_sha256": "b36b0276615c596a9caf31ab69e6d9f16fee496faf731219d7c7524b24e0fe29",
+      "optimizer_step": 80,
+      "parameter_count": 1082496,
+      "probe_max_abs_difference": 0.0,
+      "train": {
+        "loss": 6.808181878292199,
+        "per_document_loss": {
+          "Doc/library/array.rst": 6.964522659778595,
+          "Doc/library/bisect.rst": 5.978243430455525,
+          "Doc/library/heapq.rst": 6.581352029527936,
+          "Doc/library/itertools.rst": 6.958028316497803,
+          "Doc/library/json.rst": 7.343770345052083,
+          "Doc/library/pathlib.rst": 7.359396298726399
+        },
+        "perplexity": 905.223503400232,
+        "windows": 33
+      },
+      "train_record_difference": 0.0,
+      "validation": {
+        "loss": 6.960752839627474,
+        "per_document_loss": {
+          "Doc/library/collections.rst": 6.868159634726388,
+          "Doc/library/decimal.rst": 7.129067599773407,
+          "Doc/library/functools.rst": 6.873457133769989
+        },
+        "perplexity": 1054.4270729946209,
+        "windows": 23
+      },
+      "validation_record_difference": 0.0
+    }
+  },
+  "corpus_manifest_sha256": "280a091a24a9d31f98fafcdd02e42f435ecb859e78d5af7363baae8127cb3c35",
+  "frozen_ledger": {
+    "ledger_sha256": "93e272ddd31452350bd8b648e9218dbeea8f626134b64436734eb17403fd641f",
+    "mismatches": [],
+    "verified_file_count": 80
+  },
+  "sealed_test_opened": false,
+  "status": "verified",
+  "train_window_sha256": "01a2153b5998dc6bca4e39102d8db98c127bf7890c1c3e2bf0dd56d7ec9e1e48",
+  "validation_window_sha256": "3cfc43865a9adc4d034916fdd517b30c7841a1a139b88857f3a611d6627f10e6",
+  "window_counts": {
+    "train": 33,
+    "validation": 23
+  }
+}

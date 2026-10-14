@@ -1,0 +1,175 @@
+{
+  "schema_version": 2,
+  "checks": {
+    "medical_keyword_hits": 0,
+    "cross_split_exact_paragraph_pairs": 0,
+    "cross_split_near_paragraph_pairs": 0,
+    "cross_split_near_document_pairs": 0
+  },
+  "samples": [
+    {
+      "split": "train",
+      "document_id": "Doc/library/heapq.rst",
+      "source_lines": [
+        16,
+        40
+      ],
+      "text": "This module provides an implementation of the heap queue algorithm, also known as the priority queue algorithm. Heaps are binary trees for which every parent node has a value less than or equal to any of its children. We refer to this condition as the heap invariant. This implementation uses arrays for which heap[k] <= heap[2*k+1] and heap[k] <= heap[2*k+2] for all k, counting elements from zero. For the sake of comparison, non-existing elements are considered to be infinite. The interesting property of a heap is that its smallest element is always the root, heap[0]. The API below differs from textbook heap algorithms in two aspects: (a) We use zero-based indexing. This makes the relationship between the index for a node and the indexes for its children slightly less obvious, but is more suitable since Python uses zero-based indexing. (b) Our pop method returns the smallest item, not the largest (called a \"min heap\" in textbooks; a \"max heap\" is more common in texts because of its suitability for in-place sorting). These two make it possible to view the heap as a regular Python list without surprises: heap[0] is the smallest item, and heap.sort() maintains the heap invariant! To create a heap, use a list initialized to [], or you can transform a populated list into a heap via function heapify."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/heapq.rst",
+      "source_lines": [
+        130,
+        134
+      ],
+      "text": "The latter two functions perform best for smaller values of n. For larger values, it is more efficient to use the sorted function. Also, when n==1, it is more efficient to use the built-in min and max functions. If repeated usage of these functions is required, consider turning the iterable into an actual heap."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/bisect.rst",
+      "source_lines": [
+        14,
+        25
+      ],
+      "text": "This module provides support for maintaining a list in sorted order without having to sort the list after each insertion. For long lists of items with expensive comparison operations, this can be an improvement over linear searches or frequent resorting. The module is called bisect because it uses a basic bisection algorithm to do its work. Unlike other bisection tools that search for a specific value, the functions in this module are designed to locate an insertion point. Accordingly, the functions never call an object.__eq__ method to determine whether a value has been found. Instead, the functions only call the object.__lt__ method and will return an insertion point between values in an array."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/bisect.rst",
+      "source_lines": [
+        112,
+        127
+      ],
+      "text": "When writing time sensitive code using bisect() and insort(), keep these thoughts in mind: Bisection is effective for searching ranges of values. For locating specific values, dictionaries are more performant. The insort() functions are O (n) because the logarithmic search step is dominated by the linear time insertion step. * The search functions are stateless and discard key function results after they are used. Consequently, if the search functions are used in a loop, the key function may be called again and again on the same array elements. If the key function isn't fast, consider wrapping it with functools.cache to avoid duplicate computations. Alternatively, consider searching an array of precomputed keys to locate the insertion point (as shown in the examples section below)."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/array.rst",
+      "source_lines": [
+        11,
+        16
+      ],
+      "text": "This module defines an object type which can compactly represent an array of basic values: characters, integers, floating-point numbers. Arrays are sequence types and behave very much like lists, except that the type of objects stored in them is constrained. The type is specified at object creation time by using a type code, which is a single character. The following type codes are defined:"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/array.rst",
+      "source_lines": [
+        222,
+        224
+      ],
+      "text": "Convert the array to an array of machine values and return the bytes representation (the same sequence of bytes that would be written to a file by the tofile method.)"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/itertools.rst",
+      "source_lines": [
+        20,
+        27
+      ],
+      "text": "This module implements a number of iterator building blocks inspired by constructs from APL, Haskell, and SML. Each has been recast in a form suitable for Python. The module standardizes a core set of fast, memory efficient tools that are useful by themselves or in combination. Together, they form an \"iterator algebra\" making it possible to construct specialized tools succinctly and efficiently in pure Python."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/itertools.rst",
+      "source_lines": [
+        103,
+        111
+      ],
+      "text": "Make an iterator that returns accumulated sums or accumulated results from other binary functions. The function defaults to addition. The function should accept two arguments, an accumulated total and a value from the iterable. If an initial value is provided, the accumulation will start with that value and the output will have one more element than the input iterable."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/pathlib.rst",
+      "source_lines": [
+        15,
+        19
+      ],
+      "text": "This module offers classes representing filesystem paths with semantics appropriate for different operating systems. Path classes are divided between pure paths, which provide purely computational operations without I/O, and concrete paths, which inherit from pure paths but also provide I/O operations."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/pathlib.rst",
+      "source_lines": [
+        266,
+        267
+      ],
+      "text": "Calling bytes is only recommended under Unix. Under Windows, the unicode form is the canonical representation of filesystem paths."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/json.rst",
+      "source_lines": [
+        22,
+        24
+      ],
+      "text": "Be cautious when parsing JSON data from untrusted sources. A malicious JSON string may cause the decoder to consume considerable CPU and memory resources. Limiting the size of data to be parsed is recommended."
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/json.rst",
+      "source_lines": [
+        243,
+        248
+      ],
+      "text": "Keys in key/value pairs of JSON are always of the type str. When a dictionary is converted into JSON, all the keys of the dictionary are coerced to strings. As a result of this, if a dictionary is converted into JSON and then back into a dictionary, the dictionary may not equal the original one. That is, loads(dumps(x)) != x if x has non-string keys."
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/library/functools.rst",
+      "source_lines": [
+        23,
+        27
+      ],
+      "text": "The functools module is for higher-order functions: functions that act on or return other functions. In general, any callable object can be treated as a function for the purposes of this module. The functools module defines the following functions:"
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/library/functools.rst",
+      "source_lines": [
+        130,
+        140
+      ],
+      "text": "Transform an old-style comparison function to a key function. Used with tools that accept key functions (such as sorted, min, max, heapq.nlargest, heapq.nsmallest, itertools.groupby). This function is primarily used as a transition tool for programs being converted from Python 2 which supported the use of comparison functions. A comparison function is any callable that accepts two arguments, compares them, and returns a negative number for less-than, zero for equality, or a positive number for greater-than. A key function is a callable that accepts one argument and returns another value to be used as the sort key."
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/library/collections.rst",
+      "source_lines": [
+        20,
+        22
+      ],
+      "text": "This module implements specialized container datatypes providing alternatives to Python's general purpose built-in containers, dict, list, set, and tuple."
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/library/collections.rst",
+      "source_lines": [
+        225,
+        225
+      ],
+      "text": "A counter tool is provided to support convenient and rapid tallies."
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/library/decimal.rst",
+      "source_lines": [
+        33,
+        35
+      ],
+      "text": "The decimal module provides support for fast correctly rounded decimal floating-point arithmetic. It offers several advantages over the float datatype:"
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/library/decimal.rst",
+      "source_lines": [
+        101,
+        111
+      ],
+      "text": "Signals are groups of exceptional conditions arising during the course of computation. Depending on the needs of the application, signals may be ignored, considered as informational, or treated as exceptions. The signals in the decimal module are: Clamped, InvalidOperation, DivisionByZero, Inexact, Rounded, Subnormal, Overflow, Underflow and FloatOperation. For each signal there is a flag and a trap enabler. When a signal is encountered, its flag is set to one, then, if the trap enabler is set to one, an exception is raised. Flags are sticky, so the user needs to reset them before monitoring a calculation."
+    }
+  ],
+  "test_text_displayed": false,
+  "limits": "Automated duplicate/keyword checks and selected prose samples do not establish comprehensive human quality or contributor-rights review."
+}

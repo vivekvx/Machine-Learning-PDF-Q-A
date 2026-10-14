@@ -1,0 +1,7 @@
+{
+  "cross_split_near_documents": [],
+  "cross_split_paragraph_matches": [],
+  "limitation": "Lexical overlap checks do not prove absence of paraphrases or shared facts.",
+  "threshold": 0.6,
+  "word_shingle_size": 5
+}

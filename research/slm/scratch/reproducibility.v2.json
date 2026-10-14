@@ -1,0 +1,31 @@
+{
+  "file_sha256": {
+    "checkpoint.py": "59d1b52ffb24973cc8071cd49da709d5f25898832122fd4c92db998a362e9b38",
+    "config.v1.json": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+    "data.py": "4c41c2c79a809b9deb860ea55f4dbadfe07df0d36e45a5bb98b188ee0226f51c",
+    "data/v1/manifest.json": "0234bee367ea47189d94ff9be00a42184054525ec3374f6bdfec2c5170d7aa04",
+    "data/v1/tokenizer.json": "08a02e83aa53e14cf54fce35ae4b6207ea8b8c54f9ace90369646fc75267775e",
+    "data/v1/train.jsonl": "571a41a4d22a5478ef83ac130740b720f96ca0ddef88a85b8b47fcfdb81bd551",
+    "data/v1/validation.jsonl": "5db27578ce87544f81d592a8550936bc4f223aa58199596877cb7727dd44b534",
+    "freeze.py": "0cbb2f506094f56852e2a6a7d915f34cdce7340764d528afbcea4f972aad24a2",
+    "generate.py": "d3d76b45ec941d8de8c1da5fd9fa4a3a7c6ef94bb94e010d47926fd7d9bd935c",
+    "model.py": "6f00eb7139e486d43c122bae92724addb1a57c59ca57edb6c8cefe6761bbb4d4",
+    "prepare_data.py": "483d55a444f174b014a001314b77467c0efd4c6824c4b1b1392b8abb39ab7405",
+    "requirements.txt": "49b4a4d83fb7e9f02317243f8702cf3897ad3abddb52c79e27cc78f40648c1a5",
+    "run.py": "cd801c6ca663d297dd428855e62ce8483e0445ce91bd7fd5b0dc1598e3d76708",
+    "tests/test_data_and_safety.py": "05714f5cd5be8c29bc791342ce35c208e6a6b2e0a0827725c9fa8a29186435c3",
+    "tests/test_mlx_model.py": "9176cdcbb0dfd9a9487a333893ddbeff89988d8c89260f06305b145db8385ea2",
+    "tokenizer.py": "72c48f5917bfdf2e6911eb5872bc2f5efa142e942a76b6ab527fc1ec9272cd8b",
+    "train_worker.py": "6793c3d5cccfcd82f1158d8e6bcdf36bcb51d11580f651b3da5bfbdd688e1d31"
+  },
+  "git_head": "2277720c78539326f3d43ac38e5e04402fe5135a",
+  "packages": {
+    "mlx": "0.32.3",
+    "mlx-metal": "0.32.3",
+    "psutil": "7.1.0"
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "project": "SLM-A-from-scratch",
+  "python": "3.14.6",
+  "schema_version": 1
+}

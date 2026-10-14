@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "experiment": "SLM-A-six-sequence-synthetic-memorization",
+  "seed": 20261012,
+  "model_config": "config.v1.json (unchanged)",
+  "tokenizer": "data/v1/tokenizer.json (unchanged)",
+  "optimizer": "AdamW",
+  "learning_rate": 0.002,
+  "weight_decay": 0.01,
+  "batch_size": 1,
+  "max_optimizer_steps": 200,
+  "wall_time_cap_seconds": 120,
+  "loss_eval_interval_steps": 10,
+  "checkpoint_interval_steps": 25,
+  "early_stop_full_set_loss": 0.10,
+  "early_stop_exact_reproductions": 6
+}

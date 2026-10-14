@@ -1,0 +1,22 @@
+{
+  "best_validation_step": 60,
+  "final_step": 80,
+  "validation_loss_difference_final_minus_best": 0.6245585731838066,
+  "train_loss_difference_final_minus_best": 0.41232819990678227,
+  "per_document_validation_delta_final_minus_best": {
+    "Doc/library/functools.rst": 0.6051397323608398,
+    "Doc/library/collections.rst": 0.7072830881391257,
+    "Doc/library/decimal.rst": 0.5715934634208679
+  },
+  "document_bootstrap": {
+    "unit": "validation_document",
+    "resamples": 1000,
+    "delta_final_minus_best": 0.6280054279736111,
+    "bootstrap_95_percent_interval": [
+      0.5715934634208679,
+      0.7072830881391257
+    ],
+    "limits": "Only three selected validation documents; descriptive resampling, not an independent test."
+  },
+  "interpretation_limit": "Fixed windows give deterministic within-run measurements; three documents cannot reliably separate general overfitting from validation-sample heterogeneity. Best-step selection itself uses this validation set."
+}

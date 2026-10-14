@@ -1,0 +1,153 @@
+{
+  "file_sha256": {
+    "config.json": "492c4fda0b28a737a06b804d64fb480f4ae10ebabc3639602b9c84c9c65fde2d",
+    "leakage_audit.json": "5ac5e4a9cec3ffbdcdeaac32e9f4655677ee93863b2a49cb30692ec5a9fb6550",
+    "quality_samples.json": "1aaf0cf4488b4c5befca6823c6f251483f3a7f1e7c430c4e216f2c35409303ab",
+    "test.sealed.jsonl": "43eafbb835fc7c8a3c36319d9d89a7db6865b042f8043cc7c1e0e2cf351f934c",
+    "tokenizer.json": "957434b216fa32df88812910840a84e38aae6112194a52cb95bf59e4a1625a1f",
+    "tokenizer_evaluation.json": "23a218fa6c1e5c9c73507bb0f41ce7da1aba01edc895c20331221ad9c138cab0",
+    "train.jsonl": "3a343023cfcf94214773f28dd676af8343c8584101c1195b360909faf3590e25",
+    "validation.jsonl": "8d7b7b6ee14098d9923fda710b26c5cca59c797ffb3bb656ea5858276f09e5ad"
+  },
+  "fixed_windows": {
+    "train": 33,
+    "validation": 23,
+    "validation_by_document": {
+      "Doc/library/collections.rst": 7,
+      "Doc/library/decimal.rst": 8,
+      "Doc/library/functools.rst": 8
+    }
+  },
+  "leakage_audit_sha256": "5ac5e4a9cec3ffbdcdeaac32e9f4655677ee93863b2a49cb30692ec5a9fb6550",
+  "license": "Python Software Foundation License Version 2",
+  "license_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/license.rst",
+  "required_notice": "Copyright © 2001-2023 Python Software Foundation; All Rights Reserved",
+  "required_terms": "Retain full PSF License Version 2 and copyright notice; summarize derivative changes when distributed.",
+  "retrieval_date_utc": "2026-10-12",
+  "rights_scope": "Pinned official documentation prose only; no independent contributor-chain audit or inference about third-party linked material.",
+  "schema_version": 2,
+  "source_commit": "e848e4b09ca4bc67c0041c9ce7526dae471d4c36",
+  "source_sha256": {
+    "Doc/library/array.rst": "f4114c4b0b414b8d943e65ebb2c8570f74f02efd12bca61b1cb7fb500c2118d1",
+    "Doc/library/bisect.rst": "1fb2fa097a86e3bd92049f3e6b791a9bbf3bdf54a1098fcbb369d3e0e5c56a5c",
+    "Doc/library/collections.rst": "dd9867a9f2f2419a1fbf03c89100f1260041fd6549a785d075d32cb4d36417ee",
+    "Doc/library/decimal.rst": "fe460be1001d858a45ff46fe435f5162ac88968be2eeb7995b4b4fc2461e605f",
+    "Doc/library/functools.rst": "cb514b69cb52a2a1577de2ae14148162e0faa74e0ede60d251fa04bc55f18811",
+    "Doc/library/heapq.rst": "c9d819c44d892c812f65b07ab9de1d13ec30dcdfc8af8423a754c2506d136e53",
+    "Doc/library/io.rst": "6f9739389fe7d1499472a892fc6ba25a1c96a5d980e03437f8b29a37dabef9a1",
+    "Doc/library/itertools.rst": "2d3a1783c49cb695dfbcc64e2652435df55a914a3044417926174a1cce91fa25",
+    "Doc/library/json.rst": "939f692d13cad1c22417edb8704664991f73dfa064f1eec5f59532de99fa93ef",
+    "Doc/library/logging.rst": "14ee509eb3785049a5c577baa832235af67c75290a057b96a6b450dbc74eee28",
+    "Doc/library/pathlib.rst": "1c4ba9aabc2e36321dcfdc3b86daebace41aa39969eaedb449e4a385d6011af1",
+    "Doc/library/re.rst": "f48277d9192e110b9a1e38a28274a6346fe0fb5dcd750bf55a25e41df968bd2e",
+    "Doc/license.rst": "341832873fd316a37927e79385093fbbfd40a467428480835fe435a80cadf4e5",
+    "LICENSE": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+  },
+  "source_tag": "v3.12.15",
+  "source_url": "https://github.com/python/cpython",
+  "split_document_text_sha256": {
+    "test": {
+      "Doc/library/io.rst": "095ff9354a0c5c2688dca5fcf8ff41ec72e2fe3b215c318cbb23104a545772b8",
+      "Doc/library/logging.rst": "13a5ee7a17b767fe087ca4fb5545ff7867903639903c6920f33d2a979eca1e39",
+      "Doc/library/re.rst": "664fff94a369b40f34a71b1e8b8203833cb4723bdd6e2c0f48b24e5ea1da565d"
+    },
+    "train": {
+      "Doc/library/array.rst": "b1ac0bc6f48bc65ef563aeb544e14af7d692474d2a4dc06056b8a6a793ddb1e5",
+      "Doc/library/bisect.rst": "6f5c186de47dbc850af0dbc3af13cd6a3442ed3f320faada7a5feefdcef9419e",
+      "Doc/library/heapq.rst": "ffff8d2c00cbe2cc7d140e0ed3afae928d3578e9c1487f9e14625332fdf731e9",
+      "Doc/library/itertools.rst": "592f8dab7623b4645eef84d48a080735cf825adef889372c3bdc461eb6a6b012",
+      "Doc/library/json.rst": "7f428d65067577ccea5e0e4034d9690b0856c8e04b3b7947b1f16ac3e4ee5aad",
+      "Doc/library/pathlib.rst": "092bdf25d52121294ac248dce4014943c2239224c9e0be7ec5439bae1a934e81"
+    },
+    "validation": {
+      "Doc/library/collections.rst": "c4dc1353ae415a8ce96da49e31c63cb8c884db950f4c4eca952e248c77009fd8",
+      "Doc/library/decimal.rst": "89144cc39e0c11aac0cf6e5f9a99bf0528583070b14665e5a2b22982660f7228",
+      "Doc/library/functools.rst": "f38fba073b0f9fdf32c28075172f515c2d7e4496dc0990097004a38277309058"
+    }
+  },
+  "split_stats": {
+    "test": {
+      "bytes_per_token": 2.5156847742922723,
+      "document_ids": [
+        "Doc/library/logging.rst",
+        "Doc/library/re.rst",
+        "Doc/library/io.rst"
+      ],
+      "documents": 3,
+      "domains": {
+        "diagnostics": 1,
+        "io": 1,
+        "text_processing": 1
+      },
+      "paragraphs": 24,
+      "tokens": 2614,
+      "tokens_by_domain": {
+        "diagnostics": 908,
+        "io": 670,
+        "text_processing": 1036
+      },
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 470,
+      "utf8_bytes": 6576
+    },
+    "train": {
+      "bytes_per_token": 3.5392912172573188,
+      "document_ids": [
+        "Doc/library/heapq.rst",
+        "Doc/library/bisect.rst",
+        "Doc/library/array.rst",
+        "Doc/library/itertools.rst",
+        "Doc/library/pathlib.rst",
+        "Doc/library/json.rst"
+      ],
+      "documents": 6,
+      "domains": {
+        "algorithms": 2,
+        "data_structures": 1,
+        "filesystem": 1,
+        "iterators": 1,
+        "serialization": 1
+      },
+      "paragraphs": 48,
+      "tokens": 4543,
+      "tokens_by_domain": {
+        "algorithms": 1857,
+        "data_structures": 1055,
+        "filesystem": 429,
+        "iterators": 394,
+        "serialization": 808
+      },
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 765,
+      "utf8_bytes": 16079
+    },
+    "validation": {
+      "bytes_per_token": 2.463833157338965,
+      "document_ids": [
+        "Doc/library/functools.rst",
+        "Doc/library/collections.rst",
+        "Doc/library/decimal.rst"
+      ],
+      "documents": 3,
+      "domains": {
+        "data_structures": 1,
+        "functional": 1,
+        "numerical": 1
+      },
+      "paragraphs": 23,
+      "tokens": 3788,
+      "tokens_by_domain": {
+        "data_structures": 950,
+        "functional": 1523,
+        "numerical": 1315
+      },
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 516,
+      "utf8_bytes": 9333
+    }
+  },
+  "tag_date_utc": "2026-09-30T22:04:19Z",
+  "test_access_policy": "Only corpus creation, aggregate statistics, source rights, and automated leakage checks may read test text; training/evaluation worker never opens test.sealed.jsonl or test raw sources.",
+  "test_sealed_for_training_and_model_selection": true,
+  "transformation": "Selected reviewed prose spans for train/validation; conservative structure-only selector for sealed test; stripped RST inline markup; rejected examples/tables/links/medical terms; document split before tokenizer fit and windows."
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "selection": "SHA-256 of split:document:source-lines; first eight train and four validation paragraphs",
+  "automated_sample_only": true,
+  "human_review_decisions": null,
+  "sealed_test_opened_or_displayed": false,
+  "samples": [
+    {
+      "split": "train",
+      "document_id": "Doc/tutorial/interactive.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/interactive.rst",
+      "source_lines": [
+        19,
+        30
+      ],
+      "text": "Completion of variable and module names is automatically enabled at interpreter startup so that the Tab key invokes the completion function; it looks at Python statement names, the current local variables, and the available module names. For dotted expressions such as string.a, it will evaluate the expression up to the final '.' and then suggest completions from the attributes of the resulting object. Note that this may execute application-defined code if an object with a object.__getattr__ method is part of the expression. The default configuration also saves your history into a file named .python_history in your user directory. The history will be available again during the next interactive interpreter session.",
+      "text_sha256": "0cad985e4ef070bc369c2017f30df50217e34acfd8ac9d22ec093c98b9ef3598"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/reference/lexical_analysis.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/lexical_analysis.rst",
+      "source_lines": [
+        523,
+        526
+      ],
+      "text": "A string literal with 'f' or 'F' in its prefix is a formatted string literal; see f-strings. The 'f' may be combined with 'r', but not with 'b' or 'u', therefore raw formatted strings are possible, but formatted bytes literals are not.",
+      "text_sha256": "d4c0e6ce8bad365eb7f7c4934b4ddd4713b2335db63d44c86a57a9d632d732af"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/collections.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/collections.rst",
+      "source_lines": [
+        1373,
+        1377
+      ],
+      "text": "The class, UserString acts as a wrapper around string objects. The need for this class has been partially supplanted by the ability to subclass directly from str; however, this class can be easier to work with because the underlying string is accessible as an attribute.",
+      "text_sha256": "d047e52c083b60d323341c7aa5805f5879a0ef8cc34b877c314d0b87e0db18c4"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/reference/lexical_analysis.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/lexical_analysis.rst",
+      "source_lines": [
+        162,
+        167
+      ],
+      "text": "A logical line that contains only spaces, tabs, formfeeds and possibly a comment, is ignored (i.e., no NEWLINE token is generated). During interactive input of statements, handling of a blank line may differ depending on the implementation of the read-eval-print loop. In the standard interactive interpreter, an entirely blank logical line (i.e. one containing not even whitespace or a comment) terminates a multi-line statement.",
+      "text_sha256": "6f202a6e87d82b69d9e2b9a6d703e71d82e64074657c7937644507ac74e0cdfc"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/unittest.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/unittest.rst",
+      "source_lines": [
+        440,
+        441
+      ],
+      "text": "If TestCase.setUp succeeded, TestCase.tearDown will be run whether the test method succeeded or not.",
+      "text_sha256": "d558b625631f86ee423abc337ca8bfe362d3034e692a5be5671c35742dbae472"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/reference/datamodel.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/datamodel.rst",
+      "source_lines": [
+        3388,
+        3389
+      ],
+      "text": "For more information on context managers, see typecontextmanager. The object class itself does not provide the context manager methods.",
+      "text_sha256": "e1da812d66a5fd2116b9cad684a335be3ac4ebcb51d88b74b23529e390fe030c"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/reference/datamodel.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/datamodel.rst",
+      "source_lines": [
+        733,
+        736
+      ],
+      "text": "It is important to note that user-defined functions which are attributes of a class instance are not converted to bound methods; this only happens when the function is an attribute of the class.",
+      "text_sha256": "6a260a002cfa0c9078657516da4cc11b747e0e634b5a22d8222710aadfcae448"
+    },
+    {
+      "split": "train",
+      "document_id": "Doc/library/http.cookiejar.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/http.cookiejar.rst",
+      "source_lines": [
+        150,
+        151
+      ],
+      "text": "CookieJar objects support the iterator protocol for iterating over contained Cookie objects.",
+      "text_sha256": "7db16a9cbc844611914a40c7ef94777d1216ab94a2215d5f586544a116174d46"
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/library/threading.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/threading.rst",
+      "source_lines": [
+        1191,
+        1193
+      ],
+      "text": "Currently, Lock, RLock, Condition, Semaphore, and BoundedSemaphore objects may be used as with statement context managers.",
+      "text_sha256": "6beef894ad53191c4c8eddaab1821af562951de8274446074a88d90a74368e03"
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/reference/expressions.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/expressions.rst",
+      "source_lines": [
+        1864,
+        1866
+      ],
+      "text": "The expression x if C else y first evaluates the condition, C rather than x. If C is true, x is evaluated and its value is returned; otherwise, y is evaluated and its value is returned.",
+      "text_sha256": "e9be7cb690814f07b3af5df6354afd25dc93a758e15ff64233dcc0f7f8a70725"
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/reference/expressions.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/expressions.rst",
+      "source_lines": [
+        973,
+        978
+      ],
+      "text": "There is ambiguity in the formal syntax here: anything that looks like an expression list also looks like a slice list, so any subscription can be interpreted as a slicing. Rather than further complicating the syntax, this is disambiguated by defining that in this case the interpretation as a subscription takes priority over the interpretation as a slicing (this is the case if the slice list contains no proper slice).",
+      "text_sha256": "77358c8d3948cb9e76f5b2c55f997727e986c76eb876fca39b99b9b6501e316d"
+    },
+    {
+      "split": "validation",
+      "document_id": "Doc/reference/expressions.rst",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/expressions.rst",
+      "source_lines": [
+        528,
+        532
+      ],
+      "text": "When the underlying iterator is complete, the StopIteration.value attribute of the raised StopIteration instance becomes the value of the yield expression. It can be either set explicitly when raising StopIteration, or automatically when the subiterator is a generator (by returning a value from the subgenerator).",
+      "text_sha256": "ce78d7c8e518482e55d61e6731f70588e458c87ac559623d48dc374038083059"
+    }
+  ]
+}

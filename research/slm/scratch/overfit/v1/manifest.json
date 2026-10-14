@@ -1,0 +1,19 @@
+{
+  "academic_qa_records": 0,
+  "builder_sha256": "acf0a951cf4e27a0a2d92845f6e86e1706fbefbab4c93647ba6caecd40543aa3",
+  "data_sha256": "c8a2bcf7d9bb6eee9aeef2fd118917f728b1605277772f89ab7087a1a3224601",
+  "model_config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+  "next_token_targets": 151,
+  "schema_version": 1,
+  "sequence_count": 6,
+  "synthetic_only": true,
+  "token_lengths_with_bos_eos": [
+    25,
+    26,
+    26,
+    28,
+    27,
+    25
+  ],
+  "tokenizer_sha256": "08a02e83aa53e14cf54fce35ae4b6207ea8b8c54f9ace90369646fc75267775e"
+}

@@ -1,0 +1,3087 @@
+{
+  "entries": [
+    {
+      "path": "Doc/library/2to3.rst",
+      "source_sha256": "caf75c80498e358bed0554ab1ac48e6e25ef508015ab02e3d8484cc3cbf4dadb",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/2to3.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Benjamin Peterson"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/2to3"
+    },
+    {
+      "path": "Doc/library/__future__.rst",
+      "source_sha256": "a62882bf159d7683c4d28d586b7fa388c63f7dd81b0a0d67ac6200e154f89283",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/__main__.rst",
+      "source_sha256": "bcd43de5b51094b23121035e5a9867f1f54f34bed1ab6555b03557c9e6f0acef",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/__main__.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/"
+    },
+    {
+      "path": "Doc/library/_thread.rst",
+      "source_sha256": "34c5a6c20e9f9e0d695648a22f8b8a7f2725b62d7694661c38f83c668e7a6b8c",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/abc.rst",
+      "source_sha256": "1d2b71aede63e9af8381da908c14225268fd70c677db51e10ff31a6c7faf7b31",
+      "decision": "excluded",
+      "reason": "explicit_rights_or_reproduction_notice_in_header"
+    },
+    {
+      "path": "Doc/library/aifc.rst",
+      "source_sha256": "0732cc57a510bda1e8908603e9a2d1cc94efa66110b3e3340d218ad9bb363d2d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/aifc.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/aifc"
+    },
+    {
+      "path": "Doc/library/allos.rst",
+      "source_sha256": "34aec2e6bb5efbdb7a6aaaa830aeaa6b808e02f3e9cf9531fb91ecd03da0e629",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/archiving.rst",
+      "source_sha256": "4873b5ee8d71e0e957b250dedf389460ffa03a7468341f0b7b9b666d763c7c2c",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/argparse.rst",
+      "source_sha256": "63ded439dac509784d8159a148cb8c15b9f93a6b309ff32a246ff5c9809e83b2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/argparse.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Steven Bethard"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/argparse"
+    },
+    {
+      "path": "Doc/library/array.rst",
+      "source_sha256": "f4114c4b0b414b8d943e65ebb2c8570f74f02efd12bca61b1cb7fb500c2118d1",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/ast.rst",
+      "source_sha256": "89e64c59836238337bc1087e9ec5c6941d080271c759281ab75c6ab6ff62fdcb",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/ast.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Martin v. L\u00f6wis",
+        "Georg Brandl"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/ast"
+    },
+    {
+      "path": "Doc/library/asynchat.rst",
+      "source_sha256": "bba1f5c2e72fe946b982c90dbdf2efaa630414e7c1220ccbefd179eda3ee88b3",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/asyncio-api-index.rst",
+      "source_sha256": "d1e486620655c1b7e302655392af21a5b6c70317baa423fd51c74a9a8f09712d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-api-index.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-dev.rst",
+      "source_sha256": "7b5b152cfc9a2e536affa78a3dfc54cfa1cb454f31c2114e82d96cccb6e47074",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-dev.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-eventloop.rst",
+      "source_sha256": "24ed689b39b9e10857e2421e18d2f99e7c29dcd0e6cd1b2e83a88fde940c03c5",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-eventloop.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-exceptions.rst",
+      "source_sha256": "b8463e591b76956ba1c61ef3ffc6f4a09186386cec1457b86842113f4e00ca86",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/asyncio-extending.rst",
+      "source_sha256": "f59ca0ddb13771f67c84fc58eeafd8005e4b3a809f354d5421b047c8366098c1",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-extending.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-future.rst",
+      "source_sha256": "3666265d657742f6957418e745bc347dcf53518719cf04276c2c6e6dc7017a63",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/asyncio-llapi-index.rst",
+      "source_sha256": "99b652f9ca703b3239be8a318ac4ab223d5c1f6d3a0318947a17fdf456083254",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-llapi-index.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-platforms.rst",
+      "source_sha256": "10208e8733adc4f0c1933e770b1fa3405225468fdb2b02cedd6b89403b0a1236",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-platforms.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-policy.rst",
+      "source_sha256": "b0dfe5a77a9bc4739b38f421db0fb6265f91f04c569ee65553d35e97126af49c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-policy.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-protocol.rst",
+      "source_sha256": "2c730c026deaae00a92d24db783336071c5bd61a0247e039f96b2fb86b1c5a63",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-protocol.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-queue.rst",
+      "source_sha256": "02e41bb2b03dd53da4e3580905f5f9e994427e51d478ea4fc8fe2a6a59ec8f9f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-queue.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-runner.rst",
+      "source_sha256": "7b50599dfb4d790e4008154c593446d55f3fb7ceb1f6b2ecf0a688d2035a4a95",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-runner.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-stream.rst",
+      "source_sha256": "df4a765239f98332e035957190fdd0301c4c8c2fd0e9c457f2bbb23b4025ebfa",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/asyncio-subprocess.rst",
+      "source_sha256": "f79a45c54d29bad97db6c9a6f786e8f2852fab610ec6f29dce0e2366a09e27d4",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-subprocess.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio-sync.rst",
+      "source_sha256": "36524be738b0acbbbfb909a1c2f0049492b82cb6f2daa61d3e2e3092b408d3a2",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/asyncio-task.rst",
+      "source_sha256": "409adc864cd750aff89fbb2c34c7d99ab2ff9ee95442afeee9365a8a8afac85e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio-task.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncio.rst",
+      "source_sha256": "e10eee79cafa668c5de005f8500a857d4e7e7fde55dd9c253bb4eea7498a6024",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/asyncio.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/asyncio"
+    },
+    {
+      "path": "Doc/library/asyncore.rst",
+      "source_sha256": "50d2a360e7e46c7e96efc4f3943775c2c55fb861fe686158ee90647cdd95d6ce",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/atexit.rst",
+      "source_sha256": "e927d28a2e3a4dbb954830c129e779bd697084f6e4687bc4e213c25674676ae0",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/atexit.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Skip Montanaro"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/atexit"
+    },
+    {
+      "path": "Doc/library/audioop.rst",
+      "source_sha256": "e69bbf7e17d94903d113b5b15fab484841b7a6ef1acea4128f0365424e21af6c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/audioop.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/audioop"
+    },
+    {
+      "path": "Doc/library/audit_events.rst",
+      "source_sha256": "bb2e59ad95c9b64ae99bedc2c38848a72e8ee5a8c01f140d083b522d78d95112",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/audit_events.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/audit"
+    },
+    {
+      "path": "Doc/library/base64.rst",
+      "source_sha256": "d4d7eea4d38c04fb53684b43b32720eb84591abfb33595d735e8f0bdaabe7cd8",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/base64.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/base64"
+    },
+    {
+      "path": "Doc/library/bdb.rst",
+      "source_sha256": "7f54a94138502c0c80fad03f435e9692735a27215aabefbf9cd5641b742789c3",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/binary.rst",
+      "source_sha256": "dbfdb3afe5e2d52945a996f6b725cdf9ff2f2c9e7e4e585a4d453591aab8401d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/binary.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/binary"
+    },
+    {
+      "path": "Doc/library/binascii.rst",
+      "source_sha256": "ea3eef7fd719006bcde128c374dd88eb0524851983ba5c76c1e5a9b619e38717",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/bisect.rst",
+      "source_sha256": "1fb2fa097a86e3bd92049f3e6b791a9bbf3bdf54a1098fcbb369d3e0e5c56a5c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/bisect.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr.",
+        "Raymond Hettinger"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/bisect"
+    },
+    {
+      "path": "Doc/library/builtins.rst",
+      "source_sha256": "951d14797a1a1105c6cf159f4ee334f317766bb3acb615879d0fc10b61bb6c76",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/builtins.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/builtins"
+    },
+    {
+      "path": "Doc/library/bz2.rst",
+      "source_sha256": "da02977b3f1ad37d9dcc5529c6446a317b0930d507db474e46a560fc41e275ea",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/calendar.rst",
+      "source_sha256": "adac48d4a6c786a2efd6ce43e9a5b80c840d999d97d60890b2727056609817c9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/calendar.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Drew Csillag"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/calendar"
+    },
+    {
+      "path": "Doc/library/cgi.rst",
+      "source_sha256": "51e50d78f1ff704b14fec776f67756c0ccf7fa20ce03dca47d7a1ea512aad291",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/cgi.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/cgi"
+    },
+    {
+      "path": "Doc/library/cgitb.rst",
+      "source_sha256": "55b2613c2cd4bb4db090e678376cc149718eb4eace26e653d79b52e96ed1936e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/cgitb.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Ka-Ping Yee",
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/cgitb"
+    },
+    {
+      "path": "Doc/library/chunk.rst",
+      "source_sha256": "85c0751f0163c4cf6ffa3158461ce8a7941ab7f52f5a575d147b5d9e40ce0d07",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/chunk.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Sjoerd Mullender"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/chunk"
+    },
+    {
+      "path": "Doc/library/cmath.rst",
+      "source_sha256": "c68cb1c6bf50efbb39ce587fa985e0a40d6e24ee2448071f00b61574098aff10",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/cmath.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/cmath"
+    },
+    {
+      "path": "Doc/library/cmd.rst",
+      "source_sha256": "60277ca5b8956b4d348c51f7a1b1fbfae3d6450f8829e68886cee84989b51d7d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/cmd.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Eric S. Raymond"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/cmd"
+    },
+    {
+      "path": "Doc/library/cmdline.rst",
+      "source_sha256": "b04504bdcffa369f5ad0394029d1ce24f3bb7a0b4eeaf5b5533fb38d27e74dd4",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/code.rst",
+      "source_sha256": "38d062b6eedf5a180a39be933a91c6cd8ecacd89ddc49fbebde4901b715d93cb",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/code.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/code"
+    },
+    {
+      "path": "Doc/library/codecs.rst",
+      "source_sha256": "cff09fedfd021b6f48a96a3d82a3a012f730f172f3b40c5e8b623f1fb38bea19",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/codecs.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Marc-Andr\u00e9 Lemburg",
+        "Martin v. L\u00f6wis"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/codecs"
+    },
+    {
+      "path": "Doc/library/codeop.rst",
+      "source_sha256": "530312cb51dafeb93914acaab059f3f5f4102d2d5ef47c615a1c84b6658e949f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/codeop.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Moshe Zadka",
+        "Michael Hudson"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/codeop"
+    },
+    {
+      "path": "Doc/library/collections.abc.rst",
+      "source_sha256": "60d9de1885fbf691c9641d185578eb65c225333a3ba1976f2516cc51d5380ebb",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/collections.abc.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Raymond Hettinger"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/collections"
+    },
+    {
+      "path": "Doc/library/collections.rst",
+      "source_sha256": "dd9867a9f2f2419a1fbf03c89100f1260041fd6549a785d075d32cb4d36417ee",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/collections.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Raymond Hettinger"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/collections"
+    },
+    {
+      "path": "Doc/library/colorsys.rst",
+      "source_sha256": "79d2da918049cfc63ca956758ed68debe66e0bee104f7cb4221600da763437d9",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/compileall.rst",
+      "source_sha256": "ae68ea5fa762e687a028b6ccad64731f9fb13d5ce420582253c3411aed88467e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/compileall.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/compileall"
+    },
+    {
+      "path": "Doc/library/concurrency.rst",
+      "source_sha256": "617fd046bbe402bdb91d004222a004480f3dfb9311149d25c357552bf06313b2",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/concurrent.futures.rst",
+      "source_sha256": "b930ef1169c1b4a752feeb44228cabc7ca1d11c7daa2356197a3393d8686a524",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/concurrent.futures.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/concurrent"
+    },
+    {
+      "path": "Doc/library/concurrent.rst",
+      "source_sha256": "390627e6ab6805a809ea68060f1835d48ad426508caeda1b94f182b2a82015b7",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/configparser.rst",
+      "source_sha256": "c9dd0a5dab79cf9b845231bfebec735cddea387d4f07cbc6c41fed5f2846bdda",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/configparser.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Ken Manheimer",
+        "Barry Warsaw",
+        "Eric S. Raymond",
+        "\u0141ukasz Langa",
+        "Christopher G. Petrilli"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/configparser"
+    },
+    {
+      "path": "Doc/library/constants.rst",
+      "source_sha256": "d0eff1599f80c94e9d0102d80211fcf004743cac16e3296e3dfa9b81de526e10",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/contextlib.rst",
+      "source_sha256": "b49fea58303b476ded9d40f4d69560877a76d859195f67b4caad4eb2a4acc4f9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/contextlib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/contextlib"
+    },
+    {
+      "path": "Doc/library/contextvars.rst",
+      "source_sha256": "a146574284fc7ab8180d38e5e8d25f9ad64e88c182680cc9ca8ad42809f1b674",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/contextvars.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Yury Selivanov"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/contextvars"
+    },
+    {
+      "path": "Doc/library/copy.rst",
+      "source_sha256": "0841c586f2d195101c5c7cde7472e8e0ebec125ef1bd330d140abbeb715b314a",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/copy.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/copy"
+    },
+    {
+      "path": "Doc/library/copyreg.rst",
+      "source_sha256": "6b6f2253191b64801391910cad40b79b349ecba4f128f209078e295d20a5a9dc",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/crypt.rst",
+      "source_sha256": "465865917a0c2a0dcab34b3a8adf8475482a16da73eb046ea4e2e0d581f845bd",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/crypt.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Steven D. Majewski",
+        "Peter Funk"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/crypt"
+    },
+    {
+      "path": "Doc/library/crypto.rst",
+      "source_sha256": "19af49e230977077f8c87ebeb7fa29f6fb3e2000e7b0f61104f6e7cf6e1ae6ab",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/csv.rst",
+      "source_sha256": "f1b1ae4ac16e984733e454789eb1b18dd7ee2078c22b7e6a1fcd0bff85887587",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/csv.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Skip Montanaro"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/csv"
+    },
+    {
+      "path": "Doc/library/ctypes.rst",
+      "source_sha256": "875652648cf452a722336b6c1b1661bbdfed775e9273ae57419ccfe1280278b1",
+      "decision": "excluded",
+      "reason": "conservative external-specification_or_third-party-risk_stem"
+    },
+    {
+      "path": "Doc/library/curses.ascii.rst",
+      "source_sha256": "edaa5f9af6544786e19f189a5519c98fae4d18ee0caa5c259c3eddbbebc074ea",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/curses.ascii.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Eric S. Raymond"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/curses"
+    },
+    {
+      "path": "Doc/library/curses.panel.rst",
+      "source_sha256": "db52c7b2346390bb5ffcd1e0b9c826c5f7054325341162c8565db8e4a31d4c78",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/curses.panel.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "A.M. Kuchling"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/curses"
+    },
+    {
+      "path": "Doc/library/curses.rst",
+      "source_sha256": "73b60c4e81160447521637f64664397b8d3efd85a70ac61050d43f0b6d2afa05",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/curses.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Moshe Zadka",
+        "Eric Raymond"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/curses"
+    },
+    {
+      "path": "Doc/library/custominterp.rst",
+      "source_sha256": "78a4d38337a11a0842e1ccdc1959ed11fe27bfe417f7ab9a1826d18df77ecf42",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/dataclasses.rst",
+      "source_sha256": "584f840b8d62b68033b26f53dd730d7eb0ed467bc2b4dab6c46bd7f13e8c5df7",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/dataclasses.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Eric V. Smith"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/dataclasses"
+    },
+    {
+      "path": "Doc/library/datatypes.rst",
+      "source_sha256": "637739e18b14be9aed90b0272d5e27fc9206dbeb3e406f131e51ed4b5503cc0c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/datatypes.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/datatypes"
+    },
+    {
+      "path": "Doc/library/datetime.rst",
+      "source_sha256": "d9ce3438a01bb6c44a62210a10113db59e5336968b9bb792093609dcdef2a2f1",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/datetime.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Tim Peters",
+        "A.M. Kuchling"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/datetime"
+    },
+    {
+      "path": "Doc/library/dbm.rst",
+      "source_sha256": "e2f7d1a4c699d02fed304f9154f21701c616d07644681255ef83825e2e93f2e7",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/dbm.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/dbm"
+    },
+    {
+      "path": "Doc/library/debug.rst",
+      "source_sha256": "37a1b8053e37232e117857e98b08705ad8d0dce3eab55aee644a656f08228c3c",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/decimal.rst",
+      "source_sha256": "fe460be1001d858a45ff46fe435f5162ac88968be2eeb7995b4b4fc2461e605f",
+      "decision": "excluded",
+      "reason": "conservative external-specification_or_third-party-risk_stem"
+    },
+    {
+      "path": "Doc/library/development.rst",
+      "source_sha256": "31f4642876cb789c73561ff6663c4566afe1cd8a1abece5ad31373e36cdfc839",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/devmode.rst",
+      "source_sha256": "0f84cfa3341e20805279f3c759136621031c3abdbf0a6ff7bdbaf1f462aeed3f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/devmode.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/devmode"
+    },
+    {
+      "path": "Doc/library/dialog.rst",
+      "source_sha256": "1a9ad8c971275ad49ffe23b4ab60cb46feb7623f273ded67e6120000a66e5bda",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/dialog.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/dialog"
+    },
+    {
+      "path": "Doc/library/difflib.rst",
+      "source_sha256": "f7469d71e0c586667d8ebca345f7b2a6fea7d206c5a01930ce798075e92d3117",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/difflib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Tim Peters"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/difflib"
+    },
+    {
+      "path": "Doc/library/dis.rst",
+      "source_sha256": "5d6ae36449802d9502cd2e3cf412fbb2fdb245221b5dee3c4a4fa0a8ae886eac",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/dis.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/dis"
+    },
+    {
+      "path": "Doc/library/distribution.rst",
+      "source_sha256": "13f4015ee13fd7c5eaf6e6d8406cd9b4126d2f645cf53bd4ffe0dc3a57eab9fa",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/distutils.rst",
+      "source_sha256": "8c44b643a8a70ff7bd1c479b5b0b53088ece62f0c73e02bd6668af118a156076",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/doctest.rst",
+      "source_sha256": "a062da994224ae8eda41ccc0a48b3af198b88a45d442e499465ae639dba7789c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/doctest.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Tim Peters",
+        "Moshe Zadka",
+        "Edward Loper"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/doctest"
+    },
+    {
+      "path": "Doc/library/email.charset.rst",
+      "source_sha256": "10bf72207a86701e309219b249114817f625caa0b8e1694afefcd736fee645bd",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.charset.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.compat32-message.rst",
+      "source_sha256": "f7da26d9dae2f9d30f71630363c2105c7d032c20cb5ddaf9892f9cecd27d4431",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.compat32-message.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.contentmanager.rst",
+      "source_sha256": "79fe1e41ad4cc2f7e4d3f823f3a79987e36f18fd3e794d5b12348a5b6c978ecd",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/email.encoders.rst",
+      "source_sha256": "3384fc50cebe53db5a96ec74218ab52e2a600e90e50b549b0c1e9723b15863d3",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.encoders.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.errors.rst",
+      "source_sha256": "5c7dfab727aed7481588f3899ba2c0c65398df3af8100474279ce0c16fbff422",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/email.examples.rst",
+      "source_sha256": "765e60935712a2f4a424cc7ddcd360f7df507234b1b335d70710335deb14bd9f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.examples.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.generator.rst",
+      "source_sha256": "8aad94402c3de6b7f79a3572f27d0aadb0e9e8af735a4038e8f6789d5b2368de",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.generator.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.header.rst",
+      "source_sha256": "ca94fde13cd0591c89a19aaf5b0813dd7f547b9d9ad14d1edba5842dc5a6ab53",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.header.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.headerregistry.rst",
+      "source_sha256": "5ce11cf6d73e9a13656acd1e03d11b1f6ad73aa6ee90fa0a45e7e705e69f390e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.headerregistry.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "R. David Murray"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.iterators.rst",
+      "source_sha256": "e2cadb65d1106445a81e3b23a416cf13a831f05ceeb9c03dbd92686fcbe852ba",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.iterators.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.message.rst",
+      "source_sha256": "a6e04175e071d0fe077e4fe34720c4a89093dc72b2b0d810459d74f01c8e3218",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.message.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "R. David Murray"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.mime.rst",
+      "source_sha256": "e71b7fdd679f858ccc43d012912fba0217b1006c7d3b77ef267aeb809bb7c74d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.mime.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.parser.rst",
+      "source_sha256": "738c7475085f4fdf72afe2d4718a2d75debd469d2281cc620eb62fb2eb6ecd88",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.parser.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.policy.rst",
+      "source_sha256": "39da33b5eeb45156df160049c86dad705fc99467d56fd613876ba9e936b28fb2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.policy.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "R. David Murray"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.rst",
+      "source_sha256": "f803748787637521ce939491918a177fc39772c965333fcb0f0206dd808eba21",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/email.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Barry A. Warsaw",
+        "R. David Murray"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/email"
+    },
+    {
+      "path": "Doc/library/email.utils.rst",
+      "source_sha256": "2f24dbf0cf5d0dc2d345591424015674dc3214e9d6f4c481146f260d36c3c9b0",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/ensurepip.rst",
+      "source_sha256": "ad15d15f05be21588e9095ea17feb5b81aadd796b8de604c43e03915eaa45e89",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/ensurepip.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/ensurepip"
+    },
+    {
+      "path": "Doc/library/enum.rst",
+      "source_sha256": "324096b94b688a212e63e82129687d4fc79ed60f26b126c293d2fe07c58c3ae0",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/enum.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Ethan Furman",
+        "Barry Warsaw",
+        "Eli Bendersky"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/enum"
+    },
+    {
+      "path": "Doc/library/errno.rst",
+      "source_sha256": "6dfcbd3851b7bcf3023b28cca20e0fd2680b663ca003e48ab9231f013416b197",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/exceptions.rst",
+      "source_sha256": "e4de03f241f7e0f8ae22780e17b17eb1a553de9b827769be4fb8c40c0ad9ac1c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/exceptions.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/exceptions"
+    },
+    {
+      "path": "Doc/library/faulthandler.rst",
+      "source_sha256": "6ca105599408cf2ad04efede7c2906b15cc78fffb8b7d9124027bf009c9a4875",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/faulthandler.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/faulthandler"
+    },
+    {
+      "path": "Doc/library/fcntl.rst",
+      "source_sha256": "2ffc6287c7de996a831f77b0ce46f1e4b8aba20ab4ba17afad5bc4e8a26ade43",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/fcntl.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Jaap Vermeulen"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/fcntl"
+    },
+    {
+      "path": "Doc/library/filecmp.rst",
+      "source_sha256": "702dd0f167fbb32c7486cd953139e33b433d61e080057dac7da9eec0036a3eab",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/fileformats.rst",
+      "source_sha256": "a619581fcb30c6a9e8a0ea1871144be9a638d57dacfcf0e1f6df6b582c733479",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/fileinput.rst",
+      "source_sha256": "0e871ad34ce7218c91deeffd09c2c054c79ebb0c3edc865016f1f23921da816a",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/fileinput.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Guido van Rossum",
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/fileinput"
+    },
+    {
+      "path": "Doc/library/filesys.rst",
+      "source_sha256": "519406cf0e57cc40524979b3515447d4886a0909739213e1439886e3ceb08836",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/fnmatch.rst",
+      "source_sha256": "7aa0cb61428195f4943c66710809f65f89abf6811b7a1898a3dd7b497f8b6be6",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/fnmatch.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/fnmatch"
+    },
+    {
+      "path": "Doc/library/fractions.rst",
+      "source_sha256": "ed214dd0c9da914273419f8bba06e8215ebc9802475237dce863c9426a369c29",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/frameworks.rst",
+      "source_sha256": "c238aaa370ceb534da8b688dff8470889973eddce208d2ea971891a9f2908d7f",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/ftplib.rst",
+      "source_sha256": "e31e229366b6c00a04d265497f212768089ce6ac3b4a706e549f2e39acb5e304",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/functional.rst",
+      "source_sha256": "4ab99304b526dcb08b837809efac51fc6a60f57de90f17470c26b80de37a1884",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/functions.rst",
+      "source_sha256": "963d7143ba762daba0675a6cb3b2b470fd374f2110e92a678f4f28ee85bd7048",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/functools.rst",
+      "source_sha256": "cb514b69cb52a2a1577de2ae14148162e0faa74e0ede60d251fa04bc55f18811",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/functools.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Peter Harris",
+        "Raymond Hettinger",
+        "Nick Coghlan",
+        "\u0141ukasz Langa",
+        "Pablo Galindo"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/functools"
+    },
+    {
+      "path": "Doc/library/gc.rst",
+      "source_sha256": "98e57f90f3f30bfeb10b65adbe801f5de40c091b7f27bba4d2844576f2706031",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/getopt.rst",
+      "source_sha256": "77cd0f156ad4f56cc6f93b5415875c9890ea77f751636a1df015814a8368e78d",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/getpass.rst",
+      "source_sha256": "ed2ec901b1097fc526016e6cc17f32855f6f38422b00ad949ad967225c60ed78",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/gettext.rst",
+      "source_sha256": "0183d0e093f3d47a8b7b6a261d6f9872be486b291de902d4924928e80cc9e194",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/gettext.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Barry A. Warsaw"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/gettext"
+    },
+    {
+      "path": "Doc/library/glob.rst",
+      "source_sha256": "7e095e1e3067438da4608c2d745adae492b8a6d97cb22ee6b860ba586943cfb5",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/glob.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/glob"
+    },
+    {
+      "path": "Doc/library/graphlib.rst",
+      "source_sha256": "4bad5b7eb3c24538907c6358ab2223e23f75bc127b4402bfe14241e33e9f4f3e",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/grp.rst",
+      "source_sha256": "1c3f6b2e765d5b48f8a1e04ec2a89840685a69d932360aff93a320b4703d6589",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/gzip.rst",
+      "source_sha256": "af1bb973ebc600750918697afbf75ec20815835ce8e5ce4156cdf3ed45fb2a29",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/gzip.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/gzip"
+    },
+    {
+      "path": "Doc/library/hashlib.rst",
+      "source_sha256": "700cff55dfba2228a4773aac93bdd0d157edb0534b998c6ca62bba1b9488fed5",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/hashlib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Gregory P. Smith"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/hashlib"
+    },
+    {
+      "path": "Doc/library/heapq.rst",
+      "source_sha256": "c9d819c44d892c812f65b07ab9de1d13ec30dcdfc8af8423a754c2506d136e53",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/heapq.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Kevin O'Connor",
+        "Guido van Rossum",
+        "Fran\u00e7ois Pinard",
+        "Raymond Hettinger"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/heapq"
+    },
+    {
+      "path": "Doc/library/hmac.rst",
+      "source_sha256": "d864cc3f67d40f4a8cc55b29835fa3e4345102f8db53d7bd943e4595fc32c614",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/html.entities.rst",
+      "source_sha256": "f61479c7c54d379982355eba576652e6ce84c3defa19416f1ff72bce26e28c55",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/html.parser.rst",
+      "source_sha256": "53fa088bb0b285e2f050bcde05c15901c27a17746d1377ddec3d99414a4b0078",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/html.rst",
+      "source_sha256": "180bbed9e0ac1a39485df810d68d53e85666a79dd214f80586b1dbe1b61e11ab",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/http.client.rst",
+      "source_sha256": "8bd45541b038a81bacb2cf3f71ff277828351e6cd15377dddd91173d81a02216",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/http.client.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/http"
+    },
+    {
+      "path": "Doc/library/http.cookiejar.rst",
+      "source_sha256": "26a63f6d61396da90af2e9a977f5914884868ded7a4e453cfcfbb473cc8b4157",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/http.cookiejar.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "John J. Lee"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/http"
+    },
+    {
+      "path": "Doc/library/http.cookies.rst",
+      "source_sha256": "434f90f3c01cd580c5ca97594350dd0d2f926bac1df86a01ab6dc56a892ece0e",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/http.rst",
+      "source_sha256": "d5e166be9bdcf41a493f7c28c945c6d0bf1ecaa2efc8d59483ec0a571d7181e9",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/http.server.rst",
+      "source_sha256": "e78b375f3489e3b26dac86d236133568987ce5d36a39392f8f9d0d02c75612cf",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/http.server.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/http"
+    },
+    {
+      "path": "Doc/library/i18n.rst",
+      "source_sha256": "69096e0e9a744f748b6cd7b6591437b7d94d93b1c363f1a2a328b6ccf684b014",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/idle.rst",
+      "source_sha256": "dfff5f223b8dd2586d55017dcfde59c5879d4dc1995c603566b70634d79139bc",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/idle.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Guido van Rossum"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/idle"
+    },
+    {
+      "path": "Doc/library/imaplib.rst",
+      "source_sha256": "1f529b2e736653b0933f1ff469c1eb5657d511c572b6b91611354c04c86acd01",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/imaplib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Piers Lauder"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/imaplib"
+    },
+    {
+      "path": "Doc/library/imghdr.rst",
+      "source_sha256": "1388593323e991e5b5dedb89faf5307826753e1ce44dadb5d1c21ed8a8939e2c",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/imp.rst",
+      "source_sha256": "f4f7d96ceb3b37e7cd39ed1be08fef7adfe2c6190d1505a93cb1a571e0fe8733",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/imp.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/imp"
+    },
+    {
+      "path": "Doc/library/importlib.metadata.rst",
+      "source_sha256": "80f7001c1006c49aa75a1cce730d5396b253bf165b3aa97a4a2cdd3b56e0bafa",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/importlib.metadata.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/importlib"
+    },
+    {
+      "path": "Doc/library/importlib.resources.abc.rst",
+      "source_sha256": "9728e23d5dc0b10b4f605c4907d88a62e801bae530e5da014ffe2165a7830f9c",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/importlib.resources.rst",
+      "source_sha256": "e99be0e0f1ca9b3423546c8504edf9f371d99627ffe1cd589c7693a3f2766661",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/importlib.resources.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/importlib"
+    },
+    {
+      "path": "Doc/library/importlib.rst",
+      "source_sha256": "f9d78d580a7ad6dc71b22e261e43590a0bca998f57dd5726bb37eb9ab4ea1769",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/importlib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Brett Cannon"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/importlib"
+    },
+    {
+      "path": "Doc/library/index.rst",
+      "source_sha256": "947662b3566e2cff9c5890b5d5df3f9dc5c78c36394ea4730721eae34c09d663",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/index.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/index"
+    },
+    {
+      "path": "Doc/library/inspect.rst",
+      "source_sha256": "7f600840a89dc884260b48cf6a4ae4534bf9a57f07c9ab7a1f8106094ef9aae5",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/inspect.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Ka-Ping Yee"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/inspect"
+    },
+    {
+      "path": "Doc/library/internet.rst",
+      "source_sha256": "de1286d4adf2e8b4e1dff1a28e7543944886a4ce5b1af102571392a22a42c129",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/intro.rst",
+      "source_sha256": "bc99d5fcb379a1e2df2209e1ffedbe89fde4582404dad4ff1a2b2213ed6ed21a",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/intro.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/intro"
+    },
+    {
+      "path": "Doc/library/io.rst",
+      "source_sha256": "6f9739389fe7d1499472a892fc6ba25a1c96a5d980e03437f8b29a37dabef9a1",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/io.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Guido van Rossum",
+        "Mike Verdone",
+        "Mark Russell",
+        "Antoine Pitrou",
+        "Amaury Forgeot d'Arc",
+        "Benjamin Peterson"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/io"
+    },
+    {
+      "path": "Doc/library/ipaddress.rst",
+      "source_sha256": "37c880c4ea3570ed60be8c09ba806273b6e90f7beca3b4ddd64cbb2644eb2d0e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/ipaddress.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Peter Moody"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/ipaddress"
+    },
+    {
+      "path": "Doc/library/ipc.rst",
+      "source_sha256": "5c3ae81eebcce8c08ebcbf4f6607c7fdeb32b09057985c375cc3cef3bbb9b728",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/ipc.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/ipc"
+    },
+    {
+      "path": "Doc/library/itertools.rst",
+      "source_sha256": "2d3a1783c49cb695dfbcc64e2652435df55a914a3044417926174a1cce91fa25",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/itertools.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Raymond Hettinger"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/itertools"
+    },
+    {
+      "path": "Doc/library/json.rst",
+      "source_sha256": "939f692d13cad1c22417edb8704664991f73dfa064f1eec5f59532de99fa93ef",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/json.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Bob Ippolito"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/json"
+    },
+    {
+      "path": "Doc/library/keyword.rst",
+      "source_sha256": "096fa0f3c1e8f4f0038552f064de99c2bafd558db74d9eb7907c20103ccc8a61",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/language.rst",
+      "source_sha256": "906c6f165f4bf782b18565406d5ab4e4d9d474848b4b28714d6a034ae2d9fedc",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/linecache.rst",
+      "source_sha256": "77e255e8f69920eef334a202f89227e1951fabc03d57f2dccbae7bf778806dbb",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/linecache.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Moshe Zadka"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/linecache"
+    },
+    {
+      "path": "Doc/library/locale.rst",
+      "source_sha256": "4d768b5b8809e6a96afb8bec6a4b6c465ba191f84d20ed95ab7df3ed1ed2d343",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/locale.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Martin von L\u00f6wis"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/locale"
+    },
+    {
+      "path": "Doc/library/logging.config.rst",
+      "source_sha256": "479953e36f9936a1eda6d8b7db154210a1bb1c5592fda4f6f43ea4d2bb7907c5",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/logging.config.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Vinay Sajip"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/logging"
+    },
+    {
+      "path": "Doc/library/logging.handlers.rst",
+      "source_sha256": "9f3585c62541881a0067bd335388ce435f77d0ccf1db35d8b4eba49f20a052b0",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/logging.handlers.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Vinay Sajip"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/logging"
+    },
+    {
+      "path": "Doc/library/logging.rst",
+      "source_sha256": "14ee509eb3785049a5c577baa832235af67c75290a057b96a6b450dbc74eee28",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/logging.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Vinay Sajip"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/logging"
+    },
+    {
+      "path": "Doc/library/lzma.rst",
+      "source_sha256": "afde480a77fb2dae4269220038e4e8655fd095b803d3f0528f18a98f021accd2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/lzma.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Nadeem Vawda"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/lzma"
+    },
+    {
+      "path": "Doc/library/mailbox.rst",
+      "source_sha256": "269eca7b9efe274943ab6bfa46e49aecfc80b45150a3f0c40e345623338a2fbc",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/mailcap.rst",
+      "source_sha256": "8037df4578c6d334012ca63138a438cac4641ac379b40c7af066a7e2a2172295",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/markup.rst",
+      "source_sha256": "fd1fb5ab3ecaf7d5b2e913406bd5bb44ad62c53b97f96d5400b06d6d441b0f08",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/marshal.rst",
+      "source_sha256": "b1cef3b53cb92d9f0e70a6d81364e9004fe096c2eebc6e6b518feee5421298ec",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/math.rst",
+      "source_sha256": "f80f48cc8b80294a42745edc49da8a69c7ac7ce8240c1adda8ce9f83fdd3ccee",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/math.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/math"
+    },
+    {
+      "path": "Doc/library/mimetypes.rst",
+      "source_sha256": "2e225212662a551c84515df4c3ac5a5434727c665676290acaa64427b5199182",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/mimetypes.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/mimetypes"
+    },
+    {
+      "path": "Doc/library/mm.rst",
+      "source_sha256": "be3120ea2b46f614b9a7aa5b85b1644aa24bcce0dff48ac7058a48201e4e1788",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/mmap.rst",
+      "source_sha256": "cbbbf67f13254a513b02a5adb07d881a2d8fd8d47d6a2fd0ffe3612c05370f8c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/mmap.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/mmap"
+    },
+    {
+      "path": "Doc/library/modulefinder.rst",
+      "source_sha256": "5ab2b3553b22d42d9824a01faa4abd4d5cdd541755756f9052b48e43fdae6a2b",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/modules.rst",
+      "source_sha256": "f9f7bb697a335a9cad5034c22e940e1483ee9f349d8d91194c4066359696805c",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/msilib.rst",
+      "source_sha256": "f88365e9604d17d86bf8f70c0ac76551e47e7d3cdab03dbfed0a4c84ac01f3bc",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/msilib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Martin v. L\u00f6wis"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/msilib"
+    },
+    {
+      "path": "Doc/library/msvcrt.rst",
+      "source_sha256": "b9821aceb296646c65385c687fe262bd613055054d77ce4409c51dc39eecd22c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/msvcrt.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/msvcrt"
+    },
+    {
+      "path": "Doc/library/multiprocessing.rst",
+      "source_sha256": "3d4b590905a2fae4b285c9b8bc88fa4a089275735a3078248792f1a4d5cf2a1c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/multiprocessing.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/multiprocessing"
+    },
+    {
+      "path": "Doc/library/multiprocessing.shared_memory.rst",
+      "source_sha256": "aedf984771ab7856a14eda449c2d9866df8597bca0fe38b8ee62c13970acc350",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/multiprocessing.shared_memory.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/multiprocessing"
+    },
+    {
+      "path": "Doc/library/netdata.rst",
+      "source_sha256": "1077864d45c33565bf0e0c18d18e2ce94779d8b30faf8d787da7db0e0d139254",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/netrc.rst",
+      "source_sha256": "287429c2493bf76854e4bd9d7e438cfb324edd8fdf3ecb3f7b43a7e207e0a0d8",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/nis.rst",
+      "source_sha256": "2e86851523f44e6a1c60b01deae3580a1009817634999a5e26d054d661ea00d3",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/nis.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred Gansevles",
+        "Moshe Zadka"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/nis"
+    },
+    {
+      "path": "Doc/library/nntplib.rst",
+      "source_sha256": "7e6d2232f41742161b224ba4f6da6b5889e596cf6405da8ccbb52ece0ca15971",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/nntplib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/nntplib"
+    },
+    {
+      "path": "Doc/library/numbers.rst",
+      "source_sha256": "1819dc637a5fd62a0bc5ee18f41a2d269f0625542b0d92fd10d17d422e9eeec2",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/numeric.rst",
+      "source_sha256": "561ed7f28344fef0888752322989f5ef07f74130af78a8d8fa5cb3e2d9046c80",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/operator.rst",
+      "source_sha256": "22cdd91ab578514af76a9a20aebb1173c583285fa2147e1505ecb38cf7923324",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/operator.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Skip Montanaro"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/operator"
+    },
+    {
+      "path": "Doc/library/optparse.rst",
+      "source_sha256": "f9265ae1c428867a6d7792e76d5443cec88ae87fa2e9f4e9d4992fe9c4d82e34",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/optparse.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Greg Ward"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/optparse"
+    },
+    {
+      "path": "Doc/library/os.path.rst",
+      "source_sha256": "40bb75baf76522a1b0352820f7c1c06d4ff2fb63b5e1f420127ec1a423c30ecc",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/os.path.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/os"
+    },
+    {
+      "path": "Doc/library/os.rst",
+      "source_sha256": "72ad4331b490fe71c62dca52f7ddd3fac4b24d10e5670d1a9091b87f496669c6",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/os.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/os"
+    },
+    {
+      "path": "Doc/library/ossaudiodev.rst",
+      "source_sha256": "7fd232402d82b9e5e1c6c41ac2491f6586c7d466934c13c5a4f96c6039928b76",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/ossaudiodev.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/ossaudiodev"
+    },
+    {
+      "path": "Doc/library/pathlib.rst",
+      "source_sha256": "1c4ba9aabc2e36321dcfdc3b86daebace41aa39969eaedb449e4a385d6011af1",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pathlib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pathlib"
+    },
+    {
+      "path": "Doc/library/pdb.rst",
+      "source_sha256": "ed1f28b2bcdc1666b2bdd846dd9c1a768854f27aff4f85a35f433feabd2c8950",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pdb.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pdb"
+    },
+    {
+      "path": "Doc/library/persistence.rst",
+      "source_sha256": "41ff7a8bf895b77f42812c4c5fe4eb1f3d64ecbc7b6857aae51786bfeee2d361",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/pickle.rst",
+      "source_sha256": "172426a070774dce8d868705dd9a8e38ddaef3aae89542b3fd56a7756abb23ce",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pickle.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Jim Kerr",
+        "Barry Warsaw"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pickle"
+    },
+    {
+      "path": "Doc/library/pickletools.rst",
+      "source_sha256": "e4e8760a9003b826088bc36d926693970e182e278e46fcf7291c0c6de335bcc2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pickletools.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pickletools"
+    },
+    {
+      "path": "Doc/library/pipes.rst",
+      "source_sha256": "128b790efe2a1a9dcf48bba2b8d40bde20daf0d1ed66c1a1199d4049f0a65b71",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pipes.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Moshe Zadka"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pipes"
+    },
+    {
+      "path": "Doc/library/pkgutil.rst",
+      "source_sha256": "1d5d5dfaf22638d137f70daadbee53202c74f733ed7a1b48bbcd629f3fbfc6a0",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/platform.rst",
+      "source_sha256": "ff6952100592654358ac4974142b20b8b70aebe00f4d099bd469b0d410fb4c18",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/plistlib.rst",
+      "source_sha256": "86598ecc30058ebc81e7662ea556cf86f3ab96b3dc82a8208737faec92ad4a12",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/plistlib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Jack Jansen",
+        "Georg Brandl"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/plistlib"
+    },
+    {
+      "path": "Doc/library/poplib.rst",
+      "source_sha256": "0b91969e6439731b255510f38e25a78e03c6fcb2680a6e362da395cc5c809621",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/poplib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Andrew T. Csillag"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/poplib"
+    },
+    {
+      "path": "Doc/library/posix.rst",
+      "source_sha256": "e5f608aa3b51b922e8bb90a5797f0e549c8628fec4dc2ccc0ba81b4e5d0e632c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/posix.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/posix"
+    },
+    {
+      "path": "Doc/library/pprint.rst",
+      "source_sha256": "344c2a722714fee5dd415e8e5b3de024f118e554b122a8dea88e8ebf02e49fe2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pprint.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pprint"
+    },
+    {
+      "path": "Doc/library/profile.rst",
+      "source_sha256": "271cb905e659bead9cc8df55387199566eec85b0013a5266cce8eb69f15ea7bb",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/profile.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/profile"
+    },
+    {
+      "path": "Doc/library/pty.rst",
+      "source_sha256": "94dc4ea284990ff0d75b3f2f256aff6df4fc1ed30305752fe3bf77dc01b7c78d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pty.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Steen Lumholt",
+        "Moshe Zadka"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pty"
+    },
+    {
+      "path": "Doc/library/pwd.rst",
+      "source_sha256": "0e2e193d6fde3ee65db10587fcb7a2010499bd1e6a95e3850f990fc2bb090661",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pwd.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pwd"
+    },
+    {
+      "path": "Doc/library/py_compile.rst",
+      "source_sha256": "3f54b29302d7b8684a4483964fe53190978c830219d13cbb7109ac5ea3e3481c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/py_compile.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/py"
+    },
+    {
+      "path": "Doc/library/pyclbr.rst",
+      "source_sha256": "03a52be500d1751514bcc8e2acc0c5e31e183aa5afd660e3d82d0f5a6dbe799e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pyclbr.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pyclbr"
+    },
+    {
+      "path": "Doc/library/pydoc.rst",
+      "source_sha256": "c84f9d1d42dc8a521f3ace0d263a57e5c550b89fca05d24df5c677c15c171f66",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pydoc.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Ka-Ping Yee"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pydoc"
+    },
+    {
+      "path": "Doc/library/pyexpat.rst",
+      "source_sha256": "7eeaa9866a89b9f9b03b8e1faf39311063eebe180bb5f6d1379ace14524c4d0f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/pyexpat.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Paul Prescod"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/pyexpat"
+    },
+    {
+      "path": "Doc/library/python.rst",
+      "source_sha256": "1c662a64145f9aed820725797d91ff2d6cad177d561f28616fb69a61d84ef6b6",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/queue.rst",
+      "source_sha256": "214e2de5aa7196e02a2534266ffa9f9a3ff04121757201a66c9a88d0751ee9b5",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/queue.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/queue"
+    },
+    {
+      "path": "Doc/library/quopri.rst",
+      "source_sha256": "6d3a3bb73e8cf5009f999c2f5825340c58ee60043e2ddb71c2278975dddf0115",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/random.rst",
+      "source_sha256": "2dfaa10c82a5dc0c5107a25e47dfa8e402711b14dbe26cd1f9fad16e6fe1b881",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/random.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/random"
+    },
+    {
+      "path": "Doc/library/re.rst",
+      "source_sha256": "f48277d9192e110b9a1e38a28274a6346fe0fb5dcd750bf55a25e41df968bd2e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/re.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fredrik Lundh",
+        "Andrew M. Kuchling"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/re"
+    },
+    {
+      "path": "Doc/library/readline.rst",
+      "source_sha256": "015a854e89380ddf4aded397ccc417a9b07ce4847f1ff32863549157741edd5b",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/readline.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Skip Montanaro"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/readline"
+    },
+    {
+      "path": "Doc/library/removed.rst",
+      "source_sha256": "8363567660f5f0941c430b97cff280db31e10d3c1f98aac57dc657225a703618",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/reprlib.rst",
+      "source_sha256": "ae50f9473763edafb517f88eafdcc531a2f4488ddde1fb98087b49ae7a0c9b00",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/reprlib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/reprlib"
+    },
+    {
+      "path": "Doc/library/resource.rst",
+      "source_sha256": "caf900cf72a34dfc8c7c40b819add82ae75314e46ebee62a8110421561d0fc5d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/resource.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Jeremy Hylton"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/resource"
+    },
+    {
+      "path": "Doc/library/rlcompleter.rst",
+      "source_sha256": "3ae02ce77624409528637b8c3faaa840a98f2dccff828ea96d8d32addf85ceb9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/rlcompleter.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Moshe Zadka"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/rlcompleter"
+    },
+    {
+      "path": "Doc/library/runpy.rst",
+      "source_sha256": "1b519d749dc2bd87d6274c66f7f3478158d1fb13c2c451906baee2c7e5240ca4",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/runpy.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Nick Coghlan"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/runpy"
+    },
+    {
+      "path": "Doc/library/sched.rst",
+      "source_sha256": "b642e5d40163c27f824c09c503f0927ef89946cee79fe23bd83f1d1be45dec0b",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/secrets.rst",
+      "source_sha256": "7ff635fec32608dd8de4b410d97fe94aae33e7b2cf6967349f4e835d413d6e77",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/secrets.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Steven D'Aprano"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/secrets"
+    },
+    {
+      "path": "Doc/library/security_warnings.rst",
+      "source_sha256": "a30e40e898d30c13c6ff6f78351e39e60180860db0f58c93680a2d83aa78ef49",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/select.rst",
+      "source_sha256": "aaf2e00a45f9823303bc5e66cb5fcd1b431aa8ece32974d5c34d14a592f2e25d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/select.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/select"
+    },
+    {
+      "path": "Doc/library/selectors.rst",
+      "source_sha256": "6c932ee314e3b908c50ae6da07ffc4ef269cdf7daab92c06a4a5d2c532c8172d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/selectors.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/selectors"
+    },
+    {
+      "path": "Doc/library/shelve.rst",
+      "source_sha256": "49f915373ae5a8a0383484b6ffd4880fa022b19768b53a2f2bccf6402306a6ff",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/shlex.rst",
+      "source_sha256": "410347ec8db377807cb66ae9467b7f7531b17373ad1693845191f80330f0ab40",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/shlex.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Eric S. Raymond",
+        "Gustavo Niemeyer"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/shlex"
+    },
+    {
+      "path": "Doc/library/shutil.rst",
+      "source_sha256": "3eefcfadc5f1bbc565c05ab312a083de798bd0a7f72c893b3a27d39f7f967d3c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/shutil.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/shutil"
+    },
+    {
+      "path": "Doc/library/signal.rst",
+      "source_sha256": "8413f3631a88aee2596970fe0beaebd7f0317c906ca23cf0ecce58eecb3b8cd8",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/signal.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/signal"
+    },
+    {
+      "path": "Doc/library/site.rst",
+      "source_sha256": "89e3f27ce03ef457bba693a774996a0ec52c2fa93c92ef5f80b8409265742d19",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/site.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/site"
+    },
+    {
+      "path": "Doc/library/smtpd.rst",
+      "source_sha256": "be744989daa9c69399c8202d86ec19ca03243d93e8b81bc396d3e571167d74f2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/smtpd.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/smtpd"
+    },
+    {
+      "path": "Doc/library/smtplib.rst",
+      "source_sha256": "447813082cec62f182169a0da6ec4d08804116f00c9552a63b0381032f3f56d2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/smtplib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Eric S. Raymond"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/smtplib"
+    },
+    {
+      "path": "Doc/library/sndhdr.rst",
+      "source_sha256": "cf0c1209f4cea4ff7068ffe15dfa43b43177f3bc65d89a7f3a31cbc60210aaf2",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/socket.rst",
+      "source_sha256": "66a4476d875513fdbc0e459ceae48ca0d89202ed21a8237705448d64c7ae7d55",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/socket.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/socket"
+    },
+    {
+      "path": "Doc/library/socketserver.rst",
+      "source_sha256": "6a97d0f43e38ca42caa0a73a4c90f8c0aa74fa76c03e0f6682c7175adae80685",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/socketserver.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/socketserver"
+    },
+    {
+      "path": "Doc/library/spwd.rst",
+      "source_sha256": "39cc55a6ed64a0c67c4f1e1f923308a10f8967c81a13eaf44dcbc8a77e2f5b08",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/spwd.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/spwd"
+    },
+    {
+      "path": "Doc/library/sqlite3.rst",
+      "source_sha256": "ae534aa61fb6ab8d7bff2e7d33ac3f79e3b06e18acf4ec8081250ef7ff542d76",
+      "decision": "excluded",
+      "reason": "conservative external-specification_or_third-party-risk_stem"
+    },
+    {
+      "path": "Doc/library/ssl.rst",
+      "source_sha256": "33d5f8241ff06547f3d8ab57215646ff312e32a50da714eb540cd83242f65a3d",
+      "decision": "excluded",
+      "reason": "conservative external-specification_or_third-party-risk_stem"
+    },
+    {
+      "path": "Doc/library/stat.rst",
+      "source_sha256": "115efd8eb63d0773907aaadebc2eb858bfc0f9db32b22191f41223eab105f896",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/stat.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Skip Montanaro"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/stat"
+    },
+    {
+      "path": "Doc/library/statistics.rst",
+      "source_sha256": "5d12d67adc29c15b0520de33db7db0cf149ce97b40276bb691e5ca9216c495e4",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/statistics.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Steven D'Aprano"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/statistics"
+    },
+    {
+      "path": "Doc/library/stdtypes.rst",
+      "source_sha256": "3c61e89ca96738cba12cd45632b2728e4fcb3637c340996f59f97fa4eb8614b0",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/stdtypes.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/stdtypes"
+    },
+    {
+      "path": "Doc/library/string.rst",
+      "source_sha256": "2ebc1296c0e78557e3ecef55ac9200649cbad059ee1dbe27a4b1271f26946bde",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/string.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/string"
+    },
+    {
+      "path": "Doc/library/stringprep.rst",
+      "source_sha256": "ef239271794a15edc8d004d7a5167e5422e84b6b774a84d10721f3b0aeae8c9c",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/struct.rst",
+      "source_sha256": "b23918e0290a5d5f2dbc3670ca73ee2ee25499e8e21b537d9135a0ca75a44be2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/struct.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/struct"
+    },
+    {
+      "path": "Doc/library/subprocess.rst",
+      "source_sha256": "1259329b704348f06dad5f668a859aee68c698ba285a374b8c83b13f5798235f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/subprocess.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Peter \u00c5strand"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/subprocess"
+    },
+    {
+      "path": "Doc/library/sunau.rst",
+      "source_sha256": "07d4e8bdfc71404eacafd049fdb1f1d01b9c5f5f9651e05cac178cc7dcb10579",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/sunau.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Moshe Zadka"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/sunau"
+    },
+    {
+      "path": "Doc/library/superseded.rst",
+      "source_sha256": "eefec444b358c73676599c3d4c19e0e558ef4b94659bd8f422f9af33654c917e",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/symtable.rst",
+      "source_sha256": "e0d460e1eaff618a5b5de15402e82d3c7a55a540c52c19ad15a04140e1db624b",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/sys.monitoring.rst",
+      "source_sha256": "0e57e5b1773bef1683dbea60c8d0385c2fade929328968461296427223aa61a2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/sys.monitoring.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/sys"
+    },
+    {
+      "path": "Doc/library/sys.rst",
+      "source_sha256": "a73b0d8cf8bf39aa954a6caf72c4548334380975a3a1fcf321811e5fe544c9a3",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/sys_path_init.rst",
+      "source_sha256": "bd4f5ca8c5d8a244f8585fb5114c6276fe29f76f4108c06373a77e49e63c57fc",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/sys_path_init.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/sys"
+    },
+    {
+      "path": "Doc/library/sysconfig.rst",
+      "source_sha256": "ad487ee8575c99fcb9b7e63b51d09709876e69a649b4d472d9d6814bd8c6fa25",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/sysconfig.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Tarek Ziad\u00e9"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/sysconfig"
+    },
+    {
+      "path": "Doc/library/syslog.rst",
+      "source_sha256": "ccd2cfcdc4129df1afe87f2fa2afd4f76c10b9abc190be1cc9554978781e4350",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/syslog.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/syslog"
+    },
+    {
+      "path": "Doc/library/tabnanny.rst",
+      "source_sha256": "f3edc97199ccc0f650f98f039df6448235e17b3a9d733bac54a4eb92d7bbfba0",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/tarfile.rst",
+      "source_sha256": "525d2713955c8919e34a50bb1bcd6c1f9f20f5e49c3043dfd511c635b9ebd2b8",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/tarfile.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Lars Gust\u00e4bel"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/tarfile"
+    },
+    {
+      "path": "Doc/library/telnetlib.rst",
+      "source_sha256": "751f19b900122b5d00e6f90729ada7f3b27d7c4227868932b44f8ea088f92e07",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/tempfile.rst",
+      "source_sha256": "487aeabf01be281fd1e2534b326c33cca4d9fab4db1c04d32e58439c9f6346bc",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/tempfile.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Zack Weinberg"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/tempfile"
+    },
+    {
+      "path": "Doc/library/termios.rst",
+      "source_sha256": "3153dc2f41afb2666c300b65b23692d77155c7fe9adb7527577c9896893f0501",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/termios.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/termios"
+    },
+    {
+      "path": "Doc/library/test.rst",
+      "source_sha256": "436a5d8bace90c94c679e7d5e96c5425f6224c54cca8236812bb8002c6ffab70",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/test.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Brett Cannon"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/test"
+    },
+    {
+      "path": "Doc/library/text.rst",
+      "source_sha256": "2a533a428c8671375811d5c847fad85158278744b803e1e2212d40ffdee9855b",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/text.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/text"
+    },
+    {
+      "path": "Doc/library/textwrap.rst",
+      "source_sha256": "142a4f6f32eb18030b42583e996fa878b681ece03b049845173d847708d0407d",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/textwrap.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Greg Ward"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/textwrap"
+    },
+    {
+      "path": "Doc/library/threading.rst",
+      "source_sha256": "0153766e1692460a569d539ade6824df5f87865e500bcecf6fd826095187c292",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/threading.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/threading"
+    },
+    {
+      "path": "Doc/library/time.rst",
+      "source_sha256": "5ffc5bd2a37e571781e53607d8b837aaf4e740578b00a677a03f43e98833d4f9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/time.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/time"
+    },
+    {
+      "path": "Doc/library/timeit.rst",
+      "source_sha256": "6c0117bac69e37fc6b3fa659799f1544ef3a473ca892e9862ab398e8f69e9cc9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/timeit.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/timeit"
+    },
+    {
+      "path": "Doc/library/tk.rst",
+      "source_sha256": "fcdc240658262883cb944e2384c7112fa2f16500d033f5fc57fbcafb93d6c3ce",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/tk.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/tk"
+    },
+    {
+      "path": "Doc/library/tkinter.colorchooser.rst",
+      "source_sha256": "3f20223f9bf3e5ec2143bb90c96b13c91822af48142c6572adee6a2aa009c65d",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/tkinter.dnd.rst",
+      "source_sha256": "50b4bd4f4011510c1e82d045fc0b8fb22c1049bfefb8f674cf2ac50d64f3d2ff",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/tkinter.font.rst",
+      "source_sha256": "33c91f45d32fce0fcfcd7adf529b1504bf3d891e2b337e73e3ff02a58cdde0e1",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/tkinter.messagebox.rst",
+      "source_sha256": "eec0d90ce6ca067c858e579ff486504d3cc9c516fc2714579df10e16816e70c0",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/tkinter.rst",
+      "source_sha256": "0e08f4f3ac0e72f59ef32ac73f86f66d0a70f0dc87915266a30f2eac832ac5a1",
+      "decision": "excluded",
+      "reason": "conservative external-specification_or_third-party-risk_stem"
+    },
+    {
+      "path": "Doc/library/tkinter.scrolledtext.rst",
+      "source_sha256": "48d80c86bc9245067d97a9fe21b74c1cd08c789107778b737fcff267d7bfcfb8",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/tkinter.tix.rst",
+      "source_sha256": "e168afa623a7934f47ba2a756fa32091fd14300d6629f1775b0f050f53a97283",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/tkinter.tix.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Mike Clarkson"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/tkinter"
+    },
+    {
+      "path": "Doc/library/tkinter.ttk.rst",
+      "source_sha256": "f917c0adea0f4163b762614b5e5538a7e56a56981704a742f6d11adb7298f093",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/tkinter.ttk.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Guilherme Polo"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/tkinter"
+    },
+    {
+      "path": "Doc/library/token.rst",
+      "source_sha256": "43b8618f7403e55181ed756c13688f00b5ab890959d49a76bc50ea5a734841c0",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/token.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/token"
+    },
+    {
+      "path": "Doc/library/tokenize.rst",
+      "source_sha256": "fabf6f2425c2cee2f6d78bd4635aae8581241108e940056c01ee70dd9e1cc951",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/tokenize.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Ka Ping Yee",
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/tokenize"
+    },
+    {
+      "path": "Doc/library/tomllib.rst",
+      "source_sha256": "22a430dea1dc64889a48b391c0384311e4b47430e131eeb216b2b829a4a44576",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/trace.rst",
+      "source_sha256": "f33ad104b8f08dcf139021640920bc8f5bfbb820db221956ebb8a77e6e09cdbd",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/trace.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/trace"
+    },
+    {
+      "path": "Doc/library/traceback.rst",
+      "source_sha256": "a9c8325d79426466a982de3e015043a714a7ff83f99950e48317f0d4586df905",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/traceback.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/traceback"
+    },
+    {
+      "path": "Doc/library/tracemalloc.rst",
+      "source_sha256": "ca374192331c5977f78af1a28fe5f72fa879532201f20feab4137511a0f9389a",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/tracemalloc.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/tracemalloc"
+    },
+    {
+      "path": "Doc/library/tty.rst",
+      "source_sha256": "a9e5ea520ced2198181c8698beda985a7dc0fa6a4b9816d55258b7d27ac111ae",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/turtle.rst",
+      "source_sha256": "0d327ba85a6a4befcfc6ee05e4872f7e912833b4f3ebca0a99ac9598d61a96d8",
+      "decision": "excluded",
+      "reason": "conservative external-specification_or_third-party-risk_stem"
+    },
+    {
+      "path": "Doc/library/types.rst",
+      "source_sha256": "a6a40d7eddf9fb40096dbfc818247d3ea34db1e24a3d9801f296ea8995c10e95",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/types.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/types"
+    },
+    {
+      "path": "Doc/library/typing.rst",
+      "source_sha256": "d67d53834657493e15db8020e52f65a7d5cb6b0ee150fc0940761631f318af3a",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/typing.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/typing"
+    },
+    {
+      "path": "Doc/library/unicodedata.rst",
+      "source_sha256": "972edaf26d7ed3989ade46fbeba6dfac4d9003c79154355e6345eed0c9f2f0ab",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/unittest.mock-examples.rst",
+      "source_sha256": "68f511a308517c282221a29755629cb1afda8bbbb0bcf1dd1adbc869ac2adc89",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/unittest.mock-examples.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Michael Foord"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/unittest"
+    },
+    {
+      "path": "Doc/library/unittest.mock.rst",
+      "source_sha256": "425d4790fc656284ccb38a4a0f25e7f6530808e064fedc8c0bad1e86246ec959",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/unittest.mock.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Michael Foord"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/unittest"
+    },
+    {
+      "path": "Doc/library/unittest.rst",
+      "source_sha256": "fafeb19fd8a3bdd0deaef441d2422b5c64f999ede66071bd1fdb75e1e3d91b94",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/unittest.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Steve Purcell",
+        "Fred L. Drake, Jr.",
+        "Raymond Hettinger"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/unittest"
+    },
+    {
+      "path": "Doc/library/unix.rst",
+      "source_sha256": "be87450080433bd092388451722a152cb05c5f4f68ac0c769c12afbc6336830e",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/urllib.error.rst",
+      "source_sha256": "1df88f32db7635c6c9d9382fe7b7627e46de6de05e9f63fddd82a76798b7943a",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/urllib.parse.rst",
+      "source_sha256": "d283a6da5477cb7e2149e00605a303c05366ee70958592d5902b0f9726180f68",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/urllib.parse.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/urllib"
+    },
+    {
+      "path": "Doc/library/urllib.request.rst",
+      "source_sha256": "55e3d9c4988694d529b6856af5ce7b691233821b7f1bf563d4d3dd265b3b7d5f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/urllib.request.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Jeremy Hylton",
+        "Moshe Zadka",
+        "Senthil Kumaran"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/urllib"
+    },
+    {
+      "path": "Doc/library/urllib.robotparser.rst",
+      "source_sha256": "f115b16a5cbf7b924c5b02f1fc40e3f50b42e8e965b3a861b6925c566d499a4d",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/urllib.rst",
+      "source_sha256": "48c69fa071d45f29fd8b1482ed8755c2b39099cb3843d8998facfd8e77b771e7",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/uu.rst",
+      "source_sha256": "7a86e1805671d59cabd11330fe5685cec3c1ed302ac2fef948048e7de6e77491",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/uuid.rst",
+      "source_sha256": "c36170a5a6bb81e9c2119bb6b6a3cbf94922d2827c7753f57992442dee98f9e2",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/uuid.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Ka-Ping Yee",
+        "George Yoshida"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/uuid"
+    },
+    {
+      "path": "Doc/library/venv.rst",
+      "source_sha256": "4b7bd1a665aca29bb883d944bbadf5ffcccfe37cca958184f1d8903a1062bca1",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/venv.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Vinay Sajip"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/venv"
+    },
+    {
+      "path": "Doc/library/warnings.rst",
+      "source_sha256": "60df1e794ab1163d320aa98794731d0e8065f9750299abb825023f78d2278376",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/warnings.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/warnings"
+    },
+    {
+      "path": "Doc/library/wave.rst",
+      "source_sha256": "61b672ca47d99cc62ebfd848fc0b87754ad2eeb84b2478d9bbc09103cf5e641e",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/weakref.rst",
+      "source_sha256": "0ef492312caae331776ef5f24dca5cb8c23df5cb17b3847c562eed6046528c03",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/weakref.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr.",
+        "Neil Schemenauer",
+        "Martin von L\u00f6wis"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/weakref"
+    },
+    {
+      "path": "Doc/library/webbrowser.rst",
+      "source_sha256": "49fb14948a9df14643a3a74e3ec13a577f1523dbf13cfc4ce4039a599eebd828",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/webbrowser.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/webbrowser"
+    },
+    {
+      "path": "Doc/library/windows.rst",
+      "source_sha256": "ba812f21bfd994c221cc43750469c8ea164701cf5b5fcf58b76d48a2c880f77c",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/winreg.rst",
+      "source_sha256": "63326c95d34fa21fd2440bce99806bd46b477abb962777a9ef6df54478f7a900",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/winreg.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Mark Hammond"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/winreg"
+    },
+    {
+      "path": "Doc/library/winsound.rst",
+      "source_sha256": "2a00fe23e3d10554f6701ab9da1aad67b3069bc08b732a3a08bbefed0465b327",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/wsgiref.rst",
+      "source_sha256": "f131755490fb6fb85756c1576b8762ce38ac47f436de12ebd1693f71948162e9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/wsgiref.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Phillip J. Eby"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/wsgiref"
+    },
+    {
+      "path": "Doc/library/xdrlib.rst",
+      "source_sha256": "4c79b162f38feaf815fba0bb8c4eae6d4686afa5416099469d3853178236981f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xdrlib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xdrlib"
+    },
+    {
+      "path": "Doc/library/xml.dom.minidom.rst",
+      "source_sha256": "ad4fb4f2db735ff0b70852f148e1726d577c8c9879c2b0b865ca6bf9a42e8092",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xml.dom.minidom.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Paul Prescod",
+        "Martin v. L\u00f6wis"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xml"
+    },
+    {
+      "path": "Doc/library/xml.dom.pulldom.rst",
+      "source_sha256": "8d59f52f46263abe0eb40224924e05b08382fab14490e02f9d321eb57930706b",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/xml.dom.rst",
+      "source_sha256": "354ba39088df52fe9e2c8b4d71b7ce7c9867863ec2670e2e3643c8b38c95c7e9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xml.dom.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Paul Prescod",
+        "Martin v. L\u00f6wis"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xml"
+    },
+    {
+      "path": "Doc/library/xml.etree.elementtree.rst",
+      "source_sha256": "ad08654044b8804464100aa8d4598d938d294d11874864c4d24f233bba9cea0e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xml.etree.elementtree.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fredrik Lundh"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xml"
+    },
+    {
+      "path": "Doc/library/xml.rst",
+      "source_sha256": "640006902074264bf25e9a726351a8a437059d69d932361cfae53546a6f6bda9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xml.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Christian Heimes",
+        "Georg Brandl"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xml"
+    },
+    {
+      "path": "Doc/library/xml.sax.handler.rst",
+      "source_sha256": "89dd9c1731a62f6cbe73fb11e1944625e0a0b161e6ebeb83771fe8a2dd57fc73",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xml.sax.handler.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Lars Marius Garshol",
+        "Martin v. L\u00f6wis"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xml"
+    },
+    {
+      "path": "Doc/library/xml.sax.reader.rst",
+      "source_sha256": "5c42eb30722dada102ba224436d185306657891c8bb4da80f9663288477e166b",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/xml.sax.rst",
+      "source_sha256": "0e3820f13c871afe4e7c022fb19777e8213805b23d614118fc3b56b9509ea00e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xml.sax.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Lars Marius Garshol",
+        "Fred L. Drake, Jr.",
+        "Martin v. L\u00f6wis"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xml"
+    },
+    {
+      "path": "Doc/library/xml.sax.utils.rst",
+      "source_sha256": "fc2804d96d463022a48b73a577872246aed0076419d5992410851df3f50f034a",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/xmlrpc.client.rst",
+      "source_sha256": "b346b825e69768c8bb8e5e68af2a7b7874df72c19fc382aebe5025f6c84f955f",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xmlrpc.client.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Fredrik Lundh",
+        "Eric S. Raymond"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xmlrpc"
+    },
+    {
+      "path": "Doc/library/xmlrpc.rst",
+      "source_sha256": "7c87fab2afc43d321807090c6cd61066454d2151fcb853722c548880ecfdc69e",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/xmlrpc.server.rst",
+      "source_sha256": "a6c3b000a365ff3a2bae5ca8219b3ea0ff3b510f128766ed42a0b3405320c591",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/xmlrpc.server.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Brian Quinlan",
+        "Fred L. Drake, Jr."
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/xmlrpc"
+    },
+    {
+      "path": "Doc/library/zipapp.rst",
+      "source_sha256": "d8c49523a8dda18c5f46db58558e00d621ba4777a22efa3b1b58f3e7d58262b7",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/zipapp.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/zipapp"
+    },
+    {
+      "path": "Doc/library/zipfile.rst",
+      "source_sha256": "ddb882d3b046d12ab05fea9db9fab473bf7f21f251eec6482643d5cecbb16c8c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/zipfile.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "James C. Ahlstrom"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/zipfile"
+    },
+    {
+      "path": "Doc/library/zipimport.rst",
+      "source_sha256": "e91941c1422a5819bbe2cc92361600c70a0fd04e312e8444c697bea6db30fbbd",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/zipimport.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Just van Rossum"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/zipimport"
+    },
+    {
+      "path": "Doc/library/zlib.rst",
+      "source_sha256": "103751661a879f581f74bdad9ff16205ac86763958f3ea33f5205a3f4a90c11d",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/library/zoneinfo.rst",
+      "source_sha256": "84e81652d1971ee8c54fcf5b3745539d23b4bea80318a8822980b5bfe002f474",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/library/zoneinfo.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Paul Ganssle"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/library/zoneinfo"
+    },
+    {
+      "path": "Doc/reference/compound_stmts.rst",
+      "source_sha256": "94dcaa6dc20a3876c9139cbf7049f6e95ddeb7e45088c59b3acbb0633e0aabf4",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/compound_stmts.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/compound_stmts"
+    },
+    {
+      "path": "Doc/reference/datamodel.rst",
+      "source_sha256": "3e845925bf8474ed32729e90dae5d9eb4a8cbea67f1a83f2d41d0024f55b9e05",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/datamodel.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/datamodel"
+    },
+    {
+      "path": "Doc/reference/executionmodel.rst",
+      "source_sha256": "e68f10cc3e7cc5a86170fc8cebd12c6a5f7078f3eb972c36b335652b246248c9",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/executionmodel.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/executionmodel"
+    },
+    {
+      "path": "Doc/reference/expressions.rst",
+      "source_sha256": "d9bee7f47d34d0648092fc6c92f6a6cda9d0462b789100500f7bf5a692f13db0",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/expressions.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/expressions"
+    },
+    {
+      "path": "Doc/reference/grammar.rst",
+      "source_sha256": "9def8b44e47dd2d240a865f54b542b29beb036eb39f112edc2bc7a0ae8adab7f",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/reference/import.rst",
+      "source_sha256": "254308eb33b5c2b13622126a29ac90d2a65f4b9565e99f9e4bd4e22b0e397cad",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/import.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/import"
+    },
+    {
+      "path": "Doc/reference/index.rst",
+      "source_sha256": "75dc6f4adc71981e2f4b966a5f0f13fa1ebc1c03192f9bd29f36b0ae2d714f90",
+      "decision": "excluded",
+      "reason": "fewer_than_two_eligible_prose_paragraphs"
+    },
+    {
+      "path": "Doc/reference/introduction.rst",
+      "source_sha256": "41aa1f7bcef53ac043e336112a6bb44ec17e99aa1bb77dbb0830a946965f9295",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/introduction.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/introduction"
+    },
+    {
+      "path": "Doc/reference/lexical_analysis.rst",
+      "source_sha256": "001f1f19e0038d09dd99ed6a1bf2248220707730360abccdf11f65a89981c2e6",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/lexical_analysis.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/lexical_analysis"
+    },
+    {
+      "path": "Doc/reference/simple_stmts.rst",
+      "source_sha256": "a9740934a527d2dd5114d5906fd1ff4c86b247bbf478b46bddfb0186bc4c6483",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/simple_stmts.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/simple_stmts"
+    },
+    {
+      "path": "Doc/reference/toplevel_components.rst",
+      "source_sha256": "f7800f5c5a731c818b37a5f6f05ad8a79866cfbfaca23c99bf1da38e9eb42e62",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/reference/toplevel_components.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/reference/toplevel_components"
+    },
+    {
+      "path": "Doc/tutorial/appendix.rst",
+      "source_sha256": "8d0797e30e6987a9e90dd1feeb5d6cd39baa1427c3eada1a16e555ac1db0889e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/appendix.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/appetite.rst",
+      "source_sha256": "c5766ddd864601b50b54a1882f2fbec67945d421339ddea67cd545d3b0ffad55",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/appetite.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/classes.rst",
+      "source_sha256": "fd28b82a81acda33c4997dc931ab63d5a4fea4ef65d820b579dcf2d4bf7304a4",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/classes.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/controlflow.rst",
+      "source_sha256": "1e589edc233e3654a8a64073e1cce668304453c1d64e163955df8e08dec73f66",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/controlflow.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/datastructures.rst",
+      "source_sha256": "c83633cfaa116c223eb4eacaf454f444591257f5340bae4f741726335029cf48",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/datastructures.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/errors.rst",
+      "source_sha256": "5abcceab4358053665c35497a23772773718a54325af861bb0640a9efba00f7e",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/errors.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/floatingpoint.rst",
+      "source_sha256": "8e648340d27e4ad469e40a53f8b47389d8490a7b10ea828f0bc76186c3863a55",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/floatingpoint.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [
+        "Tim Peters",
+        "Raymond Hettinger"
+      ],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/index.rst",
+      "source_sha256": "cbe35a0878b649eca9d05bbc27c6fa69aec607a4e8698343883f4ca27d187d69",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/index.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/inputoutput.rst",
+      "source_sha256": "210f867a77f007c622ca3b268c0962fb49550adec8bedea5f7bb2926a6443795",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/inputoutput.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/interactive.rst",
+      "source_sha256": "f40d6ccbcf144187a21500855e019edccb91223fae1ce9e254d1385c479dddcc",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/interactive.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/interpreter.rst",
+      "source_sha256": "aad98b0071949d2b97ca2a93a898c5cb1e64347b67b8c7b16053f6a8f3cd87af",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/interpreter.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/introduction.rst",
+      "source_sha256": "db919b049a48e7acd17869e2cabeec71060f552fa041a99fc3bf527b7da36a25",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/introduction.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/modules.rst",
+      "source_sha256": "5103a4f1a7571e79382299c36e77fddaffc6744c232616438f8678e123aaac03",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/modules.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/stdlib.rst",
+      "source_sha256": "b21e1b4adf2f2cd0c0c7b218a8562d1a7b3a6a17e06453e246b09d5d6ab7030c",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/stdlib.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/stdlib2.rst",
+      "source_sha256": "f91102359e360dd1d4dfc47f1e3c7c9b77c8eeeb47bfa4e805970cbe19c30388",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/stdlib2.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/venv.rst",
+      "source_sha256": "f9dac36833979e1e2885ea9bdb1975548b6ff6fca7f57bb3ba6a77810c93d7ac",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/venv.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    },
+    {
+      "path": "Doc/tutorial/whatnow.rst",
+      "source_sha256": "f2f4243d916a0403c405cfc74f643e715af121223b771fd620ff7361cfbeff38",
+      "source_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/tutorial/whatnow.rst",
+      "decision": "included_candidate",
+      "attribution_names_in_header": [],
+      "license": "PSF License Version 2 for official CPython documentation",
+      "source_family": "Doc/tutorial/all-chapters"
+    }
+  ],
+  "excluded_source_counts": {
+    "fewer_than_two_eligible_prose_paragraphs": 105,
+    "explicit_rights_or_reproduction_notice_in_header": 1,
+    "conservative external-specification_or_third-party-risk_stem": 6
+  },
+  "rejected_paragraph_counts": {
+    "not_prose_shape": 14001,
+    "indented_or_code": 30896,
+    "external_code_or_quotation": 315,
+    "detached_table_example_or_navigation": 92,
+    "unclean_rst": 58
+  }
+}

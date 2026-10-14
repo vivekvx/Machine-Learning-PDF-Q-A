@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment": "slma-v2-lower-learning-rate-paired-trial",
+  "control_run": "runs/v2-expanded-cpython",
+  "corpus": "real_text/v2",
+  "only_deliberate_change": "learning_rate",
+  "control_learning_rate": 0.0005,
+  "trial_learning_rate": 0.0001,
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "optimizer_steps": 80,
+  "batch_size": 1,
+  "sequence_length": 128,
+  "seed": 20261012,
+  "sample_order": "train_windows[(step - 1) % 33]",
+  "evaluation_steps": [0, 10, 20, 30, 40, 50, 60, 70, 80],
+  "checkpoint_steps": [10, 20, 30, 40, 50, 60, 70, 80],
+  "wall_time_cap_seconds": 180,
+  "pre_registered_comparison": "Compare fixed 33-window training and 23-window validation losses at identical steps. Prefer lower validation loss at step 80 and inspect full curves; one paired trial is descriptive, not proof of optimizer superiority. Select best checkpoint by validation loss only. Never evaluate the sealed test split."
+}

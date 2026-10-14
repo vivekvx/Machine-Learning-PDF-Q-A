@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source_tag": "v3.12.15",
+  "source_commit": "e848e4b09ca4bc67c0041c9ce7526dae471d4c36",
+  "seed": 20261012,
+  "tokenizer_target_size": 1024,
+  "sequence_length": 128,
+  "batch_size": 1,
+  "max_optimizer_steps": 40,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.01,
+  "evaluation_interval_steps": 10,
+  "checkpoint_interval_steps": 20,
+  "wall_time_cap_seconds": 150,
+  "max_validation_windows": 8,
+  "max_train_windows": 24,
+  "generation_tokens": 32,
+  "source_documents": {
+    "Doc/library/heapq.rst": {"split": "train", "spans": [[16, 40], [52, 54], [59, 61], [71, 82], [90, 107], [130, 134]]},
+    "Doc/library/bisect.rst": {"split": "train", "spans": [[14, 25], [34, 51], [60, 65], [73, 83], [92, 103], [112, 127]]},
+    "Doc/library/array.rst": {"split": "train", "spans": [[11, 16], [61, 63], [78, 94], [116, 122], [126, 130], [135, 138], [148, 151], [166, 169], [180, 183], [188, 191], [199, 200], [205, 207], [222, 224]]},
+    "Doc/library/functools.rst": {"split": "validation", "spans": [[23, 27], [34, 37], [52, 58], [65, 68], [81, 99], [101, 116], [121, 125], [130, 140]]}
+  },
+  "expected_source_sha256": {
+    "LICENSE": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+    "Doc/license.rst": "341832873fd316a37927e79385093fbbfd40a467428480835fe435a80cadf4e5",
+    "Doc/library/array.rst": "f4114c4b0b414b8d943e65ebb2c8570f74f02efd12bca61b1cb7fb500c2118d1",
+    "Doc/library/bisect.rst": "1fb2fa097a86e3bd92049f3e6b791a9bbf3bdf54a1098fcbb369d3e0e5c56a5c",
+    "Doc/library/functools.rst": "cb514b69cb52a2a1577de2ae14148162e0faa74e0ede60d251fa04bc55f18811",
+    "Doc/library/heapq.rst": "c9d819c44d892c812f65b07ab9de1d13ec30dcdfc8af8423a754c2506d136e53"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "vocab_size": 1024,
+  "byte_fallback_covers_all_utf8_bytes": true,
+  "validation_used_for_fit": false,
+  "split_metrics": {
+    "train": {
+      "documents": 3,
+      "paragraphs": 25,
+      "characters": 11123,
+      "utf8_bytes": 11123,
+      "tokens": 2784,
+      "tokens_per_character": 0.2502921873595253,
+      "bytes_per_token": 3.995330459770115,
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 720,
+      "used_learned_merge_ids": 657,
+      "document_ids": [
+        "Doc/library/heapq.rst",
+        "Doc/library/bisect.rst",
+        "Doc/library/array.rst"
+      ]
+    },
+    "validation": {
+      "documents": 1,
+      "paragraphs": 8,
+      "characters": 3960,
+      "utf8_bytes": 3960,
+      "tokens": 1628,
+      "tokens_per_character": 0.4111111111111111,
+      "bytes_per_token": 2.4324324324324325,
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 372,
+      "used_learned_merge_ids": 326,
+      "document_ids": [
+        "Doc/library/functools.rst"
+      ]
+    }
+  },
+  "fixed_sequence_windows": {
+    "train": 21,
+    "validation": 8
+  }
+}

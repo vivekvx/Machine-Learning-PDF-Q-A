@@ -1,0 +1,116 @@
+{
+  "best_validation_step": 100,
+  "curve": [
+    {
+      "fixed_train_loss": 7.055147655308247,
+      "fixed_train_perplexity": 1158.808562883481,
+      "step": 0,
+      "validation_document_balanced_loss": 7.042757630348206,
+      "validation_document_balanced_perplexity": 1144.5394755794375,
+      "validation_window_loss": 7.039043075159976
+    },
+    {
+      "fixed_train_loss": 4.846836790442467,
+      "fixed_train_perplexity": 127.33695862911624,
+      "step": 20,
+      "validation_document_balanced_loss": 4.843699264526367,
+      "validation_document_balanced_perplexity": 126.93806172326073,
+      "validation_window_loss": 4.840991609974911
+    },
+    {
+      "fixed_train_loss": 4.541982602328062,
+      "fixed_train_perplexity": 93.87673597543427,
+      "step": 40,
+      "validation_document_balanced_loss": 4.53318065404892,
+      "validation_document_balanced_perplexity": 93.05406367162098,
+      "validation_window_loss": 4.52973683256852
+    },
+    {
+      "fixed_train_loss": 4.432519659399986,
+      "fixed_train_perplexity": 84.14316214475092,
+      "step": 60,
+      "validation_document_balanced_loss": 4.425011879205703,
+      "validation_document_balanced_perplexity": 83.51379929374957,
+      "validation_window_loss": 4.421878181005779
+    },
+    {
+      "fixed_train_loss": 4.371277239173651,
+      "fixed_train_perplexity": 79.14465382337227,
+      "step": 80,
+      "validation_document_balanced_loss": 4.371340602636337,
+      "validation_document_balanced_perplexity": 79.14966886157507,
+      "validation_window_loss": 4.368180883558173
+    },
+    {
+      "fixed_train_loss": 4.319467570632696,
+      "fixed_train_perplexity": 75.1486063136169,
+      "step": 100,
+      "validation_document_balanced_loss": 4.3206953525543215,
+      "validation_document_balanced_perplexity": 75.24092907839722,
+      "validation_window_loss": 4.316528408150924
+    }
+  ],
+  "fixed_train_windows_seen_during_training": 2,
+  "interpretation_limit": "Only 100 updates and 5.14% of unique training tokens were exposed; falling next-token loss does not imply coherent generation or technical QA ability.",
+  "manifest_sha256": "2a29cd6e956212a977dcdd66ca7f3877afb5e28783ef1bc196a87bde33bc9a36",
+  "pilot_config_sha256": "f456ac52fa821ea83bf80118e8d0276bcd0a65d58f46e0a170eed2959ed8fd03",
+  "pilot_plan_sha256": "1d3f076cbddf4c8f3c2e67070d6242d884e019e8360a4e3d1dd17e5925a3c953",
+  "restored_checkpoints": {
+    "100": {
+      "exact_model_tensors": 28,
+      "exact_optimizer_tensors": 58,
+      "model_sha256": "4226bd83cc9fa1696f06f068478967652c17c8252eeb182b3c83531a0117ea79",
+      "optimizer_sha256": "5c1e988b489eb20bbc26c317942542be279a952ed39ec7ce3c4a71fdcef1a41d",
+      "probe_max_abs_difference": 0.0,
+      "step": 100
+    }
+  },
+  "sampled_training_documents": 58,
+  "sampled_training_groups": 44,
+  "sampled_unique_windows": 100,
+  "scheduled_loss_rises": {
+    "document_balanced_validation": [],
+    "fixed_train": []
+  },
+  "status": "verified",
+  "step_metric_summaries": {
+    "duration_seconds": {
+      "max": 0.10237137507647276,
+      "mean": 0.06909687626641244,
+      "min": 0.054995749960653484
+    },
+    "gradient_l2_norm": {
+      "max": 10.324144711102223,
+      "mean": 1.6884030467345448,
+      "min": 1.0063055345377405
+    },
+    "gradient_max_absolute": {
+      "max": 0.8365126848220825,
+      "mean": 0.15925251625478268,
+      "min": 0.04451930150389671
+    },
+    "minibatch_loss_before_update": {
+      "max": 7.041512489318848,
+      "mean": 4.624327049255371,
+      "min": 3.914414167404175
+    },
+    "mlx_peak_bytes": {
+      "max": 42680104,
+      "mean": 41419023.68,
+      "min": 33330336
+    },
+    "parameter_l2_norm": {
+      "max": 66.04239610656244,
+      "mean": 65.88339495535153,
+      "min": 65.64746807762232
+    },
+    "parameter_max_absolute": {
+      "max": 1.0297188758850098,
+      "mean": 1.0185151743888854,
+      "min": 1.0003151893615723
+    }
+  },
+  "test_split_evaluated": false,
+  "training_corpus_token_fraction_exposed": 0.05138436710918776,
+  "training_target_tokens_processed": 12800
+}

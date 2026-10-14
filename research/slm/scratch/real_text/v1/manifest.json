@@ -1,0 +1,79 @@
+{
+  "attribution": "Python Software Foundation; page authors recorded in pinned RST source headers",
+  "commit": "e848e4b09ca4bc67c0041c9ce7526dae471d4c36",
+  "file_sha256": {
+    "config.json": "44ac87f254a222c58e4dfd48a17d989b25bdbe613b0f71c2e920ee1ad272cd30",
+    "tokenizer.json": "d5de874882fb9738845fbfe6df7735da4a3c9a9c06086845ed81e7d1832b7f28",
+    "tokenizer_evaluation.json": "048518eee479dfeee462ddd679227bf30cbf9f4459982f374bdd52b98900ef88",
+    "train.jsonl": "e07efad082f8090646d22849031af203d036c9c54540b9d3105e9c018a5d128f",
+    "validation.jsonl": "0d2e8709cc377b1d24017836aeabf4b15e24e2b426cdf295b84953310101969e"
+  },
+  "fixed_sequence_windows": {
+    "train": 21,
+    "validation": 8
+  },
+  "license": "Python Software Foundation License Version 2",
+  "license_url": "https://github.com/python/cpython/blob/e848e4b09ca4bc67c0041c9ce7526dae471d4c36/Doc/license.rst",
+  "official_source": "https://github.com/python/cpython",
+  "processing": "Explicit audited source-line spans; strip RST inline markup; join paragraphs per document; exact paragraph deduplication; split by source file before tokenizer fit and windowing; drop short final window.",
+  "required_notice": "Copyright © 2001-2023 Python Software Foundation; All Rights Reserved",
+  "required_terms": "Retain PSF License Version 2 and copyright notice; describe derivative changes when distributed.",
+  "retrieved_utc": "2026-10-12T04:55:33Z",
+  "rights_status": "official_documentation_prose_only_verified_with_pinned_license",
+  "schema_version": 1,
+  "source_sha256": {
+    "Doc/library/array.rst": "f4114c4b0b414b8d943e65ebb2c8570f74f02efd12bca61b1cb7fb500c2118d1",
+    "Doc/library/bisect.rst": "1fb2fa097a86e3bd92049f3e6b791a9bbf3bdf54a1098fcbb369d3e0e5c56a5c",
+    "Doc/library/functools.rst": "cb514b69cb52a2a1577de2ae14148162e0faa74e0ede60d251fa04bc55f18811",
+    "Doc/library/heapq.rst": "c9d819c44d892c812f65b07ab9de1d13ec30dcdfc8af8423a754c2506d136e53",
+    "Doc/license.rst": "341832873fd316a37927e79385093fbbfd40a467428480835fe435a80cadf4e5",
+    "LICENSE": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+  },
+  "split_document_text_sha256": {
+    "train": {
+      "Doc/library/array.rst": "be312cb11354b56c52c0fa3a99ab87c54a552287a921286a43687a594ae28647",
+      "Doc/library/bisect.rst": "d3dc67b4574be026f66e7b9af6ab6b3fa3c11842bdf658aecc2dfca165664275",
+      "Doc/library/heapq.rst": "ffff8d2c00cbe2cc7d140e0ed3afae928d3578e9c1487f9e14625332fdf731e9"
+    },
+    "validation": {
+      "Doc/library/functools.rst": "f38fba073b0f9fdf32c28075172f515c2d7e4496dc0990097004a38277309058"
+    }
+  },
+  "stats": {
+    "train": {
+      "bytes_per_token": 3.995330459770115,
+      "characters": 11123,
+      "document_ids": [
+        "Doc/library/heapq.rst",
+        "Doc/library/bisect.rst",
+        "Doc/library/array.rst"
+      ],
+      "documents": 3,
+      "paragraphs": 25,
+      "tokens": 2784,
+      "tokens_per_character": 0.2502921873595253,
+      "unknown_token_rate": 0.0,
+      "used_learned_merge_ids": 657,
+      "used_vocabulary_ids": 720,
+      "utf8_bytes": 11123
+    },
+    "validation": {
+      "bytes_per_token": 2.4324324324324325,
+      "characters": 3960,
+      "document_ids": [
+        "Doc/library/functools.rst"
+      ],
+      "documents": 1,
+      "paragraphs": 8,
+      "tokens": 1628,
+      "tokens_per_character": 0.4111111111111111,
+      "unknown_token_rate": 0.0,
+      "used_learned_merge_ids": 326,
+      "used_vocabulary_ids": 372,
+      "utf8_bytes": 3960
+    }
+  },
+  "tag": "v3.12.15",
+  "tag_date_utc": "2026-09-30T22:04:19Z",
+  "third_party_policy": "Reviewed first-party prose spans only; code examples, tables, seealso references, external linked recipes, and figures excluded. No claim about excluded third-party content."
+}

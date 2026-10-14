@@ -1,0 +1,123 @@
+{
+  "status": "completed",
+  "completed_steps": 80,
+  "parameter_count": 1082496,
+  "initial_probe_first_eight": [
+    -0.522419810295105,
+    0.6174740195274353,
+    0.6565110683441162,
+    -0.1659696102142334,
+    0.8327889442443848,
+    -0.27297160029411316,
+    -0.9944894909858704,
+    0.5531022548675537
+  ],
+  "initial": {
+    "step": 0,
+    "train": {
+      "loss": 7.113687370762681,
+      "perplexity": 1228.6697643862271,
+      "per_document_loss": {
+        "Doc/library/heapq.rst": 7.140652588435581,
+        "Doc/library/bisect.rst": 7.093774159749349,
+        "Doc/library/array.rst": 7.068755567073822,
+        "Doc/library/itertools.rst": 7.126126607259114,
+        "Doc/library/pathlib.rst": 7.182428042093913,
+        "Doc/library/json.rst": 7.1214602788289385
+      },
+      "windows": 33
+    },
+    "validation": {
+      "loss": 7.127369631891665,
+      "perplexity": 1245.596277370372,
+      "per_document_loss": {
+        "Doc/library/functools.rst": 7.144298672676086,
+        "Doc/library/collections.rst": 7.115268639155796,
+        "Doc/library/decimal.rst": 7.121028959751129
+      },
+      "windows": 23
+    }
+  },
+  "best": {
+    "step": 70,
+    "train": {
+      "loss": 6.2301700620940235,
+      "perplexity": 507.8418407994127,
+      "per_document_loss": {
+        "Doc/library/heapq.rst": 6.124252387455532,
+        "Doc/library/bisect.rst": 6.287167549133301,
+        "Doc/library/array.rst": 6.256497442722321,
+        "Doc/library/itertools.rst": 6.183517615000407,
+        "Doc/library/pathlib.rst": 6.2825338045756025,
+        "Doc/library/json.rst": 6.258784373601277
+      },
+      "windows": 33
+    },
+    "validation": {
+      "loss": 6.254347614620043,
+      "perplexity": 520.2698475759958,
+      "per_document_loss": {
+        "Doc/library/functools.rst": 6.1758424043655396,
+        "Doc/library/collections.rst": 6.178444521767752,
+        "Doc/library/decimal.rst": 6.3992680311203
+      },
+      "windows": 23
+    }
+  },
+  "final": {
+    "step": 80,
+    "train": {
+      "loss": 6.12788792812463,
+      "perplexity": 458.4668225027242,
+      "per_document_loss": {
+        "Doc/library/heapq.rst": 5.874187741960798,
+        "Doc/library/bisect.rst": 6.109083334604899,
+        "Doc/library/array.rst": 6.236681699752808,
+        "Doc/library/itertools.rst": 6.146469434102376,
+        "Doc/library/pathlib.rst": 6.28592586517334,
+        "Doc/library/json.rst": 6.2093079884847
+      },
+      "windows": 33
+    },
+    "validation": {
+      "loss": 6.393455754155698,
+      "perplexity": 597.919275571643,
+      "per_document_loss": {
+        "Doc/library/functools.rst": 6.311885952949524,
+        "Doc/library/collections.rst": 6.3256586619785855,
+        "Doc/library/decimal.rst": 6.534348011016846
+      },
+      "windows": 23
+    }
+  },
+  "best_restore": {
+    "step": 70,
+    "max_absolute_probe_logit_difference": 0.0,
+    "model_sha256": "11566915b015ddfb30acb0c234ac61062e3bb4db7b1e9dc300275139551bbb9e",
+    "optimizer_sha256": "648dc98ac2a824fc35987198479571434759bc818f4eaffa1949d3e7f6ec74c7"
+  },
+  "final_restore": {
+    "step": 80,
+    "max_absolute_probe_logit_difference": 0.0,
+    "model_sha256": "5427f2b46562df04fae571ba5b024ff3bdee0d682d3c9bb52bf1e5a2953ddd7d",
+    "optimizer_sha256": "f891c108ba2a31f5eae2c9856d93547ab1d3432c08ff9f96c4e5a759ae2e1738"
+  },
+  "final_in_memory_probe_max_abs_difference": 0.0,
+  "fresh_random_initialization": true,
+  "prior_checkpoint_loaded": false,
+  "test_file_opened": false,
+  "worker_wall_seconds": 6.782919084071182,
+  "mlx_peak_bytes": 42680104,
+  "mlx_active_bytes": 25980972,
+  "provenance": {
+    "trial_config_sha256": "db13ba32df23057bdb078c1fdd591032431e21ca0d6328720083eb6497e0a126",
+    "audit_sha256": "bc33e3890b375301803dbd14764492a566d91333eee07366a6c92fcd97839f31",
+    "corpus_manifest_sha256": "280a091a24a9d31f98fafcdd02e42f435ecb859e78d5af7363baae8127cb3c35",
+    "train_sha256": "3a343023cfcf94214773f28dd676af8343c8584101c1195b360909faf3590e25",
+    "validation_sha256": "8d7b7b6ee14098d9923fda710b26c5cca59c797ffb3bb656ea5858276f09e5ad",
+    "tokenizer_sha256": "957434b216fa32df88812910840a84e38aae6112194a52cb95bf59e4a1625a1f",
+    "base_model_config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+    "model_source_sha256": "6f00eb7139e486d43c122bae92724addb1a57c59ca57edb6c8cefe6761bbb4d4",
+    "worker_source_sha256": "27747af9c586b85409e66b7a898bae38bd2572fcbe94f303645a7e353768c850"
+  }
+}

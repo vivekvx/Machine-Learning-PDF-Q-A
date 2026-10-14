@@ -1,0 +1,1029 @@
+{
+  "all_train_windows": 1852,
+  "all_validation_windows": 235,
+  "config_sha256": "f456ac52fa821ea83bf80118e8d0276bcd0a65d58f46e0a170eed2959ed8fd03",
+  "fixed_train": [
+    {
+      "document_id": "Doc/reference/datamodel.rst",
+      "ids_sha256": "c89a9ca2891ce13180fc93ddc2ebbbf006efd6095f22eaa7489196a37fa69311",
+      "offset": 6144
+    },
+    {
+      "document_id": "Doc/library/typing.rst",
+      "ids_sha256": "ab04bc5b3229bfdf628e482d922299c22a3b9c07d925e81cea797808c4d10a15",
+      "offset": 1280
+    },
+    {
+      "document_id": "Doc/library/tracemalloc.rst",
+      "ids_sha256": "42da37b1cea6be532dda35d3a36eadc4e382d8e13b32a9573c6fd81c53974e03",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/tutorial/modules.rst",
+      "ids_sha256": "6e7740d89fca7305d1d89ef1abea49b5507e0e53b6209d2de5a8185beb895fe2",
+      "offset": 384
+    },
+    {
+      "document_id": "Doc/library/ensurepip.rst",
+      "ids_sha256": "42659a3c453238fa8e6619aebeee1cfd90c3a025853398333897aede7e96ee5a",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/os.rst",
+      "ids_sha256": "8b4a5ad85fd0f099e5f931d486cd2786ef650f48ef2312822978bd0f4d46d110",
+      "offset": 1536
+    },
+    {
+      "document_id": "Doc/library/email.policy.rst",
+      "ids_sha256": "2e0421ecdbf8399fb675d2a4c61a9a33254b4c70a7866f7e17381b902b5f42fc",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/library/idle.rst",
+      "ids_sha256": "41e0b7970b40c64c70c84bf9ea08817083c371c9a4a8eee64747d2bd81e4030a",
+      "offset": 9216
+    },
+    {
+      "document_id": "Doc/tutorial/errors.rst",
+      "ids_sha256": "76adaf58ee83c26a89b0040f379101c307c9d4dd25fed78123bd3eb2f97a68d3",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/unittest.rst",
+      "ids_sha256": "0f631464558c6127c9ea74c01a4ccc2d658f3f7b55ae635fef34393dcf3ee364",
+      "offset": 1408
+    },
+    {
+      "document_id": "Doc/library/winreg.rst",
+      "ids_sha256": "e546c4280b89de88db7dfd8ed8349cfa2ef72f916213f0f9959143e47911ae72",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/unittest.mock.rst",
+      "ids_sha256": "28afb968f748eb840a79df437839ae957a7b011d3ab75847784d0ee15b918b73",
+      "offset": 1280
+    },
+    {
+      "document_id": "Doc/tutorial/classes.rst",
+      "ids_sha256": "640df5675478463cf10fc89dd9110bcb96974d6198b537f9dfe96fab5ac795f3",
+      "offset": 1408
+    },
+    {
+      "document_id": "Doc/library/re.rst",
+      "ids_sha256": "06e763891cb5f2f292014c25ef12e29c29fad47c936ded99b009c3f39a7bbb57",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/reference/lexical_analysis.rst",
+      "ids_sha256": "dcd72c3d6674b68ea6609a10ff07acf363e98d3382b27fe12ebb12e549e997b0",
+      "offset": 3328
+    },
+    {
+      "document_id": "Doc/tutorial/floatingpoint.rst",
+      "ids_sha256": "33a31a568bafae9b929a7aa521e426e386163462063bb696aea260efd272d4ac",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/imaplib.rst",
+      "ids_sha256": "b2c1277044567e616e93d21e94fbeeecdd173bbf090546b9a25d5178f4980cad",
+      "offset": 384
+    },
+    {
+      "document_id": "Doc/reference/toplevel_components.rst",
+      "ids_sha256": "7e578c81ff89db33ef24395367a82768392be4ae4800bb2e25f68d4938ef2f94",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/tutorial/controlflow.rst",
+      "ids_sha256": "56f9c69801676f9f638b4155cc3e22c8ca546011b811568dd2d8845b566c9145",
+      "offset": 1408
+    },
+    {
+      "document_id": "Doc/library/doctest.rst",
+      "ids_sha256": "364ea20e71ad0819d2c0a44a94cd0ac132bc026a1ae200dc4b6bc6034666b8f9",
+      "offset": 3072
+    },
+    {
+      "document_id": "Doc/library/resource.rst",
+      "ids_sha256": "0413874c3a833510cae9e4e11c9ad74cbdd693a84c7a594da428b6c06cb9dfc8",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/tarfile.rst",
+      "ids_sha256": "4537741306b548a7f0e02dd1ac6b676b34725cb8cf8274e53f35d726954dabe4",
+      "offset": 1280
+    },
+    {
+      "document_id": "Doc/library/asyncio-dev.rst",
+      "ids_sha256": "e590e1c24961c8fe5ef94833dd7cdf6514468eb600d47462e356e0199a51f3c7",
+      "offset": 384
+    },
+    {
+      "document_id": "Doc/library/stdtypes.rst",
+      "ids_sha256": "a3396632fc9259ef4b9087eeda5cec6651ebcc0ae9675e92ec20949567c483da",
+      "offset": 6656
+    },
+    {
+      "document_id": "Doc/library/fileinput.rst",
+      "ids_sha256": "6c30f82c35923882d470c7b7215cb27a3c4969c952d2d0ad5a664d44bdd0c4aa",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/cgi.rst",
+      "ids_sha256": "b17a166fdc6fa4f5023a6934df54515bd8983a6ecb1d27466204b9e49f641373",
+      "offset": 896
+    },
+    {
+      "document_id": "Doc/library/logging.handlers.rst",
+      "ids_sha256": "c8b67e8afb6cb5392d6e3d9173571d451b23b515d7c18fcf52fffa71e605d39a",
+      "offset": 1792
+    },
+    {
+      "document_id": "Doc/reference/compound_stmts.rst",
+      "ids_sha256": "3e8077a9867dab5b7fa554050a46a5333847cf88f1d88a62334219957bb10c4f",
+      "offset": 4096
+    },
+    {
+      "document_id": "Doc/library/pickletools.rst",
+      "ids_sha256": "5301e4df11fbb513eb058df1f6752a7af565d6d64972b80ea3c255227c123bad",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/2to3.rst",
+      "ids_sha256": "262769a9c0646f6882a5266f1a677e33b18a0d16ea69a335aeda634dc872a37c",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/datetime.rst",
+      "ids_sha256": "201415993f3d6b89c3a0408d855ca9a66e8a47915b7c17d54e3c3b0ff3b7d50e",
+      "offset": 2944
+    },
+    {
+      "document_id": "Doc/library/codecs.rst",
+      "ids_sha256": "9ae9adc50187ed0c0a5992e7c4ad9e38655dfa074c01589af34205a244bcd85a",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/tutorial/interpreter.rst",
+      "ids_sha256": "25e34a6a617bfb70fa52c82553b11e710a1cafffb7fb6cb80a074fb731331bbd",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/calendar.rst",
+      "ids_sha256": "5cc2253840c9b8874fc3464eb3f7f7b4e7a494933fac376f8ba28a690c02a232",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/struct.rst",
+      "ids_sha256": "e5d879deff5786131e00b07cb336d26b79248cc3743e10ad0b24f1d4989c34ee",
+      "offset": 1152
+    },
+    {
+      "document_id": "Doc/library/email.examples.rst",
+      "ids_sha256": "b11e440f1444e547620d60a950d2fb615d0d1a472b100bec5df44adb44bbc907",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/unittest.mock-examples.rst",
+      "ids_sha256": "772927b3c4a723bde4eeeeefdf9a2601d85e8487b2eaf0b07144e8cdaea7e9b8",
+      "offset": 3712
+    },
+    {
+      "document_id": "Doc/library/weakref.rst",
+      "ids_sha256": "bfd86aae630778c41082702a745764732bba5c5eca6511ebaa359dea2106867c",
+      "offset": 1408
+    },
+    {
+      "document_id": "Doc/library/asyncio-eventloop.rst",
+      "ids_sha256": "dd042a2459bd00df04beacf7121600fbb57926e14c6fa697767a3dc8cd267c6d",
+      "offset": 640
+    },
+    {
+      "document_id": "Doc/library/collections.rst",
+      "ids_sha256": "7707f174cc4f6bcd1054bb7e4bc425b9dd6da9ebde064e6f5864cdad89b549dd",
+      "offset": 1920
+    },
+    {
+      "document_id": "Doc/library/email.compat32-message.rst",
+      "ids_sha256": "7638720a8c262263dc9ef0d7b059b9c47ef721643f1c5482a2b21c7cea1f1c6b",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/logging.config.rst",
+      "ids_sha256": "766d88bcbd5352b9fd105243e2507e40257537b856b99308d8568559fb199bcc",
+      "offset": 4992
+    },
+    {
+      "document_id": "Doc/library/spwd.rst",
+      "ids_sha256": "6bd3c3406b1f4c4e13a68c4a7978e4698cfbce55a1bbce7ff83aed654ead7c1c",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/tutorial/appendix.rst",
+      "ids_sha256": "59f06eaffd37bba11ecb7d6dd0033930215d970c83939437e83d4500da7c5687",
+      "offset": 640
+    },
+    {
+      "document_id": "Doc/library/zipfile.rst",
+      "ids_sha256": "91e7f9e25ce47163157d42bd64f83dc6ebf766174dc9e816f700d996c54e6abb",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/subprocess.rst",
+      "ids_sha256": "9b949b03c1f3e7d8b4cdec8f356b77bdb6d5b9dc9b170dccf5fd60b4a62b8acc",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/tutorial/appetite.rst",
+      "ids_sha256": "dea9310f57f42f776e2958e1bf2f2a1dfe6c30f6f61252fe62f59a5144b8349c",
+      "offset": 768
+    },
+    {
+      "document_id": "Doc/library/json.rst",
+      "ids_sha256": "6ac40eac36fccfa22571bbe0b259ccf628227d117ea4dd7bf326cfc73b72f193",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/argparse.rst",
+      "ids_sha256": "919ed9842e263da897722b655cac77e1cf26d06f531ac459837f973339e2a899",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/string.rst",
+      "ids_sha256": "cb822f72f77551290e50a12379ab7ea67e3ef52768040029dc1704905b965162",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/library/io.rst",
+      "ids_sha256": "da3315b58cf4f728541569fd390b71e31c608aca3f9a433dbbc527f737cd9398",
+      "offset": 1280
+    },
+    {
+      "document_id": "Doc/library/fcntl.rst",
+      "ids_sha256": "8912cf607029770dec5051fff360a75d7c6ad8f422ff9a45fca3e48cb2a46473",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/queue.rst",
+      "ids_sha256": "5724ca78365b28c6354ea96dcc7dd7d92fc4baab4d8cdac1fd51cfb73eed1772",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/concurrent.futures.rst",
+      "ids_sha256": "a54147a62b9b46b2463703bf672c9e68050a3484ba7bf59eed5b86fc5f8ec563",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/logging.rst",
+      "ids_sha256": "0a430437f11955e18dc98bb15bba6669455ac4b4cd53a8b903c2d089076510af",
+      "offset": 1408
+    },
+    {
+      "document_id": "Doc/library/optparse.rst",
+      "ids_sha256": "b086aab7b2d0ab594b85630f604b0a387befdc037142d18d98632e36b9ae020c",
+      "offset": 4224
+    },
+    {
+      "document_id": "Doc/library/warnings.rst",
+      "ids_sha256": "976c2e7bd71c65a8a2139c17f153a36de663dd759ec65d3e8dbc62aceecb035d",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/xml.etree.elementtree.rst",
+      "ids_sha256": "e9a865bd2ff7b54f5b65327fbfcc23b05cf621cd8e8df80ba0a294f79d4ecd79",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/hashlib.rst",
+      "ids_sha256": "81c50ef2eb7502151498bfb06f3d68ad30e6509719a44d37275e0eb8cd6ce72a",
+      "offset": 384
+    },
+    {
+      "document_id": "Doc/library/xml.dom.minidom.rst",
+      "ids_sha256": "9a5b39dfb46e57b06d8347f7a94ce9553c84d88e73c3706850ab38b8b3c6a0e5",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/asyncio-extending.rst",
+      "ids_sha256": "141007e36292a8d01f00d2cff477a898d0aa8697b825f4b0ac39fa46c2ce4c42",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/dataclasses.rst",
+      "ids_sha256": "3415119d18cce07a92f3fda9bf640ad2e146488d1fae97b0987a9958714fdd30",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/library/cmath.rst",
+      "ids_sha256": "d3bace0351fb51cc6e2e004fadd78519649457accb7878522988a0cc5d8e55b0",
+      "offset": 640
+    },
+    {
+      "document_id": "Doc/tutorial/datastructures.rst",
+      "ids_sha256": "22150a2196094e92a7b3dc2c0c1cb023620ca05b6f3049b569ed85d2f7af9e1d",
+      "offset": 512
+    }
+  ],
+  "fixed_validation": [
+    {
+      "document_id": "Doc/library/curses.ascii.rst",
+      "ids_sha256": "0b2d78b9715f46386ec5da7e638edfba7f2620a577bd517e1c18ea0a2abbf3fc",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/curses.ascii.rst",
+      "ids_sha256": "2f677ce28d581223a930d4609904173ac54770227ec9eeac53ac7df115d2e51a",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/curses.panel.rst",
+      "ids_sha256": "5b54fa27d669c254c3cb24f7ebd0d657277910770f9a5012bbbaa2b8fe2d07d7",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/curses.rst",
+      "ids_sha256": "86c2c1b831ae151b29fccc2d4a4d9dabec8fcfa3d1de5e0b85921725782a8171",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/curses.rst",
+      "ids_sha256": "0b958faa7ba3b6617a026360e5a4dd931246f97b49838cdf48ed5556c5fc9c15",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/devmode.rst",
+      "ids_sha256": "f28a1b2777c20c843e2a6d000f04f5514a0c2a96d4f19203d334e9c126ca0deb",
+      "offset": 640
+    },
+    {
+      "document_id": "Doc/library/devmode.rst",
+      "ids_sha256": "3aff8d425edbf44dba1f8f661d46d84424dffc2d5301ae303d911c73db13a66f",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/enum.rst",
+      "ids_sha256": "244608fce291f1450e64da9b4b2c517b582018b84f10880ce722fc756eb6702e",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/faulthandler.rst",
+      "ids_sha256": "6cd4b970d1c1b2124e11f719e9a0eba03317ac89ee99dd99b1ee674d0c5955e9",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/faulthandler.rst",
+      "ids_sha256": "ad4a14bedafa47b48a55c2e3161c57d9715ad9618930b24bd453577687879ac7",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/importlib.metadata.rst",
+      "ids_sha256": "49c5bb3ba37f24c39e645ce9d40bb2aa548fd702cc302340ac01b0d2b6176356",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/importlib.metadata.rst",
+      "ids_sha256": "d5a7841358c7c95b1b378890263a049ebbda38c7b003e8725796e1996676833e",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/importlib.resources.rst",
+      "ids_sha256": "2f525c47d492dd68ab90fd21408d45923e6437b30bd9739906ce7aff75a04b97",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/importlib.resources.rst",
+      "ids_sha256": "91eb8dd9cc4a5ea2360d8984449c6ef13df1863f6e7358b7f81712c18fdd5f7d",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/importlib.rst",
+      "ids_sha256": "af14c76bc707a1caa3f4f29315416348e8184ce310209f810b4491d59aa32b25",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/importlib.rst",
+      "ids_sha256": "be8f2edd7c608197460f69d6887c68cb276ae28738df72e3bdf8462e7296f82a",
+      "offset": 384
+    },
+    {
+      "document_id": "Doc/library/nntplib.rst",
+      "ids_sha256": "ed1c4eedd8861bd9b50c1d9ede9e850f1630588b59b1a2fbbb6267e20e3a50db",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/nntplib.rst",
+      "ids_sha256": "5e642cdbf3323a09f614f48642307bf57dc9114835bed8f7b4dac0c9046a20bc",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/pickle.rst",
+      "ids_sha256": "3d1629579af72e665db70e8a3ac187739a42d0290e045a6774e988d78479eee2",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/pickle.rst",
+      "ids_sha256": "e015bf8f757ef324a55267a67c215525996016076bb1f52d458a1e1bbe242bc8",
+      "offset": 3584
+    },
+    {
+      "document_id": "Doc/library/pprint.rst",
+      "ids_sha256": "79f2eea91bdf7ca4016d8930861a7bcbacfd91e794f27c56a1a45c0319edfe20",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/pprint.rst",
+      "ids_sha256": "ff4351682887469163b7e3617019846c09546d4bd763c74d38f62b7c366c8923",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/pydoc.rst",
+      "ids_sha256": "272f5033f35ce6d02eb8d33137a138bb867285cc7dbf7932420ab4345aec2cea",
+      "offset": 640
+    },
+    {
+      "document_id": "Doc/library/pydoc.rst",
+      "ids_sha256": "2e733846ee050302a6b16cf11db62fe706bc7af526c2ea3ae27ef6dcfa5efe40",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/runpy.rst",
+      "ids_sha256": "4d84f4231849433a6e3549aec924c876f594dadb9928a0dd1aff24c10c768318",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/runpy.rst",
+      "ids_sha256": "146fc5a5b6d413df07d3aa44121de9a31974a34cf9f8f7bcfc449a40c9d9a5c3",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/shutil.rst",
+      "ids_sha256": "e84f34d6b187f0b822c0db8bc3a174ffd8e03a66d22a946a5813dddb6eff4428",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/shutil.rst",
+      "ids_sha256": "6fa3e523b71233e5e7beb4e8fbc40bfb722a787466da3aa6464e0fd00d14c8e9",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/smtplib.rst",
+      "ids_sha256": "eda147232f291c3e8f9c0daa9d199ca8f5dec4257d2d4a53ebaaa6b9a4146d24",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/smtplib.rst",
+      "ids_sha256": "0f6ec688ba6e7064010a7eb0827d71ddf7aaa8a8244469fdbf80fb4940a69942",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/socketserver.rst",
+      "ids_sha256": "9f53ca250a979a7caec2b2e6b062d5caf4e919b6c62d86dec0bfc71ad06c7a17",
+      "offset": 1536
+    },
+    {
+      "document_id": "Doc/library/socketserver.rst",
+      "ids_sha256": "950dad855122af9589164d4bff66f1e1a0ff493d3f318eb199129f07d194abb0",
+      "offset": 1152
+    },
+    {
+      "document_id": "Doc/library/threading.rst",
+      "ids_sha256": "7ec7e4063ad48da4161630b9b29ea5973a39e7ccb2ec995c847c65902a6fa25c",
+      "offset": 2944
+    },
+    {
+      "document_id": "Doc/library/threading.rst",
+      "ids_sha256": "1545800d0e0c8420be56ceed08f7ca05be97be019757e3a3761b7cd095984ce0",
+      "offset": 384
+    },
+    {
+      "document_id": "Doc/library/webbrowser.rst",
+      "ids_sha256": "a39baae9db87fd9ea27acc0ba7ad75ec7090fb28f9da9d9966b761541a28135c",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/webbrowser.rst",
+      "ids_sha256": "6b9c13153cc434a1727c10057ed1cd16677a3c95e2c37774f479b2591c7026de",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/reference/expressions.rst",
+      "ids_sha256": "5044acc7095e5af8272addc0413b23bb95306d5e647ff90c8bd298a549199f4b",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/reference/expressions.rst",
+      "ids_sha256": "84cb70821f974269f4ea753ac10efd8d03477b6093ef589c9cdebf93bacae215",
+      "offset": 2304
+    }
+  ],
+  "manifest_sha256": "2a29cd6e956212a977dcdd66ca7f3877afb5e28783ef1bc196a87bde33bc9a36",
+  "sampled_training_documents": 58,
+  "sampled_training_groups": 44,
+  "schema_version": 1,
+  "sealed_test_opened": false,
+  "tokenizer_sha256": "97a18e8c1db3845ef4f04dcff918919f1b2cd5e5456c339cbb2f46919f84eee7",
+  "training_sample_order": [
+    {
+      "document_id": "Doc/library/json.rst",
+      "ids_sha256": "33c8eb8396524e48c95d50c23a84bbc273c2dd7810bb6b645f43d916ebe9b369",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/doctest.rst",
+      "ids_sha256": "dc31e4e37a56757b3700684b839765e46008664488ddc41c0f1bf9f7028c50c5",
+      "offset": 1280
+    },
+    {
+      "document_id": "Doc/library/json.rst",
+      "ids_sha256": "4f2acaa6af9da132056f31d3a492130a3acf6641cee859ebe8ebca157d96af91",
+      "offset": 896
+    },
+    {
+      "document_id": "Doc/tutorial/interpreter.rst",
+      "ids_sha256": "e4acf3343daf207a8fc64bbb5460a7cf333da760dca1258911e22bcc512269fd",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/tarfile.rst",
+      "ids_sha256": "d88d2ef06f9bb90bbf0bd46c9116bfceff03864cb051790d624d16a2b307104e",
+      "offset": 1152
+    },
+    {
+      "document_id": "Doc/library/xdrlib.rst",
+      "ids_sha256": "e9eeaf4e0bc5442bdd137f6851cc98eb9bde820183efa58434593d17ea1cbe23",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/signal.rst",
+      "ids_sha256": "7dd5d463c5fb218b37929368458999040e8bcc86ee5828a8658a2c1b03d0951a",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/tarfile.rst",
+      "ids_sha256": "f5110b83e9b5495216e6d62debd8dee35b98abeba8b021e9091e64ca8fd700b3",
+      "offset": 1792
+    },
+    {
+      "document_id": "Doc/library/idle.rst",
+      "ids_sha256": "dc0961e85288e3888824ea974822860b6e3d2385d3d4c089f65105b9721746ce",
+      "offset": 6272
+    },
+    {
+      "document_id": "Doc/tutorial/classes.rst",
+      "ids_sha256": "8e0299b40dedc07bf5a14e514e62d039e5b66227a33d46c46b9ce951a1efd75f",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/logging.rst",
+      "ids_sha256": "72320be8e5b9a34bc364486e38719072b0c114a67b77529ce6dbdaca296a8ada",
+      "offset": 1536
+    },
+    {
+      "document_id": "Doc/tutorial/inputoutput.rst",
+      "ids_sha256": "d6b15d8a36bf790087c55dac15f62608a64e01d95caacfc270d0d366811e5fb6",
+      "offset": 1152
+    },
+    {
+      "document_id": "Doc/library/logging.rst",
+      "ids_sha256": "c7db77468d8c8e73680f12135bc39c9988e9f1cb7fdf706bb6bd34e9d79d0f7f",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/logging.handlers.rst",
+      "ids_sha256": "10c4ad7e7a39ff95ad81e5c89763d7a7c2d1884456783facb18e15e76e862165",
+      "offset": 1920
+    },
+    {
+      "document_id": "Doc/library/locale.rst",
+      "ids_sha256": "27d517e027f365e4823d2e94b61a09c092c93be78a1b885179a378acbddf3753",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/library/typing.rst",
+      "ids_sha256": "6e857e310b9234b871e4f100c68306933e6bc81de2e809fc6f2cc3129de0adbf",
+      "offset": 1664
+    },
+    {
+      "document_id": "Doc/library/argparse.rst",
+      "ids_sha256": "dede365eb377564352d0b0ecc23f5c0b9f1230365c5035d281d97b810868200c",
+      "offset": 2304
+    },
+    {
+      "document_id": "Doc/library/idle.rst",
+      "ids_sha256": "09a8c3896bef0f2ef5492beca12ffc7b5f47f29f354371664b1cefc1d1628968",
+      "offset": 2432
+    },
+    {
+      "document_id": "Doc/library/idle.rst",
+      "ids_sha256": "327eea4e721554a41aa7c9bc7e49111b72ae2673c78d213ea790b6cdf8be30d7",
+      "offset": 7680
+    },
+    {
+      "document_id": "Doc/library/stdtypes.rst",
+      "ids_sha256": "ee8d4ef4b155a037e351782da33bda38b61255e59f1de21fee8c822a9fdcc6a9",
+      "offset": 6016
+    },
+    {
+      "document_id": "Doc/tutorial/modules.rst",
+      "ids_sha256": "98feae099aa78466417c3a0c455c699df3e23e5ab5df665713fc4dc2a7263501",
+      "offset": 1152
+    },
+    {
+      "document_id": "Doc/library/intro.rst",
+      "ids_sha256": "1da3495c728013c732f91a220a73b6cbf78601b56794e28760041c7fad24c000",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/logging.config.rst",
+      "ids_sha256": "5cb867c32567dab75712f57e8d7e764641e1542cde142ac573ba72897753ecd0",
+      "offset": 640
+    },
+    {
+      "document_id": "Doc/library/io.rst",
+      "ids_sha256": "b208494e13d61ee0f2426927cd7820601de3c157201067c7257c59f1fb3b3b99",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/tkinter.ttk.rst",
+      "ids_sha256": "e4a7c3769a26917fb3d495519079deaae96485ea37ba0a1cc185285b80e9dcbe",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/library/test.rst",
+      "ids_sha256": "ef6d3e848a1bb1c86be212fa083cc3a37d5a32b3d701888da8d55fbf3921a781",
+      "offset": 896
+    },
+    {
+      "document_id": "Doc/library/stdtypes.rst",
+      "ids_sha256": "2d87e124b77585e36b92b7c5aa465faa796aea0c27d50946ac542db617625d0e",
+      "offset": 3712
+    },
+    {
+      "document_id": "Doc/reference/datamodel.rst",
+      "ids_sha256": "924b17cd77849b4941d93289e992746f28c9c3f30ecd6d5796c244cbbdd65958",
+      "offset": 4736
+    },
+    {
+      "document_id": "Doc/reference/compound_stmts.rst",
+      "ids_sha256": "bdec971ff9e56457db91d87190b3dc60d4976aa3070f3d7b08eb0f71983f8e0e",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/reference/lexical_analysis.rst",
+      "ids_sha256": "2929928dee97cba3ea37855b5adaae36e030856f9dd59fcc1179a955a763215d",
+      "offset": 2816
+    },
+    {
+      "document_id": "Doc/reference/executionmodel.rst",
+      "ids_sha256": "2a11ffda0f051c462275c8e4f291aa8493c30782cbb7fe4a7c459f6b12c25c54",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/tutorial/introduction.rst",
+      "ids_sha256": "f34051d22bf1e5cc72dfffafe87b5d5334cac2ca07d4f8cf56fed0dcab8b1a3f",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/gettext.rst",
+      "ids_sha256": "731c8b5a3f359ac46e80b1eb7d3b94d50bfd92a283f99e869c5c492d6a7b5628",
+      "offset": 1280
+    },
+    {
+      "document_id": "Doc/library/unittest.mock-examples.rst",
+      "ids_sha256": "2751cc2a7dd870034898a4f32fcffc45094895b303a6a2a2d635c4d18acde21c",
+      "offset": 2304
+    },
+    {
+      "document_id": "Doc/tutorial/classes.rst",
+      "ids_sha256": "6c55a112ea1e220801b4e061ae5ddf44fcc99da16e920f8809cd2a8b41b18cd1",
+      "offset": 4992
+    },
+    {
+      "document_id": "Doc/library/socket.rst",
+      "ids_sha256": "7aa27956aa3fc11546eaba379a171b0e409b5c2b18cc7c6f10dc4adbb5271bc3",
+      "offset": 1152
+    },
+    {
+      "document_id": "Doc/library/unittest.mock.rst",
+      "ids_sha256": "1d3f48837c22aec80f18879191f57bcd73bbe1b110ad91f25149fb1dfd931797",
+      "offset": 5760
+    },
+    {
+      "document_id": "Doc/library/doctest.rst",
+      "ids_sha256": "b5492c6a65a1aab9a3d03f1634333884e111cf26be45f5ba3f4fc565e806a851",
+      "offset": 3328
+    },
+    {
+      "document_id": "Doc/library/optparse.rst",
+      "ids_sha256": "7404915dd8a4fc3d621b2fb0ee0e73be107c69abcb81ded51b1e2e1c0d68f488",
+      "offset": 3584
+    },
+    {
+      "document_id": "Doc/library/stdtypes.rst",
+      "ids_sha256": "40674c84f12bc3845993e9d300ce5d7ef53eae66d03f6a5a00569bb7c2ef66c7",
+      "offset": 5120
+    },
+    {
+      "document_id": "Doc/library/multiprocessing.rst",
+      "ids_sha256": "c12afedd415dd6903b9efce7ed9b57ee557db929564ad03a10ab139e8cb4a771",
+      "offset": 1664
+    },
+    {
+      "document_id": "Doc/library/socket.rst",
+      "ids_sha256": "c130e6ed0d6e7fb85862c81da2ebd11d5db538b59ec6bde55fa47ef6abba1577",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/tutorial/datastructures.rst",
+      "ids_sha256": "9a8d71dcb912da7e459b422fe524d1ee34e0582ecc2608b17aaf1ec2da7bb778",
+      "offset": 2688
+    },
+    {
+      "document_id": "Doc/library/tkinter.ttk.rst",
+      "ids_sha256": "bccc57821c94fa78060846cb8decacaeb8ac796e8a852ffaf809771a7dc7a29c",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/rlcompleter.rst",
+      "ids_sha256": "44b0bc6e9bbd668a8e5bc72cdfc746ae6e982284654aac829273a475bc2f8c4b",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/unittest.rst",
+      "ids_sha256": "9ee422b3713a4a34537618ee8c4537068de97660ae027abd1a4a1e8e6a6ec6f9",
+      "offset": 2816
+    },
+    {
+      "document_id": "Doc/library/email.parser.rst",
+      "ids_sha256": "b282ef1391ed806e1f58249bf5e68f62701b66985906e0b917ad4782e6f460e7",
+      "offset": 1408
+    },
+    {
+      "document_id": "Doc/library/multiprocessing.rst",
+      "ids_sha256": "8ac221291c6ef08ed7ec124876814932de6454135c6fcd74235066aed70f998c",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/xml.etree.elementtree.rst",
+      "ids_sha256": "8e9c55fa545537c4d356a38618ad7678da0d59266cbf6a75d698f7ae526a1c27",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/tutorial/controlflow.rst",
+      "ids_sha256": "be49626f022a8aa10bc22a4d2bc91ea9963ec4084f2bd0c3b4afd5216062b7e6",
+      "offset": 1152
+    },
+    {
+      "document_id": "Doc/library/doctest.rst",
+      "ids_sha256": "319efe6756e81c1cca16067d01b6bda94fce0f4956fdb3f64f968d7887e94269",
+      "offset": 1664
+    },
+    {
+      "document_id": "Doc/library/logging.config.rst",
+      "ids_sha256": "06b14f64204ba8a045c5624cfcbac886c505cb63ae4725587681707243d26044",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/reference/lexical_analysis.rst",
+      "ids_sha256": "8c7e2e98bf53276f73afc00b0de5140f3895886760cda3d97074c061807c993e",
+      "offset": 5248
+    },
+    {
+      "document_id": "Doc/library/optparse.rst",
+      "ids_sha256": "1f63ba135296371ea94b7f0ad21c14e4873ddf54c97e00452b3e5d7ad8fa3d99",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/tutorial/controlflow.rst",
+      "ids_sha256": "f05c88e5356a0aeb79760b6d5b3ff798feb3d7556ad64b0c100d61291948e83c",
+      "offset": 3072
+    },
+    {
+      "document_id": "Doc/library/tarfile.rst",
+      "ids_sha256": "fc25248af43f18cb08e60cdb7a0fe820930efe4142ff1b8ce6351279df2a2fde",
+      "offset": 768
+    },
+    {
+      "document_id": "Doc/library/logging.config.rst",
+      "ids_sha256": "8cf77df644647a74e04bd598792fd08ea0f2435bb5bcc7d0341df0639c31cbb8",
+      "offset": 3328
+    },
+    {
+      "document_id": "Doc/library/unittest.rst",
+      "ids_sha256": "f826435848c0080d4330511030813dd7a533c51ae64b2d1680c7e35d2d916782",
+      "offset": 3840
+    },
+    {
+      "document_id": "Doc/tutorial/datastructures.rst",
+      "ids_sha256": "f69678fc841ba71a8b8e920a78159f92f9a449762886e74d1435b39aabd5914c",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/reference/datamodel.rst",
+      "ids_sha256": "0a110f727a5593eb817b5780f80b986734d4e66af49452d2eaacbd8c07f9709b",
+      "offset": 3840
+    },
+    {
+      "document_id": "Doc/library/contextlib.rst",
+      "ids_sha256": "546965858ec83d712a07716fdb71ffed07c7a2e2379414896847ae2394a62d19",
+      "offset": 896
+    },
+    {
+      "document_id": "Doc/library/unittest.mock-examples.rst",
+      "ids_sha256": "35b9b349ff7c8680cf98c8df49f3b6b7c228d705db09ce8ca633027aaf16ee4d",
+      "offset": 3456
+    },
+    {
+      "document_id": "Doc/library/tkinter.tix.rst",
+      "ids_sha256": "b3b5da67c3062eef7f6a38e325e2877b8314abd9d6a3de43dc685082ca1ff5d5",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/test.rst",
+      "ids_sha256": "afb74aac0aae7ce50e390ad7c185b7fe43a8bf8a28ec8284d613fdc7250b1dca",
+      "offset": 640
+    },
+    {
+      "document_id": "Doc/library/dataclasses.rst",
+      "ids_sha256": "321090cbaeb0d35057b2bcb2dd3dfcac5f86129620ef27c7019b8241156c0618",
+      "offset": 640
+    },
+    {
+      "document_id": "Doc/library/tracemalloc.rst",
+      "ids_sha256": "2bab27ef2af37ef1d19ce3fe015f2aaccf1e4d7351517d313587161e0dd881f0",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/tutorial/interpreter.rst",
+      "ids_sha256": "e69ca7611f048e586616aca4c6a47f193fa3cf44b69ba9bfb6d3377ef1497273",
+      "offset": 768
+    },
+    {
+      "document_id": "Doc/library/trace.rst",
+      "ids_sha256": "b08c358b4665bd411813494939b90b387f810daabdb4ded073ae92ede0595ca9",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/idle.rst",
+      "ids_sha256": "ddc4791e21ac4a8a32a4df7b37e7c9057858338c1a4e9975163363b034a728d1",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/library/typing.rst",
+      "ids_sha256": "fdaf5ff9314c28e5296b471aa0ba8cc55c218be4a0aa7c904c68b774e1fdcb17",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/library/warnings.rst",
+      "ids_sha256": "34413fd68df86a2b0cf6cfb85b6b42f38a8710756d1cdd38d7bd497dc9fd5384",
+      "offset": 2176
+    },
+    {
+      "document_id": "Doc/library/re.rst",
+      "ids_sha256": "06e763891cb5f2f292014c25ef12e29c29fad47c936ded99b009c3f39a7bbb57",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/statistics.rst",
+      "ids_sha256": "605c01f7009b71c3931abf33cff97060c35a8cc60de34e15f38c78292f0157f6",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/cgi.rst",
+      "ids_sha256": "e8a8ef40c0c5226ae565079efe5cc31a4546ceab026cf16beecc81b862dc6699",
+      "offset": 3072
+    },
+    {
+      "document_id": "Doc/library/logging.rst",
+      "ids_sha256": "26fcd6e754cfa13ba0aac42ddd96472c965e86e8ead180352c7b254436d848ea",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/optparse.rst",
+      "ids_sha256": "9abc79916cfff8b0187d741cc06483ab47b640815069b8b3a077ae25b72f54a7",
+      "offset": 896
+    },
+    {
+      "document_id": "Doc/reference/datamodel.rst",
+      "ids_sha256": "12ab20eae6f847bfc1731ff5dbc8bdef15b35a260c6e3ef5802dcb116e468a9b",
+      "offset": 1920
+    },
+    {
+      "document_id": "Doc/reference/compound_stmts.rst",
+      "ids_sha256": "833aed1eb03941eee2f0d56a849b298c4e6ff1c90bc976710ec2d15c72b30400",
+      "offset": 768
+    },
+    {
+      "document_id": "Doc/library/stdtypes.rst",
+      "ids_sha256": "e4f97367e8c7f7813fb3933f1be2a8bceb6503ca31c8c8e8574ee37123d4d3c3",
+      "offset": 896
+    },
+    {
+      "document_id": "Doc/library/logging.config.rst",
+      "ids_sha256": "0d52a0abf3b08a5276ef4067082a39512745abe9276fec67c20c532ee5109ad0",
+      "offset": 4096
+    },
+    {
+      "document_id": "Doc/library/logging.config.rst",
+      "ids_sha256": "66bf377da512242fa98202a7a3829cb71f507e69d27114d1e5b237f9672bc403",
+      "offset": 384
+    },
+    {
+      "document_id": "Doc/library/stdtypes.rst",
+      "ids_sha256": "f331bcbf447f3ae567494988bbddcc6b46d83850c3a4c96f47d4d054a3a92707",
+      "offset": 9472
+    },
+    {
+      "document_id": "Doc/library/email.rst",
+      "ids_sha256": "52c1bd7c31bbf54222ac56c0c290bd935202859bc4a5ce67929598c648ed4483",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/random.rst",
+      "ids_sha256": "aa369af9816529b5fd677c1cac4e59003b64ae99185307f30689588e22c91fed",
+      "offset": 896
+    },
+    {
+      "document_id": "Doc/library/subprocess.rst",
+      "ids_sha256": "318e2000f61dce511f7735fb1889b0c4ba00e634255cd3a624f01fc48283f60e",
+      "offset": 1152
+    },
+    {
+      "document_id": "Doc/library/ossaudiodev.rst",
+      "ids_sha256": "4aad6ae3e7b3b1e5ac5b8c3175c32072789f0733506f970e28a90d2f3b1e8797",
+      "offset": 0
+    },
+    {
+      "document_id": "Doc/library/copy.rst",
+      "ids_sha256": "b60d9e993d5f75337b6e671fccf054a6b8adcdeff42b20699a3db97293c5396b",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/unittest.mock-examples.rst",
+      "ids_sha256": "be4c76bc05e58ca917e852f97ab263244a292f017a032777609486c48452f05b",
+      "offset": 1024
+    },
+    {
+      "document_id": "Doc/library/stdtypes.rst",
+      "ids_sha256": "e450f4419a2ee18ac4ac66ef1a85db0c6ab74caa9b0fb49e26eb4bd706dfd6f2",
+      "offset": 4608
+    },
+    {
+      "document_id": "Doc/library/stdtypes.rst",
+      "ids_sha256": "0dca70833b52e6233fffc40ee3bd5f32fb253bf66a9ad57a42dde57995975dfe",
+      "offset": 1408
+    },
+    {
+      "document_id": "Doc/tutorial/datastructures.rst",
+      "ids_sha256": "22150a2196094e92a7b3dc2c0c1cb023620ca05b6f3049b569ed85d2f7af9e1d",
+      "offset": 512
+    },
+    {
+      "document_id": "Doc/library/asyncio-dev.rst",
+      "ids_sha256": "0554067a3e5dfd5e3d28747faa487f0c038a00c102a86722375f9be408b9286a",
+      "offset": 256
+    },
+    {
+      "document_id": "Doc/library/asyncio-subprocess.rst",
+      "ids_sha256": "a629b6c7f65e49aec90e950218242f00a2bd34978da8f9fe3eb0dbc9f1325054",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/logging.config.rst",
+      "ids_sha256": "322eeba8533101decdffe612183f21db1c1f92b70036980c8dfcc0c4c1fa011f",
+      "offset": 4864
+    },
+    {
+      "document_id": "Doc/library/unittest.mock-examples.rst",
+      "ids_sha256": "ceb036172f899ee273d56a2f7f0f5d8583b392c5eec3bff7fe5b5b5b08001d8f",
+      "offset": 3328
+    },
+    {
+      "document_id": "Doc/library/collections.rst",
+      "ids_sha256": "f0f9d52356aff148d3e04490c05287e5a5f9b4b57baaf649ef9f5bd7d315515f",
+      "offset": 1664
+    },
+    {
+      "document_id": "Doc/library/doctest.rst",
+      "ids_sha256": "6452e42b791f817b538b89505011ca5ceed668eb181fd6569c1e8f0a5760a56b",
+      "offset": 2048
+    },
+    {
+      "document_id": "Doc/library/datetime.rst",
+      "ids_sha256": "62c37f13015022a859735ecbd90545f9370ff97bb7ad472ffa1e6576c1717527",
+      "offset": 384
+    },
+    {
+      "document_id": "Doc/library/timeit.rst",
+      "ids_sha256": "0634416997143ed96894216134abb7437f8b8d771925da93b07da0fc8e949894",
+      "offset": 128
+    },
+    {
+      "document_id": "Doc/library/struct.rst",
+      "ids_sha256": "5529be1e28e420360dac3ad88b8d8cfe4fb5161d6a63e879bbf5175e5b6d2e4d",
+      "offset": 896
+    }
+  ],
+  "training_target_tokens": 12800,
+  "unique_training_window_ids": 100
+}

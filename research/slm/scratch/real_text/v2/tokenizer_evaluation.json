@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "target_vocab": 1024,
+  "actual_vocab": 1024,
+  "fit_split": "train",
+  "validation_or_test_used_for_fit": false,
+  "byte_fallback_unknown_rate": 0.0,
+  "split_stats": {
+    "train": {
+      "documents": 6,
+      "paragraphs": 48,
+      "utf8_bytes": 16079,
+      "tokens": 4543,
+      "bytes_per_token": 3.5392912172573188,
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 765,
+      "domains": {
+        "algorithms": 2,
+        "data_structures": 1,
+        "iterators": 1,
+        "filesystem": 1,
+        "serialization": 1
+      },
+      "tokens_by_domain": {
+        "algorithms": 1857,
+        "data_structures": 1055,
+        "filesystem": 429,
+        "iterators": 394,
+        "serialization": 808
+      },
+      "document_ids": [
+        "Doc/library/heapq.rst",
+        "Doc/library/bisect.rst",
+        "Doc/library/array.rst",
+        "Doc/library/itertools.rst",
+        "Doc/library/pathlib.rst",
+        "Doc/library/json.rst"
+      ]
+    },
+    "validation": {
+      "documents": 3,
+      "paragraphs": 23,
+      "utf8_bytes": 9333,
+      "tokens": 3788,
+      "bytes_per_token": 2.463833157338965,
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 516,
+      "domains": {
+        "functional": 1,
+        "data_structures": 1,
+        "numerical": 1
+      },
+      "tokens_by_domain": {
+        "data_structures": 950,
+        "functional": 1523,
+        "numerical": 1315
+      },
+      "document_ids": [
+        "Doc/library/functools.rst",
+        "Doc/library/collections.rst",
+        "Doc/library/decimal.rst"
+      ]
+    },
+    "test": {
+      "documents": 3,
+      "paragraphs": 24,
+      "utf8_bytes": 6576,
+      "tokens": 2614,
+      "bytes_per_token": 2.5156847742922723,
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 470,
+      "domains": {
+        "diagnostics": 1,
+        "text_processing": 1,
+        "io": 1
+      },
+      "tokens_by_domain": {
+        "diagnostics": 908,
+        "io": 670,
+        "text_processing": 1036
+      },
+      "document_ids": [
+        "Doc/library/logging.rst",
+        "Doc/library/re.rst",
+        "Doc/library/io.rst"
+      ]
+    }
+  }
+}

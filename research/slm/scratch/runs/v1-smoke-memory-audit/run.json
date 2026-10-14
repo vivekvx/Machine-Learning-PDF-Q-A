@@ -1,0 +1,135 @@
+{
+  "status": "completed",
+  "mode": "smoke",
+  "preflight": {
+    "ready": true,
+    "reasons": [],
+    "resources": {
+      "timestamp": 1791777923.328584,
+      "available_bytes": 1754693632,
+      "swap_allocated_total_bytes": 4294967296,
+      "swap_used_bytes": 3575578624,
+      "swap_free_bytes": 719388672,
+      "swap_in_total_bytes": 3713341030400,
+      "swap_out_total_bytes": 263073038336,
+      "memory_pressure_free_percent": 42,
+      "process_rss_bytes": null,
+      "disk_free_bytes": 29856927744
+    },
+    "initial_resources": {
+      "timestamp": 1791777922.323196,
+      "available_bytes": 1765244928,
+      "swap_allocated_total_bytes": 4294967296,
+      "swap_used_bytes": 3575578624,
+      "swap_free_bytes": 719388672,
+      "swap_in_total_bytes": 3713341014016,
+      "swap_out_total_bytes": 263073038336,
+      "memory_pressure_free_percent": 42,
+      "process_rss_bytes": null,
+      "disk_free_bytes": 29856940032
+    },
+    "sample_window_seconds": 1.0053880214691162,
+    "allocated_swap_free_is_fixed_limit": false,
+    "disk_free_bytes": 29856927744,
+    "hardware": {
+      "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "total_memory_bytes": 8589934592
+    },
+    "environment": {
+      "python": "3.14.6",
+      "mlx": "0.32.3",
+      "mlx-metal": "0.32.3",
+      "psutil": "7.1.0"
+    },
+    "config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+    "data_manifest_sha256": "0234bee367ea47189d94ff9be00a42184054525ec3374f6bdfec2c5170d7aa04",
+    "safety": {
+      "min_preflight_available_bytes": 1200000000,
+      "min_preflight_swap_free_bytes": 750000000,
+      "min_preflight_pressure_free_percent": 20,
+      "min_preflight_disk_free_bytes": 1000000000,
+      "stop_available_bytes": 700000000,
+      "stop_swap_free_bytes": 400000000,
+      "stop_swap_growth_bytes": 600000000,
+      "stop_process_rss_bytes": 2500000000,
+      "stop_pressure_free_percent": 10,
+      "smoke_timeout_seconds": 180,
+      "overfit_timeout_seconds": 240
+    }
+  },
+  "snapshots": [
+    {
+      "timestamp": 1791777923.3609102,
+      "available_bytes": 1755742208,
+      "swap_allocated_total_bytes": 4294967296,
+      "swap_used_bytes": 3575578624,
+      "swap_free_bytes": 719388672,
+      "swap_in_total_bytes": 3713341079552,
+      "swap_out_total_bytes": 263073038336,
+      "memory_pressure_free_percent": 42,
+      "process_rss_bytes": 688128,
+      "disk_free_bytes": 29856919552
+    },
+    {
+      "timestamp": 1791777923.871031,
+      "available_bytes": 1645166592,
+      "swap_allocated_total_bytes": 4294967296,
+      "swap_used_bytes": 3575578624,
+      "swap_free_bytes": 719388672,
+      "swap_in_total_bytes": 3713346732032,
+      "swap_out_total_bytes": 263073202176,
+      "memory_pressure_free_percent": 40,
+      "process_rss_bytes": 53297152,
+      "disk_free_bytes": 29851136000
+    }
+  ],
+  "exit_code": 0,
+  "wall_seconds": 1.0215933750150725,
+  "after": {
+    "timestamp": 1791777924.3800802,
+    "available_bytes": 1840332800,
+    "swap_allocated_total_bytes": 4294967296,
+    "swap_used_bytes": 3575578624,
+    "swap_free_bytes": 719388672,
+    "swap_in_total_bytes": 3713348452352,
+    "swap_out_total_bytes": 263073202176,
+    "memory_pressure_free_percent": 42,
+    "process_rss_bytes": null,
+    "disk_free_bytes": 29844193280
+  },
+  "completed_steps": 5,
+  "total_tokens": 1280,
+  "aggregate_step_tokens_per_second": 6452.430064397957,
+  "peak_worker_rss_bytes": 53297152,
+  "minimum_system_available_bytes": 1645166592,
+  "minimum_swap_free_bytes": 719388672,
+  "maximum_swap_growth_bytes": 0,
+  "minimum_pressure_free_percent": 40,
+  "minimum_disk_free_bytes": 29851136000,
+  "maximum_swap_out_growth_bytes": 163840,
+  "worker_result": {
+    "status": "completed",
+    "mode": "smoke",
+    "completed_steps": 5,
+    "global_step": 5,
+    "early_stopped": false,
+    "actual_parameter_count": 1332352,
+    "actual_vocab_size": 2000,
+    "train_blocks": 4,
+    "validation_blocks": 2,
+    "initial_train_loss": 7.667785167694092,
+    "final_train_loss": 7.89862060546875,
+    "initial_validation_loss": 7.740370988845825,
+    "final_validation_loss": 7.971168756484985,
+    "mlx_peak_bytes": 81512964,
+    "mlx_active_bytes": 21385260,
+    "mlx_cache_bytes": 70807100,
+    "checkpoint_file_sha256": {
+      "model.safetensors": "78c7117e69219aaa440721950f870108ba9aa1af3041462995e28c33ecfbf159",
+      "adamw.safetensors": "3da70678993199d2f4b8eff23f51a25a52146468909bd51f9453298b78d67f4a"
+    },
+    "checkpoint_metadata_sha256": "33609dc25d57f9649d3d96cbd28d1c456ab1694cde683f4f6c4a5b53bcc3320b",
+    "data_manifest_sha256": "0234bee367ea47189d94ff9be00a42184054525ec3374f6bdfec2c5170d7aa04"
+  }
+}

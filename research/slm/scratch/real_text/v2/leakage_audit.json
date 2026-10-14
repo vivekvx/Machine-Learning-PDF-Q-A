@@ -1,0 +1,28 @@
+{
+  "algorithm": "normalized exact paragraphs plus word-5-gram Jaccard for cross-split paragraphs and documents",
+  "cross_split_exact_paragraph_pairs": [],
+  "cross_split_near_document_pairs": [],
+  "cross_split_near_paragraph_pairs": [],
+  "max_cross_split_paragraph_similarity": {
+    "document_ids": [
+      "Doc/library/bisect.rst",
+      "Doc/library/re.rst"
+    ],
+    "jaccard": 0.006535947712418301,
+    "source_lines": [
+      [
+        14,
+        25
+      ],
+      [
+        61,
+        64
+      ]
+    ]
+  },
+  "policy": {
+    "minimum_shared_shingles": 5,
+    "near_duplicate_jaccard_threshold": 0.6,
+    "word_shingle_size": 5
+  }
+}

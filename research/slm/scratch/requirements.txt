@@ -1,0 +1,3 @@
+mlx==0.32.3
+mlx-metal==0.32.3; platform_system == "Darwin"
+psutil==7.1.0

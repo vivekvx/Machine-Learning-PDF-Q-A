@@ -1,0 +1,5 @@
+{
+  "checkpoint_step": 200,
+  "max_absolute_logit_difference": 0.0,
+  "generated_token_ids_identical": true
+}

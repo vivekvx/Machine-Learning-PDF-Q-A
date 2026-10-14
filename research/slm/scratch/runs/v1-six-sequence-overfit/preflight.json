@@ -1,0 +1,62 @@
+{
+  "ready": true,
+  "reasons": [],
+  "resources": {
+    "timestamp": 1791780005.437189,
+    "available_bytes": 2028257280,
+    "swap_allocated_total_bytes": 4294967296,
+    "swap_used_bytes": 3790798848,
+    "swap_free_bytes": 504168448,
+    "swap_in_total_bytes": 3722869473280,
+    "swap_out_total_bytes": 263269302272,
+    "memory_pressure_free_percent": 49,
+    "process_rss_bytes": null,
+    "disk_free_bytes": 29657546752
+  },
+  "initial_resources": {
+    "timestamp": 1791780004.429188,
+    "available_bytes": 2013609984,
+    "swap_allocated_total_bytes": 4294967296,
+    "swap_used_bytes": 3790798848,
+    "swap_free_bytes": 504168448,
+    "swap_in_total_bytes": 3722869063680,
+    "swap_out_total_bytes": 263269302272,
+    "memory_pressure_free_percent": 48,
+    "process_rss_bytes": null,
+    "disk_free_bytes": 29657858048
+  },
+  "sample_window_seconds": 1.0080010890960693,
+  "allocated_swap_free_is_fixed_limit": false,
+  "disk_free_bytes": 29657546752,
+  "hardware": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "total_memory_bytes": 8589934592
+  },
+  "environment": {
+    "python": "3.14.6",
+    "mlx": "0.32.3",
+    "mlx-metal": "0.32.3",
+    "psutil": "7.1.0"
+  },
+  "config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+  "data_manifest_sha256": "0234bee367ea47189d94ff9be00a42184054525ec3374f6bdfec2c5170d7aa04",
+  "safety": {
+    "min_preflight_available_bytes": 1200000000,
+    "min_preflight_swap_free_bytes": 750000000,
+    "min_preflight_pressure_free_percent": 20,
+    "min_preflight_disk_free_bytes": 1000000000,
+    "stop_available_bytes": 700000000,
+    "stop_swap_free_bytes": 400000000,
+    "stop_swap_growth_bytes": 600000000,
+    "stop_process_rss_bytes": 2500000000,
+    "stop_pressure_free_percent": 10,
+    "smoke_timeout_seconds": 180,
+    "overfit_timeout_seconds": 240
+  },
+  "experiment_config_sha256": "6fb0e7ed122737dd8064e8e5aa016012c7cdf59fdffd4417cb6e2b2ab708f96e",
+  "fixture_manifest_sha256": "0d00403f38dcff0fd5ba6549dce67da5d6e9d5987b48c2af57807de1eca63cfa",
+  "worker_source_sha256": "6d58048178dbefe39b805a80a704b3fa505bdde61bbeb742f6399ad6df88bcbb",
+  "step_cap": 200,
+  "wall_time_cap_seconds": 120
+}

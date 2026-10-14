@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "synthetic_only": true,
+  "train_count": 96,
+  "validation_count": 24,
+  "train_validation_record_overlap": 0,
+  "train_validation_text_overlap": 0,
+  "tokenizer_trained_on": "train.jsonl only",
+  "tokenizer_target_vocab": 2000,
+  "actual_vocab": 2000,
+  "config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+  "file_sha256": {
+    "train.jsonl": "571a41a4d22a5478ef83ac130740b720f96ca0ddef88a85b8b47fcfdb81bd551",
+    "validation.jsonl": "5db27578ce87544f81d592a8550936bc4f223aa58199596877cb7727dd44b534",
+    "tokenizer.json": "08a02e83aa53e14cf54fce35ae4b6207ea8b8c54f9ace90369646fc75267775e"
+  },
+  "generation_script_sha256": "483d55a444f174b014a001314b77467c0efd4c6824c4b1b1392b8abb39ab7405",
+  "tokenizer_script_sha256": "72c48f5917bfdf2e6911eb5872bc2f5efa142e942a76b6ab527fc1ec9272cd8b"
+}

@@ -1,0 +1,41 @@
+{
+  "ready": false,
+  "reasons": [
+    "free swap below preflight floor"
+  ],
+  "resources": {
+    "timestamp": 1791777404.564008,
+    "available_bytes": 1868300288,
+    "swap_used_bytes": 3677159424,
+    "swap_free_bytes": 617807872,
+    "memory_pressure_free_percent": 45,
+    "process_rss_bytes": null
+  },
+  "disk_free_bytes": 22622511104,
+  "hardware": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "total_memory_bytes": 8589934592
+  },
+  "environment": {
+    "python": "3.14.6",
+    "mlx": "0.32.3",
+    "mlx-metal": "0.32.3",
+    "psutil": "7.1.0"
+  },
+  "config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+  "data_manifest_sha256": "0234bee367ea47189d94ff9be00a42184054525ec3374f6bdfec2c5170d7aa04",
+  "safety": {
+    "min_preflight_available_bytes": 1200000000,
+    "min_preflight_swap_free_bytes": 750000000,
+    "min_preflight_pressure_free_percent": 20,
+    "min_preflight_disk_free_bytes": 1000000000,
+    "stop_available_bytes": 700000000,
+    "stop_swap_free_bytes": 400000000,
+    "stop_swap_growth_bytes": 600000000,
+    "stop_process_rss_bytes": 2500000000,
+    "stop_pressure_free_percent": 10,
+    "smoke_timeout_seconds": 180,
+    "overfit_timeout_seconds": 240
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "status": "completed",
+  "completed_steps": 80,
+  "step_cap": 80,
+  "early_stop_reason": null,
+  "fresh_random_initialization": true,
+  "prior_checkpoint_loaded": false,
+  "test_file_opened": false,
+  "parameter_count": 1082496,
+  "vocabulary_size": 1024,
+  "initial": {
+    "step": 0,
+    "train": {
+      "loss": 7.113687370762681,
+      "perplexity": 1228.6697643862271,
+      "per_document_loss": {
+        "Doc/library/heapq.rst": 7.140652588435581,
+        "Doc/library/bisect.rst": 7.093774159749349,
+        "Doc/library/array.rst": 7.068755567073822,
+        "Doc/library/itertools.rst": 7.126126607259114,
+        "Doc/library/pathlib.rst": 7.182428042093913,
+        "Doc/library/json.rst": 7.1214602788289385
+      },
+      "windows": 33
+    },
+    "validation": {
+      "loss": 7.127369631891665,
+      "perplexity": 1245.596277370372,
+      "per_document_loss": {
+        "Doc/library/functools.rst": 7.144298672676086,
+        "Doc/library/collections.rst": 7.115268639155796,
+        "Doc/library/decimal.rst": 7.121028959751129
+      },
+      "windows": 23
+    }
+  },
+  "best_validation": {
+    "step": 60,
+    "train": {
+      "loss": 6.395853678385417,
+      "perplexity": 599.3547610948693,
+      "per_document_loss": {
+        "Doc/library/heapq.rst": 6.579733371734619,
+        "Doc/library/bisect.rst": 6.665028254191081,
+        "Doc/library/array.rst": 6.086325287818909,
+        "Doc/library/itertools.rst": 6.139098008473714,
+        "Doc/library/pathlib.rst": 6.327123165130615,
+        "Doc/library/json.rst": 6.487600406010945
+      },
+      "windows": 33
+    },
+    "validation": {
+      "loss": 6.336194266443667,
+      "perplexity": 564.6433350654428,
+      "per_document_loss": {
+        "Doc/library/functools.rst": 6.268317401409149,
+        "Doc/library/collections.rst": 6.160876546587263,
+        "Doc/library/decimal.rst": 6.557474136352539
+      },
+      "windows": 23
+    }
+  },
+  "final": {
+    "step": 80,
+    "train": {
+      "loss": 6.808181878292199,
+      "perplexity": 905.223503400232,
+      "per_document_loss": {
+        "Doc/library/heapq.rst": 6.581352029527936,
+        "Doc/library/bisect.rst": 5.978243430455525,
+        "Doc/library/array.rst": 6.964522659778595,
+        "Doc/library/itertools.rst": 6.958028316497803,
+        "Doc/library/pathlib.rst": 7.359396298726399,
+        "Doc/library/json.rst": 7.343770345052083
+      },
+      "windows": 33
+    },
+    "validation": {
+      "loss": 6.960752839627474,
+      "perplexity": 1054.4270729946209,
+      "per_document_loss": {
+        "Doc/library/functools.rst": 6.873457133769989,
+        "Doc/library/collections.rst": 6.868159634726388,
+        "Doc/library/decimal.rst": 7.129067599773407
+      },
+      "windows": 23
+    }
+  },
+  "best_checkpoint": "checkpoints/step-0060",
+  "final_checkpoint": "checkpoints/step-0080",
+  "best_restore": {
+    "step": 60,
+    "max_absolute_probe_logit_difference": 0.0,
+    "model_sha256": "52a4e06b02574da144d749e0e2fc9538f0cccb4a0dd008a1f50ac78a50b49bc4",
+    "optimizer_sha256": "4c9b027243e77229a530d07b516285c84d79258dcf7952c2fb16293415ac97c5"
+  },
+  "final_restore": {
+    "step": 80,
+    "max_absolute_probe_logit_difference": 0.0,
+    "model_sha256": "619986f43b249348ec881d862a098368b69fcc61fe45ccd22ed32961eadc92e7",
+    "optimizer_sha256": "b36b0276615c596a9caf31ab69e6d9f16fee496faf731219d7c7524b24e0fe29"
+  },
+  "checkpoint_count": 8,
+  "worker_wall_seconds": 2.0033555830596015,
+  "mlx_peak_bytes": 44336956,
+  "mlx_active_bytes": 25980972,
+  "provenance": {
+    "config_sha256": "492c4fda0b28a737a06b804d64fb480f4ae10ebabc3639602b9c84c9c65fde2d",
+    "manifest_sha256": "280a091a24a9d31f98fafcdd02e42f435ecb859e78d5af7363baae8127cb3c35",
+    "train_sha256": "3a343023cfcf94214773f28dd676af8343c8584101c1195b360909faf3590e25",
+    "validation_sha256": "8d7b7b6ee14098d9923fda710b26c5cca59c797ffb3bb656ea5858276f09e5ad",
+    "tokenizer_sha256": "957434b216fa32df88812910840a84e38aae6112194a52cb95bf59e4a1625a1f",
+    "base_model_config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+    "model_source_sha256": "6f00eb7139e486d43c122bae92724addb1a57c59ca57edb6c8cefe6761bbb4d4",
+    "worker_source_sha256": "3aaa62d710dbad9604c5e7b21f70ce51c70ecaa36b107fd4e017b9321b4f3dce"
+  }
+}

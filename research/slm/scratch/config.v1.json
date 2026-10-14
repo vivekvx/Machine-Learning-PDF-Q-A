@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "project": "SLM-A-from-scratch-synthetic-feasibility",
+  "seed": 20261012,
+  "model": {
+    "layers": 4,
+    "embedding_dim": 128,
+    "attention_heads": 4,
+    "context_length": 256,
+    "feed_forward_multiplier": 4,
+    "vocabulary_target": 2000,
+    "batch_size": 1,
+    "normalization_epsilon": 1e-05
+  },
+  "data": {
+    "train_records": 96,
+    "validation_records": 24,
+    "synthetic_only": true,
+    "tokenizer_source": "synthetic_train_only"
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.002,
+    "weight_decay": 0.01,
+    "smoke_steps": 5,
+    "overfit_additional_steps_cap": 12,
+    "overfit_early_stop_train_loss": 1.5,
+    "gradient_accumulation": 1,
+    "gradient_checkpointing": false
+  },
+  "safety": {
+    "min_preflight_available_bytes": 1200000000,
+    "min_preflight_swap_free_bytes": 750000000,
+    "min_preflight_pressure_free_percent": 20,
+    "min_preflight_disk_free_bytes": 1000000000,
+    "stop_available_bytes": 700000000,
+    "stop_swap_free_bytes": 400000000,
+    "stop_swap_growth_bytes": 600000000,
+    "stop_process_rss_bytes": 2500000000,
+    "stop_pressure_free_percent": 10,
+    "smoke_timeout_seconds": 180,
+    "overfit_timeout_seconds": 240
+  }
+}

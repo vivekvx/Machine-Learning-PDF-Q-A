@@ -1,0 +1,49 @@
+{
+  "fit_split": "train",
+  "validation_or_test_used_for_fit": false,
+  "stats": {
+    "train": {
+      "documents": 193,
+      "source_groups": 135,
+      "paragraphs": 2194,
+      "utf8_bytes": 542443,
+      "unique_text_tokens": 249103,
+      "bytes_per_token": 2.177585175610089,
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 864,
+      "sections": {
+        "library": 170,
+        "reference": 6,
+        "tutorial": 17
+      }
+    },
+    "validation": {
+      "documents": 21,
+      "source_groups": 17,
+      "paragraphs": 271,
+      "utf8_bytes": 67824,
+      "unique_text_tokens": 31431,
+      "bytes_per_token": 2.157869619165792,
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 784,
+      "sections": {
+        "library": 20,
+        "reference": 1
+      }
+    },
+    "test": {
+      "documents": 20,
+      "source_groups": 17,
+      "paragraphs": 259,
+      "utf8_bytes": 67805,
+      "unique_text_tokens": 31283,
+      "bytes_per_token": 2.1674711504651087,
+      "unknown_token_rate": 0.0,
+      "used_vocabulary_ids": 777,
+      "sections": {
+        "library": 18,
+        "reference": 2
+      }
+    }
+  }
+}
