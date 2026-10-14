@@ -1,0 +1,25 @@
+test_data_rebuild_is_byte_identical (test_data_and_safety.DataAndSafetyTests.test_data_rebuild_is_byte_identical) ... ok
+test_preflight_and_stop_thresholds (test_data_and_safety.DataAndSafetyTests.test_preflight_and_stop_thresholds) ... ok
+test_tokenizer_round_trip (test_data_and_safety.DataAndSafetyTests.test_tokenizer_round_trip) ... ok
+test_train_validation_isolation_and_vocab (test_data_and_safety.DataAndSafetyTests.test_train_validation_isolation_and_vocab) ... ok
+test_actual_parameter_count (test_mlx_model.MLXModelTests.test_actual_parameter_count) ... ok
+test_causal_prefix_invariance_and_shape (test_mlx_model.MLXModelTests.test_causal_prefix_invariance_and_shape) ... ok
+test_gradient_and_checkpoint_resume_are_reproducible (test_mlx_model.MLXModelTests.test_gradient_and_checkpoint_resume_are_reproducible) ... ok
+test_byte_reproducible_synthetic_fixture (test_overfit.OverfitFixtureTests.test_byte_reproducible_synthetic_fixture) ... ok
+test_curve_export_preserves_step_and_loss (test_overfit.OverfitFixtureTests.test_curve_export_preserves_step_and_loss) ... ok
+test_experiment_caps_and_hashes (test_overfit.OverfitFixtureTests.test_experiment_caps_and_hashes) ... ok
+test_targets_are_exactly_next_tokens_and_fit_context (test_overfit.OverfitFixtureTests.test_targets_are_exactly_next_tokens_and_fit_context) ... ok
+test_all_required_model_groups_receive_gradients (test_overfit.OverfitGradientTests.test_all_required_model_groups_receive_gradients) ... ok
+test_document_split_and_clean_prose (test_real_text.RealTextTests.test_document_split_and_clean_prose) ... ok
+test_extractor_rejects_furniture_and_code (test_real_text.RealTextTests.test_extractor_rejects_furniture_and_code) ... ok
+test_fixed_windows_do_not_cross_documents (test_real_text.RealTextTests.test_fixed_windows_do_not_cross_documents) ... ok
+test_manifest_hashes_and_training_cap (test_real_text.RealTextTests.test_manifest_hashes_and_training_cap) ... ok
+test_pinned_official_source_and_rights_notice (test_real_text.RealTextTests.test_pinned_official_source_and_rights_notice) ... ok
+test_quality_audit_is_reproducible (test_real_text.RealTextTests.test_quality_audit_is_reproducible) ... ok
+test_tokenizer_fit_only_on_training_and_roundtrip (test_real_text.RealTextTests.test_tokenizer_fit_only_on_training_and_roundtrip) ... ok
+test_training_requires_watchdog_and_verified_inputs (test_real_text.RealTextTests.test_training_requires_watchdog_and_verified_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 3.024s
+
+OK
