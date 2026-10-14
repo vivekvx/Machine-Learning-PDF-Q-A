@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "selected_step": 300,
+  "selected_checkpoint_sha256": "0c68756cd7b33e3415acb50925351600b7ef10cf5d179adece1854f8e3dbe770",
+  "config_sha256": "339c63e16c780cff3d76662114f261fea196f181a454ad09ee3574ca548cfdc9",
+  "plan_sha256": "16f0a56a150e7dfaf7bd75a8860dc3e62cac4d7f39c33626d197c1966989bf6f",
+  "tokenizer_sha256": "a5236b73dd1a345e707d993191d58efbc0ebddd3fe34581d926988bce9008e63",
+  "results": {
+    "validation": {
+      "model": {
+        "count": 160,
+        "answerable_count": 80,
+        "unanswerable_count": 80,
+        "exact_match": 0.5125,
+        "token_f1": 0.5125,
+        "answerable_exact_match": 0.075,
+        "answerable_token_f1": 0.075,
+        "unanswerable_exact_marker_accuracy": 0.95,
+        "abstention_precision": 0.6031746031746031,
+        "abstention_recall": 0.95,
+        "answerable_evidence_support": 0.075,
+        "latency_median_seconds": 0.0052321249968372285,
+        "latency_mean_seconds": 0.0056229216446809,
+        "truncated_count": 0
+      },
+      "rule": {
+        "count": 160,
+        "answerable_count": 80,
+        "unanswerable_count": 80,
+        "exact_match": 0.43125,
+        "token_f1": 0.515625,
+        "answerable_exact_match": 0.4,
+        "answerable_token_f1": 0.56875,
+        "unanswerable_exact_marker_accuracy": 0.4625,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.4625,
+        "answerable_evidence_support": 0.4,
+        "latency_median_seconds": 2.0895502530038357e-05,
+        "latency_mean_seconds": 2.4400300026172773e-05,
+        "truncated_count": 0
+      }
+    },
+    "test": {
+      "model": {
+        "count": 160,
+        "answerable_count": 80,
+        "unanswerable_count": 80,
+        "exact_match": 0.5,
+        "token_f1": 0.5,
+        "answerable_exact_match": 0.0375,
+        "answerable_token_f1": 0.0375,
+        "unanswerable_exact_marker_accuracy": 0.9625,
+        "abstention_precision": 0.5167785234899329,
+        "abstention_recall": 0.9625,
+        "answerable_evidence_support": 0.0375,
+        "latency_median_seconds": 0.00467297900468111,
+        "latency_mean_seconds": 0.005629849193064728,
+        "truncated_count": 0
+      },
+      "rule": {
+        "count": 160,
+        "answerable_count": 80,
+        "unanswerable_count": 80,
+        "exact_match": 0.56875,
+        "token_f1": 0.621875,
+        "answerable_exact_match": 0.5375,
+        "answerable_token_f1": 0.64375,
+        "unanswerable_exact_marker_accuracy": 0.6,
+        "abstention_precision": 1.0,
+        "abstention_recall": 0.6,
+        "answerable_evidence_support": 0.5375,
+        "latency_median_seconds": 2.1832995116710663e-05,
+        "latency_mean_seconds": 2.216090215370059e-05,
+        "truncated_count": 0
+      }
+    }
+  },
+  "heldout_pass_gate": {
+    "minimum_test_examples": 120,
+    "minimum_answerable_exact_match": 0.6,
+    "minimum_unanswerable_exact_marker_accuracy": 0.8,
+    "minimum_answerable_evidence_support": 0.6
+  },
+  "heldout_passed": false,
+  "peak_mlx_bytes": 22880836,
+  "prediction_files_sha256": {
+    "test_model_predictions.jsonl": "14d38ff33ac4785950a9b03db1cd6036769078259cd19d4e1e21b79fdb0ab623",
+    "validation_rule_predictions.jsonl": "bf527fa26e530029784822b0f6f4f64769925f715a783b7ee7ba67d9df13bb92",
+    "test_rule_predictions.jsonl": "6769675ca5afc88606201864dc4f704e3e4abba1fb15d980b14becf661f87222",
+    "validation_model_predictions.jsonl": "308bd9174f3371c08d3e56516163b5daeba7eeff47347f8b17a3520573e369e8"
+  }
+}

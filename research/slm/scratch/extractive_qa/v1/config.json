@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment": "slma-fresh-bidirectional-extractive-qa",
+  "seed": 20261013,
+  "synthetic_only": true,
+  "families_by_split": {
+    "train": ["service_record", "deployment_sheet", "operator_log"],
+    "validation": ["maintenance_bulletin"],
+    "test": ["inspection_card"]
+  },
+  "examples_per_family": {"train": 600, "validation": 240, "test": 240},
+  "fields": ["method", "quantity", "port", "owner"],
+  "tokenizer_target_size": 1024,
+  "model": {"layers": 4, "embedding_dim": 128, "attention_heads": 4, "context_length": 256,
+            "feed_forward_multiplier": 4, "normalization_epsilon": 0.00001},
+  "training": {"optimizer": "AdamW", "learning_rate": 0.0005, "weight_decay": 0.01,
+               "batch_size": 1, "maximum_sequence_length": 192, "maximum_optimizer_steps": 1600,
+               "evaluation_interval_steps": 200, "checkpoint_interval_steps": 200,
+               "fixed_train_examples": 96, "fixed_validation_examples": 96,
+               "early_stop_patience_evaluations": 3, "minimum_steps_before_early_stop": 600,
+               "wall_time_cap_seconds": 180, "answerability_loss_weight": 1.0,
+               "span_loss_weight": 1.0},
+  "checkpoint_selection": "lowest fixed validation joint loss; earliest step wins ties",
+  "validation_gate_for_demo": {"minimum_examples": 200, "minimum_answerable_exact_match": 0.6,
+                               "minimum_unanswerable_accuracy": 0.8, "minimum_answerable_span_support": 0.6},
+  "test_policy": "do not open sealed test until checkpoint selection and validation gate calculation are frozen; evaluate once",
+  "resource_guards": "reuse scratch/run.py preflight and live guard_reasons without changed thresholds"
+}

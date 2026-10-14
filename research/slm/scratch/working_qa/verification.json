@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "environment": {"python": "3.14.6", "mlx": "0.32.3", "mlx-metal": "0.32.3", "psutil": "7.1.0", "hardware": "Apple M2, 8 GB unified memory"},
+  "checks": [
+    {"command": "research/slm/scratch/.venv/bin/python research/slm/scratch/working_qa/prepare.py --verify", "result": "passed; train 2400, validation 320, sealed test metadata 320"},
+    {"command": "research/slm/scratch/.venv/bin/python -m unittest research/slm/scratch/working_qa/test_working_qa.py -v", "result": "10 passed"},
+    {"command": "PYTHONPATH=research/slm/scratch research/slm/scratch/.venv/bin/python -m unittest discover -s research/slm/scratch/tests -v", "result": "38 passed"},
+    {"command": "PYTHONPATH=research/slm/scratch research/slm/scratch/.venv/bin/python -m unittest research/slm/scratch/extractive_qa/test_extractive.py -v", "result": "9 passed"},
+    {"command": "PYTHONPATH=research/slm/scratch:research/slm/scratch/qa research/slm/scratch/.venv/bin/python -m unittest discover -s research/slm/scratch/qa -v", "result": "6 passed, 1 skipped"},
+    {"command": "research/slm/scratch/.venv/bin/python research/slm/scratch/working_qa/evaluate.py --split validation", "result": "320 complete; validation gate failed"},
+    {"command": "research/slm/scratch/.venv/bin/python research/slm/scratch/working_qa/v2/train.py --execute tiny", "result": "stopped at 80 steps by unchanged swap-growth guard"}
+  ],
+  "test_split_evaluated": false,
+  "production_application_modified": false
+}

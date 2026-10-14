@@ -1,0 +1,8 @@
+{
+  "model_type": "deterministic synthetic-template baseline; not a neural model",
+  "count": 320,
+  "answerable": 160,
+  "answerable_exact": 160,
+  "unanswerable": 160,
+  "unanswerable_correct": 160
+}

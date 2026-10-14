@@ -1,0 +1,38 @@
+{
+  "files_sha256": {
+    "config.json": "81d81b33a853e133da9991b61455036565ca507f6f260eef80b2f45b82d68df0",
+    "train.jsonl": "e9b3e54695ae087fc0688713952a1f89c2a15363a4324a670bd0a038b7a1c030",
+    "validation.jsonl": "dfc05f88bb19943a036f7a8786e07e8cedb3dbe0aa326cbcec7d63cbe1299817"
+  },
+  "pointer_selection_sha256": "2c76add5a8c93aa9dd4ab9d8e03496609b41653013bb580080d4926ca31a7d25",
+  "rights": "original generated synthetic technical text",
+  "schema_version": 1,
+  "source_pointer_manifest_sha256": "50fb590d826999b209620d51a3bdfc746f18d3599b60e17cde8740bdedb58edf",
+  "stats": {
+    "train": {
+      "categories": {
+        "contradiction": 600,
+        "missing_fact": 600,
+        "wrong_entity": 600,
+        "wrong_field": 600
+      },
+      "documents": 300,
+      "records": 2400,
+      "supported": 1200,
+      "unsupported": 1200
+    },
+    "validation": {
+      "categories": {
+        "contradiction": 120,
+        "missing_fact": 120,
+        "wrong_entity": 120,
+        "wrong_field": 120
+      },
+      "documents": 60,
+      "records": 480,
+      "supported": 240,
+      "unsupported": 240
+    }
+  },
+  "test_sealed": true
+}

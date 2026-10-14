@@ -1,0 +1,91 @@
+{
+  "entity_pool_sha256": {
+    "test": "65fc653df8fce1a2fc25545662774ba929fbae0e1e58b6c182f9891971eb2397",
+    "train": "a7e165ace7e1dc88b7d657bc7dc85973921aa147a60addaa3afa585625fa3629",
+    "validation": "47032a638fa2ee6b02397b759e42770b6799c93c1e080cc1a11211b73b681da6"
+  },
+  "file_sha256": {
+    "config.json": "4bd7b88a4d6a37a69eed6e3ecc4d5d085da03db847dd2174a925b37e81c3ac55",
+    "test.sealed.jsonl": "7b52cd4103ed4a22015c7d50919393f3bbd3acb3240cfdecffc98528d1a268f3",
+    "tokenizer.json": "83d2094504d412ec39de1a0deedbacdb22fa3b6d7d3ea8c97f6cfcf94ba663be",
+    "train.jsonl": "e7644ddc9a49f717cb22aa34995dc239dbaf5d0cb6ba70d2c6460bcecf8d334a",
+    "validation.jsonl": "0eb70fdb4c0ce682b29cdbd08729bf42f6ee40ed9114a1ee1031bffcb641a84b"
+  },
+  "schema_version": 1,
+  "source": "original synthetic technical templates; no external text",
+  "split_families": {
+    "test": [
+      "inspection"
+    ],
+    "train": [
+      "manual",
+      "deployment",
+      "logbook",
+      "specification"
+    ],
+    "validation": [
+      "bulletin"
+    ]
+  },
+  "stats": {
+    "test": {
+      "answerable": 160,
+      "candidate_counts": {
+        "1": 80,
+        "2": 80,
+        "4": 160
+      },
+      "examples": 320,
+      "max_tokens": 150,
+      "mean_tokens": 100.296875,
+      "min_tokens": 40,
+      "tiers": {
+        "multi_entity": 80,
+        "numeric": 80,
+        "paraphrase_conflict": 80,
+        "single_fact": 80
+      },
+      "unanswerable": 160
+    },
+    "train": {
+      "answerable": 1200,
+      "candidate_counts": {
+        "1": 600,
+        "2": 600,
+        "4": 1200
+      },
+      "examples": 2400,
+      "max_tokens": 122,
+      "mean_tokens": 78.60083333333333,
+      "min_tokens": 31,
+      "tiers": {
+        "multi_entity": 600,
+        "numeric": 600,
+        "paraphrase_conflict": 600,
+        "single_fact": 600
+      },
+      "unanswerable": 1200
+    },
+    "validation": {
+      "answerable": 160,
+      "candidate_counts": {
+        "1": 80,
+        "2": 80,
+        "4": 160
+      },
+      "examples": 320,
+      "max_tokens": 148,
+      "mean_tokens": 99.825,
+      "min_tokens": 40,
+      "tiers": {
+        "multi_entity": 80,
+        "numeric": 80,
+        "paraphrase_conflict": 80,
+        "single_fact": 80
+      },
+      "unanswerable": 160
+    }
+  },
+  "test_sealed_for_selection": true,
+  "tokenizer_fit_split": "train"
+}

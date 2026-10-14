@@ -1,0 +1,285 @@
+{
+  "status": "main_completed",
+  "steps": 1750,
+  "best_step": 750,
+  "exact": null,
+  "initial": {
+    "step": 0,
+    "train": {
+      "nll": 1.4477423395961524,
+      "exact": 0.225,
+      "balanced_accuracy": 0.225,
+      "per_group": {
+        "all": {
+          "correct": 18,
+          "count": 80,
+          "accuracy": 0.225
+        },
+        "answerable": {
+          "correct": 18,
+          "count": 40,
+          "accuracy": 0.45
+        },
+        "single_fact": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        },
+        "unanswerable": {
+          "correct": 0,
+          "count": 40,
+          "accuracy": 0.0
+        },
+        "numeric": {
+          "correct": 4,
+          "count": 20,
+          "accuracy": 0.2
+        },
+        "multi_entity": {
+          "correct": 1,
+          "count": 20,
+          "accuracy": 0.05
+        },
+        "paraphrase_conflict": {
+          "correct": 3,
+          "count": 20,
+          "accuracy": 0.15
+        }
+      }
+    },
+    "validation": {
+      "nll": 1.3660339303314686,
+      "exact": 0.25,
+      "balanced_accuracy": 0.25,
+      "per_group": {
+        "all": {
+          "correct": 40,
+          "count": 160,
+          "accuracy": 0.25
+        },
+        "answerable": {
+          "correct": 40,
+          "count": 80,
+          "accuracy": 0.5
+        },
+        "single_fact": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        },
+        "unanswerable": {
+          "correct": 0,
+          "count": 80,
+          "accuracy": 0.0
+        },
+        "numeric": {
+          "correct": 10,
+          "count": 40,
+          "accuracy": 0.25
+        },
+        "multi_entity": {
+          "correct": 7,
+          "count": 40,
+          "accuracy": 0.175
+        },
+        "paraphrase_conflict": {
+          "correct": 3,
+          "count": 40,
+          "accuracy": 0.075
+        }
+      }
+    }
+  },
+  "final": {
+    "step": 1750,
+    "train": {
+      "nll": 1.4865919299423695,
+      "exact": 0.5,
+      "balanced_accuracy": 0.5,
+      "per_group": {
+        "all": {
+          "correct": 40,
+          "count": 80,
+          "accuracy": 0.5
+        },
+        "answerable": {
+          "correct": 0,
+          "count": 40,
+          "accuracy": 0.0
+        },
+        "single_fact": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        },
+        "unanswerable": {
+          "correct": 40,
+          "count": 40,
+          "accuracy": 1.0
+        },
+        "numeric": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        },
+        "multi_entity": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        },
+        "paraphrase_conflict": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        }
+      }
+    },
+    "validation": {
+      "nll": 1.4865253797732294,
+      "exact": 0.5,
+      "balanced_accuracy": 0.5,
+      "per_group": {
+        "all": {
+          "correct": 80,
+          "count": 160,
+          "accuracy": 0.5
+        },
+        "answerable": {
+          "correct": 0,
+          "count": 80,
+          "accuracy": 0.0
+        },
+        "single_fact": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        },
+        "unanswerable": {
+          "correct": 80,
+          "count": 80,
+          "accuracy": 1.0
+        },
+        "numeric": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        },
+        "multi_entity": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        },
+        "paraphrase_conflict": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        }
+      }
+    }
+  },
+  "best": {
+    "step": 750,
+    "train": {
+      "nll": 1.1792467802762985,
+      "exact": 0.5,
+      "balanced_accuracy": 0.5,
+      "per_group": {
+        "all": {
+          "correct": 40,
+          "count": 80,
+          "accuracy": 0.5
+        },
+        "answerable": {
+          "correct": 0,
+          "count": 40,
+          "accuracy": 0.0
+        },
+        "single_fact": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        },
+        "unanswerable": {
+          "correct": 40,
+          "count": 40,
+          "accuracy": 1.0
+        },
+        "numeric": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        },
+        "multi_entity": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        },
+        "paraphrase_conflict": {
+          "correct": 10,
+          "count": 20,
+          "accuracy": 0.5
+        }
+      }
+    },
+    "validation": {
+      "nll": 1.1794076906517148,
+      "exact": 0.5,
+      "balanced_accuracy": 0.5,
+      "per_group": {
+        "all": {
+          "correct": 80,
+          "count": 160,
+          "accuracy": 0.5
+        },
+        "answerable": {
+          "correct": 0,
+          "count": 80,
+          "accuracy": 0.0
+        },
+        "single_fact": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        },
+        "unanswerable": {
+          "correct": 80,
+          "count": 80,
+          "accuracy": 1.0
+        },
+        "numeric": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        },
+        "multi_entity": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        },
+        "paraphrase_conflict": {
+          "correct": 20,
+          "count": 40,
+          "accuracy": 0.5
+        }
+      }
+    }
+  },
+  "restoration": {
+    "exact_tensors": 33,
+    "nll_difference": 0.0,
+    "optimizer_step": 750
+  },
+  "parameter_count": 1017346,
+  "peak_mlx_bytes": 44691184,
+  "worker_wall_seconds": 18.58169654197991,
+  "test_file_opened": false,
+  "provenance": {
+    "config_sha256": "4bd7b88a4d6a37a69eed6e3ecc4d5d085da03db847dd2174a925b37e81c3ac55",
+    "manifest_sha256": "ce2bd2dc3069fc898d6b6b8efb405cea8f344ce2ff07e5589017fed234d234a7",
+    "plan_sha256": "c1e1a8c820b0e2c3897e7574b600291ee392bc457ece04575db94d528d76551d",
+    "train_sha256": "e7644ddc9a49f717cb22aa34995dc239dbaf5d0cb6ba70d2c6460bcecf8d334a",
+    "validation_sha256": "0eb70fdb4c0ce682b29cdbd08729bf42f6ee40ed9114a1ee1031bffcb641a84b",
+    "tokenizer_sha256": "83d2094504d412ec39de1a0deedbacdb22fa3b6d7d3ea8c97f6cfcf94ba663be",
+    "model_sha256": "c02380bc508d22040fe14ac093366573f6836d2bfb864f1b3c9a824cf4463e54"
+  }
+}

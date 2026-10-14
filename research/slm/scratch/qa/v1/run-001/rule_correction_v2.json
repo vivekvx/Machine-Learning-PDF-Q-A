@@ -1,0 +1,44 @@
+{
+  "reason": "Original rule baseline matched target entity as a suffix of distractor entity; fixed on validation IDs only.",
+  "model_predictions_changed": false,
+  "original_evaluation_sha256": "8bc4c08e0d91e56db8c5f492ce8f7f298e87a1e17e24433e8a1b3b248eeeda1e",
+  "rule_source_sha256": "35210845c05e32ad7de434d22355b464b1af3e41783e9ba1ace3379f139b7145",
+  "scores": {
+    "validation": {
+      "count": 160,
+      "answerable_count": 80,
+      "unanswerable_count": 80,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "answerable_exact_match": 1.0,
+      "answerable_token_f1": 1.0,
+      "unanswerable_exact_marker_accuracy": 1.0,
+      "abstention_precision": 1.0,
+      "abstention_recall": 1.0,
+      "answerable_evidence_support": 1.0,
+      "latency_median_seconds": 3.5521050449460745e-05,
+      "latency_mean_seconds": 3.88396336347796e-05,
+      "truncated_count": 0
+    },
+    "test": {
+      "count": 160,
+      "answerable_count": 80,
+      "unanswerable_count": 80,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "answerable_exact_match": 1.0,
+      "answerable_token_f1": 1.0,
+      "unanswerable_exact_marker_accuracy": 1.0,
+      "abstention_precision": 1.0,
+      "abstention_recall": 1.0,
+      "answerable_evidence_support": 1.0,
+      "latency_median_seconds": 3.595848102122545e-05,
+      "latency_mean_seconds": 4.128570217289962e-05,
+      "truncated_count": 0
+    }
+  },
+  "prediction_file_sha256": {
+    "validation_rule_v2_predictions.jsonl": "4729d16575a074fe9f3cfd3f67c97b38c4ab6bc177545e873bd25e3ed1be955f",
+    "test_rule_v2_predictions.jsonl": "6672444fc45c2d05b9aa7ce1ccf4ba666d037c6ce4c5b9975ec4c26babb5a13e"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "entity_pool_sha256": {
+    "test": "65fc653df8fce1a2fc25545662774ba929fbae0e1e58b6c182f9891971eb2397",
+    "train": "a7e165ace7e1dc88b7d657bc7dc85973921aa147a60addaa3afa585625fa3629",
+    "validation": "47032a638fa2ee6b02397b759e42770b6799c93c1e080cc1a11211b73b681da6"
+  },
+  "families_by_split": {
+    "test": [
+      "inspection"
+    ],
+    "train": [
+      "manual",
+      "deployment",
+      "logbook",
+      "specification"
+    ],
+    "validation": [
+      "bulletin"
+    ]
+  },
+  "files_sha256": {
+    "config.json": "dcc4aa68b195be706271b25fb8df00dc98de51317fd56092f781b35fbd9b2dd4",
+    "test.sealed.jsonl": "5d125e0c1962f89adc0056cd6f986d5b3cb69e36be932447e7f368afc5e20bcf",
+    "tokenizer.json": "30c39795b07b7006e3b74685ab48bb8c04b6f4a156f5a59185010ddb7b3a0c36",
+    "train.jsonl": "83af9f500008737a315c8a022278bd635da6c7617d0d9785020a9a0a1ca8a04e",
+    "validation.jsonl": "0b77fcd829d907158afa019c5916e47c5e6b361e36b1a16e2d07fb0ac688b16a"
+  },
+  "rights": "original generated synthetic text; no third-party source",
+  "schema_version": 1,
+  "stats": {
+    "test": {
+      "answer_position_counts": {
+        "0": 60,
+        "1": 60,
+        "2": 60,
+        "3": 60
+      },
+      "answerable": 240,
+      "documents": 60,
+      "max_tokens": 169,
+      "mean_tokens": 151.94166666666666,
+      "min_tokens": 136,
+      "paraphrase_questions": 156,
+      "questions": 240
+    },
+    "train": {
+      "answer_position_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300
+      },
+      "answerable": 1200,
+      "documents": 300,
+      "max_tokens": 139,
+      "mean_tokens": 112.35333333333334,
+      "min_tokens": 95,
+      "paraphrase_questions": 820,
+      "questions": 1200
+    },
+    "validation": {
+      "answer_position_counts": {
+        "0": 60,
+        "1": 60,
+        "2": 60,
+        "3": 60
+      },
+      "answerable": 240,
+      "documents": 60,
+      "max_tokens": 182,
+      "mean_tokens": 161.94166666666666,
+      "min_tokens": 143,
+      "paraphrase_questions": 161,
+      "questions": 240
+    }
+  },
+  "test_sealed": true,
+  "tokenizer_fit_split": "train"
+}

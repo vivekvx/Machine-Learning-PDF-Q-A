@@ -1,0 +1,49 @@
+{
+  "gate": {
+    "minimum_examples": 200,
+    "minimum_answerable_exact_match": 0.6,
+    "minimum_unanswerable_accuracy": 0.8,
+    "minimum_answerable_span_support": 0.6
+  },
+  "metrics": {
+    "neural": {
+      "count": 240,
+      "answerable_count": 120,
+      "unanswerable_count": 120,
+      "exact_match": 0,
+      "token_f1": 0.0,
+      "answerable_exact_match": 0,
+      "answerable_token_f1": 0.0,
+      "answerable_span_support": 0,
+      "unanswerable_accuracy": 0,
+      "answerability_confusion_matrix": {
+        "true_answerable_predicted_answerable": 120,
+        "true_answerable_predicted_unanswerable": 0,
+        "true_unanswerable_predicted_answerable": 120,
+        "true_unanswerable_predicted_unanswerable": 0
+      },
+      "median_latency_seconds": 0.0029632290243171155,
+      "mean_latency_seconds": 0.0031632631920122853
+    },
+    "rule": {
+      "count": 240,
+      "answerable_count": 120,
+      "unanswerable_count": 120,
+      "exact_match": 1,
+      "token_f1": 1.0,
+      "answerable_exact_match": 1,
+      "answerable_token_f1": 1.0,
+      "answerable_span_support": 1,
+      "unanswerable_accuracy": 1,
+      "answerability_confusion_matrix": {
+        "true_answerable_predicted_answerable": 120,
+        "true_answerable_predicted_unanswerable": 0,
+        "true_unanswerable_predicted_answerable": 0,
+        "true_unanswerable_predicted_unanswerable": 120
+      }
+    }
+  },
+  "passed": false,
+  "checkpoint_step": 600,
+  "test_file_opened": false
+}

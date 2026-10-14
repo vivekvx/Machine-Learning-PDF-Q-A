@@ -1,0 +1,62 @@
+{
+  "status": "completed",
+  "completed_steps": 600,
+  "best_step": 300,
+  "best_validation": {
+    "loss": 1.6476312692277133,
+    "perplexity": 5.194660490189042,
+    "examples": 80
+  },
+  "initial": {
+    "step": 0,
+    "train": {
+      "loss": 7.180405758321285,
+      "perplexity": 1313.4410897896348,
+      "examples": 64
+    },
+    "validation": {
+      "loss": 6.854374754428863,
+      "perplexity": 948.0191992552144,
+      "examples": 80
+    }
+  },
+  "final": {
+    "step": 600,
+    "train": {
+      "loss": 0.6692044135052129,
+      "perplexity": 1.952683174126995,
+      "examples": 64
+    },
+    "validation": {
+      "loss": 1.7362034077988937,
+      "perplexity": 5.675753942225755,
+      "examples": 80
+    }
+  },
+  "checkpoint_steps": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600
+  ],
+  "restoration": {
+    "exact_model_tensors": 28,
+    "validation_loss_difference": 0.0,
+    "optimizer_step": 300
+  },
+  "peak_mlx_bytes": 44708524,
+  "parameter_count": 1082496,
+  "test_file_opened": false,
+  "provenance": {
+    "config_sha256": "339c63e16c780cff3d76662114f261fea196f181a454ad09ee3574ca548cfdc9",
+    "manifest_sha256": "7c15e9c382f88212575b11a408f8559636bc79d015226acbc068ca8b9b5783c9",
+    "plan_sha256": "16f0a56a150e7dfaf7bd75a8860dc3e62cac4d7f39c33626d197c1966989bf6f",
+    "model_sha256": "6f00eb7139e486d43c122bae92724addb1a57c59ca57edb6c8cefe6761bbb4d4",
+    "train_sha256": "77d20755fe24b3a3cc94086ec022397fa5da3f5c97b0e38c05de9782cc62f774",
+    "validation_sha256": "54ba5e2e408a1756faa3d070b55bd0a4b4db44adacedc014e1c9ba234db59483",
+    "tokenizer_sha256": "a5236b73dd1a345e707d993191d58efbc0ebddd3fe34581d926988bce9008e63"
+  },
+  "worker_wall_seconds": 18.97459133306984
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "checkpoint_step": 600,
+  "checkpoint_sha256": "32330b767307b1a22eb0d80570a419a32379bfdc13d6db9dc92cf3bf55f4f60e",
+  "config_sha256": "c76e3e012a32540a6638bf478be4645420e7f5cc9d1e2545d5d2f58a597c0c28",
+  "plan_sha256": "0a907cfd90132380094d30975274d0cba3282980aab7952d215dac84640e1a75",
+  "tokenizer_sha256": "390e8490f22f5172e5dd524d92b459bc74cedc83b52c6cefdd7642a323c78c5f",
+  "validation_gate_passed": false,
+  "results": {
+    "validation": {
+      "neural": {
+        "count": 240,
+        "answerable_count": 120,
+        "unanswerable_count": 120,
+        "exact_match": 0,
+        "token_f1": 0.0,
+        "answerable_exact_match": 0,
+        "answerable_token_f1": 0.0,
+        "answerable_span_support": 0,
+        "unanswerable_accuracy": 0,
+        "answerability_confusion_matrix": {
+          "true_answerable_predicted_answerable": 120,
+          "true_answerable_predicted_unanswerable": 0,
+          "true_unanswerable_predicted_answerable": 120,
+          "true_unanswerable_predicted_unanswerable": 0
+        },
+        "median_latency_seconds": 0.0029632290243171155,
+        "mean_latency_seconds": 0.0031632631920122853
+      },
+      "rule": {
+        "count": 240,
+        "answerable_count": 120,
+        "unanswerable_count": 120,
+        "exact_match": 1,
+        "token_f1": 1.0,
+        "answerable_exact_match": 1,
+        "answerable_token_f1": 1.0,
+        "answerable_span_support": 1,
+        "unanswerable_accuracy": 1,
+        "answerability_confusion_matrix": {
+          "true_answerable_predicted_answerable": 120,
+          "true_answerable_predicted_unanswerable": 0,
+          "true_unanswerable_predicted_answerable": 0,
+          "true_unanswerable_predicted_unanswerable": 120
+        }
+      }
+    },
+    "test": {
+      "neural": {
+        "count": 240,
+        "answerable_count": 120,
+        "unanswerable_count": 120,
+        "exact_match": 0.12916666666666668,
+        "token_f1": 0.13125,
+        "answerable_exact_match": 0.025,
+        "answerable_token_f1": 0.029166666666666667,
+        "answerable_span_support": 0.025,
+        "unanswerable_accuracy": 0.23333333333333334,
+        "answerability_confusion_matrix": {
+          "true_answerable_predicted_answerable": 98,
+          "true_answerable_predicted_unanswerable": 22,
+          "true_unanswerable_predicted_answerable": 92,
+          "true_unanswerable_predicted_unanswerable": 28
+        },
+        "median_latency_seconds": 0.0027770415181294084,
+        "mean_latency_seconds": 0.0026191003858305824
+      },
+      "rule": {
+        "count": 240,
+        "answerable_count": 120,
+        "unanswerable_count": 120,
+        "exact_match": 1,
+        "token_f1": 1.0,
+        "answerable_exact_match": 1,
+        "answerable_token_f1": 1.0,
+        "answerable_span_support": 1,
+        "unanswerable_accuracy": 1,
+        "answerability_confusion_matrix": {
+          "true_answerable_predicted_answerable": 120,
+          "true_answerable_predicted_unanswerable": 0,
+          "true_unanswerable_predicted_answerable": 0,
+          "true_unanswerable_predicted_unanswerable": 120
+        }
+      }
+    }
+  },
+  "peak_mlx_bytes": 19852006,
+  "prediction_file_sha256": {
+    "test_neural_predictions.jsonl": "f9950ae508ed8645962d5645133db5b67862272d0ad07140c9364521b91c68db",
+    "validation_rule_predictions.jsonl": "03ce0ebde2fde5cb72854acf1e931b8dd82bbee1c3983efd6339d9e1ee8cc013",
+    "test_rule_predictions.jsonl": "e1f23efcd16ce1fd5049e25eb4d710bb5a8a74d533acc4c9229966ea13910bca",
+    "validation_neural_predictions.jsonl": "e81e95234cfc570dfd0627d203ab4470861a023c6fab0e087ed8df8335dbc34b"
+  }
+}

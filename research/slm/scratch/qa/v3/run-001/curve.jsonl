@@ -1,0 +1,9 @@
+{"step": 0, "train": {"loss": 7.293335698544979, "perplexity": 1470.467561937926, "examples": 64}, "validation": {"loss": 6.949349588155746, "perplexity": 1042.4714718386538, "examples": 80}}
+{"step": 100, "train": {"loss": 1.9316661292687058, "perplexity": 6.90099862414943, "examples": 64}, "validation": {"loss": 2.0728374484926464, "perplexity": 7.94734132728137, "examples": 80}}
+{"step": 200, "train": {"loss": 1.820249944459647, "perplexity": 6.173401264509779, "examples": 64}, "validation": {"loss": 2.0113689314574, "perplexity": 7.473541113433434, "examples": 80}}
+{"step": 300, "train": {"loss": 1.707567566074431, "perplexity": 5.5155289875979285, "examples": 64}, "validation": {"loss": 1.8471588904038072, "perplexity": 6.3417762219603935, "examples": 80}}
+{"step": 400, "train": {"loss": 1.6140912589617074, "perplexity": 5.023320950788793, "examples": 64}, "validation": {"loss": 1.8395839624106884, "perplexity": 6.293919209277297, "examples": 80}}
+{"step": 500, "train": {"loss": 1.5648129540495574, "perplexity": 4.781780439574791, "examples": 64}, "validation": {"loss": 1.8429465122520923, "perplexity": 6.315118448090292, "examples": 80}}
+{"step": 600, "train": {"loss": 1.5106373156886548, "perplexity": 4.529616670377151, "examples": 64}, "validation": {"loss": 1.8392849892377854, "perplexity": 6.292037777544125, "examples": 80}}
+{"step": 700, "train": {"loss": 1.4326652772724628, "perplexity": 4.189851439221715, "examples": 64}, "validation": {"loss": 1.7907785905525089, "perplexity": 5.994117613372157, "examples": 80}}
+{"step": 800, "train": {"loss": 1.3743180987075903, "perplexity": 3.952380670316985, "examples": 64}, "validation": {"loss": 1.8706177856773138, "perplexity": 6.492306014286191, "examples": 80}}

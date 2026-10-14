@@ -1,0 +1,381 @@
+{
+  "status": "completed",
+  "preflight": {
+    "ready": true,
+    "reasons": [],
+    "resources": {
+      "timestamp": 1791960116.852767,
+      "available_bytes": 1585037312,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473070567424,
+      "swap_out_total_bytes": 290722545664,
+      "memory_pressure_free_percent": 39,
+      "process_rss_bytes": null,
+      "disk_free_bytes": 56235827200
+    },
+    "initial_resources": {
+      "timestamp": 1791960115.843752,
+      "available_bytes": 1610776576,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473053085696,
+      "swap_out_total_bytes": 290722545664,
+      "memory_pressure_free_percent": 39,
+      "process_rss_bytes": null,
+      "disk_free_bytes": 56235835392
+    },
+    "sample_window_seconds": 1.0090150833129883,
+    "allocated_swap_free_is_fixed_limit": false,
+    "disk_free_bytes": 56235827200,
+    "hardware": {
+      "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "total_memory_bytes": 8589934592
+    },
+    "environment": {
+      "python": "3.14.6",
+      "mlx": "0.32.3",
+      "mlx-metal": "0.32.3",
+      "psutil": "7.1.0"
+    },
+    "config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+    "data_manifest_sha256": "0234bee367ea47189d94ff9be00a42184054525ec3374f6bdfec2c5170d7aa04",
+    "safety": {
+      "min_preflight_available_bytes": 1200000000,
+      "min_preflight_swap_free_bytes": 750000000,
+      "min_preflight_pressure_free_percent": 20,
+      "min_preflight_disk_free_bytes": 1000000000,
+      "stop_available_bytes": 700000000,
+      "stop_swap_free_bytes": 400000000,
+      "stop_swap_growth_bytes": 600000000,
+      "stop_process_rss_bytes": 2500000000,
+      "stop_pressure_free_percent": 10,
+      "smoke_timeout_seconds": 180,
+      "overfit_timeout_seconds": 240
+    }
+  },
+  "snapshots": [
+    {
+      "timestamp": 1791960116.889924,
+      "available_bytes": 1599242240,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473071124480,
+      "swap_out_total_bytes": 290722545664,
+      "memory_pressure_free_percent": 39,
+      "process_rss_bytes": 671744,
+      "disk_free_bytes": 56235810816
+    },
+    {
+      "timestamp": 1791960117.3991702,
+      "available_bytes": 1599242240,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473071124480,
+      "swap_out_total_bytes": 290722545664,
+      "memory_pressure_free_percent": 31,
+      "process_rss_bytes": 60866560,
+      "disk_free_bytes": 56235765760
+    },
+    {
+      "timestamp": 1791960117.904444,
+      "available_bytes": 1250508800,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473082544128,
+      "swap_out_total_bytes": 290722562048,
+      "memory_pressure_free_percent": 30,
+      "process_rss_bytes": 58818560,
+      "disk_free_bytes": 56235757568
+    },
+    {
+      "timestamp": 1791960118.413414,
+      "available_bytes": 1254866944,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473088081920,
+      "swap_out_total_bytes": 290722562048,
+      "memory_pressure_free_percent": 30,
+      "process_rss_bytes": 58867712,
+      "disk_free_bytes": 56235745280
+    },
+    {
+      "timestamp": 1791960118.921124,
+      "available_bytes": 1268531200,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473128435712,
+      "swap_out_total_bytes": 290722562048,
+      "memory_pressure_free_percent": 30,
+      "process_rss_bytes": 56131584,
+      "disk_free_bytes": 56235724800
+    },
+    {
+      "timestamp": 1791960119.42964,
+      "available_bytes": 1207975936,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473215451136,
+      "swap_out_total_bytes": 290722693120,
+      "memory_pressure_free_percent": 29,
+      "process_rss_bytes": 56147968,
+      "disk_free_bytes": 56235712512
+    },
+    {
+      "timestamp": 1791960119.9352572,
+      "available_bytes": 1207713792,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473215926272,
+      "swap_out_total_bytes": 290722693120,
+      "memory_pressure_free_percent": 29,
+      "process_rss_bytes": 56147968,
+      "disk_free_bytes": 56235708416
+    },
+    {
+      "timestamp": 1791960120.440521,
+      "available_bytes": 1225736192,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473222791168,
+      "swap_out_total_bytes": 290722955264,
+      "memory_pressure_free_percent": 29,
+      "process_rss_bytes": 56164352,
+      "disk_free_bytes": 56235687936
+    },
+    {
+      "timestamp": 1791960120.951297,
+      "available_bytes": 1194311680,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473223528448,
+      "swap_out_total_bytes": 290722955264,
+      "memory_pressure_free_percent": 28,
+      "process_rss_bytes": 56082432,
+      "disk_free_bytes": 56235675648
+    },
+    {
+      "timestamp": 1791960121.460738,
+      "available_bytes": 1200947200,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473229737984,
+      "swap_out_total_bytes": 290722988032,
+      "memory_pressure_free_percent": 29,
+      "process_rss_bytes": 56082432,
+      "disk_free_bytes": 56235642880
+    },
+    {
+      "timestamp": 1791960121.9694378,
+      "available_bytes": 1237450752,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473256476672,
+      "swap_out_total_bytes": 290723053568,
+      "memory_pressure_free_percent": 30,
+      "process_rss_bytes": 55558144,
+      "disk_free_bytes": 56235606016
+    },
+    {
+      "timestamp": 1791960122.4790962,
+      "available_bytes": 1210580992,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473257721856,
+      "swap_out_total_bytes": 290723119104,
+      "memory_pressure_free_percent": 29,
+      "process_rss_bytes": 45170688,
+      "disk_free_bytes": 56235585536
+    },
+    {
+      "timestamp": 1791960122.989155,
+      "available_bytes": 1273380864,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473259360256,
+      "swap_out_total_bytes": 290723119104,
+      "memory_pressure_free_percent": 31,
+      "process_rss_bytes": 45203456,
+      "disk_free_bytes": 56235515904
+    },
+    {
+      "timestamp": 1791960123.498029,
+      "available_bytes": 1290518528,
+      "swap_allocated_total_bytes": 7516192768,
+      "swap_used_bytes": 5730205696,
+      "swap_free_bytes": 1785987072,
+      "swap_in_total_bytes": 4473259491328,
+      "swap_out_total_bytes": 290723119104,
+      "memory_pressure_free_percent": 31,
+      "process_rss_bytes": 45219840,
+      "disk_free_bytes": 56235511808
+    }
+  ],
+  "plan_sha256": "093db14daefd554e5786a2de96d95f3828decda15c2656167fb5e109e8d2b366",
+  "exit_code": 0,
+  "wall_seconds": 7.1190378330647945,
+  "after": {
+    "timestamp": 1791960124.006912,
+    "available_bytes": 1783169024,
+    "swap_allocated_total_bytes": 7516192768,
+    "swap_used_bytes": 5730205696,
+    "swap_free_bytes": 1785987072,
+    "swap_in_total_bytes": 4473262669824,
+    "swap_out_total_bytes": 290723119104,
+    "memory_pressure_free_percent": 37,
+    "process_rss_bytes": null,
+    "disk_free_bytes": 56235503616
+  },
+  "completed_steps": 300,
+  "tokens_processed": 44688,
+  "tokens_per_second": 9131.215565577544,
+  "mean_step_seconds": 0.01631327164825052,
+  "peak_worker_rss_bytes": 60866560,
+  "minimum_available_bytes": 1194311680,
+  "minimum_pressure_free_percent": 28,
+  "maximum_swap_used_growth_bytes": 0,
+  "maximum_swap_out_growth_bytes": 573440,
+  "minimum_disk_free_bytes": 56235511808,
+  "worker_result": {
+    "status": "tiny_failed",
+    "steps": 300,
+    "best_step": null,
+    "initial": {
+      "step": 0,
+      "train": {
+        "nll": 1.3899307996034622,
+        "exact": 0.0,
+        "paraphrase_exact": 0.0,
+        "copy_support": 1.0,
+        "question_changed_doc_fraction": 1.0,
+        "groups": {
+          "all": {
+            "correct": 0,
+            "count": 8,
+            "accuracy": 0.0
+          },
+          "direct": {
+            "correct": 0,
+            "count": 4,
+            "accuracy": 0.0
+          },
+          "metric": {
+            "correct": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "copy": {
+            "correct": 8,
+            "count": 8,
+            "accuracy": 1.0
+          },
+          "paraphrase": {
+            "correct": 0,
+            "count": 4,
+            "accuracy": 0.0
+          },
+          "capacity": {
+            "correct": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "method": {
+            "correct": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "owner": {
+            "correct": 0,
+            "count": 2,
+            "accuracy": 0.0
+          }
+        }
+      }
+    },
+    "final": {
+      "step": 300,
+      "train": {
+        "nll": 1.3862939327955246,
+        "exact": 0.625,
+        "paraphrase_exact": 0.75,
+        "copy_support": 1.0,
+        "question_changed_doc_fraction": 1.0,
+        "groups": {
+          "all": {
+            "correct": 5,
+            "count": 8,
+            "accuracy": 0.625
+          },
+          "direct": {
+            "correct": 2,
+            "count": 4,
+            "accuracy": 0.5
+          },
+          "metric": {
+            "correct": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "copy": {
+            "correct": 8,
+            "count": 8,
+            "accuracy": 1.0
+          },
+          "paraphrase": {
+            "correct": 3,
+            "count": 4,
+            "accuracy": 0.75
+          },
+          "capacity": {
+            "correct": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "method": {
+            "correct": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "owner": {
+            "correct": 2,
+            "count": 2,
+            "accuracy": 1.0
+          }
+        }
+      }
+    },
+    "best": null,
+    "restoration": null,
+    "parameter_count": 1009153,
+    "peak_mlx_bytes": 37224779,
+    "worker_wall_seconds": 6.806898042093962,
+    "test_file_opened": false,
+    "provenance": {
+      "config_sha256": "dcc4aa68b195be706271b25fb8df00dc98de51317fd56092f781b35fbd9b2dd4",
+      "manifest_sha256": "50fb590d826999b209620d51a3bdfc746f18d3599b60e17cde8740bdedb58edf",
+      "train_sha256": "83af9f500008737a315c8a022278bd635da6c7617d0d9785020a9a0a1ca8a04e",
+      "validation_sha256": "0b77fcd829d907158afa019c5916e47c5e6b361e36b1a16e2d07fb0ac688b16a",
+      "tokenizer_sha256": "30c39795b07b7006e3b74685ab48bb8c04b6f4a156f5a59185010ddb7b3a0c36",
+      "model_sha256": "49faa851e508d6414803f978d2a740e7ce5a7136fa0a11b2c12083b40bd3de66",
+      "prepare_sha256": "da3e11ed16033c1abadca3ed4102165114fb64da585bbeb192ccf12ee65b965b",
+      "shared_encoder_sha256": "531f54300eb7fb0e5abe08975f04ff66a8843b5531535d7de469e4a4aa63a86f",
+      "plan_sha256": "093db14daefd554e5786a2de96d95f3828decda15c2656167fb5e109e8d2b366"
+    }
+  }
+}

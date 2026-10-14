@@ -1,0 +1,68 @@
+{
+  "status": "completed",
+  "completed_steps": 1200,
+  "best_step": 600,
+  "initial": {
+    "step": 0,
+    "train": {
+      "joint_loss": 2.9135223453243575,
+      "examples": 96,
+      "answerable_joint_loss": 5.149645417928696,
+      "unanswerable_joint_loss": 0.677399272720019
+    },
+    "validation": {
+      "joint_loss": 3.173648833607634,
+      "examples": 96,
+      "answerable_joint_loss": 5.654586672782898,
+      "unanswerable_joint_loss": 0.6927109944323698
+    }
+  },
+  "best": {
+    "step": 600,
+    "train": {
+      "joint_loss": 1.599663432687521,
+      "examples": 96,
+      "answerable_joint_loss": 2.510841282705466,
+      "unanswerable_joint_loss": 0.688485582669576
+    },
+    "validation": {
+      "joint_loss": 3.0387287816653648,
+      "examples": 96,
+      "answerable_joint_loss": 5.3770087013642,
+      "unanswerable_joint_loss": 0.7004488619665304
+    }
+  },
+  "final": {
+    "step": 1200,
+    "train": {
+      "joint_loss": 1.5108299708614747,
+      "examples": 96,
+      "answerable_joint_loss": 2.3322885831197104,
+      "unanswerable_joint_loss": 0.6893713586032391
+    },
+    "validation": {
+      "joint_loss": 3.3773324427505336,
+      "examples": 96,
+      "answerable_joint_loss": 6.058912098407745,
+      "unanswerable_joint_loss": 0.6957527870933214
+    }
+  },
+  "restoration": {
+    "exact_model_tensors": 33,
+    "validation_loss_difference": 0.0,
+    "optimizer_step": 600
+  },
+  "parameter_count": 951811,
+  "peak_mlx_bytes": 41765421,
+  "test_file_opened": false,
+  "provenance": {
+    "config_sha256": "c76e3e012a32540a6638bf478be4645420e7f5cc9d1e2545d5d2f58a597c0c28",
+    "manifest_sha256": "66b0e47b5dba010c2ca01564ef46d605a680d2d88bad8ff6a4f759de6fc1320f",
+    "plan_sha256": "0a907cfd90132380094d30975274d0cba3282980aab7952d215dac84640e1a75",
+    "train_sha256": "c7e739f8c95de7de46bc321fcfac15f7d2706b2596fa10f69a55ff2614f0d2cd",
+    "validation_sha256": "056f67c3ee591fa98ca8a3003e3b70c1666f0b39b64ee9fff48486f9df63b505",
+    "tokenizer_sha256": "390e8490f22f5172e5dd524d92b459bc74cedc83b52c6cefdd7642a323c78c5f",
+    "model_sha256": "be8c262aa8abccd504032e084527b9ab00d6560e8b918f08204bb163a030e3cb"
+  },
+  "worker_wall_seconds": 22.749651958001778
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "source_checkpoint_sha256": "d6c828a1680b3a751eb2db46156ccf8ea4548bb9230b35026da5babed38d6208",
+  "source_config_sha256": "f5ad8e3cbf78a2ae560e446e9d3756063ecfe150c9fd5d85988c2efbdd69157b",
+  "source_validation_sha256": "3475a8997f2cf12b13270fda65cf2b609014e5d116e12425201138897ad78327",
+  "test_files_opened": false,
+  "marker_token_ids": [
+    376
+  ],
+  "split_category_summary": {
+    "train": {
+      "answerable": {
+        "gold_first_probability": {
+          "mean": 0.04576658531727617,
+          "min": 7.288482720468892e-06,
+          "max": 0.1092548593878746
+        },
+        "marker_first_probability": {
+          "mean": 0.2617691357868413,
+          "min": 0.026849165558815002,
+          "max": 0.6552841663360596
+        },
+        "gold_first_argmax": {
+          "mean": 0.01,
+          "min": 0,
+          "max": 1
+        },
+        "marker_first_argmax": {
+          "mean": 0.93,
+          "min": 0,
+          "max": 1
+        },
+        "gold_answer_token_ce": {
+          "mean": 2.393522961669498,
+          "min": 1.218779444694519,
+          "max": 7.463838577270508
+        },
+        "first_token_ce": {
+          "mean": 4.276842866738638,
+          "min": 2.214071750640869,
+          "max": 11.829215049743652
+        },
+        "prefix_tokens": {
+          "mean": 80.025,
+          "min": 70,
+          "max": 92
+        },
+        "answer_tokens_including_eos": {
+          "mean": 3.26,
+          "min": 2,
+          "max": 5
+        },
+        "mask_nonzero_positions": {
+          "mean": 3.26,
+          "min": 2,
+          "max": 5
+        },
+        "count": 600
+      },
+      "unanswerable": {
+        "gold_first_probability": {
+          "mean": 0.5425800422703226,
+          "min": 0.11281940340995789,
+          "max": 0.6697333455085754
+        },
+        "marker_first_probability": {
+          "mean": 0.5425800422703226,
+          "min": 0.11281940340995789,
+          "max": 0.6697333455085754
+        },
+        "gold_first_argmax": {
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "marker_first_argmax": {
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "gold_answer_token_ce": {
+          "mean": 0.33484700962901115,
+          "min": 0.2031262367963791,
+          "max": 1.093514323234558
+        },
+        "first_token_ce": {
+          "mean": 0.6644600015381972,
+          "min": 0.40087559819221497,
+          "max": 2.18196702003479
+        },
+        "prefix_tokens": {
+          "mean": 72.08333333333333,
+          "min": 64,
+          "max": 80
+        },
+        "answer_tokens_including_eos": {
+          "mean": 2,
+          "min": 2,
+          "max": 2
+        },
+        "mask_nonzero_positions": {
+          "mean": 2,
+          "min": 2,
+          "max": 2
+        },
+        "count": 600
+      }
+    },
+    "validation": {
+      "answerable": {
+        "gold_first_probability": {
+          "mean": 0.04309555678878496,
+          "min": 3.0285653338069096e-05,
+          "max": 0.1013474240899086
+        },
+        "marker_first_probability": {
+          "mean": 0.3986916817724705,
+          "min": 0.2616369128227234,
+          "max": 0.623672604560852
+        },
+        "gold_first_argmax": {
+          "mean": 0,
+          "min": 0,
+          "max": 0
+        },
+        "marker_first_argmax": {
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "gold_answer_token_ce": {
+          "mean": 3.089284383157889,
+          "min": 1.2369375228881836,
+          "max": 7.430138905843099
+        },
+        "first_token_ce": {
+          "mean": 4.713972988724708,
+          "min": 2.289200782775879,
+          "max": 10.404836654663086
+        },
+        "prefix_tokens": {
+          "mean": 149.85,
+          "min": 143,
+          "max": 156
+        },
+        "answer_tokens_including_eos": {
+          "mean": 3.6125,
+          "min": 2,
+          "max": 6
+        },
+        "mask_nonzero_positions": {
+          "mean": 3.6125,
+          "min": 2,
+          "max": 6
+        },
+        "count": 80
+      },
+      "unanswerable": {
+        "gold_first_probability": {
+          "mean": 0.4049718290567398,
+          "min": 0.26925650238990784,
+          "max": 0.6370106339454651
+        },
+        "marker_first_probability": {
+          "mean": 0.4049718290567398,
+          "min": 0.26925650238990784,
+          "max": 0.6370106339454651
+        },
+        "gold_first_argmax": {
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "marker_first_argmax": {
+          "mean": 1,
+          "min": 1,
+          "max": 1
+        },
+        "gold_answer_token_ce": {
+          "mean": 0.46191746797412636,
+          "min": 0.22801071405410767,
+          "max": 0.6585771441459656
+        },
+        "first_token_ce": {
+          "mean": 0.9187854483723641,
+          "min": 0.4509688913822174,
+          "max": 1.3120907545089722
+        },
+        "prefix_tokens": {
+          "mean": 141.725,
+          "min": 134,
+          "max": 151
+        },
+        "answer_tokens_including_eos": {
+          "mean": 2,
+          "min": 2,
+          "max": 2
+        },
+        "mask_nonzero_positions": {
+          "mean": 2,
+          "min": 2,
+          "max": 2
+        },
+        "count": 80
+      }
+    }
+  },
+  "frozen_validation_decoding": {
+    "count": 160,
+    "exact_marker_predictions": 160,
+    "truncated_predictions": 0,
+    "generated_token_mean": 1,
+    "maximum_generation_tokens": 16
+  },
+  "interpretation_limit": "Probabilities and losses are observational diagnostics; no weights or data were changed."
+}

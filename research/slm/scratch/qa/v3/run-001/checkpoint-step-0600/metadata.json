@@ -1,0 +1,19 @@
+{
+  "file_sha256": {
+    "adamw.safetensors": "6b71ebb6d67e2c8d4692ce04151a4055fd437f26161ccf1f72ef3547329b8d79",
+    "model.safetensors": "c1ea580ebb34ba8380e24064c20ff4183cac1148ae518de2000256600e4493a6"
+  },
+  "parameter_count": 1082496,
+  "provenance": {
+    "config_sha256": "f5ad8e3cbf78a2ae560e446e9d3756063ecfe150c9fd5d85988c2efbdd69157b",
+    "manifest_sha256": "338a9f9ad4bcd525da42572fc02c9c6ed97c4deb3a858cc6cecdc05611530438",
+    "model_sha256": "6f00eb7139e486d43c122bae92724addb1a57c59ca57edb6c8cefe6761bbb4d4",
+    "plan_sha256": "12daf0c5515ee3d311b34ea3e419cb91c2f7f0482655c38139da1b1506e21aae",
+    "tokenizer_sha256": "0f265602e342642e58df2fac359213a541ee4b5dfccd7ccc141772aef3633c7a",
+    "train_sha256": "ad5f06caaa4ec30a8a4bb662c130288d17f364cf7739ddf355b1cc866e5b420a",
+    "validation_sha256": "3475a8997f2cf12b13270fda65cf2b609014e5d116e12425201138897ad78327"
+  },
+  "sample_cursor": 600,
+  "schema_version": 1,
+  "step": 600
+}

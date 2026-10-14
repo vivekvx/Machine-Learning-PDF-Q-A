@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "experiment": "separate_frozen_pointer_answerability_head",
+  "seed": 20261014,
+  "source_pointer_selection": "../../v2/validation/pointer_selection.json",
+  "source_splits": ["train", "validation"],
+  "synthetic_only": true,
+  "categories": ["wrong_entity", "wrong_field", "missing_fact", "contradiction"],
+  "training": {"optimizer": "AdamW", "learning_rate": 0.001,
+               "weight_decay": 0.01, "batch_size": 1,
+               "hidden_dim": 64, "maximum_full_input_tokens": 240,
+               "steps_cap": 1200, "evaluation_interval_steps": 150,
+               "minimum_steps_before_early_stop": 600,
+               "early_stop_patience_evaluations": 3,
+               "wall_seconds_cap": 180,
+               "calibration_validation_documents": 20,
+               "assessment_validation_documents": 40,
+               "threshold_grid": [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95]},
+  "validation_gate": {"supported_accuracy": 0.70, "unsupported_rejection": 0.70},
+  "test_policy": "sealed until pointer and classifier full validation gates pass",
+  "resource_guards": "reuse unchanged scratch/run.py preflight and live guard_reasons"
+}

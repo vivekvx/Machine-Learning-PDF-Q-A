@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment": "slma-candidate-reader-original-synthetic-qa",
+  "seed": 20261014,
+  "synthetic_only": true,
+  "families_by_split": {
+    "train": ["manual", "deployment", "logbook", "specification"],
+    "validation": ["bulletin"],
+    "test": ["inspection"]
+  },
+  "examples_per_family": {"train": 600, "validation": 320, "test": 320},
+  "tiers": ["single_fact", "numeric", "multi_entity", "paraphrase_conflict"],
+  "tokenizer_target_size": 1024,
+  "model": {"layers": 4, "embedding_dim": 128, "attention_heads": 4,
+            "context_length": 256, "feed_forward_multiplier": 4,
+            "normalization_epsilon": 0.00001},
+  "training": {
+    "optimizer": "AdamW", "learning_rate": 0.001, "weight_decay": 0.01,
+    "batch_size": 1, "gradient_clip_l2": 1.0,
+    "maximum_sequence_length": 192,
+    "tiny_examples": 8, "tiny_optimizer_steps_cap": 400,
+    "tiny_evaluation_interval_steps": 20,
+    "tiny_pass_exact": 8,
+    "main_optimizer_steps_cap": 3000,
+    "main_evaluation_interval_steps": 250,
+    "main_checkpoint_interval_steps": 250,
+    "fixed_train_examples": 80,
+    "fixed_validation_examples": 160,
+    "early_stop_patience_evaluations": 4,
+    "minimum_steps_before_early_stop": 1000,
+    "tiny_wall_time_cap_seconds": 120,
+    "main_wall_time_cap_seconds": 300,
+    "total_optimizer_step_cap": 3400,
+    "total_wall_time_cap_seconds": 420
+  },
+  "checkpoint_selection": "maximum balanced validation QA accuracy, then lower validation NLL, then earliest step",
+  "validation_gate": {"minimum_examples": 320, "answerable_exact_match": 0.70,
+                      "unanswerable_accuracy": 0.70,
+                      "minimum_harder_subset_exact_match": 0.10,
+                      "required_span_support_rate": 1.0},
+  "test_policy": "test sealed until tiny passes, main checkpoint and inference protocol frozen, and validation gate computed",
+  "resource_guards": "reuse scratch/run.py preflight and live guard_reasons unchanged"
+}

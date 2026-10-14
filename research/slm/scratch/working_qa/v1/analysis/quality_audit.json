@@ -1,0 +1,30 @@
+{
+  "train_count": 2400,
+  "validation_count": 320,
+  "train_unique_fact_ids": 2400,
+  "validation_unique_fact_ids": 320,
+  "shared_fact_ids": 0,
+  "shared_entity_names": 0,
+  "shared_exact_passage_question": 0,
+  "train_structural_signatures": 336,
+  "validation_structural_signatures": 149,
+  "validation_signatures_seen_in_train": 142,
+  "validation_rows_with_seen_structure": 311,
+  "answerability_by_candidate_count_train": {
+    "1": {
+      "False": 300,
+      "True": 300
+    },
+    "2": {
+      "True": 300,
+      "False": 300
+    },
+    "4": {
+      "False": 600,
+      "True": 600
+    }
+  },
+  "train_sha256": "e7644ddc9a49f717cb22aa34995dc239dbaf5d0cb6ba70d2c6460bcecf8d334a",
+  "validation_sha256": "0eb70fdb4c0ce682b29cdbd08729bf42f6ee40ed9114a1ee1031bffcb641a84b",
+  "test_file_opened": false
+}

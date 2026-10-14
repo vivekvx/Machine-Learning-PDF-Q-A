@@ -1,0 +1,9 @@
+{
+  "pointer_gate_passed": true,
+  "checkpoint_step": 2000,
+  "checkpoint_sha256": "75d4ca2edaa7ea243017e58d8950e7ad2d1ed0942a695d3c5ca156f19c9e2c3d",
+  "validation_predictions_sha256": "f6367ad749b4a060ecb01f76c3238f4bbf5ea5cf05a3ea0d05016975ec807132",
+  "dataset_manifest_sha256": "50fb590d826999b209620d51a3bdfc746f18d3599b60e17cde8740bdedb58edf",
+  "tokenizer_sha256": "30c39795b07b7006e3b74685ab48bb8c04b6f4a156f5a59185010ddb7b3a0c36",
+  "inference_protocol": "four bracketed source-value spans; neural argmax without NULL; exact character-span copy"
+}

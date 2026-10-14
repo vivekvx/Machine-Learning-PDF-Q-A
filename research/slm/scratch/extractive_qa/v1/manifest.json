@@ -1,0 +1,57 @@
+{
+  "file_sha256": {
+    "config.json": "c76e3e012a32540a6638bf478be4645420e7f5cc9d1e2545d5d2f58a597c0c28",
+    "test.sealed.jsonl": "418ce120ace632804fb2e6662b4ce4c28e8e8a25d26ea6ad66c812d7207b8f43",
+    "tokenizer.json": "390e8490f22f5172e5dd524d92b459bc74cedc83b52c6cefdd7642a323c78c5f",
+    "train.jsonl": "c7e739f8c95de7de46bc321fcfac15f7d2706b2596fa10f69a55ff2614f0d2cd",
+    "validation.jsonl": "056f67c3ee591fa98ca8a3003e3b70c1666f0b39b64ee9fff48486f9df63b505"
+  },
+  "schema_version": 1,
+  "source": "original deterministic synthetic technical templates; no external content",
+  "split_families": {
+    "test": [
+      "inspection_card"
+    ],
+    "train": [
+      "service_record",
+      "deployment_sheet",
+      "operator_log"
+    ],
+    "validation": [
+      "maintenance_bulletin"
+    ]
+  },
+  "split_ids_sha256": {
+    "test": "38e983f9278490c0d3067f82ff4e2f6e8ee70b571a1344ff4c40d366a45721ea",
+    "train": "5457a17eafe080543e5ec06b6757755a1006e530942db719a0af150a7807e7be",
+    "validation": "cc247ea8bc21b856046dc973c4b707dde3af688468ee3f66708301fbfd97b5f9"
+  },
+  "stats": {
+    "test": {
+      "answerable": 120,
+      "count": 240,
+      "max_tokens": 131,
+      "mean_tokens": 126.35833333333333,
+      "min_tokens": 121,
+      "unanswerable": 120
+    },
+    "train": {
+      "answerable": 900,
+      "count": 1800,
+      "max_tokens": 103,
+      "mean_tokens": 97.14888888888889,
+      "min_tokens": 92,
+      "unanswerable": 900
+    },
+    "validation": {
+      "answerable": 120,
+      "count": 240,
+      "max_tokens": 139,
+      "mean_tokens": 134.175,
+      "min_tokens": 129,
+      "unanswerable": 120
+    }
+  },
+  "test_sealed_for_selection": true,
+  "tokenizer_fit_split": "train"
+}

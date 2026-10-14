@@ -1,0 +1,57 @@
+{
+  "ready": true,
+  "reasons": [],
+  "resources": {
+    "timestamp": 1791795186.062052,
+    "available_bytes": 1498152960,
+    "swap_allocated_total_bytes": 8589934592,
+    "swap_used_bytes": 6946291712,
+    "swap_free_bytes": 1643642880,
+    "swap_in_total_bytes": 3824880844800,
+    "swap_out_total_bytes": 268158124032,
+    "memory_pressure_free_percent": 36,
+    "process_rss_bytes": null,
+    "disk_free_bytes": 15826767872
+  },
+  "initial_resources": {
+    "timestamp": 1791795185.052185,
+    "available_bytes": 1454260224,
+    "swap_allocated_total_bytes": 8589934592,
+    "swap_used_bytes": 6946291712,
+    "swap_free_bytes": 1643642880,
+    "swap_in_total_bytes": 3824880533504,
+    "swap_out_total_bytes": 268158107648,
+    "memory_pressure_free_percent": 35,
+    "process_rss_bytes": null,
+    "disk_free_bytes": 15843811328
+  },
+  "sample_window_seconds": 1.0098669528961182,
+  "allocated_swap_free_is_fixed_limit": false,
+  "disk_free_bytes": 15826767872,
+  "hardware": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "total_memory_bytes": 8589934592
+  },
+  "environment": {
+    "python": "3.14.6",
+    "mlx": "0.32.3",
+    "mlx-metal": "0.32.3",
+    "psutil": "7.1.0"
+  },
+  "config_sha256": "2882cf15f702719608d597050640d6d5fd75be73570b62e4ce51b7aa99501998",
+  "data_manifest_sha256": "0234bee367ea47189d94ff9be00a42184054525ec3374f6bdfec2c5170d7aa04",
+  "safety": {
+    "min_preflight_available_bytes": 1200000000,
+    "min_preflight_swap_free_bytes": 750000000,
+    "min_preflight_pressure_free_percent": 20,
+    "min_preflight_disk_free_bytes": 1000000000,
+    "stop_available_bytes": 700000000,
+    "stop_swap_free_bytes": 400000000,
+    "stop_swap_growth_bytes": 600000000,
+    "stop_process_rss_bytes": 2500000000,
+    "stop_pressure_free_percent": 10,
+    "smoke_timeout_seconds": 180,
+    "overfit_timeout_seconds": 240
+  }
+}
