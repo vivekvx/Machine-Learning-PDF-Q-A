@@ -1,0 +1,97 @@
+{
+  "source_url": "https://huggingface.co/datasets/allenai/qasper",
+  "source_revision": "fdc9d8214fbab5dd782958601db4d678e6934a54",
+  "parquet_revision": "06806e4608976fc2fac0a090ac425d5b2b29caf4",
+  "source_sha256": {
+    "train": "9af08092ee26c4f700202c1f90d1592b662926f23f3a308a10ff0a53345e37fe",
+    "validation": "089781b91c337d348dd9e8b57cc8adc100ed2d9cab84a6127402bcccf1559222",
+    "test": "206d05a86672dc330a47de4ff95eb0042d5ce0c74a84885bc3d15c36ae67b86e"
+  },
+  "license": {
+    "dataset": "CC BY 4.0",
+    "source": "https://huggingface.co/datasets/allenai/qasper/blob/fdc9d8214fbab5dd782958601db4d678e6934a54/README.md",
+    "underlying_paper_rights": "not individually established"
+  },
+  "rules": {
+    "document_filter": "title/abstract only; no subject metadata in published Parquet",
+    "medical_domain_regex": "\\b(?:biomed(?:ical)?|medical|medicine|clinical|clinician|health(?:care)?|hospital|patients?|diseases?|cancer|tumou?rs?|pharmac(?:eutical|ology)|drugs?|psychiatr(?:y|ic)|epidem(?:ic|iology)|covid|coronavirus|sars|vaccines?|surgery|radiolog(?:y|ical)|genom(?:e|ic)|genetic|proteins?|diabetes|dementia|psychosis|pubmed)\\b",
+    "ambiguous_regex": "\\b(?:cell|cells|virus|viral|treatment|therapy|diagnosis|mental health|stress disorder|depression)\\b",
+    "title_domain": "exclude",
+    "two_abstract_domain_terms": "exclude",
+    "one_abstract_domain_or_ambiguous_or_missing_abstract": "quarantine",
+    "answerability_disagreement": "quarantine",
+    "missing_supplied_evidence": "quarantine",
+    "unanswerable": "all annotations agree; expected UNANSWERABLE",
+    "answerable": "all annotations agree; retain all nonempty answer variants and original evidence"
+  },
+  "splits": {
+    "train": {
+      "source_documents": 888,
+      "source_questions": 2593,
+      "documents_include": 826,
+      "questions_use": 2311,
+      "reason_answerable_with_supplied_evidence": 2056,
+      "usable_answerable": 2056,
+      "unmatched_evidence_passages": 482,
+      "questions_quarantine": 76,
+      "reason_conflicting_answerability": 5,
+      "documents_exclude": 35,
+      "questions_document_exclude": 126,
+      "reason_missing_evidence": 71,
+      "reason_unanswerable_consensus": 255,
+      "usable_unanswerable": 255,
+      "documents_quarantine": 27,
+      "questions_document_quarantine": 80
+    },
+    "validation": {
+      "source_documents": 281,
+      "source_questions": 1005,
+      "documents_include": 248,
+      "questions_use": 823,
+      "reason_answerable_with_supplied_evidence": 770,
+      "usable_answerable": 770,
+      "unmatched_evidence_passages": 235,
+      "questions_quarantine": 82,
+      "reason_conflicting_answerability": 67,
+      "documents_exclude": 21,
+      "questions_document_exclude": 60,
+      "reason_unanswerable_consensus": 53,
+      "usable_unanswerable": 53,
+      "documents_quarantine": 12,
+      "questions_document_quarantine": 40,
+      "reason_missing_evidence": 15
+    },
+    "test": {
+      "source_documents": 416,
+      "source_questions": 1451,
+      "documents_include": 394,
+      "questions_use": 1208,
+      "reason_answerable_with_supplied_evidence": 1134,
+      "usable_answerable": 1134,
+      "unmatched_evidence_passages": 433,
+      "questions_quarantine": 160,
+      "reason_conflicting_answerability": 147,
+      "reason_unanswerable_consensus": 74,
+      "usable_unanswerable": 74,
+      "documents_exclude": 14,
+      "questions_document_exclude": 52,
+      "documents_quarantine": 8,
+      "questions_document_quarantine": 31,
+      "reason_missing_evidence": 13
+    }
+  },
+  "cross_split_duplicates": [],
+  "output_sha256": {
+    "cross_split_duplicates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "document_decisions.jsonl": "5f8e172a422d7b69ab541c46cbbf7bf4f1c5cc606050db3e80f29b71b4eddb4f",
+    "test_documents.jsonl": "676d6a22385acd0748b61acb0031142bebe500217c9970126b3c7e8d63362ad8",
+    "test_question_quarantine.jsonl": "a1da247b383848d8acdc743767a7bf61d6c9e359f6184b9a99080a15640a6268",
+    "test_questions.jsonl": "1a88906d5a867ce87d254b8a6d71a3286d000ee8b356e2dd073326f15e9583a9",
+    "train_documents.jsonl": "6425525348a1a365d053e359e6c7fbd028a02eb5c96b8030d8caef2132b5ee75",
+    "train_question_quarantine.jsonl": "ece0d5363c0dced19cd01026e80265ff409d8c8dbd513174941c9f12a8f8bf50",
+    "train_questions.jsonl": "b4d65d5f7861ef11748f9800a779a4ef9e6a6ce1464b70e61a211f73f0d3276b",
+    "validation_documents.jsonl": "d390b8891977d96a5296efc2be4d46da52a17cf342a1fbda5acfd6b513bf865e",
+    "validation_question_quarantine.jsonl": "e4f0ae41aab38515e6ddc5f802e43c346303486151d2f3b08f6c40f4ba70aef0",
+    "validation_questions.jsonl": "a77972e6a9a2feff58fb856d4f47a77f70e998c5fb9488bfef26b224d32d7659"
+  }
+}
