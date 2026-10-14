@@ -1,0 +1,10 @@
+test_eval_mode_is_numerically_identical_for_this_architecture (test_optimization_stability.StabilityAuditTests.test_eval_mode_is_numerically_identical_for_this_architecture) ... ok
+test_frozen_checkpoints_same_windows_and_finite_state (test_optimization_stability.StabilityAuditTests.test_frozen_checkpoints_same_windows_and_finite_state) ... ok
+test_gradient_and_adamw_update_are_finite_and_nonzero (test_optimization_stability.StabilityAuditTests.test_gradient_and_adamw_update_are_finite_and_nonzero) ... ok
+test_next_token_shift_and_fixed_sample_order (test_optimization_stability.StabilityAuditTests.test_next_token_shift_and_fixed_sample_order) ... ok
+test_paired_curve_and_exact_best_final_tensor_restore (test_optimization_stability.StabilityAuditTests.test_paired_curve_and_exact_best_final_tensor_restore) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 6.565s
+
+OK
