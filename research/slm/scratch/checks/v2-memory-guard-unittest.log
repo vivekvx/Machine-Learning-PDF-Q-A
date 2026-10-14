@@ -1,0 +1,12 @@
+test_data_rebuild_is_byte_identical (test_data_and_safety.DataAndSafetyTests.test_data_rebuild_is_byte_identical) ... ok
+test_preflight_and_stop_thresholds (test_data_and_safety.DataAndSafetyTests.test_preflight_and_stop_thresholds) ... ok
+test_tokenizer_round_trip (test_data_and_safety.DataAndSafetyTests.test_tokenizer_round_trip) ... ok
+test_train_validation_isolation_and_vocab (test_data_and_safety.DataAndSafetyTests.test_train_validation_isolation_and_vocab) ... ok
+test_actual_parameter_count (test_mlx_model.MLXModelTests.test_actual_parameter_count) ... ok
+test_causal_prefix_invariance_and_shape (test_mlx_model.MLXModelTests.test_causal_prefix_invariance_and_shape) ... ok
+test_gradient_and_checkpoint_resume_are_reproducible (test_mlx_model.MLXModelTests.test_gradient_and_checkpoint_resume_are_reproducible) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.176s
+
+OK
