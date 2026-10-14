@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "source_export_url": "https://aclanthology.org/anthology.bib.gz",
+  "source_export_generated_date": "2026-10-10",
+  "source_export_sha256": "7175cda3d1544e7b5c0298c2c5a143b692eb9e0feae0c545ea36bac1277b4d7e",
+  "copyright_policy_url": "https://aclanthology.org/faq/copyright/",
+  "copyright_policy_sha256": "2b65968386995cbf207f2816a5634dc7972093375e99cb8fa3647221fb888d46",
+  "matching_rule": "unique exact normalized title only; near titles are review suggestions and never accepted automatically",
+  "publication_license_rule": "ACL publisher with year >=2016: ACL publication text CC BY 4.0; ACL publisher before2016: CC BY-NC-SA 3.0; other publisher or unmatched: unresolved",
+  "underlying_qasper_text_rights": "unresolved until source-version and third-party material review"
+}

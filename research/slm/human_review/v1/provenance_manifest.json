@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "publication_metadata_only_not_qasper_text_rights_clearance",
+  "source_selected_audit_sha256": "82c4042a07f71a7c45d3341550e6a258fb1403f1126d6414906c2545e88a5b10",
+  "resolver_config_sha256": "29ceab25008154aa8ae2ccb03fc4921d23e0b2a7bb07d2615e88f49c3acc81c6",
+  "acl_export_sha256": "7175cda3d1544e7b5c0298c2c5a143b692eb9e0feae0c545ea36bac1277b4d7e",
+  "acl_policy_sha256": "2b65968386995cbf207f2816a5634dc7972093375e99cb8fa3647221fb888d46",
+  "tool_sha256": {
+    "acl_metadata.py": "d7fc2d231ef5a50bf0aa36b74f122cfe39c76b07195d7529c29c5b6da03efaeb",
+    "resolve_acl.py": "c71c74300a131a50dda54c0a4e994b1b15f35186666a5c0345d81873d45e0f46"
+  },
+  "provenance_ledger_sha256": "ead23e30fe02b6047f0ff0063bea83fcf7d38bf62d6807f880eb8fc0e9efba21",
+  "document_count": 352,
+  "match_counts": {
+    "unique_normalized_exact_title": 138,
+    "no_exact_title_match": 214
+  },
+  "publication_license_class_counts": {
+    "verified_permissive_acl_publication": 105,
+    "unresolved": 245,
+    "restrictive_acl_publication": 2
+  },
+  "qasper_text_training_rights_cleared": 0,
+  "human_rights_decisions": 0,
+  "test_answers_read": false,
+  "training_executed": false
+}

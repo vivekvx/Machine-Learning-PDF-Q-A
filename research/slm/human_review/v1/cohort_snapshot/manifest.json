@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "candidate_only_not_training_ready",
+  "source_sha256": {
+    "selected_audit.jsonl": "82c4042a07f71a7c45d3341550e6a258fb1403f1126d6414906c2545e88a5b10",
+    "EVIDENCE_REVIEW_SAMPLE.csv": "728827b0059aaa5ff83add287d7b5d1a306c983594dee8041a9cd7e7d0989452",
+    "provenance_ledger.jsonl": "ead23e30fe02b6047f0ff0063bea83fcf7d38bf62d6807f880eb8fc0e9efba21",
+    "reviews.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rights_decisions.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "candidate_count": 0,
+  "excluded_or_unresolved_count": 352,
+  "reason_counts": {
+    "fewer_than_two_independent_evidence_reviews": 352,
+    "individual_source_rights_not_cleared": 352,
+    "not_in_64_question_review_sample": 288,
+    "acl_publication_license_unresolved": 245,
+    "original_annotation_contradiction_requires_adjudication": 1,
+    "restrictive_acl_publication_license": 2
+  },
+  "tool_sha256": {
+    "cohort.py": "18f81d0afc8554b37cc67ffcaaed74b2842bba91b75a30e1d6ff399260ac4571",
+    "review_core.py": "95b17d71a6ebfc1350ee2e315d5996ad85c28d07a4de2d9300c32ade7d51fe65",
+    "rights_core.py": "41792c3898d2c7e030b230b517ba3511e299721a2933b0c38c099a2fe9d912ea"
+  },
+  "file_sha256": {
+    "candidate_cohort.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cohort_decisions.jsonl": "ceba8190a73f5adc19e7577c66e418519ca057e129dafe77e51b6990c0982e43"
+  },
+  "test_answers_read": false,
+  "training_executed": false
+}

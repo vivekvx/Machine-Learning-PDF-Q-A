@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "name": "qasper-evidence-sufficiency-design-v2",
+  "status": "frozen_design_pending_independent_review_and_cloud_preflight",
+  "source_dataset": "allenai/qasper",
+  "source_revision": "fdc9d8214fbab5dd782958601db4d678e6934a54",
+  "parquet_revision": "06806e4608976fc2fac0a090ac425d5b2b29caf4",
+  "pinned_card_sha256": {
+    "qasper_dataset": "da348d3f8277f8a93ca397941f6a525433e282858b1c0562aed3f667d8e55b05",
+    "qwen3_base_model": "1ab64a26fcb3b461423b89a433a8c858f1bf8d4086f979cbb3ff878d47cf20e9",
+    "mlx_conversion_model": "43209eb9544b7d4871f54673b35a1c434155fcff0c31eced56571e0489629bf0"
+  },
+  "train_source_sha256": "34ee127615ebbdf800066257b6d06022be37ecc6a0b25edb3cac0422d35cda9a",
+  "validation_source_sha256": "54ef6bbffda3072918d51e0ce37cdf24c87be9e844b64b23b02742794eeedba0",
+  "curated_train_questions_sha256": "b4d65d5f7861ef11748f9800a779a4ef9e6a6ce1464b70e61a211f73f0d3276b",
+  "curated_train_documents_sha256": "6425525348a1a365d053e359e6c7fbd028a02eb5c96b8030d8caef2132b5ee75",
+  "train_question_count": 352,
+  "validation_question_count": 80,
+  "manual_review_sample": {
+    "count": 64,
+    "answerable": 40,
+    "unanswerable": 24,
+    "seed": 20261011,
+    "rule": "deterministic hash order within answerability and automated-risk strata; no manual judgments prefilled"
+  },
+  "model": {
+    "cloud_base_id": "Qwen/Qwen3-0.6B",
+    "cloud_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "cloud_tokenizer_config_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "local_baseline_id": "mlx-community/Qwen3-0.6B-4bit",
+    "local_baseline_revision": "73e3e38d981303bc594367cd910ea6eb48349da8",
+    "conversion_lineage_verified": false
+  },
+  "training": {
+    "seed_list": [20261011, 20261012, 20261013],
+    "arms": ["standard_lora", "raft_distractor_lora", "evidence_sufficiency_lora"],
+    "question_ids": "fixed_352_train_ids_only",
+    "exposures_per_question_per_arm": 4,
+    "maximum_sequence_tokens": 512,
+    "maximum_generation_tokens": 64,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 1,
+    "optimizer_steps": 1408,
+    "optimizer": "adamw_torch",
+    "quantization": "bitsandbytes_nf4_4bit_double_quant_bfloat16_compute",
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+    "lora_rank": 4,
+    "lora_alpha": 8,
+    "trainable_last_layers": 2,
+    "learning_rate": 0.00001,
+    "assistant_only_loss": true,
+    "enable_thinking": false,
+    "checkpoint_rule": "final_step_1408_only_one_pass_over_352_times_4_exposures; no validation-based checkpoint selection",
+    "negative_context_release_gate": "independent_review_required_before_materialization_or_training"
+  },
+  "evaluation": {
+    "validation_ids": "fixed_80_validation_ids_only",
+    "conditions": ["gold", "tfidf_faiss", "minilm_faiss"],
+    "retrieval_baseline_config_sha256": "fe84cbcf58b6a9858a99fc2881a783810d629a29ad6b619dfc3453fae4e6d2db",
+    "prediction_format": "exact UNANSWERABLE or concise answer plus one terminal [section:i:paragraph:j] citation",
+    "semantic_abstention_review": "independent blinded reviewers; distinct from exact-marker scoring",
+    "official_test": "sealed until one locked final assessment"
+  }
+}

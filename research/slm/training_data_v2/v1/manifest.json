@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "status": "automated_audit_only_no_human_judgments",
+  "config_sha256": "b48b5fd003605ac4353f0c473cb887b4ab3aa07f7f8274a59f67aca0ef43bf04",
+  "source_sha256": {
+    "train.jsonl": "34ee127615ebbdf800066257b6d06022be37ecc6a0b25edb3cac0422d35cda9a",
+    "validation_gold.jsonl": "54ef6bbffda3072918d51e0ce37cdf24c87be9e844b64b23b02742794eeedba0",
+    "train_questions.jsonl": "b4d65d5f7861ef11748f9800a779a4ef9e6a6ce1464b70e61a211f73f0d3276b",
+    "train_documents.jsonl": "6425525348a1a365d053e359e6c7fbd028a02eb5c96b8030d8caef2132b5ee75",
+    "document_decisions.jsonl": "5f8e172a422d7b69ab541c46cbbf7bf4f1c5cc606050db3e80f29b71b4eddb4f"
+  },
+  "selected_count": 352,
+  "selected_answerability": {
+    "answerable": 256,
+    "unanswerable": 96
+  },
+  "review_sample_count": 64,
+  "review_strata": {
+    "answerable": {
+      "high_risk": 20,
+      "lower_risk": 20
+    },
+    "unanswerable": {
+      "high_risk": 4,
+      "lower_risk": 20
+    }
+  },
+  "automatic_flag_counts_selected": {
+    "answer_variant_low_overlap": 4,
+    "reference_variant_not_in_passage": 4,
+    "low_question_passage_overlap": 57,
+    "unanswerable_excerpt_not_proof": 96,
+    "short_reference_weak_match": 45,
+    "possible_annotation_contradiction": 1,
+    "unanswerable_high_question_overlap": 4
+  },
+  "automatic_category_counts_selected": {
+    "ambiguous": 47,
+    "potentially_insufficient": 153,
+    "possible_contradiction": 1
+  },
+  "additional_candidate_documents": 122,
+  "additional_candidate_answerability": {
+    "unanswerable": 61,
+    "answerable": 61
+  },
+  "all_train_question_rejections": {
+    "missing_or_unmatched_evidence": 362,
+    "multiple_distinct_gold_paragraphs": 473,
+    "reference_not_in_gold_paragraph": 633,
+    "full_context_exceeds_token_budget": 15,
+    "source_paragraph_mismatch": 76
+  },
+  "all_train_question_eligible": 752,
+  "eligible_unique_train_documents": 474,
+  "exact_duplicate_document_groups_considered": 0,
+  "near_duplicate_title_pairs_considered": 0,
+  "license_ledger_status_counts": {
+    "selected_352": 352,
+    "excluded_medical_by_study_policy": 35,
+    "included_not_selected": 352,
+    "quarantined_by_study_policy": 27,
+    "additional_122_candidate": 122
+  },
+  "file_sha256": {
+    "selected_audit.jsonl": "82c4042a07f71a7c45d3341550e6a258fb1403f1126d6414906c2545e88a5b10",
+    "candidate_expansion.jsonl": "8208248b83d2a6f87114b7806cea44b63494163d2a7fee55501485b51edfceec",
+    "duplicate_review_signals.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "license_ledger.jsonl": "ea5945916e4b4cd448660f7ccc7db55d51308eaeefdebaba8f3cd96644ebe1f4",
+    "variant_plan.jsonl": "8b69fdd3ae2c2962dc158838958132d6865514d19e736418f9a2126a872b21de",
+    "train_ids.jsonl": "ece1e0b6ec0712ceb3dc8ba025dbf35161e4102e29738e33cfff595f262c6805",
+    "validation_ids.jsonl": "1bf11c640db26e7183a599e9162267036b924baf6a1b97207e849f3726a238e9",
+    "EVIDENCE_REVIEW_SAMPLE.csv": "728827b0059aaa5ff83add287d7b5d1a306c983594dee8041a9cd7e7d0989452"
+  },
+  "test_question_or_answer_files_read": false,
+  "training_executed": false,
+  "tool_sha256": {
+    "training_data_v2/build.py": "05c54d893def3df8be8bbd3b03211b1e910acb41b6dc86ed13499c341d53d381",
+    "portable/prepare.py": "39a105250ef18ccab357762169f005287ffe8369b556a77b25ca674dd663c510",
+    "training_data_v2/abstention_metrics.py": "5acf8a408aa48d02b7d9c0e833098c7bcd0537a1904ba92409eef9b2672ae1a9"
+  }
+}
