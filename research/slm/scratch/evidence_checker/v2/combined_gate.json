@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "combined_pipeline_approved": false,
+  "gold_candidate_gate_passed": true,
+  "pointer_selected_gate_passed": false,
+  "test_may_be_opened": false,
+  "frozen_gold_selection_file_is_not_combined_approval": true,
+  "threshold": 0.68,
+  "gold_candidate": {
+    "supported_acceptance": 0.85,
+    "unsupported_rejection": 0.86875,
+    "confusion": {
+      "TP": 136,
+      "FN": 24,
+      "TN": 278,
+      "FP": 42
+    }
+  },
+  "pointer_selected": {
+    "supported_acceptance": 0.927007299270073,
+    "unsupported_rejection": 0.6349206349206349,
+    "confusion": {
+      "TP": 127,
+      "FN": 10,
+      "TN": 40,
+      "FP": 23
+    }
+  },
+  "end_to_end": {
+    "answerable_original_count": 80,
+    "pointer_only_original_exact": 0.9,
+    "combined_answerable_exact_match": 0.825,
+    "answerable_coverage": 0.8875,
+    "correction_current_value_exact_match": 0.7625,
+    "missing_fact_count": 40,
+    "missing_fact_abstention_accuracy": 0.9,
+    "unsupported_candidate_count": 63,
+    "unsupported_answer_rate": 0.36507936507936506,
+    "overall_coverage": 0.75
+  },
+  "pointer_selected_error_groups": {
+    "correction": {
+      "count": 80,
+      "unsupported": 15,
+      "unsupported_false_answers": 14,
+      "supported_rejected": 4
+    },
+    "missing_fact": {
+      "count": 40,
+      "unsupported": 40,
+      "unsupported_false_answers": 4,
+      "supported_rejected": 0
+    },
+    "original": {
+      "count": 80,
+      "unsupported": 8,
+      "unsupported_false_answers": 5,
+      "supported_rejected": 6
+    }
+  },
+  "run_sha256": "a3e9136fceb69df52b32685c4a0a494e409cb8b5d929a5610e8ddf70dfe7da60",
+  "gold_predictions_sha256": "5d404990eb66241684a12990fab5be9dd3f3b832e399de1f171cd05cd9739cda",
+  "pointer_predictions_sha256": "dac7bb2f4b9e8be08cfb32300dc1471951caa30eaa664696cdb8e4f4324503fc",
+  "sealed_test_read": false
+}

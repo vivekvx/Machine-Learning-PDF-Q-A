@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "experiment": "compact_candidate_score_calibrator_with_balanced_hard_negatives",
+  "seed": 20261015,
+  "frozen_pointer": "../../pointer_qa/v2/validation/pointer_selection.json",
+  "data": {
+    "source_splits": ["train", "validation"],
+    "original_candidates": ["gold", "wrong_entity", "wrong_field"],
+    "correction_candidates": ["current_value", "obsolete_value"],
+    "missing_fact_candidates_per_entity": 2,
+    "validation_document_allocation": {
+      "threshold_calibration": 20,
+      "checkpoint_selection": 20,
+      "final_gate": 20
+    },
+    "test_policy": "sealed until frozen pointer and v2 checker final validation gates pass"
+  },
+  "model": {
+    "type": "linear_logistic_MLX_head_on_frozen_candidate_scores",
+    "features": ["candidate_logit", "best_other_logit", "candidate_margin", "candidate_probability", "top_probability", "score_entropy", "candidate_minus_mean", "score_spread"],
+    "feature_scaler": "train_only_mean_std"
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.01,
+    "weight_decay": 0.0,
+    "batch_size": 1,
+    "balanced_sampling": true,
+    "optimizer_steps_cap": 1200,
+    "evaluation_interval_steps": 150,
+    "minimum_steps_before_early_stop": 450,
+    "early_stop_patience_evaluations": 4,
+    "wall_seconds_cap": 120,
+    "maximum_pair_tokens": 128,
+    "threshold_grid_step": 0.01
+  },
+  "checkpoint_selection": "maximin class accuracy then balanced accuracy then lower BCE on selection documents; threshold picked on disjoint calibration documents",
+  "final_validation_gate": {
+    "supported_acceptance": 0.70,
+    "unsupported_rejection": 0.70
+  },
+  "sealed_test_evaluation": {
+    "original_answerable_questions": "all 240 original sealed questions; report combined exact match, coverage, false-answer rate",
+    "derived_missing_fact": "two missing-field questions per sealed document, using the frozen generator; report abstention accuracy",
+    "derived_corrections": "one correction for each sealed source question; report current-value exact match and false-answer rate",
+    "no_post_test_tuning": true
+  },
+  "safety": "unchanged scratch/run.py preflight and parent live guard; no pointer optimizer"
+}

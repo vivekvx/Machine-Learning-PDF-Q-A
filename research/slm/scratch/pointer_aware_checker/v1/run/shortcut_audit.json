@@ -1,0 +1,71 @@
+{
+  "document_overlap": {
+    "calibration/train": 0,
+    "calibration/selection": 0,
+    "calibration/final_gate": 0,
+    "selection/train": 0,
+    "final_gate/train": 0,
+    "final_gate/selection": 0
+  },
+  "exact_question_context_overlap": {
+    "calibration/train": 0,
+    "calibration/selection": 0,
+    "calibration/final_gate": 0,
+    "selection/train": 0,
+    "final_gate/train": 0,
+    "final_gate/selection": 0
+  },
+  "paired_label_flips": {
+    "train": {
+      "same_document_candidate_value_with_both_labels": 632,
+      "unique_document_candidate_values": 632
+    },
+    "calibration": {
+      "same_document_candidate_value_with_both_labels": 158,
+      "unique_document_candidate_values": 158
+    },
+    "selection": {
+      "same_document_candidate_value_with_both_labels": 155,
+      "unique_document_candidate_values": 155
+    },
+    "final_gate": {
+      "same_document_candidate_value_with_both_labels": 159,
+      "unique_document_candidate_values": 159
+    }
+  },
+  "simple_boolean_shortcut": {
+    "train": {
+      "selected_count": 1120,
+      "selected_correct": 1120,
+      "all_candidates_count": 5120,
+      "all_candidates_correct": 5120
+    },
+    "calibration": {
+      "selected_count": 280,
+      "selected_correct": 280,
+      "all_candidates_count": 1280,
+      "all_candidates_correct": 1280
+    },
+    "selection": {
+      "selected_count": 280,
+      "selected_correct": 280,
+      "all_candidates_count": 1280,
+      "all_candidates_correct": 1280
+    },
+    "final_gate": {
+      "selected_count": 280,
+      "selected_correct": 280,
+      "all_candidates_count": 1280,
+      "all_candidates_correct": 1280
+    }
+  },
+  "shortcut_definition": "joint_question_entity_field_match AND NOT superseded_candidate_for_question",
+  "interpretation": "A hand-coded feature combination directly reproduces generated labels; validation cannot establish independently learned sufficiency.",
+  "test_sealed": true,
+  "feature_files_sha256": {
+    "train": "df93726755f1563a784299bbba9fb931a931ffeb59713450b354233c53610303",
+    "calibration": "c41b5b4cb7cfaadc30f672bc3a1d753637b65f114ed25af7541d41e7c0de4e42",
+    "selection": "ff39928d801136e059e9102ae1077f4e76f2bec3f45f712914a9f4898a74c22c",
+    "final_gate": "bebd795a0aa945f8fdb9438b095258fdf626f2f5271064847e7ac23ecab27ceb"
+  }
+}

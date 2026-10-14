@@ -1,0 +1,143 @@
+{
+  "same_candidate_ids": true,
+  "scenario_count": 280,
+  "new_threshold": 0.49,
+  "old_frozen_threshold": 0.68,
+  "pointer_only_original_exact_count": 73,
+  "pointer_only_original_count": 80,
+  "old_checker": {
+    "pointer_selected": {
+      "supported_count": 207,
+      "unsupported_count": 73,
+      "supported_acceptance": 0.893719806763285,
+      "unsupported_rejection": 0.6301369863013698,
+      "balanced_accuracy": 0.7619283965323274,
+      "confusion": {
+        "TP": 185,
+        "FN": 22,
+        "TN": 46,
+        "FP": 27
+      }
+    },
+    "conditions": {
+      "original": {
+        "count": 80,
+        "pointer_correct": 73,
+        "accepted": 68,
+        "correct_accepted": 66,
+        "unsupported_accepted": 2
+      },
+      "correction": {
+        "count": 80,
+        "pointer_correct": 64,
+        "accepted": 72,
+        "correct_accepted": 56,
+        "unsupported_accepted": 16
+      },
+      "unrelated_correction": {
+        "count": 80,
+        "pointer_correct": 70,
+        "accepted": 67,
+        "correct_accepted": 63,
+        "unsupported_accepted": 4
+      },
+      "missing": {
+        "count": 40,
+        "pointer_correct": 0,
+        "accepted": 5,
+        "correct_accepted": 0,
+        "unsupported_accepted": 5
+      }
+    },
+    "pointer_only_original_exact": 0.9125,
+    "combined_original_exact": 0.825,
+    "correct_answer_retention": 0.9041095890410958,
+    "missing_fact_abstention": 0.875,
+    "obsolete_value_rejection": 0.0,
+    "unsupported_answer_rate": 0.3698630136986301,
+    "overall_coverage": 0.7571428571428571
+  },
+  "new_checker": {
+    "pointer_selected": {
+      "supported_count": 207,
+      "unsupported_count": 73,
+      "supported_acceptance": 0.9855072463768116,
+      "unsupported_rejection": 1.0,
+      "balanced_accuracy": 0.9927536231884058,
+      "confusion": {
+        "TP": 204,
+        "FN": 3,
+        "TN": 73,
+        "FP": 0
+      }
+    },
+    "conditions": {
+      "original": {
+        "count": 80,
+        "pointer_correct": 73,
+        "accepted": 72,
+        "correct_accepted": 72,
+        "unsupported_accepted": 0
+      },
+      "correction": {
+        "count": 80,
+        "pointer_correct": 64,
+        "accepted": 64,
+        "correct_accepted": 64,
+        "unsupported_accepted": 0
+      },
+      "unrelated_correction": {
+        "count": 80,
+        "pointer_correct": 70,
+        "accepted": 68,
+        "correct_accepted": 68,
+        "unsupported_accepted": 0
+      },
+      "missing": {
+        "count": 40,
+        "pointer_correct": 0,
+        "accepted": 0,
+        "correct_accepted": 0,
+        "unsupported_accepted": 0
+      }
+    },
+    "pointer_only_original_exact": 0.9125,
+    "combined_original_exact": 0.9,
+    "correct_answer_retention": 0.9863013698630136,
+    "missing_fact_abstention": 1.0,
+    "obsolete_value_rejection": 1.0,
+    "unsupported_answer_rate": 0.0,
+    "overall_coverage": 0.7285714285714285
+  },
+  "old_checker_all_candidates": {
+    "supported_count": 240,
+    "unsupported_count": 1040,
+    "supported_acceptance": 0.7916666666666666,
+    "unsupported_rejection": 0.9538461538461539,
+    "balanced_accuracy": 0.8727564102564103,
+    "confusion": {
+      "TP": 190,
+      "FN": 50,
+      "TN": 992,
+      "FP": 48
+    }
+  },
+  "new_checker_all_candidates": {
+    "supported_count": 240,
+    "unsupported_count": 1040,
+    "supported_acceptance": 0.9625,
+    "unsupported_rejection": 1.0,
+    "balanced_accuracy": 0.98125,
+    "confusion": {
+      "TP": 231,
+      "FN": 9,
+      "TN": 1040,
+      "FP": 0
+    }
+  },
+  "new_prediction_sha256": "afa02cb513766e1e6efa3680a70cf4a3d9380e9c40e2a548ed2c7446845dd95b",
+  "old_prediction_sha256": "b68699b1a01c0f0814eeff1b76dddbf5f272e8c606eca860ecb1408df85f8cfd",
+  "old_checkpoint_sha256": "e2ff8231a2a3f663863c37d7f134af6eb02483e4b7c515c15c85e2537e14062a",
+  "new_checkpoint_sha256": "c1e4b396db6b2716ea53c635e10735510877ac1cee150f0ec000c42d3a5edbd9",
+  "sealed_test_opened": false
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment": "pointer_output_candidate_aware_support_v1",
+  "seed": 20261016,
+  "source_seed": 20261016,
+  "source_index_offset": 10000,
+  "train_documents_per_family": 20,
+  "validation_documents": {"calibration": 20, "selection": 20, "final_gate": 20},
+  "candidate_feature_version": 1,
+  "training": {
+    "optimizer": "AdamW", "learning_rate": 0.01, "weight_decay": 0.0,
+    "batch_size": 1, "steps_cap": 800, "eval_interval": 100,
+    "minimum_steps": 300, "patience_evaluations": 3,
+    "wall_seconds_cap": 180, "maximum_pair_tokens": 128,
+    "threshold_grid_step": 0.01, "gradient_clip_l2": 1.0
+  },
+  "gate": {
+    "supported_acceptance_minimum": 0.70,
+    "unsupported_rejection_minimum": 0.70,
+    "original_answerable_exact_minimum": 0.80,
+    "obsolete_value_rejection_minimum": 0.70,
+    "correct_answer_retention_vs_pointer_minimum": 0.90
+  },
+  "test_policy": "Open sealed source test once only if all validation gates pass; no subsequent tuning",
+  "safety": "unchanged scratch/run.py preflight and live guard_reasons"
+}

@@ -1,0 +1,12 @@
+{
+  "checker_gate_passed": true,
+  "checkpoint_step": 450,
+  "checkpoint_sha256": "e2ff8231a2a3f663863c37d7f134af6eb02483e4b7c515c15c85e2537e14062a",
+  "threshold": 0.68,
+  "scaler_sha256": "2e0e0426581de1d27bd062ff977da8f25888aa43fd04c5b9fe38cba4c9001b0f",
+  "pointer_checkpoint_sha256": "75d4ca2edaa7ea243017e58d8950e7ad2d1ed0942a695d3c5ca156f19c9e2c3d",
+  "plan_sha256": "163d5b97a1ed6160364290ecbf1dac527b46840d62b959602b09e17998aa0c55",
+  "gate_gold_predictions_sha256": "5d404990eb66241684a12990fab5be9dd3f3b832e399de1f171cd05cd9739cda",
+  "gate_pointer_predictions_sha256": "dac7bb2f4b9e8be08cfb32300dc1471951caa30eaa664696cdb8e4f4324503fc",
+  "test_sealed": true
+}

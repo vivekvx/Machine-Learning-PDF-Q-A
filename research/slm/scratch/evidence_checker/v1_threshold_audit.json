@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "source_predictions_sha256": "e09c93fb005c405e3f05bae22828ef6273ac7b946dbadd6738be677a13fad37b",
+  "source_plan_sha256": "a850a8a83a11be506a59affd0851edd3481a3a14dbf7df9980ec7e89dbf6424d",
+  "trained_weights_unchanged": true,
+  "calibration": {
+    "count": 160,
+    "auroc": 0.6740625,
+    "frozen_gate_feasible": false,
+    "feasible_threshold_count": 0,
+    "best_minimum_class_accuracy": {
+      "threshold": 0.8790876865386963,
+      "supported_acceptance": 0.625,
+      "unsupported_rejection": 0.6375,
+      "balanced_accuracy": 0.63125,
+      "confusion": {
+        "TP": 50,
+        "FN": 30,
+        "TN": 51,
+        "FP": 29
+      }
+    },
+    "registered_threshold": {
+      "threshold": 0.7,
+      "supported_acceptance": 0.8375,
+      "unsupported_rejection": 0.4625,
+      "balanced_accuracy": 0.65,
+      "confusion": {
+        "TP": 67,
+        "FN": 13,
+        "TN": 37,
+        "FP": 43
+      }
+    },
+    "selected_grid": [
+      {
+        "threshold": 0.3,
+        "supported_acceptance": 0.925,
+        "unsupported_rejection": 0.275,
+        "balanced_accuracy": 0.6000000000000001,
+        "confusion": {
+          "TP": 74,
+          "FN": 6,
+          "TN": 22,
+          "FP": 58
+        }
+      },
+      {
+        "threshold": 0.4,
+        "supported_acceptance": 0.9,
+        "unsupported_rejection": 0.2875,
+        "balanced_accuracy": 0.59375,
+        "confusion": {
+          "TP": 72,
+          "FN": 8,
+          "TN": 23,
+          "FP": 57
+        }
+      },
+      {
+        "threshold": 0.5,
+        "supported_acceptance": 0.875,
+        "unsupported_rejection": 0.325,
+        "balanced_accuracy": 0.6,
+        "confusion": {
+          "TP": 70,
+          "FN": 10,
+          "TN": 26,
+          "FP": 54
+        }
+      },
+      {
+        "threshold": 0.6,
+        "supported_acceptance": 0.875,
+        "unsupported_rejection": 0.4,
+        "balanced_accuracy": 0.6375,
+        "confusion": {
+          "TP": 70,
+          "FN": 10,
+          "TN": 32,
+          "FP": 48
+        }
+      },
+      {
+        "threshold": 0.7,
+        "supported_acceptance": 0.8375,
+        "unsupported_rejection": 0.4625,
+        "balanced_accuracy": 0.65,
+        "confusion": {
+          "TP": 67,
+          "FN": 13,
+          "TN": 37,
+          "FP": 43
+        }
+      },
+      {
+        "threshold": 0.8,
+        "supported_acceptance": 0.7125,
+        "unsupported_rejection": 0.5625,
+        "balanced_accuracy": 0.6375,
+        "confusion": {
+          "TP": 57,
+          "FN": 23,
+          "TN": 45,
+          "FP": 35
+        }
+      }
+    ],
+    "category_auroc": {
+      "contradiction": 0.7425,
+      "missing_fact": 0.56,
+      "wrong_entity": 0.8875,
+      "wrong_field": 0.5325
+    }
+  },
+  "assessment": {
+    "count": 320,
+    "auroc": 0.7141015625,
+    "frozen_gate_feasible": false,
+    "feasible_threshold_count": 0,
+    "best_minimum_class_accuracy": {
+      "threshold": 0.8743239045143127,
+      "supported_acceptance": 0.69375,
+      "unsupported_rejection": 0.69375,
+      "balanced_accuracy": 0.69375,
+      "confusion": {
+        "TP": 111,
+        "FN": 49,
+        "TN": 111,
+        "FP": 49
+      }
+    },
+    "registered_threshold": {
+      "threshold": 0.7,
+      "supported_acceptance": 0.80625,
+      "unsupported_rejection": 0.5,
+      "balanced_accuracy": 0.653125,
+      "confusion": {
+        "TP": 129,
+        "FN": 31,
+        "TN": 80,
+        "FP": 80
+      }
+    },
+    "selected_grid": [
+      {
+        "threshold": 0.3,
+        "supported_acceptance": 0.91875,
+        "unsupported_rejection": 0.2625,
+        "balanced_accuracy": 0.590625,
+        "confusion": {
+          "TP": 147,
+          "FN": 13,
+          "TN": 42,
+          "FP": 118
+        }
+      },
+      {
+        "threshold": 0.4,
+        "supported_acceptance": 0.8875,
+        "unsupported_rejection": 0.28125,
+        "balanced_accuracy": 0.584375,
+        "confusion": {
+          "TP": 142,
+          "FN": 18,
+          "TN": 45,
+          "FP": 115
+        }
+      },
+      {
+        "threshold": 0.5,
+        "supported_acceptance": 0.86875,
+        "unsupported_rejection": 0.31875,
+        "balanced_accuracy": 0.59375,
+        "confusion": {
+          "TP": 139,
+          "FN": 21,
+          "TN": 51,
+          "FP": 109
+        }
+      },
+      {
+        "threshold": 0.6,
+        "supported_acceptance": 0.8375,
+        "unsupported_rejection": 0.3875,
+        "balanced_accuracy": 0.6125,
+        "confusion": {
+          "TP": 134,
+          "FN": 26,
+          "TN": 62,
+          "FP": 98
+        }
+      },
+      {
+        "threshold": 0.7,
+        "supported_acceptance": 0.80625,
+        "unsupported_rejection": 0.5,
+        "balanced_accuracy": 0.653125,
+        "confusion": {
+          "TP": 129,
+          "FN": 31,
+          "TN": 80,
+          "FP": 80
+        }
+      },
+      {
+        "threshold": 0.8,
+        "supported_acceptance": 0.7625,
+        "unsupported_rejection": 0.6,
+        "balanced_accuracy": 0.6812499999999999,
+        "confusion": {
+          "TP": 122,
+          "FN": 38,
+          "TN": 96,
+          "FP": 64
+        }
+      }
+    ],
+    "category_auroc": {
+      "contradiction": 0.78125,
+      "missing_fact": 0.598125,
+      "wrong_entity": 0.956875,
+      "wrong_field": 0.494375
+    }
+  },
+  "all_validation": {
+    "count": 480,
+    "auroc": 0.7004340277777777,
+    "frozen_gate_feasible": false,
+    "feasible_threshold_count": 0,
+    "best_minimum_class_accuracy": {
+      "threshold": 0.8743239045143127,
+      "supported_acceptance": 0.6708333333333333,
+      "unsupported_rejection": 0.6666666666666666,
+      "balanced_accuracy": 0.66875,
+      "confusion": {
+        "TP": 161,
+        "FN": 79,
+        "TN": 160,
+        "FP": 80
+      }
+    },
+    "registered_threshold": {
+      "threshold": 0.7,
+      "supported_acceptance": 0.8166666666666667,
+      "unsupported_rejection": 0.4875,
+      "balanced_accuracy": 0.6520833333333333,
+      "confusion": {
+        "TP": 196,
+        "FN": 44,
+        "TN": 117,
+        "FP": 123
+      }
+    },
+    "selected_grid": [
+      {
+        "threshold": 0.3,
+        "supported_acceptance": 0.9208333333333333,
+        "unsupported_rejection": 0.26666666666666666,
+        "balanced_accuracy": 0.59375,
+        "confusion": {
+          "TP": 221,
+          "FN": 19,
+          "TN": 64,
+          "FP": 176
+        }
+      },
+      {
+        "threshold": 0.4,
+        "supported_acceptance": 0.8916666666666667,
+        "unsupported_rejection": 0.2833333333333333,
+        "balanced_accuracy": 0.5875,
+        "confusion": {
+          "TP": 214,
+          "FN": 26,
+          "TN": 68,
+          "FP": 172
+        }
+      },
+      {
+        "threshold": 0.5,
+        "supported_acceptance": 0.8708333333333333,
+        "unsupported_rejection": 0.32083333333333336,
+        "balanced_accuracy": 0.5958333333333333,
+        "confusion": {
+          "TP": 209,
+          "FN": 31,
+          "TN": 77,
+          "FP": 163
+        }
+      },
+      {
+        "threshold": 0.6,
+        "supported_acceptance": 0.85,
+        "unsupported_rejection": 0.39166666666666666,
+        "balanced_accuracy": 0.6208333333333333,
+        "confusion": {
+          "TP": 204,
+          "FN": 36,
+          "TN": 94,
+          "FP": 146
+        }
+      },
+      {
+        "threshold": 0.7,
+        "supported_acceptance": 0.8166666666666667,
+        "unsupported_rejection": 0.4875,
+        "balanced_accuracy": 0.6520833333333333,
+        "confusion": {
+          "TP": 196,
+          "FN": 44,
+          "TN": 117,
+          "FP": 123
+        }
+      },
+      {
+        "threshold": 0.8,
+        "supported_acceptance": 0.7458333333333333,
+        "unsupported_rejection": 0.5875,
+        "balanced_accuracy": 0.6666666666666667,
+        "confusion": {
+          "TP": 179,
+          "FN": 61,
+          "TN": 141,
+          "FP": 99
+        }
+      }
+    ],
+    "category_auroc": {
+      "contradiction": 0.7638888888888888,
+      "missing_fact": 0.5858333333333333,
+      "wrong_entity": 0.9316666666666666,
+      "wrong_field": 0.5061111111111111
+    }
+  }
+}

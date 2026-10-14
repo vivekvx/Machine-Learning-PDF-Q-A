@@ -1,0 +1,48 @@
+{
+  "mean": [
+    8.761705015506596,
+    10.730098446551711,
+    -1.968393431045115,
+    0.21875,
+    0.6605999397671097,
+    0.8327843115480679,
+    8.673617379884035e-18,
+    1.7210412862778908,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "std": [
+    1.8866175182394962,
+    1.087074650031812,
+    2.268552979700336,
+    0.26945443898211197,
+    0.15767932043502855,
+    0.23853183793427823,
+    1.775314790699228,
+    0.43561393113901564,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "fit_split": "train_only",
+  "feature_names": [
+    "candidate_logit",
+    "best_other_logit",
+    "candidate_margin",
+    "candidate_softmax",
+    "top_softmax",
+    "score_entropy",
+    "above_mean",
+    "score_spread",
+    "question_entity_in_sentence",
+    "question_field_in_sentence",
+    "joint_fact_match",
+    "current_correction_for_question",
+    "superseded_candidate_for_question"
+  ]
+}

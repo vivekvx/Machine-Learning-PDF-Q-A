@@ -1,0 +1,15 @@
+{
+  "file_sha256": {
+    "adamw.safetensors": "dcc35a6538d56746a6a47c0bdbf7df7dfd6be3e04307a4a3ff55b21c9c34b377",
+    "model.safetensors": "41c67dce53a4f767a8e8f8a4684cae8a27d342f4de224769d71f2f4d5f8696e4"
+  },
+  "parameter_count": 14,
+  "provenance": {
+    "plan_sha256": "c18c27e33fba3b59adfa2311fa806256f340863284a5e1489ba1f996b9b683e0",
+    "pointer_checkpoint_sha256": "75d4ca2edaa7ea243017e58d8950e7ad2d1ed0942a695d3c5ca156f19c9e2c3d",
+    "scaler_sha256": "6045311a7f708e40ea3b80c29e6e243ef8e08d8b54f1cf9f9b0313053c55e65a"
+  },
+  "sample_cursor": 800,
+  "schema_version": 1,
+  "step": 800
+}

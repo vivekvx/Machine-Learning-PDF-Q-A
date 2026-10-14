@@ -1,0 +1,45 @@
+{
+  "files_sha256": {
+    "config.json": "8ec94760785123101dd84bb1f05de4664db9d0b03cdf3ef7373f017c3fb6d6a2",
+    "train.jsonl": "6c5a4d29f12e57a97cecaa80b047af55e398c26ed55547f475f49d659195f01b",
+    "validation.jsonl": "f6df0f49d464f40da25b914a67f72f18d90ed9828624d36e5a3335fb9892e4a1"
+  },
+  "rights": "original synthetic non-medical technical text",
+  "schema_version": 2,
+  "source_correction_generator_sha256": "3d1e2bb917cd76a9c6231626882780f3b3fc39764854941d172806f2dcb22739",
+  "source_pointer_manifest_sha256": "50fb590d826999b209620d51a3bdfc746f18d3599b60e17cde8740bdedb58edf",
+  "source_pointer_selection_sha256": "2c76add5a8c93aa9dd4ab9d8e03496609b41653013bb580080d4926ca31a7d25",
+  "stats": {
+    "train": {
+      "categories": {
+        "obsolete_conflicting_result": 1200,
+        "required_fact_absent": 1200,
+        "supported_current_value": 1200,
+        "supported_original": 1200,
+        "wrong_entity_same_field": 1200,
+        "wrong_field_same_entity": 1200
+      },
+      "documents": 300,
+      "records": 7200,
+      "scenarios": 3000,
+      "supported": 2400,
+      "unsupported": 4800
+    },
+    "validation": {
+      "categories": {
+        "obsolete_conflicting_result": 240,
+        "required_fact_absent": 240,
+        "supported_current_value": 240,
+        "supported_original": 240,
+        "wrong_entity_same_field": 240,
+        "wrong_field_same_entity": 240
+      },
+      "documents": 60,
+      "records": 1440,
+      "scenarios": 600,
+      "supported": 480,
+      "unsupported": 960
+    }
+  },
+  "test_sealed": true
+}

@@ -1,0 +1,23 @@
+{
+  "file_sha256": {
+    "adamw.safetensors": "4758a5745c37ab3f5845f70a8d053aaa218081f993f07e9aa6eb3b2c6fef6b68",
+    "model.safetensors": "93e5812193c0554f6a5257c632386bd98067dad0aab6c3edad5bd47a49977f56"
+  },
+  "parameter_count": 9,
+  "provenance": {
+    "config_sha256": "8ec94760785123101dd84bb1f05de4664db9d0b03cdf3ef7373f017c3fb6d6a2",
+    "manifest_sha256": "10136d11e6b4323f54a5ee2092cf7f616ee5a11c3d8f8d7cf559a14adbac8225",
+    "model_sha256": "3367dfe76196a7e67da1c6b13f178fb0b2cc94bea0e7dc33e17d827098f36506",
+    "plan_sha256": "163d5b97a1ed6160364290ecbf1dac527b46840d62b959602b09e17998aa0c55",
+    "pointer_checkpoint_sha256": "75d4ca2edaa7ea243017e58d8950e7ad2d1ed0942a695d3c5ca156f19c9e2c3d",
+    "pointer_selection_sha256": "2c76add5a8c93aa9dd4ab9d8e03496609b41653013bb580080d4926ca31a7d25",
+    "prepare_sha256": "c017df22418cd5eabf496ef93863da00911fa464682ab313e1ee6581db6553ba",
+    "scaler_sha256": "2e0e0426581de1d27bd062ff977da8f25888aa43fd04c5b9fe38cba4c9001b0f",
+    "tokenizer_sha256": "30c39795b07b7006e3b74685ab48bb8c04b6f4a156f5a59185010ddb7b3a0c36",
+    "train_sha256": "6c5a4d29f12e57a97cecaa80b047af55e398c26ed55547f475f49d659195f01b",
+    "validation_sha256": "f6df0f49d464f40da25b914a67f72f18d90ed9828624d36e5a3335fb9892e4a1"
+  },
+  "sample_cursor": 750,
+  "schema_version": 1,
+  "step": 750
+}
