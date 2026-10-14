@@ -54,6 +54,9 @@ research/slm/**/*.parquet
 research/slm/**/*.tar.gz
 research/slm/**/*.bib.gz
 research/slm/**/*.log
+# Vetted SLM-A run and check logs are small reproducibility records.
+!research/slm/scratch/**/worker.log
+!research/slm/scratch/checks/*.log
 
 # Preserve sealed partitions and raw predictions locally.
 research/slm/**/test.sealed.jsonl

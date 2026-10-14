@@ -8,7 +8,7 @@ or the frozen experiment results.
 The following existing local files are deliberately **not** in Git:
 
 - Virtual environments, package caches, downloaded Qwen weights, model and
-  optimizer checkpoint tensors, the large `scratch.zip` archive, and temporary
+  optimizer checkpoint tensors, the large `scratch.zip` archive, and unreviewed
   logs. They are retained in the working directory; no file was deleted.
 - The official QASPER Parquet cache, copied paper sections/answers/evidence in
   curated, pilot, portable, feasibility, training-audit, and retrieval payloads,
@@ -27,6 +27,10 @@ The following existing local files are deliberately **not** in Git:
   source URLs and exact snapshot hashes remain in the provenance manifest.
 - Local adapter settings containing absolute machine paths and untracked
   environment backup files.
+
+The small, reviewed SLM-A `worker.log` and `checks/*.log` files are published
+as historical training and test traces. Other logs remain excluded. These
+traces do not contain checkpoint tensors or the sealed test partitions.
 
 **Reproduction limit:** a clean remote checkout supports source inspection and
 data-independent tests. End-to-end checkpoint loading, old artifact-ledger
