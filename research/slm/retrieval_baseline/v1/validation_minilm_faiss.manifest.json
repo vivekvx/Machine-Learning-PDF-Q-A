@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "condition": "minilm_faiss",
+  "rows": 80,
+  "config_sha256": "fe84cbcf58b6a9858a99fc2881a783810d629a29ad6b619dfc3453fae4e6d2db",
+  "retrieval_config_sha256": "08957a5665f2d0ce85f1bbf6dcfdf1330eb27231602b589d73c395f9a98062e3",
+  "experiment_config_sha256": "29c4dfacd595a069b1ed8186cf347791405c688f5db4912349e1f8bca3d7506a",
+  "source_sha256": "54ef6bbffda3072918d51e0ce37cdf24c87be9e844b64b23b02742794eeedba0",
+  "documents_sha256": "d390b8891977d96a5296efc2be4d46da52a17cf342a1fbda5acfd6b513bf865e",
+  "tokenizer_config_sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+  "minilm_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "minilm_weights_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+  "python": "3.11.15",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "software_versions": {
+    "torch": "2.7.1",
+    "sentence-transformers": "5.1.2",
+    "transformers": "4.56.2",
+    "faiss-cpu": "1.12.0",
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6"
+  },
+  "model_load_seconds": 0.6869705420685932,
+  "metrics": {
+    "questions": 80,
+    "answerable_gold_questions": 40,
+    "recall_at_1": 0.275,
+    "recall_at_3": 0.525,
+    "mrr_at_3": 0.37499999999999994,
+    "packed_evidence_coverage": 0.375,
+    "packed_evidence_count": 15,
+    "candidates_skipped_for_budget": 45,
+    "questions_with_no_packed_passage": 0,
+    "mean_latency_seconds": 0.43980457753641533,
+    "median_latency_seconds": 0.35370118700666353,
+    "p95_latency_seconds": 0.8936452500056475,
+    "mean_rank_latency_seconds": 0.43671428018424197
+  },
+  "output_sha256": "b32980b979c4a52d4e9fcacd965edd585cf7fa33e642781f9f44d9f8fd37d585",
+  "test_answers_read": false
+}

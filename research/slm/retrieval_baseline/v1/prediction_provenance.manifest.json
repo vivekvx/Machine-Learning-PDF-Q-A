@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "rows": 240,
+  "conditions": {
+    "gold": {
+      "input_sha256": "54ef6bbffda3072918d51e0ce37cdf24c87be9e844b64b23b02742794eeedba0",
+      "predictions_sha256": "fdb4c0de944d3a274e372113815635db9fe5c1053658f74ee460e9940b56bfaa"
+    },
+    "tfidf_faiss": {
+      "input_sha256": "9947287f4c12b83d27077a4b9913dbdc108798da7a35ec03c40a24a5d08b337b",
+      "predictions_sha256": "b44391d602da4c20715f9f9e8c091488c1ba543b6fb5e452e0082460d22da04f"
+    },
+    "minilm_faiss": {
+      "input_sha256": "b32980b979c4a52d4e9fcacd965edd585cf7fa33e642781f9f44d9f8fd37d585",
+      "predictions_sha256": "da934fbc3116c339d40d610de80f4b98b1bca7d2091647b60ab84263ff111a36"
+    }
+  },
+  "gold_source_sha256": "54ef6bbffda3072918d51e0ce37cdf24c87be9e844b64b23b02742794eeedba0",
+  "output_sha256": "b88929145f5c816de4d6cd88df6ac99de1ab1389847b7e11f80560f2ee33dd70",
+  "test_answers_read": false,
+  "note": "Retrieved passages carry section/paragraph IDs; their QASPER annotation evidence IDs are not assigned by retrieval, even when the paragraph matches gold. Gold evidence IDs are carried separately."
+}

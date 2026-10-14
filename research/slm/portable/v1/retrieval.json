@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "conditions": {
+    "gold": {
+      "source": "QASPER source-matched paragraph; unanswerable rows use labeled document excerpt",
+      "oracle": true,
+      "page_numbers": false
+    },
+    "tfidf_faiss": {
+      "source": "per-document paragraphs from included validation document",
+      "vectorizer": "scikit-learn TfidfVectorizer",
+      "ngram_range": [1, 2],
+      "max_features": 8192,
+      "norm": "l2",
+      "index": "FAISS IndexFlatIP",
+      "top_k": 3,
+      "query": "question text only",
+      "embedding_model": null
+    },
+    "minilm_faiss": {
+      "source": "per-document paragraphs from included validation document",
+      "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "normalize_embeddings": true,
+      "index": "FAISS IndexFlatIP",
+      "top_k": 3,
+      "query": "question text only",
+      "local_files_only": true
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "config_sha256": "29c4dfacd595a069b1ed8186cf347791405c688f5db4912349e1f8bca3d7506a",
+  "curated_manifest_sha256": "de642a499f5b6b2abdf443e6b0987500a29573f72aa6c593113e68a27d8b36a8",
+  "tokenizer_config_sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+  "chat_template_sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5",
+  "source_dataset": "allenai/qasper",
+  "source_revision": "fdc9d8214fbab5dd782958601db4d678e6934a54",
+  "parquet_revision": "06806e4608976fc2fac0a090ac425d5b2b29caf4",
+  "dataset_card_license": "CC BY 4.0",
+  "attribution": "Dasigi et al. (2021), QASPER: A Dataset of Information-Seeking Questions and Answers Anchored in Research Papers",
+  "rights_limitation": "QASPER dataset license does not independently establish redistribution rights for every underlying S2ORC paper",
+  "counts": {
+    "train": {
+      "answerable": 256,
+      "unanswerable": 96
+    },
+    "validation": {
+      "answerable": 40,
+      "unanswerable": 40
+    }
+  },
+  "skipped_examined_candidates": {
+    "train": {
+      "missing_or_unmatched_evidence": 221,
+      "multiple_distinct_gold_paragraphs": 282,
+      "reference_not_in_gold_paragraph": 359,
+      "full_context_exceeds_token_budget": 9,
+      "source_paragraph_mismatch": 47
+    },
+    "validation": {
+      "missing_or_unmatched_evidence": 43,
+      "multiple_distinct_gold_paragraphs": 67,
+      "reference_not_in_gold_paragraph": 24,
+      "source_paragraph_mismatch": 10,
+      "full_context_exceeds_token_budget": 3
+    }
+  },
+  "file_sha256": {
+    "train.jsonl": "34ee127615ebbdf800066257b6d06022be37ecc6a0b25edb3cac0422d35cda9a",
+    "validation_gold.jsonl": "54ef6bbffda3072918d51e0ce37cdf24c87be9e844b64b23b02742794eeedba0",
+    "selection_audit.jsonl": "d6e72894ca2b58421c66a6506ec1977d72cceb6b82a129233db6247f1c5aca9d",
+    "evidence_review_sample.jsonl": "7efed420a220f04fd0f5e73d5a0b4fa80602a769977bf564dc2693a51d5e92df"
+  },
+  "test_files_read": false,
+  "context_truncation": "none; over-budget candidates skipped"
+}

@@ -1,0 +1,144 @@
+{
+  "baseline_validation.json": {
+    "source_sha256": "bd4acc9b9a82804fcf0714d362dff5fc59ca95407330676c3fc260af7c07eb7f",
+    "entries": [
+      {
+        "question_id": "f5e6f43454332e0521a778db0b769481e23e7682",
+        "answerability": "answerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": false,
+        "format_or_parser_miss": false
+      },
+      {
+        "question_id": "18c5d366b1da8447b5404eab71f4cc658ba12e6f",
+        "answerability": "answerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": false,
+        "format_or_parser_miss": false
+      },
+      {
+        "question_id": "b6ae8e10c6a0d34c834f18f66ab730b670fb528c",
+        "answerability": "answerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": false,
+        "format_or_parser_miss": false
+      },
+      {
+        "question_id": "37861be6aecd9242c4fdccdfcd06e48f3f1f8f81",
+        "answerability": "answerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      },
+      {
+        "question_id": "fb2b536dc8e442dffab408db992b971e86548158",
+        "answerability": "unanswerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      },
+      {
+        "question_id": "71e4ba4e87e6596aeca187127c0d088df6570c57",
+        "answerability": "unanswerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": true,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      },
+      {
+        "question_id": "c9b8d3858c112859eabee54248b874331c48f71b",
+        "answerability": "unanswerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      },
+      {
+        "question_id": "cb196725edc9cdb2c54b72364f3bbf7c76471490",
+        "answerability": "unanswerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      }
+    ],
+    "unanswerable_marker_anywhere": 1,
+    "unanswerable_abstention_language": 4
+  },
+  "baseline_faiss_validation.json": {
+    "source_sha256": "c9abb0c7a86a3aed804f39a5bd37e378c9d18bd34e567b04a64131b76e6f98a4",
+    "entries": [
+      {
+        "question_id": "f5e6f43454332e0521a778db0b769481e23e7682",
+        "answerability": "answerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": true,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      },
+      {
+        "question_id": "18c5d366b1da8447b5404eab71f4cc658ba12e6f",
+        "answerability": "answerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": false,
+        "format_or_parser_miss": false
+      },
+      {
+        "question_id": "b6ae8e10c6a0d34c834f18f66ab730b670fb528c",
+        "answerability": "answerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": false,
+        "format_or_parser_miss": false
+      },
+      {
+        "question_id": "37861be6aecd9242c4fdccdfcd06e48f3f1f8f81",
+        "answerability": "answerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": false,
+        "format_or_parser_miss": false
+      },
+      {
+        "question_id": "fb2b536dc8e442dffab408db992b971e86548158",
+        "answerability": "unanswerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      },
+      {
+        "question_id": "71e4ba4e87e6596aeca187127c0d088df6570c57",
+        "answerability": "unanswerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": true,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      },
+      {
+        "question_id": "c9b8d3858c112859eabee54248b874331c48f71b",
+        "answerability": "unanswerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": true,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      },
+      {
+        "question_id": "cb196725edc9cdb2c54b72364f3bbf7c76471490",
+        "answerability": "unanswerable",
+        "strict_marker_at_start": false,
+        "marker_anywhere": false,
+        "abstention_language": true,
+        "format_or_parser_miss": true
+      }
+    ],
+    "unanswerable_marker_anywhere": 2,
+    "unanswerable_abstention_language": 4
+  }
+}

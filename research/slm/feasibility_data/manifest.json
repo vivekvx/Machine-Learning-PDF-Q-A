@@ -1,0 +1,20 @@
+{
+  "source_curated_manifest_sha256": "de642a499f5b6b2abdf443e6b0987500a29573f72aa6c593113e68a27d8b36a8",
+  "model_revision": "73e3e38d981303bc594367cd910ea6eb48349da8",
+  "selection": "source order, distinct documents; answerable answer substring of matched source paragraph; unanswerable consensus; validation excludes baseline documents",
+  "max_sequence_tokens": 384,
+  "counts": {
+    "train": {
+      "answerable": 24,
+      "unanswerable": 8
+    },
+    "valid": {
+      "answerable": 4,
+      "unanswerable": 4
+    }
+  },
+  "file_sha256": {
+    "train": "faecb86f9ef6bbf40a0e0966bf0127aca33c929b6b82b9b3fb5900217f0f16e5",
+    "valid": "35819c88fb25d13eb6ca1a5fe904e410ca3a8bb306f8a6678e50c3b57f0a35d3"
+  }
+}

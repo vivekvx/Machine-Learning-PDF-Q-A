@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "name": "qasper-qwen3-grounded-qa-v1",
+  "seed": 20261011,
+  "source_dataset": "allenai/qasper",
+  "source_revision": "fdc9d8214fbab5dd782958601db4d678e6934a54",
+  "parquet_revision": "06806e4608976fc2fac0a090ac425d5b2b29caf4",
+  "mlx_tokenizer_revision": "73e3e38d981303bc594367cd910ea6eb48349da8",
+  "base_model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "maximum_sequence_tokens": 512,
+  "maximum_generation_tokens": 64,
+  "targets": {
+    "train": {"answerable": 256, "unanswerable": 96},
+    "validation": {"answerable": 40, "unanswerable": 40}
+  },
+  "selection": "source order; one question per included document; exactly one distinct source-matched evidence paragraph for answerable rows; no unmatched evidence; a reference answer must occur in that paragraph; no context truncation; validation excludes the eight prior baseline documents",
+  "system_instruction": "Answer the question using only the provided research-paper passage. If the passage does not establish an answer, output exactly UNANSWERABLE. Otherwise output a concise answer followed by its passage identifier in square brackets, such as [section:2:paragraph:3]. Do not invent citations or page numbers."
+}

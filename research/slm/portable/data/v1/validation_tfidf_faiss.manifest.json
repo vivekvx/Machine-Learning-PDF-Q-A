@@ -1,0 +1,17 @@
+{
+  "condition": "tfidf_faiss",
+  "source_sha256": "54ef6bbffda3072918d51e0ce37cdf24c87be9e844b64b23b02742794eeedba0",
+  "retrieval_config_sha256": "08957a5665f2d0ce85f1bbf6dcfdf1330eb27231602b589d73c395f9a98062e3",
+  "tokenizer_config_sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+  "output_sha256": "28bd63a8c9825c2220b044414022b8266e8d15dae33c9211d4b98e808cace38f",
+  "rows": 80,
+  "rows_without_fitting_passage": 0,
+  "answerable_gold_recall_count": 12,
+  "candidate_passages_skipped_for_budget": 66,
+  "model_revision": null,
+  "software_versions": {
+    "faiss-cpu": "1.15.1",
+    "scikit-learn": "1.9.1"
+  },
+  "no_test_answers_read": true
+}

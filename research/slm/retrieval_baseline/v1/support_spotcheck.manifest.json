@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "source": "predictions_gold.json, predictions_tfidf_faiss.json, predictions_minilm_faiss.json and their exact selected passages",
+  "selection": "first three answerable and first three unanswerable rows in the frozen source order for each condition",
+  "reviewer": "assistant qualitative spot-check; not an independent human or blinded adjudication",
+  "judgment_scope": "whether the individual response is supported by its packed context; prose abstention may be semantically appropriate while failing the exact UNANSWERABLE contract",
+  "rows": 18,
+  "output_sha256": "7dc27d4a18a50205f82682cc00a49860caa78bb62f3cbb8c94c13f9368475501",
+  "test_answers_read": false
+}
