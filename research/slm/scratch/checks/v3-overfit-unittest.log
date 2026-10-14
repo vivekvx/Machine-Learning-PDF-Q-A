@@ -1,0 +1,17 @@
+test_data_rebuild_is_byte_identical (test_data_and_safety.DataAndSafetyTests.test_data_rebuild_is_byte_identical) ... ok
+test_preflight_and_stop_thresholds (test_data_and_safety.DataAndSafetyTests.test_preflight_and_stop_thresholds) ... ok
+test_tokenizer_round_trip (test_data_and_safety.DataAndSafetyTests.test_tokenizer_round_trip) ... ok
+test_train_validation_isolation_and_vocab (test_data_and_safety.DataAndSafetyTests.test_train_validation_isolation_and_vocab) ... ok
+test_actual_parameter_count (test_mlx_model.MLXModelTests.test_actual_parameter_count) ... ok
+test_causal_prefix_invariance_and_shape (test_mlx_model.MLXModelTests.test_causal_prefix_invariance_and_shape) ... ok
+test_gradient_and_checkpoint_resume_are_reproducible (test_mlx_model.MLXModelTests.test_gradient_and_checkpoint_resume_are_reproducible) ... ok
+test_byte_reproducible_synthetic_fixture (test_overfit.OverfitFixtureTests.test_byte_reproducible_synthetic_fixture) ... ok
+test_curve_export_preserves_step_and_loss (test_overfit.OverfitFixtureTests.test_curve_export_preserves_step_and_loss) ... ok
+test_experiment_caps_and_hashes (test_overfit.OverfitFixtureTests.test_experiment_caps_and_hashes) ... ok
+test_targets_are_exactly_next_tokens_and_fit_context (test_overfit.OverfitFixtureTests.test_targets_are_exactly_next_tokens_and_fit_context) ... ok
+test_all_required_model_groups_receive_gradients (test_overfit.OverfitGradientTests.test_all_required_model_groups_receive_gradients) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.195s
+
+OK
