@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offline Research PDF Assistant</title>
+<style>
+body{font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f4f7fb;color:#182436;margin:0}
+main{max-width:900px;margin:32px auto;padding:0 18px}h1{font-size:30px;margin-bottom:4px}p{color:#526176}
+.card{background:white;border:1px solid #dce4ed;border-radius:14px;padding:22px;margin:18px 0;box-shadow:0 3px 14px rgba(0,0,0,.06)}
+label{font-weight:650;display:block;margin:0 0 8px}textarea,select{box-sizing:border-box;width:100%;padding:12px;border:1px solid #b8c5d6;border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:96px;resize:vertical}button{background:#0d568d;color:white;border:0;border-radius:8px;padding:11px 18px;font-size:15px;cursor:pointer;margin-top:12px}button:disabled{opacity:.55;cursor:wait}
+.muted{font-size:14px;color:#5f7188}.answer{white-space:pre-wrap;font-size:17px;color:#103c6d}.status{font-weight:700}
+.notice{background:#fff7e7;border-left:4px solid #bf7614;border-radius:6px;padding:12px;color:#513509}
+.suggestions{display:flex;gap:8px;flex-wrap:wrap}.suggestions button{background:#e8f1f8;color:#153b58;font-size:13px;padding:7px 10px;margin:2px 0}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7fa;padding:12px;border-radius:8px;font-size:13px}
+details{margin-top:14px}summary{cursor:pointer;font-weight:600}.source{padding:12px;background:#f5f7fa;border-left:3px solid #1d6596;margin:8px 0}
+</style>
+<main>
+<h1>Offline Research PDF Assistant</h1>
+<p>Upload a selectable-text PDF. This local app indexes its pages, retrieves evidence, and can ask cached Qwen3-0.6B to answer with source IDs. The optional scratch pointer selects among four short spans for eligible factual questions. It is a separate research model; Qwen was pretrained externally.</p>
+<section class="card">
+<label for="pdf">1. Upload a PDF</label><input id="pdf" type="file" accept="application/pdf,.pdf">
+<br><button id="upload">Extract and index locally</button> <button id="remove" disabled>Remove PDF from this session</button><div id="upload-result" class="muted" role="status"></div>
+<p class="muted">The browser sends PDF bytes to this localhost service without making a disk copy. Indexed text stays in memory until removed or the service stops.</p>
+</section>
+<section class="card">
+<label for="mode">2. Choose a mode</label>
+<select id="mode"><option value="qwen">Local Qwen RAG — practical default</option><option value="hybrid">Hybrid Scratch + Qwen RAG</option><option value="pointer">Scratch pointer only — narrow experiment</option></select>
+<p class="muted">Hybrid uses the scratch selector for eligible short fact questions. Paper summaries use the same local Qwen model in both generative modes.</p>
+<button id="readiness" type="button">Check Mac readiness for Qwen</button><div id="readiness-result" class="muted" role="status"></div>
+<label for="question" style="margin-top:18px">3. Ask about the PDF</label>
+<textarea id="question" maxlength="300" placeholder="Give me a summary of this paper."></textarea>
+<div class="suggestions"><button type="button" data-question="Give me a summary of this paper.">Short overview</button><button type="button" data-question="What methodology did the researchers use?">Method</button><button type="button" data-question="What were the main experimental results?">Main results</button></div>
+<button id="ask">Send question</button> <button id="preview">Preview source passages</button>
+<div id="result" aria-live="polite"></div>
+</section>
+<p class="muted">Offline after model setup. PDF text stays on this Mac. Citations show exact extracted excerpts, but a linked passage is not proof that every generated claim is true. No OCR is included. The prior evidence checker is not used.</p>
+</main>
+<script>
+let documentId=null, requestNumber=0;
+const $=id=>document.getElementById(id);
+const text=(tag,content,className='')=>{const el=document.createElement(tag);el.textContent=content;el.className=className;return el};
+$('ask').disabled=true;
+$('preview').disabled=true;
+document.querySelectorAll('[data-question]').forEach(button=>button.onclick=()=>{$('question').value=button.dataset.question;$('question').focus()});
+async function showStatus(){try{const s=await (await fetch('/api/status')).json();$('upload-result').textContent=s.qwen_model_installed?'Cached Qwen model found; readiness checked when you ask.':'Cached Qwen model missing; local generation unavailable.'}catch(_){$('upload-result').textContent='Service status unavailable.'}}
+$('readiness').onclick=async()=>{const target=$('readiness-result');target.textContent='Checking current resources…';try{const response=await fetch('/api/model-readiness');const d=await response.json();if(!response.ok)throw Error('Resource check unavailable');const available=(d.available_bytes/1e9).toFixed(2),required=(d.required_available_bytes/1e9).toFixed(2);target.textContent=d.resource_ready_now?`Qwen start check currently passes: ${available} GB available; ${required} GB required. Full checks and live monitoring still run when you ask.`:`Qwen cannot start yet: ${available} GB available; ${required} GB required. ${d.reasons.join('; ')}. Swap already in use is not itself the limit.`}catch(e){target.textContent=`Could not check readiness: ${e.message}`} };
+$('upload').onclick=async()=>{
+ const file=$('pdf').files[0];if(!file){$('upload-result').textContent='Choose a PDF first.';return}
+ const current=++requestNumber;documentId=null;$('result').replaceChildren();$('upload').disabled=true;$('ask').disabled=true;$('preview').disabled=true;$('remove').disabled=true;$('upload-result').textContent='Extracting and indexing locally…';
+ try{const res=await fetch('/api/upload-memory',{method:'POST',headers:{'Content-Type':'application/pdf','X-Pdf-Filename':encodeURIComponent(file.name)},body:file});const data=await res.json();
+ if(!res.ok)throw Error(data.detail||'Upload failed');if(current!==requestNumber)return;documentId=data.document_id;
+ $('upload-result').textContent=`Ready: ${data.filename}, ${data.pages} text page(s), ${data.chunks} local chunks.`;
+ }catch(e){if(current===requestNumber)$('upload-result').textContent=e.message}finally{$('upload').disabled=false;$('ask').disabled=!documentId;$('preview').disabled=!documentId;$('remove').disabled=!documentId}
+};
+$('remove').onclick=async()=>{if(!documentId)return;const id=documentId;documentId=null;++requestNumber;$('ask').disabled=true;$('preview').disabled=true;$('remove').disabled=true;$('result').replaceChildren();$('pdf').value='';
+ try{await fetch(`/api/documents/${encodeURIComponent(id)}`,{method:'DELETE'});$('upload-result').textContent='PDF removed from this session. Choose another PDF to continue.'}
+ catch(_){$('upload-result').textContent='Could not confirm removal; stop the local service to clear its memory.'}};
+$('preview').onclick=async()=>{if(!documentId)return;const question=$('question').value.trim();const out=$('result');out.replaceChildren();if(!question){out.append(text('p','Enter a question first.'));return}
+ const current=++requestNumber;$('preview').disabled=true;$('ask').disabled=true;out.append(text('p','Finding relevant passages locally…','muted'));
+ try{const res=await fetch('/api/evidence-preview',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({document_id:documentId,question})});const data=await res.json();if(current!==requestNumber)return;if(!res.ok)throw Error(data.detail||'Preview failed');out.replaceChildren();
+  out.append(text('p','Selected PDF passages — not a model answer','status'));
+  out.append(text('p','These exact excerpts help you inspect the paper. They have not been summarized or verified as an answer.','notice'));
+  if(data.coverage)out.append(text('p',`${data.coverage.pages_sampled} main-paper page(s) shown; ${data.coverage.back_matter_pages_excluded||0} reference/appendix page(s) excluded.`,'muted'));
+  for(const s of data.sources||[])out.append(text('div',`${s.filename}, page ${s.page_number}, ${s.section}: ${s.text}`,'source'));
+  if(!data.sources?.length)out.append(text('p','No relevant passage was selected. Try a different question.','muted'));
+ }catch(e){if(current===requestNumber)out.replaceChildren(text('p',`Could not preview passages: ${e.message}`))}finally{$('preview').disabled=!documentId;$('ask').disabled=!documentId}
+};
+$('ask').onclick=async()=>{
+ const out=$('result');out.replaceChildren();if(!documentId){out.append(text('p','Upload a PDF first.'));return}
+ const question=$('question').value.trim();if(!question){out.append(text('p','Enter a question.'));return}
+ const mode=$('mode').value, current=++requestNumber;$('ask').disabled=true;$('preview').disabled=true;
+ if(mode==='pointer'&&/\b(?:summari[sz]e|summary|overview|main (?:experimental )?(?:results|findings))\b/i.test(question)){out.append(text('p','The scratch pointer cannot summarize a paper. Choose Local Qwen RAG or Hybrid for a summary; those modes need enough free memory to run Qwen.','notice'));$('ask').disabled=false;$('preview').disabled=false;return}
+ out.append(text('p',mode==='pointer'?'Running the frozen scratch pointer…':'Retrieving PDF evidence and running local Qwen. Long summaries may take longer…'));
+ try{const path=mode==='pointer'?'/api/ask':'/api/hybrid/ask';const res=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({document_id:documentId,question,mode})});
+ const d=await res.json();if(current!==requestNumber)return;if(!res.ok)throw Error(d.detail||'Query failed');out.replaceChildren();
+ const uncertain=['TRUNCATED_UNVERIFIED','UNCITED_UNVERIFIED','INVALID_CITATION_UNVERIFIED','FORMAT_UNVERIFIED'].includes(d.status);
+ const insufficient=d.status==='INSUFFICIENT_EVIDENCE'||d.status==='INSUFFICIENT_CANDIDATES';
+ if(mode==='hybrid')out.append(text('p',d.pointer?.used?'Hybrid run: scratch pointer suggested a span; Qwen wrote the answer.':'Qwen-only answer: the scratch pointer did not run for this question.','notice'));
+ out.append(text('p',uncertain?'I could not finish a reliable answer':insufficient?'I could not confirm an answer':mode==='pointer'?'Experimental scratch span':d.automated_support_warning?.requires_manual_support_review?'Draft answer — check the cited passages':'Answer','status'));
+ if(uncertain){out.append(text('p','The local model produced an incomplete or unverified draft. Ask a narrower question, such as the method or main results.','notice'));
+  if(d.answer){const draft=document.createElement('details');draft.append(text('summary','View partial model output (not a verified answer)'));draft.append(text('pre',d.answer));out.append(draft)}}
+ else if(insufficient){out.append(text('p',mode==='pointer'&&d.status==='INSUFFICIENT_CANDIDATES'?'The scratch model did not run: this PDF question did not yield four short, representable answer spans. It cannot answer from unrestricted prose.':mode==='pointer'?'The scratch model selected a span, but source checks rejected it. This does not prove the paper lacks an answer.':'I could not confirm this from the selected document passages. This does not prove the paper has no answer; try a more specific question.','notice'))}
+ else out.append(text('div',d.answer||d.reason||'No answer returned.','answer'));
+ if(mode==='pointer'){
+  if(d.citation){out.append(text('p',`${d.citation.filename} — page ${d.citation.page_number}`));out.append(text('p',d.citation.sentence))}
+  out.append(text('p',`Scratch selector: ${d.neural_prediction??'not run'} · ${Math.round(d.total_latency_ms||0)} ms`,'muted'));
+ }else{
+  if(d.coverage){const c=d.coverage;out.append(text('p',d.intent?.includes('summary')?`Selective overview: ${c.pages_sampled} of ${c.main_body_pages||c.pages_total} main-paper pages sampled; ${c.back_matter_pages_excluded||0} reference/appendix pages excluded. Sections: ${(c.sections_sampled||[]).join(', ')}.`:`Evidence drawn from ${c.pages_sampled} selected page(s).`,'muted'))}
+  const sources=d.sources?.length?d.sources:(insufficient?d.retrieved_sources?.slice(0,3):[])||[];if(sources.length){const details=document.createElement('details');details.open=true;details.append(text('summary',d.sources?.length?`Cited source excerpts (${sources.length})`:`Passages checked (${sources.length}; no answer verified)`));
+   for(const s of sources)details.append(text('div',`[${s.id}] ${s.filename}, page ${s.page_number}, ${s.section}: ${s.text}`,'source'));out.append(details)}
+  if(d.total_latency_ms)out.append(text('p',`Processed locally in ${(d.total_latency_ms/1000).toFixed(1)} seconds.`,'muted'));
+  if(d.automated_support_warning?.requires_manual_support_review)out.append(text('p','Citation support needs review: sources may be pooled or share too few words with a claim. Check the exact passages; this automatic warning is not a semantic review.','muted'));
+ }
+ const details=document.createElement('details');details.append(text('summary','Technical evidence and timing'));details.append(text('pre',JSON.stringify(mode==='pointer'?{retrieved:d.retrieved,four_candidates:d.four_candidates,neural_candidate_index:d.neural_candidate_index}:{retrieved_sources:d.retrieved_sources,pointer:d.pointer,generation:d.generation,citation_status:d.citation_status},null,2)));out.append(details);
+ }catch(e){if(current===requestNumber){out.replaceChildren();const message=String(e.message||'Local request failed');
+  if(/resource guard|preflight|memory|swap|disk|model request exceeded/i.test(message)){
+   out.append(text('p','Stopped to protect this Mac','status'));
+   const measured=message.match(/available memory\s+(\d+(?:\.\d+)?)\s+GB below\s+(\d+(?:\.\d+)?)\s+GB/i);
+   const advice=/preflight.*available memory/i.test(message)?
+    `The Mac had ${measured?measured[1]+' GB':'too little memory'} available when Qwen tried to start${measured?'; it needs '+measured[2]+' GB':''}. Check Mac readiness above. Closing tabs may not immediately free enough memory; quit unused heavy apps before retrying.`:
+    /swap use grew|swap-out activity grew/i.test(message)?
+    'macOS started using too much swap while the model ran. Close unused browser tabs or other heavy apps before trying again. Changing the PDF alone will not free system memory.':
+    'The local model could not finish within this Mac’s memory and disk safety limits. Close unused heavy apps and try again when resources are stable.';
+   out.append(text('p',advice+' Your PDF remains indexed in memory. The app will not retry automatically.','notice'));
+   if(documentId){try{const preview=await fetch('/api/evidence-preview',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({document_id:documentId,question})});
+    if(preview.ok){const data=await preview.json();if(data.sources?.length){const excerpts=document.createElement('details');excerpts.append(text('summary','Show selected PDF passages (not an answer)'));
+     for(const s of data.sources)excerpts.append(text('div',`${s.filename}, page ${s.page_number}, ${s.section}: ${s.text}`,'source'));out.append(excerpts)}}}catch(_){}}
+  }else{out.append(text('p','Could not complete this request','status'));out.append(text('p','Try a shorter, more specific question.','notice'))}
+  const details=document.createElement('details');details.append(text('summary','Technical reason'));details.append(text('pre',message));out.append(details)
+ }}finally{$('ask').disabled=!documentId;$('preview').disabled=!documentId}
+};
+showStatus();
+</script>
+</html>

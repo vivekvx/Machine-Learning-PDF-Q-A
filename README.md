@@ -8,6 +8,8 @@
 [![FAISS](https://img.shields.io/badge/FAISS-CPU-green)](https://github.com/facebookresearch/faiss)
 [![Tests](https://img.shields.io/badge/Tests-100%25%20Passing-brightgreen)]()
 
+The separate [offline Apple Silicon research assistant](research/slm/scratch/pdf_qa/README.md) has its own installation and safety checks. Its scratch-trained pointer selects among four short spans; broader answers come from an externally pretrained, locally cached Qwen model. It does not change the application documented below.
+
 ---
 
 ## 🧩 Problem Statement

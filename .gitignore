@@ -49,6 +49,8 @@ research/slm/**/.venv/
 research/slm/**/.retrieval-venv/
 research/slm/scratch.zip
 research/slm/**/*.safetensors
+# Required, checksum-verified scratch pointer inference weight (3.6 MB).
+!research/slm/scratch/pointer_qa/v2/runs/main/checkpoint-step-2000/model.safetensors
 research/slm/**/*.npz
 research/slm/**/*.parquet
 research/slm/**/*.tar.gz
