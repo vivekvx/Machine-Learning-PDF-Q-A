@@ -1,0 +1,2384 @@
+[
+  {
+    "question": "What does the document say about MINDS LAB BLADE: Failure Attribution?",
+    "answer": "MINDS LAB BLADE: Failure Attribution in LLM Multi-Agent Systems BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems Xiaoguang Guo, Yaohao Long, Chuxu Zhang† University of Connecticut {xiaoguang.guo, chuxu.zhang}@uconn.edu, robinlong5678@gmail.com †Corresponding author Large language model multi-agent systems extend individual agents’ capabilities through collab- oration across specialized roles, tools, and workflows.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Yet collaboration makes failures harder?",
+    "answer": "Yet collaboration makes failures harder to diagnose: one agent may misinterpret a correct result while others carry the mistake forward.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Failure attribution therefore seeks to?",
+    "answer": "Failure attribution therefore seeks to identify the responsible agent and decisive error step.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Recent methods trace dependencies, but?",
+    "answer": "Recent methods trace dependencies, but knowing where information came from is not the same as knowing where it went wrong.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about We introduce BLADE (Blame Localization?",
+    "answer": "We introduce BLADE (Blame Localization via Audited Dependency Evidence), a training-free framework that moves beyond tracing information to auditing its use.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Using Jev for structured probabilistic?",
+    "answer": "Using Jev for structured probabilistic judgments, BLADE uses dependency probabilities to select relevant source–decision handoffs for auditing.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about At these handoffs, it examines?",
+    "answer": "At these handoffs, it examines whether receiving decisions use their sources faithfully and within task requirements, distinguishing error introduction, propaga- tion, and repair.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about These findings inform a global?",
+    "answer": "These findings inform a global diagnosis that considers all execution steps.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Without reference answers, BLADE achieves?",
+    "answer": "Without reference answers, BLADE achieves the best or tied-best step accuracy among eight strategies under a shared Jev decision interface on 1,228 failed runs across five Who&When and Who&When Pro subsets, outperforming All-at-once by 2.2–11.1 percentage points.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Making responsibility evidence explicit offers?",
+    "answer": "Making responsibility evidence explicit offers a path toward more interpretable and reliable agentic systems.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about § Code: https://github.com/GXG-CS/BLADE 1 Introduction?",
+    "answer": "§ Code: https://github.com/GXG-CS/BLADE 1 Introduction Large language model (LLM)-based agents are increasingly being developed to tackle complex tasks through sustained reasoning, tool use, and multi-agent collaboration (Fourney et al., 2024; Luo et al., 2026).",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about These advances are enabling increasingly?",
+    "answer": "These advances are enabling increasingly sophisticated workflows in software engineering, web-based tasks, and scientific discovery (Ghareeb et al., 2026; Hong et al., 2024).",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about However, as these systems undertake?",
+    "answer": "However, as these systems undertake more complex and interdependent tasks, diagnosing their failures becomes increasingly challenging.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Errors arising from incorrect reasoning?",
+    "answer": "Errors arising from incorrect reasoning, misinterpreted observations, or faulty information exchange may propagate across multiple agents before surfacing in the final outcome (Cemri et al., 2025; Lin et al., 2026).",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Consequently, observing a failed outcome?",
+    "answer": "Consequently, observing a failed outcome, or identifying erroneous intermediate decisions, does not necessarily reveal which mistakes were responsible for the failure (Qi et al., 2026; Zhang et al., 2025).",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about This challenge motivates the study?",
+    "answer": "This challenge motivates the study of failure attribution, which seeks to locate decisive errors and assign responsibility within execution trajectories, providing a foundation for debugging, corrective feedback, and improving the reliability of agentic systems (Chen et al., 2026; Zhang et al., 2025).",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Despite its importance, failure attribution?",
+    "answer": "Despite its importance, failure attribution in multi-agent systems presents three closely related challenges.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about First, identifying relevant interactions is?",
+    "answer": "First, identifying relevant interactions is difficult, as critical decisions may depend on information from distant steps and multiple agents, making it difficult to determine which dependencies deserve closer attention (Deng et al., 2026; Rafi et al., 2026).",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about Second, tracing dependencies alone is?",
+    "answer": "Second, tracing dependencies alone is not enough to establish responsibility.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about An agent may faithfully pass?",
+    "answer": "An agent may faithfully pass along incorrect information or introduce a new error by misinterpreting a correct source (Cemri et al., 2025; Zhang et al., 2025).",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about For example, as shown in?",
+    "answer": "For example, as shown in Figure 1, a code execution correctly identifies Braintree and Honolulu as the farthest-apart birthplaces of U.S.",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about presidents, but a subsequent agent?",
+    "answer": "presidents, but a subsequent agent misreads the result as Honolulu and Quincy, which is then carried into the final 1 arXiv:2610.18780v1 [cs.AI] 13 Oct 2026",
+    "source": "testimage.pdf",
+    "page": 1
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems Find the two U.S.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about presidential birth cities that are?",
+    "answer": "presidential birth cities that are farthest apart.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Verification expert writes code to?",
+    "answer": "Verification expert writes code to recompute distances.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Computer terminal output: Braintree, Massachusetts?",
+    "answer": "Computer terminal output: Braintree, Massachusetts; Honolulu, Hawaii Verification expert misreads the output as: Honolulu, Quincy Web-serving expert repeats: Honolulu, Quincy Final answer: Honolulu, Quincy Failure: the wrong answer is propagated.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Correct result Critical Error: Misinterpretation?",
+    "answer": "Correct result Critical Error: Misinterpretation Error carried forward e 1 e 2 e 3 e 4 Figure 1.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Failure attribution requires distinguishing where?",
+    "answer": "Failure attribution requires distinguishing where an error is first introduced from where it is merely propagated downstream.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about The error therefore arises not?",
+    "answer": "The error therefore arises not from the original source, but from how its information is interpreted.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Third, identifying local errors does?",
+    "answer": "Third, identifying local errors does not necessarily lead to a correct overall attribution, since some mistakes may be corrected later, while others may have little impact on the final outcome (Qi et al., 2026; Rafi et al., 2026).",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Together, these challenges call for?",
+    "answer": "Together, these challenges call for an approach that goes beyond tracing dependencies to examine how agents use information and how local evidence contributes to the overall diagnosis.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Recent studies have explored several?",
+    "answer": "Recent studies have explored several approaches to failure attribution.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Counterfactual replay has been used?",
+    "answer": "Counterfactual replay has been used to construct training supervision for attribution models (Zhang et al., 2026), while repeated-run analyses assess the contributions of individual agent actions (Ge et al., 2026).",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Dependency-guided methods trace information flow?",
+    "answer": "Dependency-guided methods trace information flow and error propagation across execution steps (Deng et al., 2026; Rafi et al., 2026).",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Other approaches examine how errors?",
+    "answer": "Other approaches examine how errors evolve over time, verify failure hypotheses, or check for violations of task and tool requirements (Barke et al., 2026; Li et al., 2026; Qi et al., 2026).",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about These advances have improved our?",
+    "answer": "These advances have improved our understanding of how failures develop.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Building on this progress, we?",
+    "answer": "Building on this progress, we ask how information use at source–decision handoffs can provide explicit evidence of responsibility.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Beyond identifying which steps are?",
+    "answer": "Beyond identifying which steps are connected, we argue that attribution should examine what an agent receives, how it uses that information, and whether its decisions satisfy the task’s requirements.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about This motivates treating each source–?",
+    "answer": "This motivates treating each source– decision handoff as a unit for collecting evidence of error introduction, propagation, and repair.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about Since these interactions can be?",
+    "answer": "Since these interactions can be numerous and their assessment uncertain, such analysis calls for selective, structured judgments over a shared execution context, with their probabilities informing the final diagnosis.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about To realize this perspective, we?",
+    "answer": "To realize this perspective, we introduce BLADE (Blame Localization via Audited Dependency Evidence), a training-free framework that moves beyond tracing information flow to examining responsibility at agent handoffs.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about At its core, BLADE extends?",
+    "answer": "At its core, BLADE extends a dependency graph into a blame graph: rather than merely recording which decisions rely on earlier information, it also captures how that information is used and where errors may be introduced, propagated, or repaired.",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about BLADE first reconstructs relationships among?",
+    "answer": "BLADE first reconstructs relationships among execution steps 2",
+    "source": "testimage.pdf",
+    "page": 2
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems and uses their probabilities to select relevant source–decision handoffs for closer examination.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Inspired by contract-based blame assignment?",
+    "answer": "Inspired by contract-based blame assignment (Findler and Felleisen, 2002; Wadler and Findler, 2009), it then audits how each receiving decision interprets and applies its source under the task’s requirements, distinguishing newly introduced violations from inherited errors and repairs.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about The resulting findings are associated?",
+    "answer": "The resulting findings are associated with the audited handoffs as structured evidence rather than fixed blame assignments.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about BLADE implements these judgments with?",
+    "answer": "BLADE implements these judgments with Jev, whose decision interface evaluates independent structured questions in parallel over a shared execution context and returns probabilities over predefined alternatives.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Finally, BLADE combines the blame?",
+    "answer": "Finally, BLADE combines the blame graph with the complete trajectory to identify the decisive error and assign responsibility, keeping every execution step as a candidate and allowing the global diagnosis to override uncertain local findings.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about We evaluate BLADE on 1,228?",
+    "answer": "We evaluate BLADE on 1,228 failed executions across five subsets of Who&When and Who&When Pro, covering diverse multi-agent architectures and both natural and injected failures.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Under a shared Jev decision?",
+    "answer": "Under a shared Jev decision interface, BLADE achieves the best or tied-best step attribution accuracy among eight compared strategies on every subset.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Our ablations support the central?",
+    "answer": "Our ablations support the central distinction between tracing information and auditing its use: dependency information alone yields mixed improvements, whereas adding handoff-level audit findings improves step accuracy by 2.4–3.4 percentage points across all four subsets examined.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Shuffling dependency edges and audit?",
+    "answer": "Shuffling dependency edges and audit findings across event pairs reduces accuracy, highlighting the importance of grounding evidence in the interactions it describes.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Dependency-guided auditing matches or outperforms?",
+    "answer": "Dependency-guided auditing matches or outperforms exhaustive auditing on three subsets while examining only 13–23% as many handoffs.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about These results demonstrate the value?",
+    "answer": "These results demonstrate the value of using dependencies to guide targeted audits and the evidence to support global attribution.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about We make the following contributions?",
+    "answer": "We make the following contributions: • Beyond Dependency Tracing.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about We identify source–decision handoffs as?",
+    "answer": "We identify source–decision handoffs as units for collecting responsibil- ity evidence, distinguishing information provenance from how that information is used.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Dependency tracing reveals how information?",
+    "answer": "Dependency tracing reveals how information flows between agents, but not whether an error originates in a re- ceiving decision or is inherited from an upstream source.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about We argue that source–decision handoffs?",
+    "answer": "We argue that source–decision handoffs are therefore critical to understanding how failures arise and propagate.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about We introduce BLADE, a training-free?",
+    "answer": "We introduce BLADE, a training-free framework that uses probabilistic dependen- cies to guide where to inspect rather than directly assigning blame.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about By auditing how agents interpret?",
+    "answer": "By auditing how agents interpret and use information, BLADE constructs a blame graph capturing error introduction, propagation, and repair.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about This evidence informs a global?",
+    "answer": "This evidence informs a global diagnosis in which all execution steps remain candidates.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Experiments on 1,228 failed trajectories?",
+    "answer": "Experiments on 1,228 failed trajectories across five benchmark subsets reveal that dependency information alone offers inconsistent benefits, whereas handoff auditing consistently improves attribution across the four subsets examined in our ablations.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Selective auditing also matches or?",
+    "answer": "Selective auditing also matches or outperforms exhaustive auditing on three subsets, showing that inspecting more interactions does not necessarily improve attribution.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about 2 Related Work 2.1 Failure?",
+    "answer": "2 Related Work 2.1 Failure Attribution in Agent Trajectories Who&When (Zhang et al., 2025) established agent- and step-level failure attribution, with subsequent benchmarks covering injected failures (Liu et al., 2026) and richer execution traces (Chen et al., 2026).",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Beyond direct trajectory judgments, AgenTracer?",
+    "answer": "Beyond direct trajectory judgments, AgenTracer (Zhang et al., 2026) trains an attribution model on supervision derived from counterfactual replay, while FAMAS (Ge et al., 2026) estimates responsibility across repeated executions.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about These approaches obtain additional attribution?",
+    "answer": "These approaches obtain additional attribution signals through training or repeated runs, motivating complementary forms of diagnosis.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Other methods focus on collecting?",
+    "answer": "Other methods focus on collecting evidence of failure.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about AgentRx (Barke et al., 2026)?",
+    "answer": "AgentRx (Barke et al., 2026) checks task and tool constraints, ErrorProbe (Li et al., 2026) verifies failure hypotheses through tool-grounded execution, and TrajDebug (Qi et al., 2026) tracks errors through their correction and downstream impact.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about Together, they highlight an important?",
+    "answer": "Together, they highlight an important distinction: detecting an error is not equivalent to establishing responsibility.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about In collaborative workflows, this often?",
+    "answer": "In collaborative workflows, this often depends on how agents interpret and use information produced by others.",
+    "source": "testimage.pdf",
+    "page": 3
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems 1.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about Dependency Reconstruction Jev builds dependencies?",
+    "answer": "Dependency Reconstruction Jev builds dependencies 2.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about Graph-Guided Contract Auditing plan handoffs?",
+    "answer": "Graph-Guided Contract Auditing plan handoffs, then audit them 3.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about Defeasible Diagnosis all events remain?",
+    "answer": "Defeasible Diagnosis all events remain candidates Task q Trajectory τ … Events V e₁ e₂ e₃ e₄ e₅ … depends_on repeats contradicts repairs Dependency graph e₁ e₂ e₃ e₄ e₅ Output: dependency edges E Requirements R Dependency evidence E Events V … Plan handoffs H Audit handoff u →v u v check contract inspect use assign label Jev auditor kept breach inherited / repaired Findings F Blame graph G = (V, E, R, F) Task q Full trajectory τ … Blame graph G … t̂ … e₅ local findings are hints Jev diagnosis When = t̂ Who = author(t̂) Output: responsibility attribution P(e) t̂ … Figure 2.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about (1) Jev reconstructs dependencies between?",
+    "answer": "(1) Jev reconstructs dependencies between events.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about (2) The dependencies select the?",
+    "answer": "(2) The dependencies select the handoffs to audit, and Jev checks how each agent decision uses its source against the task’s requirement spans R.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about (3) The diagnosis reads the?",
+    "answer": "(3) The diagnosis reads the full trajectory with the blame graph G = (V, E, R, F); every event remains a candidate.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about 2.2 From Dependency Tracing to?",
+    "answer": "2.2 From Dependency Tracing to Responsibility Evidence Dependency-aware methods examine these cross-step interactions.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about CHIEF (Wang et al., 2026a)?",
+    "answer": "CHIEF (Wang et al., 2026a) and DCFA (Wang et al., 2026b) organize failures through causal-inspired structures, while TRIAGE (Wang, 2026) ranks steps by suspicion and structural impact.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about More closely related, FALAT (Rafi?",
+    "answer": "More closely related, FALAT (Rafi et al., 2026) uses dependencies to distinguish error origins, propagation, and correction, whereas DeFA (Deng et al., 2026) combines event dependencies with failure propagation analysis.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about These methods demonstrate the value?",
+    "answer": "These methods demonstrate the value of structural evidence, yet a dependency does not itself establish whether the receiving decision used its source correctly.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about Moreover, uncertain local evidence raises?",
+    "answer": "Moreover, uncertain local evidence raises the question of which interactions warrant closer examination and how strongly they should influence attribution.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about This distinction echoes data provenance?",
+    "answer": "This distinction echoes data provenance and program slicing, which trace information dependencies (Buneman et al., 2001; Weiser, 1981), and contract-based blame assignment, which examines responsibility at interaction boundaries (Findler and Felleisen, 2002).",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about BLADE builds on these ideas?",
+    "answer": "BLADE builds on these ideas by using dependency probabilities to select source–decision handoffs for targeted auditing.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about Its typed findings capture how?",
+    "answer": "Its typed findings capture how information is used, distinguishing error introduction from propagation and repair.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about Unlike candidate- focused adjudication in?",
+    "answer": "Unlike candidate- focused adjudication in DeFA, these findings do not restrict the final search space: every step remains eligible for global attribution.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about Dependencies thus guide where to?",
+    "answer": "Dependencies thus guide where to inspect, while the resulting evidence informs where responsibility lies.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about 3 BLADE BLADE separates the?",
+    "answer": "3 BLADE BLADE separates the construction of diagnostic evidence from the final assignment of responsibility.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about Rather than using dependencies to?",
+    "answer": "Rather than using dependencies to directly determine blame, it uses them to guide targeted inspection of source– decision handoffs.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about These audits provide structured evidence?",
+    "answer": "These audits provide structured evidence about how information is used, while the final diagnosis considers the complete trajectory without restricting the candidate events (Figure 2, Algorithm 1).",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about We implement these judgments with?",
+    "answer": "We implement these judgments with Jev, a decision model that returns probabilities over predefined alternatives rather than free-form text.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about 3.1 Problem Definition Following Zhang?",
+    "answer": "3.1 Problem Definition Following Zhang et al.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about (2025), consider a multi-agent system?",
+    "answer": "(2025), consider a multi-agent system attempting a task q.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about A failed execution produces a?",
+    "answer": "A failed execution produces a trajectory τ = (e1, .",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about eT), where each event?",
+    "answer": ", eT), where each event et records a message, action, or observation.",
+    "source": "testimage.pdf",
+    "page": 4
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems Algorithm 1 BLADE: Dependency-guided responsibility attribution.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Require: Task q, trajectory τ?",
+    "answer": "Require: Task q, trajectory τ = (e1, .",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about eT), threshold θ, maximum?",
+    "answer": ", eT), threshold θ, maximum sources per event K (1) Dependency reconstruction 1: for t = 2, .",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about T, r ∈Rlink do?",
+    "answer": ", T, r ∈Rlink do 2: p(r) ut ←PJev(eu | sτ, xt,r) for u < t 3: end for 4: E ←{(eu, et, r, p(r) ut ) : p(r) ut ≥θ} (2) Graph-guided contract auditing 5: H ←S t Ht ▷Eq.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about 3 6: R ←requirement spans?",
+    "answer": "3 6: R ←requirement spans of q 7: κ(et) ←decision/evidence classification via Jev for all et ∈V 8: ℓut, πut ←Jev’s semantic audit of eu →et for (eu, et) ∈H, given R 9: F ←non-kept findings whose receiving events are agent decisions ▷Eq.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about 5 10: G ←(V, E?",
+    "answer": "5 10: G ←(V, E, R, F) (3) Defeasible diagnosis 11: ˆt ←arg maxt PJev(et | q, τ, G) ▷all events 12: return ˆt, a(eˆt) V = {e1, .",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about eT} denote the event?",
+    "answer": ", eT} denote the event set, and let a(et) denote the recorded actor identifier of event et, which may be undefined (⊥).",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Failure attribution aims to identify?",
+    "answer": "Failure attribution aims to identify the responsible agent a∗and decisive error step t∗.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Following Who&When, an error is?",
+    "answer": "Following Who&When, an error is decisive if correcting it would turn the failed execution into a successful one, with preceding steps unchanged and subsequent execution adjusted accordingly.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about If multiple decisive errors exist?",
+    "answer": "If multiple decisive errors exist, the target is the earliest.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Given only q and τ?",
+    "answer": "Given only q and τ, BLADE predicts ˆt ∈{1, .",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about T} and assigns the?",
+    "answer": ", T} and assigns the recorded actor of the selected event as responsible, ˆa = a(eˆt).",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Neither the reference answer nor?",
+    "answer": "Neither the reference answer nor the ground-truth attribution is available during inference.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about 3.2 Dependency Reconstruction The first?",
+    "answer": "3.2 Dependency Reconstruction The first challenge in constructing responsibility evidence is identifying which interactions warrant closer examination.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about In multi-agent trajectories, a decision?",
+    "answer": "In multi-agent trajectories, a decision may rely on a distant instruction, tool result, or interme- diate claim rather than the immediately preceding event.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Program slicing and data provenance?",
+    "answer": "Program slicing and data provenance have long studied how outputs depend on earlier computations and information (Buneman et al., 2001; Weiser, 1981).",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about In agent trajectories, however, many?",
+    "answer": "In agent trajectories, however, many relevant dependencies are implicit in natural-language interactions and must be inferred from trajectory context.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about BLADE reconstructs these relations as?",
+    "answer": "BLADE reconstructs these relations as probabilistic evidence, using them to guide targeted auditing rather than directly determining responsibility.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Given a shared state sτ?",
+    "answer": "Given a shared state sτ containing the task and trajectory, BLADE uses Jev (TypeSafe, jev-1.13.0)1 to assess four relations for each event et with t > 1: depends on, repeats, contradicts, and repairs.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Each relation is evaluated through?",
+    "answer": "Each relation is evaluated through a separate multiple-choice question asking which preceding event in {e1, .",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about et−1} best matches the?",
+    "answer": ", et−1} best matches the relation, with NONE as an additional option.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Jev returns probabilities over these?",
+    "answer": "Jev returns probabilities over these alternatives, with questions sharing the same context evaluated independently and batched into requests (Appendix D).",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about Let Rlink denote the four?",
+    "answer": "Let Rlink denote the four relation types and xt,r the question for relation r at event et.",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about The probability assigned to an?",
+    "answer": "The probability assigned to an earlier event eu is p(r) ut = PJev(eu | sτ, xt,r).",
+    "source": "testimage.pdf",
+    "page": 5
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems We retain relations with probability at least θ = 0.3, forming the weighted edge set E = \b(eu, et, r, p(r) ut ) : u < t, r ∈Rlink, p(r) ut ≥θ .",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about (2) These edges represent plausible?",
+    "answer": "(2) These edges represent plausible relations rather than verified causal links.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about The relation types serve complementary?",
+    "answer": "The relation types serve complementary roles: the full depends-on distributions guide the selection of source–decision handoffs for auditing, while all four relations provide structural context for global diagnosis.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Dependency reconstruction thus identifies where?",
+    "answer": "Dependency reconstruction thus identifies where information may have flowed; determining how it was used requires examining the handoffs themselves.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about 3.3 Graph-Guided Contract Auditing An?",
+    "answer": "3.3 Graph-Guided Contract Auditing An erroneous decision need not be the source of its own error.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about The same incorrect claim may?",
+    "answer": "The same incorrect claim may reflect a misinterpretation of a correct source or faithful propagation of an upstream mistake.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Distinguishing these cases requires examining?",
+    "answer": "Distinguishing these cases requires examining how the receiving decision interprets and uses its source.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about BLADE therefore treats the source–decision?",
+    "answer": "BLADE therefore treats the source–decision handoff as the unit of diagnostic evidence.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Drawing on contract-based blame assignment?",
+    "answer": "Drawing on contract-based blame assignment (Findler and Felleisen, 2002), it examines whether receiving decisions use their sources faithfully and in accordance with the task’s requirements.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Not all event pairs represent?",
+    "answer": "Not all event pairs represent meaningful information transfers.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Exhaustively auditing them requires a?",
+    "answer": "Exhaustively auditing them requires a quadratic number of judgments and may introduce findings from weakly related interactions.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about BLADE instead uses the depends-on?",
+    "answer": "BLADE instead uses the depends-on distributions to prioritize plausible handoffs.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about For each event et, let?",
+    "answer": "For each event et, let Ut = {u < t : p(dep) ut ≥θ}, where dep denotes the depends-on relation, and let St ⊆Ut be the indices of the at most K = 2 sources with the highest p(dep) ut .",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about The selected handoffs are Ht?",
+    "answer": "The selected handoffs are Ht = \b(eu, et) : u ∈St , (3) and H = ST t=2 Ht.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Audit planning reuses the dependency?",
+    "answer": "Audit planning reuses the dependency probabilities and requires no additional model calls.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Crucially, selecting what to inspect?",
+    "answer": "Crucially, selecting what to inspect does not restrict which events may ultimately be held responsible.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Each handoff (eu, et) carries?",
+    "answer": "Each handoff (eu, et) carries an implicit semantic contract: the receiving decision should preserve its source’s meaning, avoid treating uncertain information as established fact, and respect the task’s requirements.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Unlike formal contract verification, these?",
+    "answer": "Unlike formal contract verification, these obligations are assessed through structured semantic judgments.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about BLADE extracts requirement spans R?",
+    "answer": "BLADE extracts requirement spans R from the task q (Appendix B.1) and includes them with the complete trajectory in the audit state sτ,R.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about Jev classifies each event as?",
+    "answer": "Jev classifies each event as an agent decision or evidence, denoted by κ(et), and evaluates how each selected receiving event et uses its source eu.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about For question xuse ut?",
+    "answer": "For question xuse ut , Jev assigns probabilities over nine predefined labels L: put(ℓ) = PJev \u0000ℓ| sτ,R, xuse ut \u0001 , ℓ∈L.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about (4) Let ℓut be the?",
+    "answer": "(4) Let ℓut be the most probable label and πut its assigned probability.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about The labels distinguish potential error?",
+    "answer": "The labels distinguish potential error introduction, inheritance or repair of existing errors, and cases yielding no retained finding.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about We organize them into three?",
+    "answer": "We organize them into three groups, L = Lkept ∪ Lbreach ∪Linh: • Kept: faithful use, no actual use of the source, or insufficient evidence to assess the handoff.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about • Breach: potential error introduction?",
+    "answer": "• Breach: potential error introduction through unverified adoption, inapplicable information, misinter- pretation, or a correction that introduces a new error.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about • Inherited or repaired: propagation?",
+    "answer": "• Inherited or repaired: propagation of an existing error, or correction without introducing a new one.",
+    "source": "testimage.pdf",
+    "page": 6
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems For handoffs into agent decisions, BLADE retains non-kept judgments as structured findings.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Let Hdec = {(eu, et)?",
+    "answer": "Let Hdec = {(eu, et) ∈H : κ(et) = decision}.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about The findings are F =?",
+    "answer": "The findings are F = \b(eu, et, ℓut, πut) : (eu, et) ∈Hdec, ℓut /∈Lkept .",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about The resulting blame graph G?",
+    "answer": "The resulting blame graph G = (V, E, R, F) connects where information came from with how it was used, combining dependency relations and handoff findings as evidence for global attribution.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Here, E captures plausible information?",
+    "answer": "Here, E captures plausible information relationships, F records information-use findings at selected handoffs, and R provides the task requirements against which these interactions are assessed.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about 3.4 Defeasible Diagnosis Handoff-level evidence?",
+    "answer": "3.4 Defeasible Diagnosis Handoff-level evidence reveals how errors are introduced, propagated, or repaired, but does not necessarily identify the decisive error.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about A local breach may be?",
+    "answer": "A local breach may be corrected later, have no effect on the outcome, or coexist with other errors.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Conversely, a decisive error may?",
+    "answer": "Conversely, a decisive error may lack an audit finding.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Confidence in an information- use?",
+    "answer": "Confidence in an information- use label does not imply that the corresponding event is responsible for the failure.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Although each audit considers the?",
+    "answer": "Although each audit considers the complete trajectory, it answers a handoff-specific question.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Global diagnosis must additionally determine?",
+    "answer": "Global diagnosis must additionally determine which error was decisive for the failed execution.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about This distinction draws on model-based?",
+    "answer": "This distinction draws on model-based diagnosis, which seeks explanations for observed system failures (Reiter, 1987), and truth maintenance, which allows conclusions to be revised as their supporting evidence changes (Doyle, 1979).",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Following this perspective, BLADE treats?",
+    "answer": "Following this perspective, BLADE treats the blame graph as revisable diagnostic evidence rather than a fixed assignment of responsibility.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Given the task q, complete?",
+    "answer": "Given the task q, complete trajectory τ, and blame graph G, Jev answers the same decisive-step question as the All-at-once baseline, augmented with structured responsibility evidence: ˆt = arg max t∈{1,...,T} PJev \u0000et | q, τ, G \u0001 , ˆa = a(eˆt).",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about (6) Every event remains a?",
+    "answer": "(6) Every event remains a candidate, including those without audit findings, allowing the global judgment to reconsider uncertain local evidence and distinguish error origins from downstream symptoms.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about By separating evidence collection from?",
+    "answer": "By separating evidence collection from attribution, BLADE uses dependencies to guide inspection, handoff audits to characterize information use, and global diagnosis to identify the decisive error.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about 4 Experiments 4.1 Experimental Setup?",
+    "answer": "4 Experiments 4.1 Experimental Setup Benchmarks.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about We evaluate BLADE on 1,228?",
+    "answer": "We evaluate BLADE on 1,228 failed execution trajectories from two established benchmarks: Who&When (Zhang et al., 2025), featuring naturally occurring failures, and Who&When Pro (Liu et al., 2026), featuring injected failures.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Who&When includes the Hand-Crafted (HC)?",
+    "answer": "Who&When includes the Hand-Crafted (HC) subset based on Magentic- One (Fourney et al., 2024) and the Algorithm-Generated (AG) subset built using CaptainAgent (Song et al., 2024).",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Our evaluation on Who&When Pro?",
+    "answer": "Our evaluation on Who&When Pro covers three distinct multi-agent architectures: Magentic-One, the debate-based DyLAN (Liu et al., 2024), and the pipeline-based MetaGPT (Hong et al., 2024).",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Together, these five subsets cover?",
+    "answer": "Together, these five subsets cover diverse collaboration structures and both natural and injected failure settings for evaluating attribution.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about We compare BLADE against seven?",
+    "answer": "We compare BLADE against seven representative failure attribution strategies from three cate- gories.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about Direct attribution includes All-at-once, Step-by-step?",
+    "answer": "Direct attribution includes All-at-once, Step-by-step, and Binary search (Zhang et al., 2025), which identify decisive errors through different trajectory inspection strategies.",
+    "source": "testimage.pdf",
+    "page": 7
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems Who&When Who&When Pro Macro Avg.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about HC AG Magentic-One DyLAN MetaGPT?",
+    "answer": "HC AG Magentic-One DyLAN MetaGPT Method Agent Step Agent Step Agent Step Agent Step Agent Step Agent Step All-at-once (Zhang et al., 2025) 50.0 24.1 64.3 50.0 80.4 78.7 59.9 52.6 46.9 54.3 60.3 52.0 Step-by-step (Zhang et al., 2025) 55.2 27.6 57.9 39.7 80.5 76.0 50.7 46.1 53.1 53.1 59.5 48.5 Binary search (Zhang et al., 2025) 56.9 31.0 59.5 45.2 74.6 68.7 58.6 56.6 37.0 37.0 57.3 47.7 TRIAGE (Wang, 2026) 56.9 22.4 60.3 44.4 83.5 79.9 52.6 48.0 46.9 46.9 60.0 48.3 FALAT (Rafi et al., 2026) 48.3 20.7 56.3 37.3 76.1 69.3 40.1 34.2 37.0 37.0 51.6 39.7 ErrorProbe (Li et al., 2026) 63.8 20.7 59.5 39.7 77.8 74.7 52.0 42.1 29.6 29.6 56.5 41.4 TrajDebug (Qi et al., 2026) 58.6 22.4 62.7 47.6 83.7 80.0 52.0 42.8 63.0 63.0 64.0 51.2 BLADE (ours) 58.6 31.0 66.7 54.0 84.0 80.9 59.2 56.6 65.4 65.4 66.8 57.6 Table 1.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Agent and step accuracy (%)?",
+    "answer": "Agent and step accuracy (%) without the reference answer.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about All methods are instantiated under?",
+    "answer": "All methods are instantiated under the same Jev decision interface (Appendix B.2).",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about equally weights the five subsets?",
+    "answer": "equally weights the five subsets.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Bold marks the best and?",
+    "answer": "Bold marks the best and underline the second best.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about includes TRIAGE (Wang, 2026) and?",
+    "answer": "includes TRIAGE (Wang, 2026) and FALAT (Rafi et al., 2026), which use structural and dependency infor- mation for failure localization.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Error-aware diagnosis includes ErrorProbe (Li?",
+    "answer": "Error-aware diagnosis includes ErrorProbe (Li et al., 2026) and TrajDebug (Qi et al., 2026), which examine failure evidence and error evolution.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about For consistent evaluation, all strate-?",
+    "answer": "For consistent evaluation, all strate- gies are instantiated under a shared Jev decision interface using identical tasks and recorded trajectories.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Implementation details for each strategy?",
+    "answer": "Implementation details for each strategy are provided in Appendix B.2.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about We report agent accuracy and?",
+    "answer": "We report agent accuracy and step accuracy, measuring agreement with the anno- tated responsible agent and decisive error step, respectively.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about For DyLAN, whose annotations specify?",
+    "answer": "For DyLAN, whose annotations specify an agent and a round, a step prediction is correct if it identifies a turn of the annotated agent in that round.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about All methods receive the same?",
+    "answer": "All methods receive the same task and trajectory without access to reference answers or ground-truth attribution labels.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about We remove benchmark-construction metadata that?",
+    "answer": "We remove benchmark-construction metadata that reveals injected error locations and apply a consistent context-length policy across methods (Appendix A).",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Invalid or missing predictions are?",
+    "answer": "Invalid or missing predictions are counted as incorrect.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about 4.2 Attribution Performance Overall attribution?",
+    "answer": "4.2 Attribution Performance Overall attribution accuracy.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Table 1 reports the performance?",
+    "answer": "Table 1 reports the performance of BLADE and seven baselines across five subsets.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about With each subset weighted equally?",
+    "answer": "With each subset weighted equally, BLADE achieves the highest macro-average accuracy for both step attribution (57.6%) and agent attribution (66.8%).",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about These exceed the strongest baseline?",
+    "answer": "These exceed the strongest baseline averages by 5.6 percentage points for step attribution (All-at-once, 52.0%) and 2.8 points for agent attribution (TrajDebug, 64.0%).",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about BLADE also achieves the best?",
+    "answer": "BLADE also achieves the best or tied-best step accuracy on every subset, with three outright wins and two ties.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Its step accuracy gains over?",
+    "answer": "Its step accuracy gains over All-at-once range from 2.2 to 11.1 points, spanning both natural and injected failures across different multi-agent architectures.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about To evaluate localization quality beyond?",
+    "answer": "To evaluate localization quality beyond exact-step agreement, Fig- ure 3 reports accuracy under increasing tolerance k around the annotated step.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about BLADE consistently ranks among the?",
+    "answer": "BLADE consistently ranks among the strongest methods across tolerance levels, indicating that its localization advantage extends beyond exact matches.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about 4.3 Mechanism Analysis Beyond dependency?",
+    "answer": "4.3 Mechanism Analysis Beyond dependency tracing.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Table 2 examines the contribution?",
+    "answer": "Table 2 examines the contribution of handoff auditing, with the diagnosis question and candidate set held fixed.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Dependency context alone yields mixed?",
+    "answer": "Dependency context alone yields mixed improvements over All-at- once.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about Adding audit findings, however, improves?",
+    "answer": "Adding audit findings, however, improves step accuracy by 2.4–3.4 points across all four subsets.",
+    "source": "testimage.pdf",
+    "page": 8
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems 0 1 2 3 4 5 Tolerance k (events) 20 30 40 50 60 Step accuracy (%) Hand-Crafted 0 1 2 3 4 5 Tolerance k (events) 40 50 60 70 80 90 Algorithm-Generated 0 1 2 3 4 5 Tolerance k (events) 70 75 80 85 90 95 Magentic-One 0 1 2 3 4 5 Tolerance k (events) 40 50 60 70 80 90 DyLAN All-at-once Step-by-step Binary search TRIAGE ErrorProbe FALAT TrajDebug BLADE Figure 3.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Step accuracy under increasing localization?",
+    "answer": "Step accuracy under increasing localization tolerance k, where predictions within k events of the annotated step are considered correct.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about k = 0 corresponds to?",
+    "answer": "k = 0 corresponds to the exact step accuracy reported in Table 1.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Who&When Who&When Pro Evidence HC?",
+    "answer": "Who&When Who&When Pro Evidence HC AG M-One DyLAN No evidence 24.1 50.0 78.7 52.6 Dependencies only 27.6 51.6 78.4 53.9 Shuffled evidence 25.9 52.4 76.7 52.0 Without breach findings 29.3 52.4 78.3 53.3 Full BLADE 31.0 54.0 80.9 56.6 Table 2.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Step attribution accuracy (%) under?",
+    "answer": "Step attribution accuracy (%) under different evidence configurations.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about The diagnosis question and candidate?",
+    "answer": "The diagnosis question and candidate events are held fixed.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about No evidence corresponds to All-at-once?",
+    "answer": "No evidence corresponds to All-at-once; dependencies only includes dependency edges and task requirement spans; shuffled evidence randomly reassigns edges and audit findings to event pairs.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Removing breach findings reduces accuracy?",
+    "answer": "Removing breach findings reduces accuracy on every subset, as does shuffling graph evidence across event pairs.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Breach findings also concentrate at?",
+    "answer": "Breach findings also concentrate at the annotated decisive step: on Magentic-One, 70% of audited handoffs entering that step are labeled breach, compared with 4% of those entering earlier steps.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about These results show that useful?",
+    "answer": "These results show that useful attribution evidence comes not only from tracing dependencies, but from examining how information is used at specific handoffs.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Auditing more handoffs does not?",
+    "answer": "Auditing more handoffs does not necessarily improve attribution.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Figure 4 compares dependency-guided selection?",
+    "answer": "Figure 4 compares dependency-guided selection with exhaustive auditing under the same diagnosis procedure.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about BLADE examines only 13–23% as?",
+    "answer": "BLADE examines only 13–23% as many handoffs while matching or improving step accuracy on AG, Magentic-One, and DyLAN.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Its findings are also more?",
+    "answer": "Its findings are also more concentrated on the annotated decisive step.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about The choice of sources matters?",
+    "answer": "The choice of sources matters as well: on DyLAN, replacing dependency-guided selection with a recency-based plan under the same audit budget nearly halves the share of findings at the decisive step and reduces attribution accuracy.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about Dependency reconstruction thus serves not?",
+    "answer": "Dependency reconstruction thus serves not merely to represent information flow, but to identify which interactions warrant closer inspection.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about 4.4 Further Analysis Trajectory length?",
+    "answer": "4.4 Further Analysis Trajectory length.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about We examine attribution performance as?",
+    "answer": "We examine attribution performance as the number of agent steps increases.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about On Magentic-One, BLADE improves step?",
+    "answer": "On Magentic-One, BLADE improves step accuracy over All-at-once from 74.4% to 78.8% for trajectories with four to seven agent steps, and from 52.6% to 56.1% for those with more than seven steps.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about These gains indicate that handoff-level?",
+    "answer": "These gains indicate that handoff-level evidence remains useful for attribution in longer trajectories.",
+    "source": "testimage.pdf",
+    "page": 9
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems 0.0 0.5 1.0 1.5 2.0 2.5 3.0 Step accuracy gain over full auditing (points) DyLAN M-One AG +1.3 +0.6 +2.4 5 10 30 60 Handoff audits per run DyLAN M-One AG 10 20 30 40 50 Findings on decisive step (%) DyLAN M-One AG BLADE Full auditing Figure 4.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about Top: step accuracy gain over?",
+    "answer": "Top: step accuracy gain over exhaustive auditing; middle: handoff audits per run (log scale); bottom: share of findings on the annotated decisive step.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about The full BLADE pipeline has?",
+    "answer": "The full BLADE pipeline has an estimated Jev inference cost of approximately $1.9 across all 1,228 trajectories at the published input-token rate.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about This covers dependency reconstruction, contract?",
+    "answer": "This covers dependency reconstruction, contract auditing, and global diagnosis.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about 5 Conclusion Dependencies reveal where?",
+    "answer": "5 Conclusion Dependencies reveal where information came from; auditing its use helps locate where errors were intro- duced.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about BLADE audits the handoffs that?",
+    "answer": "BLADE audits the handoffs that the dependencies select and leaves the verdict to a global diagnosis that may overrule the audit.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about With one decision model and?",
+    "answer": "With one decision model and no reference answer, this gives the best or tied-best step accuracy among eight methods on five subsets, and the blame graph exposes the local evidence available to each diagnosis.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about The experiments also carry a?",
+    "answer": "The experiments also carry a broader lesson: dependency information alone is not sufficient for reliable attribution, whereas examining how agents use their sources consistently improves localization, and selective auditing can be more effective than examining every possible interaction.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about Because every judgment is a?",
+    "answer": "Because every judgment is a typed question, any model that returns option probabilities can take Jev’s place; testing such models, and auditing richer contracts than the task’s requirement spans, are natural next steps toward reliable agentic systems.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about Limitations Our evaluation covers five?",
+    "answer": "Limitations Our evaluation covers five subsets of Who&When and Who&When Pro, spanning different multi-agent architectures and both naturally occurring and injected failures.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about While these benchmarks provide diverse?",
+    "answer": "While these benchmarks provide diverse settings for failure attribution, broader evaluation on real-world workflows and additional task domains would further establish the generalizability of our findings.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about BLADE relies on recorded execution?",
+    "answer": "BLADE relies on recorded execution traces, and its attribution quality depends on the availability of relevant observations and interactions.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about For trajectories exceeding the model’s?",
+    "answer": "For trajectories exceeding the model’s context window, input shortening may omit useful evidence.",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about Our experiments use a single?",
+    "answer": "Our experiments use a single decision model, Jev, for structured 10",
+    "source": "testimage.pdf",
+    "page": 10
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems probabilistic judgments.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Evaluating other compatible decision models?",
+    "answer": "Evaluating other compatible decision models would help assess how the framework generalizes across backbones.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Ethical Considerations This work studies?",
+    "answer": "Ethical Considerations This work studies failure attribution in LLM multi-agent systems using existing research benchmarks.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Our experiments do not involve?",
+    "answer": "Our experiments do not involve new human-subject data collection or interventions in deployed systems.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about BLADE is intended to support?",
+    "answer": "BLADE is intended to support retrospective failure diagnosis and debugging.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about References Shraddha Barke, Arnav Goyal?",
+    "answer": "References Shraddha Barke, Arnav Goyal, Alind Khare, Avaljot Singh, Suman Nath, and Chetan Bansal.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about AgentRx: Diagnosing AI agent failures?",
+    "answer": "AgentRx: Diagnosing AI agent failures from execution trajectories.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about In Findings of the Association?",
+    "answer": "In Findings of the Association for Computational Linguistics: EMNLP 2026, 2026.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Peter Buneman, Sanjeev Khanna, and?",
+    "answer": "Peter Buneman, Sanjeev Khanna, and Wang-Chiew Tan.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Why and where: A characterization?",
+    "answer": "Why and where: A characterization of data provenance.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about In Database Theory – ICDT?",
+    "answer": "In Database Theory – ICDT 2001, volume 1973 of Lecture Notes in Computer Science, pages 316–330.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Pan, Shuyi Yang, Lakshya A?",
+    "answer": "Pan, Shuyi Yang, Lakshya A.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Agrawal, Bhavya Chopra, Rishabh Tiwari?",
+    "answer": "Agrawal, Bhavya Chopra, Rishabh Tiwari, Kurt Keutzer, Aditya Parameswaran, Dan Klein, Kannan Ramchandran, Matei A.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Gon- zalez, and Ion Stoica?",
+    "answer": "Gon- zalez, and Ion Stoica.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Why do multi-agent LLM systems?",
+    "answer": "Why do multi-agent LLM systems fail?",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about In Advances in Neural Information?",
+    "answer": "In Advances in Neural Information Pro- cessing Systems (Datasets and Benchmarks Track), volume 38, pages 135676–135729.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Mengzhuo Chen, Junjie Wang, Fangwen?",
+    "answer": "Mengzhuo Chen, Junjie Wang, Fangwen Mu, Yawen Wang, Zhe Liu, Huanxiang Feng, and Qing Wang.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Seeing the whole elephant: A?",
+    "answer": "Seeing the whole elephant: A benchmark for failure attribution in LLM-based multi-agent systems.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about In Proceedings of the 64th?",
+    "answer": "In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 19888–19905.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Association for Computational Linguistics, 2026?",
+    "answer": "Association for Computational Linguistics, 2026.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Bo Deng, Xinlei Zheng, Yi?",
+    "answer": "Bo Deng, Xinlei Zheng, Yi Wei, Kang Zhou, Chongyang Tao, Renzhao Liang, Xuanren Chen, Lifan Guo, and Chi Zhang.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about DeFA: Dependency-guided failure attribution for?",
+    "answer": "DeFA: Dependency-guided failure attribution for LLM agents.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Robert Bruce Findler and Matthias?",
+    "answer": "Robert Bruce Findler and Matthias Felleisen.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about In Proceedings of the Seventh?",
+    "answer": "In Proceedings of the Seventh ACM SIGPLAN International Conference on Functional Programming (ICFP), pages 48–59, 2002.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Adam Fourney, Gagan Bansal, Hussein?",
+    "answer": "Adam Fourney, Gagan Bansal, Hussein Mozannar, Cheng Tan, Eduardo Salinas, Erkang Zhu, Friederike Niedtner, Grace Proebsting, Griffin Bassman, Jack Gerrits, Jacob Alber, Peter Chang, Ricky Loynd, Robert West, Victor Dibia, Ahmed Awadallah, Ece Kamar, Rafah Hosn, and Saleema Amershi.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Magentic-One: A generalist multi-agent system?",
+    "answer": "Magentic-One: A generalist multi-agent system for solving complex tasks.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Yu Ge, Linna Xie, Zhong?",
+    "answer": "Yu Ge, Linna Xie, Zhong Li, Yu Pei, and Tian Zhang.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Spectrum-based failure attribution for multi-agent?",
+    "answer": "Spectrum-based failure attribution for multi-agent systems.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Proceedings of the ACM on?",
+    "answer": "Proceedings of the ACM on Software Engineering, 3(FSE):1888–1909, 2026.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Ghareeb, Benjamin Chang, Ludovico Mitchener?",
+    "answer": "Ghareeb, Benjamin Chang, Ludovico Mitchener, Angela Yiu, Caralyn J.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about Szostkiewicz, Dmytro Shved, Gavin J?",
+    "answer": "Szostkiewicz, Dmytro Shved, Gavin J.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about A multi-agent system for automating?",
+    "answer": "A multi-agent system for automating scientific discovery.",
+    "source": "testimage.pdf",
+    "page": 11
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems Sirui Hong, Mingchen Zhuge, Jonathan Chen, Xiawu Zheng, Yuheng Cheng, Jinlin Wang, Ceyao Zhang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang Zhou, Chenyu Ran, Lingfeng Xiao, Chenglin Wu, and Jürgen Schmidhuber.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about MetaGPT: Meta programming for a?",
+    "answer": "MetaGPT: Meta programming for a multi-agent collaborative framework.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about In The Twelfth International Conference?",
+    "answer": "In The Twelfth International Conference on Learning Representations, 2024.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Jiazheng Li, Emine Yilmaz, Bei?",
+    "answer": "Jiazheng Li, Emine Yilmaz, Bei Chen, and Thu Le.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Towards self-improving error diagnosis in?",
+    "answer": "Towards self-improving error diagnosis in multi- agent systems.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about In Findings of the Association?",
+    "answer": "In Findings of the Association for Computational Linguistics: ACL 2026, pages 2063–2077.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Association for Computational Linguistics, 2026?",
+    "answer": "Association for Computational Linguistics, 2026.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Bohan Lin, Kuo Yang, Zelin?",
+    "answer": "Bohan Lin, Kuo Yang, Zelin Tan, Yingchuan Lai, Chen Zhang, Guibin Zhang, Xinlei Yu, Miao Yu, Xu Wang, Yudong Zhang, and Yang Wang.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about AgentAsk: Multi-agent systems need to?",
+    "answer": "AgentAsk: Multi-agent systems need to ask.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about In Proceedings of the 64th?",
+    "answer": "In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 28055– 28077.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Association for Computational Linguistics, 2026?",
+    "answer": "Association for Computational Linguistics, 2026.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Jiale Liu, Huajun Xi, Shaokun?",
+    "answer": "Jiale Liu, Huajun Xi, Shaokun Zhang, Yifan Zeng, Tianwei Yue, Chi Wang, Jian Kang, Qingyun Wu, and Huazheng Wang.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Who&When Pro: Can LLMs really?",
+    "answer": "Who&When Pro: Can LLMs really attribute failures in AI agents?",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Zijun Liu, Yanzhe Zhang, Peng?",
+    "answer": "Zijun Liu, Yanzhe Zhang, Peng Li, Yang Liu, and Diyi Yang.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about A dynamic LLM-powered agent network?",
+    "answer": "A dynamic LLM-powered agent network for task-oriented agent collaboration.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about In First Conference on Language?",
+    "answer": "In First Conference on Language Modeling, 2024.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Haotian Luo, Huaisong Zhang, Xuelin?",
+    "answer": "Haotian Luo, Huaisong Zhang, Xuelin Zhang, Haoyu Wang, Zeyu Qin, Wenjie Lu, Guozheng Ma, Haiying He, Yingsha Xie, Qiyang Zhou, Zixuan Hu, Hongze Mi, Yibo Wang, Naiqiang Tan, Hong Chen, Yi R.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Fung, Chun Yuan, and Li?",
+    "answer": "Fung, Chun Yuan, and Li Shen.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about UltraHorizon: Benchmarking agent capabilities in?",
+    "answer": "UltraHorizon: Benchmarking agent capabilities in ultra long-horizon scenarios.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about In Proceedings of the 43rd?",
+    "answer": "In Proceedings of the 43rd International Conference on Machine Learning, volume 306 of Proceedings of Machine Learning Research, pages 83084–83136.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Yunjia Qi, Zehua Yin, Xintong?",
+    "answer": "Yunjia Qi, Zehua Yin, Xintong Shi, Hao Peng, Songyuanyi Lu, Yixian Liu, Richeng Xuan, Yuhong Liu, Zhichao Hu, Xiaozhi Wang, Lei Hou, Bin Xu, and Juanzi Li.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about TrajDebug: Tracing error lifecycle to?",
+    "answer": "TrajDebug: Tracing error lifecycle to identify critical failures in long-horizon agent trajectories.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Md Nakhla Rafi, Md Ahasanuzzaman?",
+    "answer": "Md Nakhla Rafi, Md Ahasanuzzaman, Dong Jae Kim, Zhijie Wang, and Tse-Hsun Chen.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about FALAT: Tracing failures in LLM?",
+    "answer": "FALAT: Tracing failures in LLM agent trajectories via dependency-guided search.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about A theory of diagnosis from?",
+    "answer": "A theory of diagnosis from first principles.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Linxin Song, Jiale Liu, Jieyu?",
+    "answer": "Linxin Song, Jiale Liu, Jieyu Zhang, Shaokun Zhang, Ao Luo, Shijian Wang, Qingyun Wu, and Chi Wang.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Adaptive in-conversation team building for?",
+    "answer": "Adaptive in-conversation team building for language model agents.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Philip Wadler and Robert Bruce?",
+    "answer": "Philip Wadler and Robert Bruce Findler.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Well-typed programs can’t be blamed?",
+    "answer": "Well-typed programs can’t be blamed.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about In Programming Languages and Systems?",
+    "answer": "In Programming Languages and Systems (ESOP 2009), volume 5502 of Lecture Notes in Computer Science, pages 1–16.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about TRIAGE: Severity-ranked multi-agent failure attribution?",
+    "answer": "TRIAGE: Severity-ranked multi-agent failure attribution.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about In Proceedings of the 5th?",
+    "answer": "In Proceedings of the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 15th International Joint Conference on Natural Language Processing, 2026.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about Yawen Wang, Wenjie Wu, Junjie?",
+    "answer": "Yawen Wang, Wenjie Wu, Junjie Wang, and Qing Wang.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about From flat logs to causal?",
+    "answer": "From flat logs to causal graphs: Hierarchical failure attribution for LLM-based multi-agent systems.",
+    "source": "testimage.pdf",
+    "page": 12
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems Zehao Wang, Lanjun Wang, Shilong Jin, Junjie Chen, and Yanghua Xiao.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about DCFA: Dual-view causal-inspired attribution for?",
+    "answer": "DCFA: Dual-view causal-inspired attribution for failure reasoning in LLM-based multi-agent systems.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about In Proceedings of the 5th?",
+    "answer": "In Proceedings of the 5th International Conference on Software Engineering (ICSE), pages 439–449, 1981.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about Guibin Zhang, Junhao Wang, Junjie?",
+    "answer": "Guibin Zhang, Junhao Wang, Junjie Chen, Wangchunshu Zhou, Kun Wang, and Shuicheng Yan.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about AgenTracer: Who is inducing failure?",
+    "answer": "AgenTracer: Who is inducing failure in the LLM agentic systems?",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about In The Fourteenth International Conference?",
+    "answer": "In The Fourteenth International Conference on Learning Representations, 2026.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about Shaokun Zhang, Ming Yin, Jieyu?",
+    "answer": "Shaokun Zhang, Ming Yin, Jieyu Zhang, Jiale Liu, Zhiguang Han, Jingyang Zhang, Beibin Li, Chi Wang, Huazheng Wang, Yiran Chen, and Qingyun Wu.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about Which agent causes task failures?",
+    "answer": "Which agent causes task failures and when?",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about On automated failure attribution of?",
+    "answer": "On automated failure attribution of LLM multi-agent systems.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about In Proceedings of the 42nd?",
+    "answer": "In Proceedings of the 42nd International Conference on Machine Learning, volume 267 of Proceedings of Machine Learning Research, pages 76583–76599.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about A Data Preprocessing A.1 Leaking?",
+    "answer": "A Data Preprocessing A.1 Leaking Fields In Who&When Pro, the progress ledger of Magentic-One records each instruction of the orchestrator, and the one event whose content differs from its ledger entry is the injected step in 636 of the 811 runs; DyLAN and MetaGPT turns record whether they were injected or replayed.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about We remove these fields before?",
+    "answer": "We remove these fields before any method reads a run.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about A.2 Long Trajectories Runs whose?",
+    "answer": "A.2 Long Trajectories Runs whose state and longest question exceed Jev’s 32k-token limit (22 of the 995 Who&When and Magentic- One runs) are shortened for all methods: a marker replaces web-page metadata and, if needed, long event contents keep their beginning and end.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about Tasks, agents, event ids and?",
+    "answer": "Tasks, agents, event ids and authors are unchanged.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about B Implementation Details B.1 Requirement?",
+    "answer": "B Implementation Details B.1 Requirement Spans The task is split into exact substrings: at list items when it has at least two; otherwise at discourse markers (first, second, next, then, additionally, furthermore, moreover, also, finally, lastly) when there are at least two; otherwise at semicolons when there are at least two; otherwise into sentences.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about B.2 Baseline Implementations The seven?",
+    "answer": "B.2 Baseline Implementations The seven trace-based adaptations use structured Jev judgments over identical tasks and trajectories, without auxiliary free-form generation.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about All-at-once predicts agent and step?",
+    "answer": "All-at-once predicts agent and step; other methods use the selected step’s recorded actor.",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about All-at-once uses the complete trajectory?",
+    "answer": "All-at-once uses the complete trajectory; Step-by-step searches sequentially; Binary search repeatedly halves the candidate segment (Zhang et al., 2025).",
+    "source": "testimage.pdf",
+    "page": 13
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems Structure-guided localization.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about TRIAGE (Wang, 2026) ranks steps?",
+    "answer": "TRIAGE (Wang, 2026) ranks steps by suspicion and structural impact.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about FALAT (Rafi et al., 2026)?",
+    "answer": "FALAT (Rafi et al., 2026) screens relevant candidate steps and uses influence, propagation, and correction judgments to prune candidates and refine localization.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about TrajDebug (Qi et al., 2026)?",
+    "answer": "TrajDebug (Qi et al., 2026) tracks triggers, resolution, and downstream impact to select a decisive step.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about ErrorProbe (Li et al., 2026)?",
+    "answer": "ErrorProbe (Li et al., 2026) proposes and assesses failure hypotheses along dependency paths, then arbitrates among candidates.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about It uses BLADE’s precomputed Jev?",
+    "answer": "It uses BLADE’s precomputed Jev depends-on judgments and trace-based verification instead of tool execution, without persistent memory.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about C Additional Results C.1 Breach?",
+    "answer": "C Additional Results C.1 Breach Localization A decision with a breach finding is the decisive step in 59.5% of the cases on Magentic-One and 11.9% on Who&When, against 9.8% and 5.2% for decisions without a finding.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about Figure 5 places every audited?",
+    "answer": "Figure 5 places every audited handoff by the position of its receiving decision relative to the decisive step.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about The share labeled breach peaks?",
+    "answer": "The share labeled breach peaks at the decisive step: on Magentic-One it rises from at most 5% in the four decisions before it to 70%, and on DyLAN from at most 6% to 42%.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about Among the 30 Magentic-One runs?",
+    "answer": "Among the 30 Magentic-One runs that BLADE attributes correctly and All-at-once does not, the step selected by BLADE carries an audit finding in 25 runs, compared with 2 for the step selected by All-at-once.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about -4 -3 -2 -1 0?",
+    "answer": "-4 -3 -2 -1 0 +1 +2 +3 +4 Decisions from the decisive step 0 20 40 60 Handoffs labeled breach (%) M-One DyLAN Figure 5.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about Share of audited handoffs labeled?",
+    "answer": "Share of audited handoffs labeled breach by the position of the receiving decision, in agent decisions from the annotated decisive step (0).",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about M-One: the Magentic-One runs of?",
+    "answer": "M-One: the Magentic-One runs of Who&When Pro.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about C.2 Step Attribution: Paired Comparisons?",
+    "answer": "C.2 Step Attribution: Paired Comparisons Table 3 compares the macro-average step accuracy of BLADE with seven baselines in Table 1.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about We estimate uncertainty using 20,000?",
+    "answer": "We estimate uncertainty using 20,000 paired task-cluster bootstrap replicates (seed 0).",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about Trajectories sharing the same task?",
+    "answer": "Trajectories sharing the same task query form a cluster and are resampled together, including tasks shared across subsets.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about We resample clusters within strata?",
+    "answer": "We resample clusters within strata defined by their subset membership, preserving the pairing between methods.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about Each replicate recomputes step accuracy?",
+    "answer": "Each replicate recomputes step accuracy within each subset and averages the five subsets equally.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about The 2.5th and 97.5th percentiles?",
+    "answer": "The 2.5th and 97.5th percentiles give 95% confidence intervals (CIs), quantifying task-sampling uncertainty with predictions held fixed.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about All seven intervals lie above?",
+    "answer": "All seven intervals lie above zero.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about C.3 Additional Mechanism Checks Evidence?",
+    "answer": "C.3 Additional Mechanism Checks Evidence contribution.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about Relative to dependencies alone, adding?",
+    "answer": "Relative to dependencies alone, adding audit findings corrects 34 step predictions and loses 5 across four subsets in Table 2.",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about On Magentic-One, removing breach findings?",
+    "answer": "On Magentic-One, removing breach findings loses 22 correct 14",
+    "source": "testimage.pdf",
+    "page": 14
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems Baseline Gain (pp) 95% CI All-at-once +5.6 [2.8, 8.6] Step-by-step +9.1 [5.2, 13.2] Binary search +9.9 [5.8, 14.0] TRIAGE +9.2 [6.4, 12.2] FALAT +17.9 [13.5, 22.4] ErrorProbe +16.2 [12.6, 20.1] TrajDebug +6.4 [3.2, 9.7] Table 3.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about Macro-average step accuracy gain of?",
+    "answer": "Macro-average step accuracy gain of BLADE over each baseline, weighting the subsets equally, with paired task-cluster bootstrap 95% confidence intervals.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about predictions and gains 1, reducing?",
+    "answer": "predictions and gains 1, reducing step accuracy to 78.3%.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about Keeping only breach findings matches?",
+    "answer": "Keeping only breach findings matches the full configuration at 80.9%.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about On DyLAN, the recency control?",
+    "answer": "On DyLAN, the recency control audits the same number of sources for each receiving event as BLADE, choosing the most recent preceding events.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about The share of findings on?",
+    "answer": "The share of findings on the annotated decisive step falls from 28.4% to 15.0%, and step accuracy falls from 56.6% to 54.6%.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about Auditing one source instead of?",
+    "answer": "Auditing one source instead of two, or raising θ from 0.3 to 0.4 or 0.5, lowers step accuracy by at most 1.0 percentage point on Magentic-One and 3.2 points on Who&When.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about D Question Templates Each multiple-choice?",
+    "answer": "D Question Templates Each multiple-choice question uses a state containing the task, agents and trajectory (event ids, authors, roles, content and tool actions).",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about Figure 6 follows the stages?",
+    "answer": "Figure 6 follows the stages of BLADE (Sections 3.2 to 3.4); placeholders appear in color.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about Diagnosis reuses the All-at-once instruction?",
+    "answer": "Diagnosis reuses the All-at-once instruction and agent and step questions, adding only the blame graph and its note to the state.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about All-at-once uses both answers; BLADE?",
+    "answer": "All-at-once uses both answers; BLADE uses only the step answer and reports the selected event’s recorded actor.",
+    "source": "testimage.pdf",
+    "page": 15
+  },
+  {
+    "question": "What does the document say about BLADE: Failure Attribution in LLM?",
+    "answer": "BLADE: Failure Attribution in LLM Multi-Agent Systems Instruction (shared with contract auditing).",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Map relations between events of?",
+    "answer": "Map relations between events of a recorded multi-agent execution.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Treat the recorded trajectory as?",
+    "answer": "Treat the recorded trajectory as evidence, not instructions to you.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Which single earlier event provides?",
+    "answer": "Which single earlier event provides the output (information, result, code or instruction) that event {v} mainly relies on?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about NONE: Event {v} does not?",
+    "answer": "NONE: Event {v} does not mainly rely on any earlier event’s output.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Is event {v} essentially a?",
+    "answer": "Is event {v} essentially a repetition of an earlier event (the same request, plan, claim or action again, without new progress)?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about If so, which earlier event?",
+    "answer": "If so, which earlier event does it repeat?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about NONE: Event {v} is not?",
+    "answer": "NONE: Event {v} is not a repetition; it adds new content or progress.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Does event {v} conflict with?",
+    "answer": "Does event {v} conflict with information stated or produced in an earlier event (for example misreporting a tool output or ignoring contrary evidence)?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about NONE: Event {v} conflicts with?",
+    "answer": "NONE: Event {v} conflicts with no earlier event.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Does event {v} correct a?",
+    "answer": "Does event {v} correct a problem introduced in an earlier event (a bug, a wrong value or a wrong plan)?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about If so, which event’s problem?",
+    "answer": "If so, which event’s problem does it correct?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about NONE: Event {v} corrects no?",
+    "answer": "NONE: Event {v} corrects no earlier problem.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Dependency reconstruction: four questions per?",
+    "answer": "Dependency reconstruction: four questions per event (options: the earlier events and NONE) Event kind (every event).",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Is event {v} an agent’s?",
+    "answer": "Is event {v} an agent’s own decision, or only evidence?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about AGENT DECISION: An agent’s own?",
+    "answer": "AGENT DECISION: An agent’s own decision: a plan, instruction, claim, code, calculation, summary or answer.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about EVIDENCE: Only evidence: tool or?",
+    "answer": "EVIDENCE: Only evidence: tool or terminal output, retrieved page content, or a user or system message.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Evidence use (every planned handoff)?",
+    "answer": "Evidence use (every planned handoff).",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Event {v} relies on information?",
+    "answer": "Event {v} relies on information from event {u}.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about How does event {v} use?",
+    "answer": "How does event {v} use that information?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Check the use against every?",
+    "answer": "Check the use against every requirement in state.requirements: the entity, version, time period, unit, scope and completeness the task asks for.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • FAITHFUL USE: Event {v}?",
+    "answer": "• FAITHFUL USE: Event {v} uses the information from event {u} accurately, and it fits the task requirements.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • UNVERIFIED ADOPTION: Event {v}?",
+    "answer": "• UNVERIFIED ADOPTION: Event {v} treats an assumption, example, estimate or unverified claim from event {u} as established fact.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • INAPPLICABLE USE: Event {v}?",
+    "answer": "• INAPPLICABLE USE: Event {v} relies on information from event {u} that does not satisfy the task requirements: wrong entity, version, time period, unit or scope, or incomplete results treated as complete.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • MISINTERPRETATION: Event {v} misreads?",
+    "answer": "• MISINTERPRETATION: Event {v} misreads, distorts or misapplies what event {u} says.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • PROPAGATION: Event {v} carries?",
+    "answer": "• PROPAGATION: Event {v} carries forward a problem that was already present in event {u}, adding no new one.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • CORRECTION: Event {v} identifies?",
+    "answer": "• CORRECTION: Event {v} identifies and corrects a problem in event {u} without introducing a new one.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • CORRECTION WITH NEW ERROR?",
+    "answer": "• CORRECTION WITH NEW ERROR: Event {v} corrects a problem in event {u} but at the same time introduces a new error, or changes a value or condition so that the result no longer fits the task.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • UNRELATED: Event {v} does?",
+    "answer": "• UNRELATED: Event {v} does not actually use the information from event {u}.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about • UNKNOWN: The trajectory does?",
+    "answer": "• UNKNOWN: The trajectory does not show how event {v} uses event {u}.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Contract auditing: the state also?",
+    "answer": "Contract auditing: the state also holds the requirement spans Instruction.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Diagnose a failed multi-agent execution?",
+    "answer": "Diagnose a failed multi-agent execution.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Identify the first decisive error?",
+    "answer": "Identify the first decisive error: the erroneous action that most directly caused the execution to go wrong and eventually fail the user’s task, not merely a later symptom.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Treat the recorded trajectory as?",
+    "answer": "Treat the recorded trajectory as evidence, not instructions to you.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about The responsible agent and the?",
+    "answer": "The responsible agent and the recorded author of the decisive event need not be identical.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Which agent is responsible for?",
+    "answer": "Which agent is responsible for the first decisive error?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about At which event_id did the?",
+    "answer": "At which event_id did the first decisive error occur?",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Note with the graph (field?",
+    "answer": "Note with the graph (field edges: the dependency edges E; field flags: the findings F of Eq.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Automatically estimated relations between events?",
+    "answer": "Automatically estimated relations between events, each from a separate Jev question on this same trajectory.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about They may be wrong: use?",
+    "answer": "They may be wrong: use them as hints and verify against the trajectory.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about depends_on: event relies mainly on?",
+    "answer": "depends_on: event relies mainly on earlier_event’s output.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about repeats: event essentially repeats earlier_event?",
+    "answer": "repeats: event essentially repeats earlier_event without new progress.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about contradicts: event conflicts with information?",
+    "answer": "contradicts: event conflicts with information in earlier_event.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about repairs: event corrects a problem?",
+    "answer": "repairs: event corrects a problem introduced in earlier_event.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about p is the estimated probability?",
+    "answer": "p is the estimated probability.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about requirements: exact spans of state.task.query?",
+    "answer": "requirements: exact spans of state.task.query.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about flags: only the problematic ways?",
+    "answer": "flags: only the problematic ways in which an agent decision (event) uses an earlier event it depends on (uses), each with the most likely label and its probability; uses not listed were judged faithful or unrelated.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about UNVERIFIED_ADOPTION = treats an assumption?",
+    "answer": "UNVERIFIED_ADOPTION = treats an assumption, example or unverified claim as fact; INAPPLICABLE_USE = relies on information that does not fit the task’s entity, version, period, unit or scope, or treats incomplete results as complete; MISINTERPRETATION = misreads its input; PROPAGATION = only carries forward a problem already present in its input; CORRECTION = fixes a problem in its input; CORRECTION_WITH_NEW_ERROR = fixes one problem but introduces another.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Defeasible diagnosis: the state also?",
+    "answer": "Defeasible diagnosis: the state also holds the blame graph Figure 6.",
+    "source": "testimage.pdf",
+    "page": 16
+  },
+  {
+    "question": "What does the document say about Question templates for dependency reconstruction?",
+    "answer": "Question templates for dependency reconstruction, contract auditing, and diagnosis.",
+    "source": "testimage.pdf",
+    "page": 16
+  }
+]

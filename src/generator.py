@@ -31,30 +31,35 @@ from src.config import (
     GEMINI_API_KEY, GEMINI_MODEL,
 )
 
-logger = logging.getLogger(__name__)
+# Scratch-trained model
+_scratch_model = None
+_scratch_vocab = None
+_scratch_seq_len = None
 
-# Singletons for local FLAN-T5
-_local_model     = None
-_local_tokenizer = None
 
+def _get_scratch_model():
+    global _scratch_model, _scratch_vocab, _scratch_seq_len
 
-def _get_local_model():
-    """Lazily load local FLAN-T5 model and tokenizer."""
-    global _local_model, _local_tokenizer
-    if _local_model is None:
+    if _scratch_model is None:
         import torch
-        from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+        from pathlib import Path
+        from scratch_model.model import TinyTransformer
 
-        os.environ["TOKENIZERS_PARALLELISM"] = "false"
-        torch.set_num_threads(2)
+        checkpoint_path = Path("scratch_model/checkpoint/model.pt")
+        checkpoint = torch.load(
+            checkpoint_path,
+            map_location="cpu",
+            weights_only=True
+        )
 
-        logger.info(f"Loading local LLM: {LOCAL_LLM_MODEL}...")
-        _local_tokenizer = AutoTokenizer.from_pretrained(LOCAL_LLM_MODEL, use_fast=True)
-        _local_model = AutoModelForSeq2SeqLM.from_pretrained(LOCAL_LLM_MODEL, low_cpu_mem_usage=True)
-        _local_model.config.tie_word_embeddings = False
-        _local_model.eval()
-        logger.info("Local LLM loaded successfully.")
-    return _local_model, _local_tokenizer
+        _scratch_vocab = checkpoint["vocab"]
+        _scratch_seq_len = checkpoint["seq_len"]
+
+        _scratch_model = TinyTransformer(len(_scratch_vocab))
+        _scratch_model.load_state_dict(checkpoint["model_state_dict"])
+        _scratch_model.eval()
+
+    return _scratch_model, _scratch_vocab, _scratch_seq_len
 
 
 # ─────────────────────────────────────────────────────────
