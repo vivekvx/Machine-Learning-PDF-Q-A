@@ -17,7 +17,12 @@ build/
 .env.*
 *.backup
 
-# FAISS index (large binary files — regenerate locally)
+# Model checkpoints and weights (regenerate using train_gpt2.py or train.py)
+*.pt
+*.safetensors
+*.bin
+scratch_model/checkpoint_backup/
+scratch_model/checkpoint/gpt2_finetuned/*.safetensors
 vector_store/*.index
 vector_store/*.meta
 

@@ -1,80 +1,72 @@
-import torch
-from torch import nn
+import re
+import sys
+import time
 from pathlib import Path
+import torch
+
+BASE_DIR = Path(__file__).resolve().parent
+if str(BASE_DIR.parent) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR.parent))
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+
+try:
+    from scratch_model.bpe_tokenizer import BPETokenizer
+    from scratch_model.model import CustomCausalLM
+except ImportError:
+    from bpe_tokenizer import BPETokenizer
+    from model import CustomCausalLM
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-CHECKPOINT = Path("scratch_model/checkpoint/model.pt")
+CHECKPOINT_PATH = BASE_DIR / "checkpoint" / "qa_model.pt"
+TOKENIZER_PATH = BASE_DIR / "checkpoint" / "bpe_tokenizer.json"
 
-checkpoint = torch.load(CHECKPOINT, map_location=DEVICE, weights_only=False)
+if not CHECKPOINT_PATH.exists() or not TOKENIZER_PATH.exists():
+    raise FileNotFoundError("Model checkpoint or tokenizer missing. Please run train.py first.")
 
-vocab = checkpoint["vocab"]
-SEQ_LEN = checkpoint["seq_len"]
+tokenizer = BPETokenizer().load(TOKENIZER_PATH)
+checkpoint = torch.load(CHECKPOINT_PATH, map_location=DEVICE)
 
-stoi = {ch: i for i, ch in enumerate(vocab)}
-itos = {i: ch for i, ch in enumerate(vocab)}
+model = CustomCausalLM(
+    vocab_size=checkpoint["vocab_size"],
+    d_model=checkpoint["d_model"],
+    n_head=checkpoint["n_head"],
+    n_layers=checkpoint["n_layers"],
+    max_seq_len=checkpoint["max_seq_len"],
+    dropout=0.1,
+    pad_idx=checkpoint["pad_idx"]
+).to(DEVICE)
 
-
-class TinyTransformer(nn.Module):
-    def __init__(self, vocab_size):
-        super().__init__()
-        self.token_embedding = nn.Embedding(vocab_size, 64)
-        self.position_embedding = nn.Embedding(SEQ_LEN, 64)
-
-        layer = nn.TransformerEncoderLayer(
-            d_model=64,
-            nhead=4,
-            dim_feedforward=128,
-            batch_first=True,
-        )
-        self.transformer = nn.TransformerEncoder(layer, num_layers=2)
-        self.output = nn.Linear(64, vocab_size)
-
-    def forward(self, x):
-        _, length = x.shape
-        positions = torch.arange(length, device=x.device)
-        h = self.token_embedding(x) + self.position_embedding(positions)
-
-        mask = torch.triu(
-            torch.ones(length, length, device=x.device, dtype=torch.bool),
-            diagonal=1,
-        )
-        h = self.transformer(h, mask=mask)
-        return self.output(h)
-
-
-model = TinyTransformer(len(vocab)).to(DEVICE)
 model.load_state_dict(checkpoint["model_state_dict"])
 model.eval()
 
 
-def generate(prompt, max_new_tokens=100):
-    unknown_chars = [ch for ch in prompt if ch not in stoi]
+def generate(prompt: str, max_tokens: int = 60, temperature: float = 0.4):
+    input_ids = tokenizer.encode(prompt, add_bos=True)
+    if len(input_ids) > checkpoint["max_seq_len"] - 60:
+        input_ids = input_ids[-(checkpoint["max_seq_len"] - 60):]
 
-    if unknown_chars:
-        print("Some prompt characters are not in the training vocabulary.")
-        prompt = "".join(ch for ch in prompt if ch in stoi)
+    input_tensor = torch.tensor([input_ids], dtype=torch.long, device=DEVICE)
 
-    if not prompt:
-        prompt = "Machine learning"
-
-    tokens = torch.tensor(
-        [[stoi[ch] for ch in prompt]],
-        dtype=torch.long,
-        device=DEVICE,
+    gen_ids = model.generate(
+        idx=input_tensor,
+        max_new_tokens=max_tokens,
+        temperature=temperature,
+        top_k=30,
+        repetition_penalty=1.6,
+        stop_token_ids=[tokenizer.eos_id]
     )
 
-    with torch.no_grad():
-        for _ in range(max_new_tokens):
-            context = tokens[:, -SEQ_LEN:]
-            logits = model(context)
-            next_token = torch.argmax(logits[:, -1, :], dim=-1).unsqueeze(1)
-            tokens = torch.cat([tokens, next_token], dim=1)
-
-    return "".join(itos[int(i)] for i in tokens[0])
+    full_output = tokenizer.decode(gen_ids)
+    if "Answer:" in full_output:
+        return full_output.split("Answer:")[-1].strip()
+    return full_output[len(prompt):].strip()
 
 
 if __name__ == "__main__":
-    print("Device:", DEVICE)
-    question = input("Enter a prompt: ")
-    print("\nGenerated text:\n")
-    print(generate(question))
+    print(f"Loaded Custom Causal LM ({checkpoint['total_params']:,} parameters)")
+    q = input("\nEnter Question: ")
+    ctx = input("Enter Context (optional): ")
+    prompt = f"Context: {ctx}\n\nQuestion: {q}\n\nAnswer:" if ctx else f"Question: {q}\n\nAnswer:"
+    ans = generate(prompt)
+    print(f"\nGenerated Answer:\n{ans}")

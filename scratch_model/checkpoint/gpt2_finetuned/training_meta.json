@@ -1,0 +1,16 @@
+{
+  "base_model": "gpt2",
+  "total_params": 124439808,
+  "trainable_params": 124439808,
+  "best_val_loss": 1.7909451855553522,
+  "best_train_loss": 1.664063641987741,
+  "best_epoch": 2,
+  "total_epochs": 2,
+  "max_seq_len": 320,
+  "learning_rate": 4e-05,
+  "batch_size": 8,
+  "training_examples": 159,
+  "device": "cpu",
+  "training_approach": "Full fine-tuning of GPT-2 Small on custom QA dataset",
+  "pretrained_weights": "GPT-2 Small (OpenAI, 117M params)"
+}
